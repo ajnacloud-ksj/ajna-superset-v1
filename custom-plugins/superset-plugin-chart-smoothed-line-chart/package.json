@@ -1,4 +1,5 @@
 {
+
   "name": "superset-plugin-chart-smoothed-line-chart",
   "version": "0.1.0",
   "description": "Superset Plugin Chart Smoothed Line Chart",
@@ -42,3 +43,4 @@
     "typescript": "^4.1.2"
   }
 }
+

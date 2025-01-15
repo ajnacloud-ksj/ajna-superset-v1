@@ -62,4 +62,4 @@ After that the plugin should show up when you run Superset, e.g. the development
 
 ```
 npm run dev-server
-```
+
