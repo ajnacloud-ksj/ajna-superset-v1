@@ -45,7 +45,7 @@ import { setSaveChartModalVisibility } from 'src/explore/actions/saveModalAction
 import { SaveActionType } from 'src/explore/types';
 import { UserWithPermissionsAndRoles } from 'src/types/bootstrapTypes';
 import { Dashboard } from 'src/types/Dashboard';
-import SetURL from 'src/components/PageHeaderWithActions/SetURL';
+//import SetURL from 'src/components/PageHeaderWithActions/SetURL';
 
 // Session storage key for recent dashboard
 const SK_DASHBOARD_ID = 'save_chart_recent_dashboard';

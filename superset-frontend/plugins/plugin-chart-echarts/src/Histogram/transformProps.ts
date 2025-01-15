@@ -9,9 +9,9 @@
  *
  *   http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
@@ -91,7 +91,7 @@ export default function transformProps(
   const minBin = findBin(minValue, binNames);
   const maxBin = findBin(maxValue, binNames);
 
-  // warning if minBin or maxBin is null
+  // Warning if minBin or maxBin is null
   if (!minBin) {
     console.warn(`Warning: minValue (${minValue}) does not fall within any bin range.`);
   }
@@ -113,7 +113,6 @@ export default function transformProps(
       { coord: [peakPoints[i + 1].xAxis, peakPoints[i + 1].yAxis] },
     ]);
   }
-
 
   const barSeries: BarSeriesOption[] = data.map(datum => {
     const seriesName =
@@ -137,6 +136,48 @@ export default function transformProps(
           const { value } = params;
           return formatter.format(value as number);
         },
+      },
+      markLine: {
+        data: [
+          { xAxis: minBin ?? 'null',
+            label: { formatter: () => minValue ? minValue.toString() : 'minValue' },
+            lineStyle: {
+              color: 'red',
+              type: 'solid',
+              width: 2,
+            },
+          } as any,
+          { xAxis: maxBin ?? 'null',
+            label: { formatter: () => maxValue ? maxValue.toString() : 'maxValue' },
+            lineStyle: {
+              color: 'red',
+              type: 'solid',
+              width: 2,
+            },
+          } as any,
+          ...trendLineData,
+        ],
+        label: {
+          show: true,
+          position: 'end',
+          formatter: '{b}',
+          color: 'red',
+          fontSize: 12,
+        },
+        lineStyle: {
+          color: 'red',
+          type: 'dashed',
+          width: 2,
+        },
+        symbol: ['arrow', 'arrow'],
+        symbolSize: 8,
+        animation: true,
+        animationDuration: 3000,
+        animationEasing: 'cubicOut',
+        animationDelay: idx => idx * 100,
+        animationDurationUpdate: 1000,
+        animationEasingUpdate: 'cubicOut',
+        animationDelayUpdate: idx => idx * 100,
       },
     };
   });
@@ -207,52 +248,6 @@ export default function transformProps(
       },
     },
     series: barSeries,
-    // upadted series to create vertical markLine
-    series: barSeries.map(series => ({
-      ...series,
-      markLine: {
-        data: [
-          { xAxis: minBin ?? "null", 
-            label: { formatter: () => minValue ? minValue.toString() : 'minValue' },
-            lineStyle: {
-              color: 'red',
-              type: 'solid',
-              width: 2,
-            },
-           } as any,
-          { xAxis: maxBin ?? "null", 
-            label: { formatter: () => maxValue ? maxValue.toString() : 'maxValue' },
-            lineStyle: {
-              color: 'red',
-              type: 'solid',
-              width: 2,
-            }
-           } as any,
-          ...trendLineData,
-        ],
-        label: {
-          show: true,
-          position: 'end',
-          formatter: '{b}',
-          color: 'red',
-          fontSize: 12,
-        },
-        lineStyle: {
-          color: 'red',
-          type: 'dashed',
-          width: 2,
-        },
-        symbol: ['arrow', 'arrow'],
-        symbolSize: 8,
-        animation: true,
-        animationDuration: 3000,
-        animationEasing: 'cubicOut',
-        animationDelay: (idx) => idx * 100,
-        animationDurationUpdate: 1000,
-        animationEasingUpdate: 'cubicOut',
-        animationDelayUpdate: (idx) => idx * 100,
-      },
-    })),
     legend: {
       ...getLegendProps(
         LegendType.Scroll,
@@ -281,3 +276,4 @@ export default function transformProps(
     onLegendStateChanged,
   };
 }
+
