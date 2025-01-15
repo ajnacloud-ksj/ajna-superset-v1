@@ -60,6 +60,8 @@ export default function transformProps(
     sliceId,
     xAxisTitle,
     yAxisTitle,
+    minValue,
+    maxValue,
   } = formData;
   const { data } = queriesData[0];
   const colorFn = CategoricalColorNamespace.getScale(colorScheme);
@@ -71,6 +73,48 @@ export default function transformProps(
   const xAxisData: string[] = Object.keys(data[0]).filter(
     key => !groupbySet.has(key),
   );
+
+  // Extract bin names from the data object keys
+  const binNames = Object.keys(data[0]);
+
+  // Function to determine which bin a minValue/maxValue belongs to
+  const findBin = (value: number, bins: string[]): string | null => {
+    for (let i = 0; i < bins.length; i++) {
+      const [min, max] = bins[i].split(' - ').map(Number);
+      if (value >= min && value <= max) {
+        return bins[i];
+      }
+    }
+    return null;
+  };
+
+  const minBin = findBin(minValue, binNames);
+  const maxBin = findBin(maxValue, binNames);
+
+  // warning if minBin or maxBin is null
+  if (!minBin) {
+    console.warn(`Warning: minValue (${minValue}) does not fall within any bin range.`);
+  }
+  if (!maxBin) {
+    console.warn(`Warning: maxValue (${maxValue}) does not fall within any bin range.`);
+  }
+
+  // Identify the peak points for each bin
+  const peakPoints = binNames.map(bin => {
+    const peakValue = Math.max(...data.map(d => (d[bin] as number) || 0));
+    return { xAxis: bin, yAxis: peakValue };
+  });
+
+  // Create markLine segments between adjacent peak points
+  const trendLineData: { coord: [string, number] }[][] = [];
+  for (let i = 0; i < peakPoints.length - 1; i++) {
+    trendLineData.push([
+      { coord: [peakPoints[i].xAxis, peakPoints[i].yAxis] },
+      { coord: [peakPoints[i + 1].xAxis, peakPoints[i + 1].yAxis] },
+    ]);
+  }
+
+
   const barSeries: BarSeriesOption[] = data.map(datum => {
     const seriesName =
       groupby.length > 0
@@ -163,6 +207,52 @@ export default function transformProps(
       },
     },
     series: barSeries,
+    // upadted series to create vertical markLine
+    series: barSeries.map(series => ({
+      ...series,
+      markLine: {
+        data: [
+          { xAxis: minBin ?? "null", 
+            label: { formatter: () => minValue ? minValue.toString() : 'minValue' },
+            lineStyle: {
+              color: 'red',
+              type: 'solid',
+              width: 2,
+            },
+           } as any,
+          { xAxis: maxBin ?? "null", 
+            label: { formatter: () => maxValue ? maxValue.toString() : 'maxValue' },
+            lineStyle: {
+              color: 'red',
+              type: 'solid',
+              width: 2,
+            }
+           } as any,
+          ...trendLineData,
+        ],
+        label: {
+          show: true,
+          position: 'end',
+          formatter: '{b}',
+          color: 'red',
+          fontSize: 12,
+        },
+        lineStyle: {
+          color: 'red',
+          type: 'dashed',
+          width: 2,
+        },
+        symbol: ['arrow', 'arrow'],
+        symbolSize: 8,
+        animation: true,
+        animationDuration: 3000,
+        animationEasing: 'cubicOut',
+        animationDelay: (idx) => idx * 100,
+        animationDurationUpdate: 1000,
+        animationEasingUpdate: 'cubicOut',
+        animationDelayUpdate: (idx) => idx * 100,
+      },
+    })),
     legend: {
       ...getLegendProps(
         LegendType.Scroll,
