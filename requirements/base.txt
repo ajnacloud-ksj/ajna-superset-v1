@@ -445,3 +445,4 @@ zipp==3.21.0
     #   importlib-resources
 zstandard==0.23.0
     # via flask-compress
+pydruid==0.6.9
