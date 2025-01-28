@@ -40,8 +40,6 @@ from superset.sql.dialects.firebolt import Firebolt
 
 logger = logging.getLogger(__name__)
 
-# register 3rd party dialects
-Dialect.classes["firebolt"] = Firebolt
 
 # mapping between DB engine specs and sqlglot dialects
 SQLGLOT_DIALECTS = {
@@ -65,7 +63,7 @@ SQLGLOT_DIALECTS = {
     # "elasticsearch": ???
     # "exa": ???
     # "firebird": ???
-    "firebolt": "firebolt",
+    "firebolt": Firebolt,
     "gsheets": Dialects.SQLITE,
     "hana": Dialects.POSTGRES,
     "hive": Dialects.HIVE,
@@ -412,7 +410,7 @@ class SQLStatement(BaseSQLStatement[exp.Expression]):
 
         return self._fallback_formatting()
 
-    @deprecated(deprecated_in="4.0", removed_in="5.0")
+    @deprecated(deprecated_in="4.0")
     def _fallback_formatting(self) -> str:
         """
         Format SQL without a specific dialect.
