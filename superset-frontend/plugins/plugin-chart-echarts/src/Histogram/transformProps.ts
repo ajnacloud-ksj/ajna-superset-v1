@@ -71,12 +71,8 @@ export default function transformProps(
   const percentFormatter = getPercentFormatter(NumberFormats.PERCENT_2_POINT);
   const groupbySet = new Set(groupby);
 
-  // ------------------------------------------------------------------
-  // 1. Extract bin names from the data (keys that include ' - ')
-  // ------------------------------------------------------------------
   const rawBinNames = Object.keys(data[0]).filter(key => key.includes(' - '));
 
-  // Ensure uniqueness by appending a counter if needed
   const binNameCount: Record<string, number> = {};
   const uniqueBinNames = rawBinNames.map(bin => {
     if (binNameCount[bin] === undefined) {
@@ -88,9 +84,6 @@ export default function transformProps(
     }
   });
 
-  // ------------------------------------------------------------------
-  // 2. Determine the bin into which the spec values fall
-  // ------------------------------------------------------------------
   const findBin = (value: number, bins: string[]): string | null => {
     for (let i = 0; i < bins.length; i++) {
       const parts = bins[i].split(' - ').map(Number);
@@ -104,7 +97,6 @@ export default function transformProps(
     return null;
   };
 
-  // Extract spec values from the first record (assumes spec values are constant)
   let specMinValue: number | undefined = undefined;
   let specMaxValue: number | undefined = undefined;
   if (data.length > 0) {
@@ -112,7 +104,6 @@ export default function transformProps(
     specMaxValue = data[0][spec_max_column] as number;
   }
 
-  // Find the raw bin that each spec value belongs to, then map to unique label.
   const minBinRaw = specMinValue != null ? findBin(specMinValue, rawBinNames) : null;
   const maxBinRaw = specMaxValue != null ? findBin(specMaxValue, rawBinNames) : null;
 
@@ -132,9 +123,7 @@ export default function transformProps(
     console.warn(`Warning: spec_max_value (${specMaxValue}) does not fall within any bin range.`);
   }
 
-  // ------------------------------------------------------------------
-  // 3. Build the histogram (density) series
-  // ------------------------------------------------------------------
+
   const xAxisData: string[] = uniqueBinNames;
   const densitySeries: BarSeriesOption[] = data.map(datum => {
     const seriesName =
@@ -163,9 +152,6 @@ export default function transformProps(
   const maxFrequency = Math.max(...allFrequencies, 0);
   const specBarHeight = maxFrequency * 0.1 || 1; // 10% of max frequency
 
-  // ------------------------------------------------------------------
-  // 4. Create extra bar series for the spec thresholds with fallbacks
-  // ------------------------------------------------------------------
   const minSpecData = uniqueBinNames.map(bin => (bin === minBin ? specBarHeight : 0));
   const maxSpecData = uniqueBinNames.map(bin => (bin === maxBin ? specBarHeight : 0));
 
@@ -198,9 +184,6 @@ export default function transformProps(
     barWidth: '50%',
   };
 
-  // ------------------------------------------------------------------
-  // 5. Combine series and update legend/tooltip
-  // ------------------------------------------------------------------
   const allSeries: BarSeriesOption[] = [...densitySeries, minSpecSeries, maxSpecSeries];
 
   const legendOptions = allSeries.map(series => series.name as string);
