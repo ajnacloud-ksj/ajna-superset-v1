@@ -16,22 +16,23 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import { buildQueryContext } from '@superset-ui/core';
+import { buildQueryContext, getColumnLabel } from '@superset-ui/core';
 import { histogramOperator } from '@superset-ui/chart-controls';
 import { HistogramFormData } from './types';
 
 export default function buildQuery(formData: HistogramFormData) {
   const { column, spec_min_column, spec_max_column, groupby = [] } = formData;
   const extraColumns: string[] = [];
-  if (spec_min_column) extraColumns.push(spec_min_column);
-  if (spec_max_column) extraColumns.push(spec_max_column);
+  if (spec_min_column) extraColumns.push(getColumnLabel(spec_min_column));
+  if (spec_max_column) extraColumns.push(getColumnLabel(spec_max_column));
 
   return buildQueryContext(formData, baseQueryObject => [
     {
       ...baseQueryObject,
-      columns: [...groupby, column, ...extraColumns],
+      columns: [...groupby, getColumnLabel(column), ...extraColumns],
       post_processing: [histogramOperator(formData, baseQueryObject)],
       metrics: undefined,
     },
   ]);
 }
+

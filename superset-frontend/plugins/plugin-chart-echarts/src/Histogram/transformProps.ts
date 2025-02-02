@@ -69,10 +69,11 @@ export default function transformProps(
     normalize ? NumberFormats.FLOAT_2_POINT : NumberFormats.INTEGER,
   );
   const percentFormatter = getPercentFormatter(NumberFormats.PERCENT_2_POINT);
-  const groupbySet = new Set(groupby);
+
 
   const rawBinNames = Object.keys(data[0]).filter(key => key.includes(' - '));
 
+  // Ensure uniqueness by appending a counter if needed
   const binNameCount: Record<string, number> = {};
   const uniqueBinNames = rawBinNames.map(bin => {
     if (binNameCount[bin] === undefined) {
@@ -100,8 +101,8 @@ export default function transformProps(
   let specMinValue: number | undefined = undefined;
   let specMaxValue: number | undefined = undefined;
   if (data.length > 0) {
-    specMinValue = data[0][spec_min_column] as number;
-    specMaxValue = data[0][spec_max_column] as number;
+    specMinValue = data[0][getColumnLabel(spec_min_column)] as number;
+    specMaxValue = data[0][getColumnLabel(spec_max_column)] as number;
   }
 
   const minBinRaw = specMinValue != null ? findBin(specMinValue, rawBinNames) : null;
@@ -130,7 +131,7 @@ export default function transformProps(
       groupby.length > 0
         ? groupby.map(key => datum[getColumnLabel(key)]).join(', ')
         : getColumnLabel(column);
-    const seriesData = uniqueBinNames.map((uniqueLabel, index) => datum[rawBinNames[index]] as number);
+    const seriesData = uniqueBinNames.map((_, index) => datum[rawBinNames[index]] as number);
     return {
       name: seriesName,
       type: 'bar',
@@ -150,7 +151,8 @@ export default function transformProps(
     uniqueBinNames.map((_, idx) => datum[rawBinNames[idx]] as number),
   );
   const maxFrequency = Math.max(...allFrequencies, 0);
-  const specBarHeight = maxFrequency * 0.1 || 1; // 10% of max frequency
+  const specBarHeight = maxFrequency * 0.1 || 1;
+
 
   const minSpecData = uniqueBinNames.map(bin => (bin === minBin ? specBarHeight : 0));
   const maxSpecData = uniqueBinNames.map(bin => (bin === maxBin ? specBarHeight : 0));
@@ -195,12 +197,12 @@ export default function transformProps(
 
   const tooltipFormatter = (params: CallbackDataParams[]) => {
     const title = params[0].name;
-    const rows = params.map(param => {
+    const rows = params.map((param, i) => {
       const { marker, seriesName, value } = param;
-      if (seriesName.startsWith('Min Spec')) {
+      if (seriesName?.startsWith('Min Spec')) {
         return [`${marker}${seriesName}`, `Min Spec: ${minSpecLabel}`];
       }
-      if (seriesName.startsWith('Max Spec')) {
+      if (seriesName?.startsWith('Max Spec')) {
         return [`${marker}${seriesName}`, `Max Spec: ${maxSpecLabel}`];
       }
       return [`${marker}${seriesName}`, formatter.format(value as number)];
@@ -214,7 +216,7 @@ export default function transformProps(
         rows.forEach((row, i) =>
           row.push(
             percentFormatter.format(
-              (typeof params[i].value === 'number' ? params[i].value : 0) / (total || 1),
+              ((typeof params[i].value === 'number' ? params[i].value ?? 0 : 0) as number) / (total || 1),
             ),
           ),
         );
@@ -288,6 +290,7 @@ export default function transformProps(
     onLegendStateChanged,
   };
 }
+
 
 
 
