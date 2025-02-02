@@ -216,6 +216,11 @@ FROM python-common AS lean
 COPY requirements/base.txt requirements/
 RUN --mount=type=cache,target=/root/.cache/uv \
     /app/docker/pip-install.sh --requires-build-essential -r requirements/base.txt
+
+RUN --mount=type=cache,target=/root/.cache/uv \
+    pip install pydruid prometheus-flask-exporter
+
+
 # Install the superset package
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv pip install .

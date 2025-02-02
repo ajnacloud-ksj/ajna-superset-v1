@@ -22,14 +22,16 @@ import { BaseChartProps, BaseTransformedProps } from '../types';
 export type HistogramFormData = QueryFormData & {
   bins: number;
   column: QueryFormColumn;
+  spec_min_column: QueryFormColumn;
+  spec_max_column: QueryFormColumn;
   colorScheme?: string;
   cumulative: boolean;
   normalize: boolean;
   sliceId: number;
   showLegend: boolean;
   showValue: boolean;
-  xAxisTitle: string;
-  yAxisTitle: string;
+  x_axis_title: string;
+  y_axis_title: string;
 };
 
 export interface HistogramChartProps extends BaseChartProps<HistogramFormData> {
@@ -40,3 +42,4 @@ export type HistogramTransformedProps =
   BaseTransformedProps<HistogramFormData> & {
     onFocusedSeries: (index: number | undefined) => void;
   };
+

@@ -42,9 +42,43 @@ const config: ControlPanelConfig = {
             name: 'column',
             config: {
               ...dndGroupByControl,
-              label: t('Column'),
+              label: t('Primary Column'),
               multi: false,
               description: t('Numeric column used to calculate the histogram.'),
+              validators: [validateNonEmpty],
+              freeForm: false,
+              disabledTabs: new Set(['saved', 'sqlExpression']),
+              mapStateToProps: ({ datasource }) => ({
+                options: columnsByType(datasource, GenericDataType.Numeric),
+              }),
+            },
+          },
+        ],
+        [
+          {
+            name: 'spec_min_column',
+            config: {
+              ...dndGroupByControl,
+              label: t('Minimum Specification Column'),
+              multi: false,
+              description: t('Numeric column for the minimum specification threshold.'),
+              validators: [validateNonEmpty],
+              freeForm: false,
+              disabledTabs: new Set(['saved', 'sqlExpression']),
+              mapStateToProps: ({ datasource }) => ({
+                options: columnsByType(datasource, GenericDataType.Numeric),
+              }),
+            },
+          },
+        ],
+        [
+          {
+            name: 'spec_max_column',
+            config: {
+              ...dndGroupByControl,
+              label: t('Maximum Specification Column'),
+              multi: false,
+              description: t('Numeric column for the maximum specification threshold.'),
               validators: [validateNonEmpty],
               freeForm: false,
               disabledTabs: new Set(['saved', 'sqlExpression']),
@@ -113,6 +147,28 @@ const config: ControlPanelConfig = {
         ['color_scheme'],
         [showValueControl],
         [showLegendControl],
+        [
+          {
+            name: 'x_axis_title',
+            config: {
+              type: 'TextControl',
+              label: t('X Axis Title'),
+              renderTrigger: true,
+              default: '',
+            },
+          },
+        ],
+        [
+          {
+            name: 'y_axis_title',
+            config: {
+              type: 'TextControl',
+              label: t('Y Axis Title'),
+              renderTrigger: true,
+              default: '',
+            },
+          },
+        ],
       ],
     },
   ],
