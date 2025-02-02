@@ -42,9 +42,43 @@ const config: ControlPanelConfig = {
             name: 'column',
             config: {
               ...dndGroupByControl,
-              label: t('Column'),
+              label: t('Primary Column'),
               multi: false,
               description: t('Numeric column used to calculate the histogram.'),
+              validators: [validateNonEmpty],
+              freeForm: false,
+              disabledTabs: new Set(['saved', 'sqlExpression']),
+              mapStateToProps: ({ datasource }) => ({
+                options: columnsByType(datasource, GenericDataType.Numeric),
+              }),
+            },
+          },
+        ],
+        [
+          {
+            name: 'spec_min_column',
+            config: {
+              ...dndGroupByControl,
+              label: t('Minimum Specification Column'),
+              multi: false,
+              description: t('Numeric column for the minimum specification threshold.'),
+              validators: [validateNonEmpty],
+              freeForm: false,
+              disabledTabs: new Set(['saved', 'sqlExpression']),
+              mapStateToProps: ({ datasource }) => ({
+                options: columnsByType(datasource, GenericDataType.Numeric),
+              }),
+            },
+          },
+        ],
+        [
+          {
+            name: 'spec_max_column',
+            config: {
+              ...dndGroupByControl,
+              label: t('Maximum Specification Column'),
+              multi: false,
+              description: t('Numeric column for the maximum specification threshold.'),
               validators: [validateNonEmpty],
               freeForm: false,
               disabledTabs: new Set(['saved', 'sqlExpression']),
@@ -132,30 +166,6 @@ const config: ControlPanelConfig = {
               label: t('Y Axis Title'),
               renderTrigger: true,
               default: '',
-            },
-          },
-        ],
-        [
-          {
-            name: 'min_value',
-            config: {
-              type: 'TextControl',
-              label: t('Minimum Acceptable Value'),
-              renderTrigger: true,
-              default: 0,
-              description: t('Enter the minimum acceptable value'),
-            },
-          },
-        ],
-        [
-          {
-            name: 'max_value',
-            config: {
-              type: 'TextControl',
-              label: t('Maximum Acceptable Value'),
-              renderTrigger: true,
-              default: 0,
-              description: t('Enter the maximum acceptable value'),
             },
           },
         ],

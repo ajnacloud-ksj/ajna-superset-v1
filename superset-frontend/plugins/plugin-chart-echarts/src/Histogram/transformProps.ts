@@ -53,15 +53,15 @@ export default function transformProps(
   const {
     colorScheme,
     column,
+    spec_min_column,
+    spec_max_column,
     groupby = [],
     normalize,
     showLegend,
     showValue,
     sliceId,
-    xAxisTitle,
-    yAxisTitle,
-    minValue,
-    maxValue,
+    x_axis_title: xAxisTitle,
+    y_axis_title: yAxisTitle,
   } = formData;
   const { data } = queriesData[0];
   const colorFn = CategoricalColorNamespace.getScale(colorScheme);
@@ -70,58 +70,78 @@ export default function transformProps(
   );
   const percentFormatter = getPercentFormatter(NumberFormats.PERCENT_2_POINT);
   const groupbySet = new Set(groupby);
-  const xAxisData: string[] = Object.keys(data[0]).filter(
-    key => !groupbySet.has(key),
-  );
 
-  // Extract bin names from the data object keys
-  const binNames = Object.keys(data[0]);
+  // ------------------------------------------------------------------
+  // 1. Extract bin names from the data (keys that include ' - ')
+  // ------------------------------------------------------------------
+  const rawBinNames = Object.keys(data[0]).filter(key => key.includes(' - '));
 
-  // Function to determine which bin a minValue/maxValue belongs to
+  // Ensure uniqueness by appending a counter if needed
+  const binNameCount: Record<string, number> = {};
+  const uniqueBinNames = rawBinNames.map(bin => {
+    if (binNameCount[bin] === undefined) {
+      binNameCount[bin] = 1;
+      return bin;
+    } else {
+      binNameCount[bin]++;
+      return `${bin} (${binNameCount[bin]})`;
+    }
+  });
+
+  // ------------------------------------------------------------------
+  // 2. Determine the bin into which the spec values fall
+  // ------------------------------------------------------------------
   const findBin = (value: number, bins: string[]): string | null => {
     for (let i = 0; i < bins.length; i++) {
-      const [min, max] = bins[i].split(' - ').map(Number);
-      if (value >= min && value <= max) {
-        return bins[i];
+      const parts = bins[i].split(' - ').map(Number);
+      if (parts.length === 2) {
+        const [min, max] = parts;
+        if (value >= min && value <= max) {
+          return bins[i];
+        }
       }
     }
     return null;
   };
 
-  const minBin = findBin(minValue, binNames);
-  const maxBin = findBin(maxValue, binNames);
-
-  // Warning if minBin or maxBin is null
-  if (!minBin) {
-    console.warn(`Warning: minValue (${minValue}) does not fall within any bin range.`);
-  }
-  if (!maxBin) {
-    console.warn(`Warning: maxValue (${maxValue}) does not fall within any bin range.`);
+  // Extract spec values from the first record (assumes spec values are constant)
+  let specMinValue: number | undefined = undefined;
+  let specMaxValue: number | undefined = undefined;
+  if (data.length > 0) {
+    specMinValue = data[0][spec_min_column] as number;
+    specMaxValue = data[0][spec_max_column] as number;
   }
 
-  // Identify the peak points for each bin
-  const peakPoints = binNames.map(bin => {
-    const peakValue = Math.max(...data.map(d => (d[bin] as number) || 0));
-    return { xAxis: bin, yAxis: peakValue };
-  });
+  // Find the raw bin that each spec value belongs to, then map to unique label.
+  const minBinRaw = specMinValue != null ? findBin(specMinValue, rawBinNames) : null;
+  const maxBinRaw = specMaxValue != null ? findBin(specMaxValue, rawBinNames) : null;
 
-  // Create markLine segments between adjacent peak points
-  const trendLineData: { coord: [string, number] }[][] = [];
-  for (let i = 0; i < peakPoints.length - 1; i++) {
-    trendLineData.push([
-      { coord: [peakPoints[i].xAxis, peakPoints[i].yAxis] },
-      { coord: [peakPoints[i + 1].xAxis, peakPoints[i + 1].yAxis] },
-    ]);
+  const mapBinToUnique = (bin: string | null): string | null => {
+    if (bin === null) return null;
+    const index = rawBinNames.indexOf(bin);
+    return index >= 0 ? uniqueBinNames[index] : bin;
+  };
+
+  const minBin = mapBinToUnique(minBinRaw);
+  const maxBin = mapBinToUnique(maxBinRaw);
+
+  if (specMinValue != null && !minBin) {
+    console.warn(`Warning: spec_min_value (${specMinValue}) does not fall within any bin range.`);
+  }
+  if (specMaxValue != null && !maxBin) {
+    console.warn(`Warning: spec_max_value (${specMaxValue}) does not fall within any bin range.`);
   }
 
-  const barSeries: BarSeriesOption[] = data.map(datum => {
+  // ------------------------------------------------------------------
+  // 3. Build the histogram (density) series
+  // ------------------------------------------------------------------
+  const xAxisData: string[] = uniqueBinNames;
+  const densitySeries: BarSeriesOption[] = data.map(datum => {
     const seriesName =
       groupby.length > 0
         ? groupby.map(key => datum[getColumnLabel(key)]).join(', ')
         : getColumnLabel(column);
-    const seriesData = Object.keys(datum)
-      .filter(key => groupbySet.has(key) === false)
-      .map(key => datum[key] as number);
+    const seriesData = uniqueBinNames.map((uniqueLabel, index) => datum[rawBinNames[index]] as number);
     return {
       name: seriesName,
       type: 'bar',
@@ -132,57 +152,58 @@ export default function transformProps(
       label: {
         show: showValue,
         position: 'top',
-        formatter: params => {
-          const { value } = params;
-          return formatter.format(value as number);
-        },
-      },
-      markLine: {
-        data: [
-          { xAxis: minBin ?? 'null',
-            label: { formatter: () => minValue ? minValue.toString() : 'minValue' },
-            lineStyle: {
-              color: 'red',
-              type: 'solid',
-              width: 2,
-            },
-          } as any,
-          { xAxis: maxBin ?? 'null',
-            label: { formatter: () => maxValue ? maxValue.toString() : 'maxValue' },
-            lineStyle: {
-              color: 'red',
-              type: 'solid',
-              width: 2,
-            },
-          } as any,
-          ...trendLineData,
-        ],
-        label: {
-          show: true,
-          position: 'end',
-          formatter: '{b}',
-          color: 'red',
-          fontSize: 12,
-        },
-        lineStyle: {
-          color: 'red',
-          type: 'dashed',
-          width: 2,
-        },
-        symbol: ['arrow', 'arrow'],
-        symbolSize: 8,
-        animation: true,
-        animationDuration: 3000,
-        animationEasing: 'cubicOut',
-        animationDelay: idx => idx * 100,
-        animationDurationUpdate: 1000,
-        animationEasingUpdate: 'cubicOut',
-        animationDelayUpdate: idx => idx * 100,
+        formatter: params => formatter.format(params.value as number),
       },
     };
   });
 
-  const legendOptions = barSeries.map(series => series.name as string);
+  const allFrequencies = data.flatMap(datum =>
+    uniqueBinNames.map((_, idx) => datum[rawBinNames[idx]] as number),
+  );
+  const maxFrequency = Math.max(...allFrequencies, 0);
+  const specBarHeight = maxFrequency * 0.1 || 1; // 10% of max frequency
+
+  // ------------------------------------------------------------------
+  // 4. Create extra bar series for the spec thresholds with fallbacks
+  // ------------------------------------------------------------------
+  const minSpecData = uniqueBinNames.map(bin => (bin === minBin ? specBarHeight : 0));
+  const maxSpecData = uniqueBinNames.map(bin => (bin === maxBin ? specBarHeight : 0));
+
+  const minSpecLabel = specMinValue != null ? specMinValue : 'N/A';
+  const maxSpecLabel = specMaxValue != null ? specMaxValue : 'N/A';
+
+  const minSpecSeries: BarSeriesOption = {
+    name: `Min Spec (${minSpecLabel})`,
+    type: 'bar',
+    data: minSpecData,
+    itemStyle: { color: 'green' },
+    label: {
+      show: true,
+      position: 'top',
+      formatter: () => `Min: ${minSpecLabel}`,
+    },
+    barWidth: '50%',
+  };
+
+  const maxSpecSeries: BarSeriesOption = {
+    name: `Max Spec (${maxSpecLabel})`,
+    type: 'bar',
+    data: maxSpecData,
+    itemStyle: { color: 'red' },
+    label: {
+      show: true,
+      position: 'top',
+      formatter: () => `Max: ${maxSpecLabel}`,
+    },
+    barWidth: '50%',
+  };
+
+  // ------------------------------------------------------------------
+  // 5. Combine series and update legend/tooltip
+  // ------------------------------------------------------------------
+  const allSeries: BarSeriesOption[] = [...densitySeries, minSpecSeries, maxSpecSeries];
+
+  const legendOptions = allSeries.map(series => series.name as string);
   if (isEmpty(legendState)) {
     legendOptions.forEach(legend => {
       legendState[legend] = true;
@@ -193,17 +214,25 @@ export default function transformProps(
     const title = params[0].name;
     const rows = params.map(param => {
       const { marker, seriesName, value } = param;
+      if (seriesName.startsWith('Min Spec')) {
+        return [`${marker}${seriesName}`, `Min Spec: ${minSpecLabel}`];
+      }
+      if (seriesName.startsWith('Max Spec')) {
+        return [`${marker}${seriesName}`, `Max Spec: ${maxSpecLabel}`];
+      }
       return [`${marker}${seriesName}`, formatter.format(value as number)];
     });
     if (groupby.length > 0) {
       const total = params.reduce(
-        (acc, param) => acc + (param.value as number),
+        (acc, param) => acc + (typeof param.value === 'number' ? param.value : 0),
         0,
       );
       if (!normalize) {
         rows.forEach((row, i) =>
           row.push(
-            percentFormatter.format((params[i].value as number) / (total || 1)),
+            percentFormatter.format(
+              (typeof params[i].value === 'number' ? params[i].value : 0) / (total || 1),
+            ),
           ),
         );
       }
@@ -247,7 +276,7 @@ export default function transformProps(
         formatter: (value: number) => formatter.format(value),
       },
     },
-    series: barSeries,
+    series: allSeries,
     legend: {
       ...getLegendProps(
         LegendType.Scroll,
@@ -276,4 +305,8 @@ export default function transformProps(
     onLegendStateChanged,
   };
 }
+
+
+
+
 

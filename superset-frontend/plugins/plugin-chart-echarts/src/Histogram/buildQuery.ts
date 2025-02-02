@@ -21,11 +21,15 @@ import { histogramOperator } from '@superset-ui/chart-controls';
 import { HistogramFormData } from './types';
 
 export default function buildQuery(formData: HistogramFormData) {
-  const { column, groupby = [] } = formData;
+  const { column, spec_min_column, spec_max_column, groupby = [] } = formData;
+  const extraColumns: string[] = [];
+  if (spec_min_column) extraColumns.push(spec_min_column);
+  if (spec_max_column) extraColumns.push(spec_max_column);
+
   return buildQueryContext(formData, baseQueryObject => [
     {
       ...baseQueryObject,
-      columns: [...groupby, column],
+      columns: [...groupby, column, ...extraColumns],
       post_processing: [histogramOperator(formData, baseQueryObject)],
       metrics: undefined,
     },
