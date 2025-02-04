@@ -1,0 +1,62 @@
+slice_name: Mixer Utilization (Shift-1)
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 1__table
+  viz_type: big_number_total
+  slice_id: 1
+  metric:
+    expressionType: SQL
+    sqlExpression: (SUM(total_mix_time) / (COUNT(DISTINCT DATE(datetime_fmt)) *8*
+      60.0))
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: (SUM(total_mix_time) / (COUNT(DISTINCT DATE(datetime_fmt)) *8* 60.0))
+    optionName: metric_8adzofx24fn_lj2m6ix7ver
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: datetime_fmt
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_wmkyn309c8g_3pt7clivtdx
+  - expressionType: SIMPLE
+    subject: shift
+    operator: IN
+    operatorId: IN
+    comparator:
+    - FIRST_SHIFT
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_z1waeg6wy2_akem10bhuu
+  subheader: Mixer Utilization Percentage
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: ',.1%'
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"},{"col":"shift","op":"IN","val":["FIRST_SHIFT"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"(SUM(total_mix_time)
+  / (COUNT(DISTINCT DATE(datetime_fmt)) *8* 60.0))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"(SUM(total_mix_time)
+  / (COUNT(DISTINCT DATE(datetime_fmt)) *8* 60.0))","optionName":"metric_8adzofx24fn_lj2m6ix7ver"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"1__table","viz_type":"big_number_total","slice_id":1,"metric":{"expressionType":"SQL","sqlExpression":"(SUM(total_mix_time)
+  / (COUNT(DISTINCT DATE(datetime_fmt)) *8* 60.0))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"(SUM(total_mix_time)
+  / (COUNT(DISTINCT DATE(datetime_fmt)) *8* 60.0))","optionName":"metric_8adzofx24fn_lj2m6ix7ver"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_wmkyn309c8g_3pt7clivtdx"},{"expressionType":"SIMPLE","subject":"shift","operator":"IN","operatorId":"IN","comparator":["FIRST_SHIFT"],"clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_z1waeg6wy2_akem10bhuu"}],"subheader":"Mixer
+  Utilization Percentage","header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":",.1%","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 2764c9ca-51b6-4358-acf2-cda358e1b6df
+version: 1.0.0
+dataset_uuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781

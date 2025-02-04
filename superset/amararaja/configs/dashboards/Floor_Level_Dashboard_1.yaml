@@ -1,0 +1,3600 @@
+dashboard_title: Floor Level Dashboard
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 91cf20d3-320b-4605-8cb5-4545141c1981
+position:
+  CHART-1Tl_YYstr7l_0A9nE7wga:
+    children: []
+    id: CHART-1Tl_YYstr7l_0A9nE7wga
+    meta:
+      chartId: 89
+      height: 37
+      sliceName: 'DM Water Standardized MTD, '
+      uuid: ef959aae-869a-4526-b348-314a1835d710
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-BG8ZVFdPOlY24rsv1U8gh
+    type: CHART
+  CHART-2CjwVUIZySBa_uKNTUJSi:
+    children: []
+    id: CHART-2CjwVUIZySBa_uKNTUJSi
+    meta:
+      chartId: 96
+      height: 32
+      sliceName: 'Penetration Standardized MTD, '
+      uuid: 7d5a777d-82c1-44d6-af96-d4b472e8936b
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-P529ZByUV7S7pCF84iIRO
+    type: CHART
+  CHART-2stFfYB0_gm5NW0nQ-aGY:
+    children: []
+    id: CHART-2stFfYB0_gm5NW0nQ-aGY
+    meta:
+      chartId: 77
+      height: 41
+      sliceName: 'Air Cooling Temp Standardized MTD, '
+      uuid: f65243dc-c9f8-49d7-aa9e-bc8c25bcfe24
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wZAdPyKme98hFdKY0Q42w
+    type: CHART
+  CHART-427vyipyrCbVSonzlo02F:
+    children: []
+    id: CHART-427vyipyrCbVSonzlo02F
+    meta:
+      chartId: 67
+      height: 40
+      sliceName: 'Water Dump Time YTD, '
+      uuid: 1b4182fd-f13b-43a5-b841-762ffdbc036e
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-vUTdimBy9m_wUxf4G2gmw
+    type: CHART
+  CHART-4Qj9d3dM916lPUE8gp9g-:
+    children: []
+    id: CHART-4Qj9d3dM916lPUE8gp9g-
+    meta:
+      chartId: 4
+      height: 28
+      sliceName: Mixer Utilization (Shift-3)
+      uuid: 340b0b52-5b4e-4b95-a014-067c008eab32
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-qgOFNYKx20UeBj72dYhAa
+    type: CHART
+  CHART-7PkCOqR_9zCd_zWiiOwlq:
+    children: []
+    id: CHART-7PkCOqR_9zCd_zWiiOwlq
+    meta:
+      chartId: 78
+      height: 41
+      sliceName: 'Air Cooling Temp Standardized YTD, '
+      uuid: e34841ef-fca4-431c-9914-b5b88cdef56c
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wZAdPyKme98hFdKY0Q42w
+    type: CHART
+  CHART-8kBppKO3XwnPD1oQvsjsG:
+    children: []
+    id: CHART-8kBppKO3XwnPD1oQvsjsG
+    meta:
+      chartId: 94
+      height: 33
+      sliceName: 'Penetration Standardized YTD, '
+      uuid: 44752782-0e52-4631-a892-ced5dfbc45f7
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-P529ZByUV7S7pCF84iIRO
+    type: CHART
+  CHART-AXavpIvQvsS5ghP4br-z8:
+    children: []
+    id: CHART-AXavpIvQvsS5ghP4br-z8
+    meta:
+      chartId: 86
+      height: 41
+      sliceName: 'DM Water MTD, '
+      uuid: badb4d08-3620-409b-acc9-1957b20584e7
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Zoi9v2aJJeYg4KH5B8ws8
+    type: CHART
+  CHART-C7k07DvO4GXv5GHS7VOc9:
+    children: []
+    id: CHART-C7k07DvO4GXv5GHS7VOc9
+    meta:
+      chartId: 65
+      height: 45
+      sliceName: 'Peak Temp Standardized MTD, '
+      uuid: 84dc6bf4-6e2e-4a29-afa9-9db2e226dc1d
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-fbf0evkJzFjBLZCPLtKLA
+    type: CHART
+  CHART-DIDTlVJQsNUysyV04-bhQ:
+    children: []
+    id: CHART-DIDTlVJQsNUysyV04-bhQ
+    meta:
+      chartId: 3
+      height: 28
+      sliceName: Mixer Utilization (Shift-2)
+      uuid: 1ea605a6-10e3-4c2b-9034-3956a2923a1f
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-qgOFNYKx20UeBj72dYhAa
+    type: CHART
+  CHART-GlHLVAW2JwGltZq3Flg_A:
+    children: []
+    id: CHART-GlHLVAW2JwGltZq3Flg_A
+    meta:
+      chartId: 75
+      height: 37
+      sliceName: 'Air Cooling Temp Lastday, '
+      uuid: 892ebfff-4756-42bb-9ef0-fb386ee2e1e4
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-tH_g8fb_A0CkXNg12XehA
+    type: CHART
+  CHART-HSXwzV0l1TLo8xVR4Legl:
+    children: []
+    id: CHART-HSXwzV0l1TLo8xVR4Legl
+    meta:
+      chartId: 81
+      height: 38
+      sliceName: 'Acid Consumed Standardized Lastday, '
+      uuid: 5c8865e8-a7f3-4a30-b848-c05e2772560b
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-q-FsmnoZpWlJzRy-QQO_Y
+    type: CHART
+  CHART-IjJy42AQzvoHKa5hnZYkq:
+    children: []
+    id: CHART-IjJy42AQzvoHKa5hnZYkq
+    meta:
+      chartId: 80
+      height: 38
+      sliceName: Acid Consumed Lastday
+      uuid: c8d74e88-20c0-4d24-b953-272251c29653
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-l5hXZKW3pMP7HhUt0syk5
+    type: CHART
+  CHART-JaS4l2VRolYexkHvWoU8a:
+    children: []
+    id: CHART-JaS4l2VRolYexkHvWoU8a
+    meta:
+      chartId: 17
+      height: 40
+      sliceName: 'Highest Mixer Temp(YTD-MTD-LastDay), '
+      sliceNameOverride: Peak Temp(YTD-MTD-LastDay)
+      uuid: ce8e8fbe-5822-4632-84c4-5f9aa756549c
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-LJM9Ly80INIzY1n2pXj3m
+    type: CHART
+  CHART-JndwW-pmSVv9qtl6oOM1v:
+    children: []
+    id: CHART-JndwW-pmSVv9qtl6oOM1v
+    meta:
+      chartId: 87
+      height: 41
+      sliceName: 'DM Water Lastday, '
+      uuid: f3196439-bf67-4c7e-a9bb-d4c2e13ba57a
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Zoi9v2aJJeYg4KH5B8ws8
+    type: CHART
+  CHART-NHgLQGrIlpkGbly4PB1_L:
+    children: []
+    id: CHART-NHgLQGrIlpkGbly4PB1_L
+    meta:
+      chartId: 92
+      height: 35
+      sliceName: 'Penetration MTD, '
+      uuid: 480ec6ec-2779-4b83-a306-97944726d962
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RLZ_T8mbMGVevwCnLOeh0
+    type: CHART
+  CHART-Nq72WkOJxPfMFHwMIahtv:
+    children: []
+    id: CHART-Nq72WkOJxPfMFHwMIahtv
+    meta:
+      chartId: 70
+      height: 40
+      sliceName: 'Water Dump Time Standardized YTD, '
+      uuid: 82d9674c-4047-46c6-9ede-b54066c658fd
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-d_vUmchJHuV6HKqSEDi76
+    type: CHART
+  CHART-O3Is-ksiojy8EN-YOqR8K:
+    children: []
+    id: CHART-O3Is-ksiojy8EN-YOqR8K
+    meta:
+      chartId: 85
+      height: 41
+      sliceName: 'DM Water YTD, '
+      uuid: b04ad007-4605-45ae-a26b-ff0a6321a5f0
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Zoi9v2aJJeYg4KH5B8ws8
+    type: CHART
+  CHART-Si4TfhO1o8U12RP8lCBcX:
+    children: []
+    id: CHART-Si4TfhO1o8U12RP8lCBcX
+    meta:
+      chartId: 91
+      height: 35
+      sliceName: 'Penetration Lastday, '
+      uuid: 0a21987a-f65c-40b8-a5c5-9efa97174fe0
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RLZ_T8mbMGVevwCnLOeh0
+    type: CHART
+  CHART-Ssmzc74a27xSb9QWAdI4e:
+    children: []
+    id: CHART-Ssmzc74a27xSb9QWAdI4e
+    meta:
+      chartId: 95
+      height: 32
+      sliceName: 'Penetration Standardized Lastday, '
+      uuid: cf95d6c1-0527-4a8e-965d-31ea0f1acf92
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-P529ZByUV7S7pCF84iIRO
+    type: CHART
+  CHART-WeI_rMfNpEuomLQUibu5O:
+    children: []
+    id: CHART-WeI_rMfNpEuomLQUibu5O
+    meta:
+      chartId: 43
+      height: 40
+      sliceName: 'Peak Temp YTD, '
+      uuid: 985eb6ff-000c-461a-bdce-7149c8d48c33
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-LJM9Ly80INIzY1n2pXj3m
+    type: CHART
+  CHART-Y0_MTo0ttmoBaHDyzLePT:
+    children: []
+    id: CHART-Y0_MTo0ttmoBaHDyzLePT
+    meta:
+      chartId: 7
+      height: 50
+      sliceName: 'Specification Compliance, '
+      uuid: c7429585-b095-4af2-a6c8-f71231a73e5d
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-GTwzOBNDtDgBUzbpkpbUh
+    type: CHART
+  CHART-ZPuR_gytbanEsLZJhmSlq:
+    children: []
+    id: CHART-ZPuR_gytbanEsLZJhmSlq
+    meta:
+      chartId: 68
+      height: 40
+      sliceName: 'Water Dump Time MTD, '
+      uuid: 9a5dac72-4057-4e04-abdc-db65852ea061
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-vUTdimBy9m_wUxf4G2gmw
+    type: CHART
+  CHART-_-T76MP_rf2WyLPv0aqCp:
+    children: []
+    id: CHART-_-T76MP_rf2WyLPv0aqCp
+    meta:
+      chartId: 2
+      height: 28
+      sliceName: Mixer Utilization (Shift-1)
+      uuid: 2764c9ca-51b6-4358-acf2-cda358e1b6df
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-qgOFNYKx20UeBj72dYhAa
+    type: CHART
+  CHART-aQpw18v_1iecqZmD2x8us:
+    children: []
+    id: CHART-aQpw18v_1iecqZmD2x8us
+    meta:
+      chartId: 82
+      height: 38
+      sliceName: 'Acid Consumed Standardized MTD, '
+      uuid: 5bd0f998-4831-4d43-8a4f-f0c4dcce4d2d
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-q-FsmnoZpWlJzRy-QQO_Y
+    type: CHART
+  CHART-cPSVgMiffSuM5yXlXp23f:
+    children: []
+    id: CHART-cPSVgMiffSuM5yXlXp23f
+    meta:
+      chartId: 88
+      height: 37
+      sliceName: 'DM Water Standardized Lastday, '
+      uuid: 0f08de08-5829-4b04-9885-ab7c7f780e61
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-BG8ZVFdPOlY24rsv1U8gh
+    type: CHART
+  CHART-dAIoyy76nTIX_5V4RU6YT:
+    children: []
+    id: CHART-dAIoyy76nTIX_5V4RU6YT
+    meta:
+      chartId: 93
+      height: 35
+      sliceName: 'Penetration YTD, '
+      uuid: ddc02b0e-a5e4-4ae5-9b1e-ed880b6dd42f
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RLZ_T8mbMGVevwCnLOeh0
+    type: CHART
+  CHART-dWuVwPkIHxL80f_IM9QeU:
+    children: []
+    id: CHART-dWuVwPkIHxL80f_IM9QeU
+    meta:
+      chartId: 74
+      height: 36
+      sliceName: 'Air Cooling Temp MTD, '
+      uuid: 65c20205-826c-43ce-8877-2a586e6fac0d
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-tH_g8fb_A0CkXNg12XehA
+    type: CHART
+  CHART-ePC-HrHxUSDAkLF1HIyUP:
+    children: []
+    id: CHART-ePC-HrHxUSDAkLF1HIyUP
+    meta:
+      chartId: 84
+      height: 38
+      sliceName: 'Acid Consumed MTD, '
+      uuid: 551b2fbe-7152-48b5-b322-ac62e19980f4
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-l5hXZKW3pMP7HhUt0syk5
+    type: CHART
+  CHART-explore-100-1:
+    children: []
+    id: CHART-explore-100-1
+    meta:
+      chartId: 100
+      height: 34
+      sliceName: 'Density Standardized YTD, '
+      uuid: 93687fa0-4631-4081-bcf6-a24f2f9408fb
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-UooBa6cQnbh2dROzUst3A
+    type: CHART
+  CHART-explore-101-1:
+    children: []
+    id: CHART-explore-101-1
+    meta:
+      chartId: 101
+      height: 34
+      sliceName: 'Density Standardized MTD, '
+      uuid: 7797614c-3882-40ad-b834-0c44c8be19ed
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-UooBa6cQnbh2dROzUst3A
+    type: CHART
+  CHART-explore-102-1:
+    children: []
+    id: CHART-explore-102-1
+    meta:
+      chartId: 102
+      height: 34
+      sliceName: 'Density Standardized Lastday, '
+      uuid: 37b4a9cd-943f-4e85-b6e4-29dd44982fe7
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-UooBa6cQnbh2dROzUst3A
+    type: CHART
+  CHART-explore-9-1:
+    children: []
+    id: CHART-explore-9-1
+    meta:
+      chartId: 9
+      height: 50
+      sliceName: Parameter Wise CpK
+      uuid: c6ab9436-e95e-439f-b0e1-7352b85acc5e
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-x0SX94KBkT6bHVevsao4p
+    type: CHART
+  CHART-explore-97-1:
+    children: []
+    id: CHART-explore-97-1
+    meta:
+      chartId: 97
+      height: 33
+      sliceName: 'Density YTD, '
+      uuid: 4971f199-a810-4346-b2e3-db43d0428a2d
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-cQbAB2z5V0_iU490jMqtf
+    type: CHART
+  CHART-explore-98-1:
+    children: []
+    id: CHART-explore-98-1
+    meta:
+      chartId: 98
+      height: 33
+      sliceName: 'Density MTD, '
+      uuid: b70f0721-d8b3-4929-98a6-08bb06132fa6
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-cQbAB2z5V0_iU490jMqtf
+    type: CHART
+  CHART-explore-99-1:
+    children: []
+    id: CHART-explore-99-1
+    meta:
+      chartId: 99
+      height: 33
+      sliceName: 'Density Lastday, '
+      uuid: beb86cb6-2030-4d0b-8585-18fc092575b8
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-cQbAB2z5V0_iU490jMqtf
+    type: CHART
+  CHART-ezPYA2N4a8aPsxQbb7dzH:
+    children: []
+    id: CHART-ezPYA2N4a8aPsxQbb7dzH
+    meta:
+      chartId: 6
+      height: 26
+      sliceName: Total Batches Processed
+      uuid: e09d5db8-e7b1-4ea4-9cb2-721899193e5c
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SKe-7KApbLwJLyoTXF5kv
+    type: CHART
+  CHART-fc_MCZnxKaxHvtC3wZbx6:
+    children: []
+    id: CHART-fc_MCZnxKaxHvtC3wZbx6
+    meta:
+      chartId: 66
+      height: 45
+      sliceName: 'Peak Temp Standardized Lastday, '
+      uuid: 6897785e-6025-46b6-9df3-f09cd17d7c10
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-fbf0evkJzFjBLZCPLtKLA
+    type: CHART
+  CHART-fzfSL9YDtB2ZDwpIi9eZ2:
+    children: []
+    id: CHART-fzfSL9YDtB2ZDwpIi9eZ2
+    meta:
+      chartId: 54
+      height: 40
+      sliceName: 'Peak Temp MTD, '
+      uuid: 06c8be6c-06f6-4840-b46e-1d8e33fa2f93
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-LJM9Ly80INIzY1n2pXj3m
+    type: CHART
+  CHART-hU-X3xCch4jTQLJj7Cyfe:
+    children: []
+    id: CHART-hU-X3xCch4jTQLJj7Cyfe
+    meta:
+      chartId: 49
+      height: 40
+      sliceName: 'Peak Temp Last Day, '
+      uuid: d7f6ad64-c054-45bc-8bb4-9d9409361def
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-LJM9Ly80INIzY1n2pXj3m
+    type: CHART
+  CHART-i4eFCl_3qsB9Nzq_-9Xe9:
+    children: []
+    id: CHART-i4eFCl_3qsB9Nzq_-9Xe9
+    meta:
+      chartId: 71
+      height: 40
+      sliceName: 'Water Dump Time Standardized MTD, '
+      uuid: c62cb797-d184-484c-836b-31f133f1f478
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-d_vUmchJHuV6HKqSEDi76
+    type: CHART
+  CHART-oAN9MpOwPb41YJvPXjbuP:
+    children: []
+    id: CHART-oAN9MpOwPb41YJvPXjbuP
+    meta:
+      chartId: 76
+      height: 41
+      sliceName: 'Air Cooling Temp Standardized Lastday, '
+      uuid: a5608980-0d8a-412f-a34f-720222a6fe79
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wZAdPyKme98hFdKY0Q42w
+    type: CHART
+  CHART-oGCvCALOLfMD0W-2J5XCm:
+    children: []
+    id: CHART-oGCvCALOLfMD0W-2J5XCm
+    meta:
+      chartId: 1
+      height: 28
+      sliceName: Overall Mixer Utilization
+      uuid: 333bbd58-6cef-4d9c-b569-1c374c8d8e63
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-qgOFNYKx20UeBj72dYhAa
+    type: CHART
+  CHART-sFsYt549NMNs3ET546G94:
+    children: []
+    id: CHART-sFsYt549NMNs3ET546G94
+    meta:
+      chartId: 5
+      height: 25
+      sliceName: Average Batch Duration (Minutes)
+      uuid: faffb25b-ce2d-4f20-ad8b-5235726ea80b
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SKe-7KApbLwJLyoTXF5kv
+    type: CHART
+  CHART-s_e6OcawYKymAd10cjeyy:
+    children: []
+    id: CHART-s_e6OcawYKymAd10cjeyy
+    meta:
+      chartId: 83
+      height: 38
+      sliceName: 'Acid Consumed Standardized YTD, '
+      uuid: dc9222c3-cf78-4e1c-b572-50ad7fe68f1c
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-q-FsmnoZpWlJzRy-QQO_Y
+    type: CHART
+  CHART-tTN5eLyyajbTleEGYZke_:
+    children: []
+    id: CHART-tTN5eLyyajbTleEGYZke_
+    meta:
+      chartId: 73
+      height: 36
+      sliceName: 'Air Cooling Temp YTD, '
+      uuid: c156e5f5-26ac-40ee-80f9-9dc2400d5544
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-tH_g8fb_A0CkXNg12XehA
+    type: CHART
+  CHART-v645Bu_q2hPEvdj-lLRDi:
+    children: []
+    id: CHART-v645Bu_q2hPEvdj-lLRDi
+    meta:
+      chartId: 90
+      height: 37
+      sliceName: 'DM Water Standardized YTD, '
+      uuid: 781a9f09-e4a4-49f4-b149-d6a623ddde59
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-BG8ZVFdPOlY24rsv1U8gh
+    type: CHART
+  CHART-vEAUMdKptmuYgx1fgl_Fa:
+    children: []
+    id: CHART-vEAUMdKptmuYgx1fgl_Fa
+    meta:
+      chartId: 64
+      height: 45
+      sliceName: 'Peak Temp Standardized YTD, '
+      uuid: 84fe70d6-2601-4215-be36-46e7607751a1
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-fbf0evkJzFjBLZCPLtKLA
+    type: CHART
+  CHART-x6nxwi5VdeAgYSOfl0kow:
+    children: []
+    id: CHART-x6nxwi5VdeAgYSOfl0kow
+    meta:
+      chartId: 69
+      height: 40
+      sliceName: 'Water Dump Time Lastday, '
+      uuid: e501f528-31e3-416e-8483-ba18bb3de665
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-vUTdimBy9m_wUxf4G2gmw
+    type: CHART
+  CHART-ywNhi-bFDKyDQCBc2wAx2:
+    children: []
+    id: CHART-ywNhi-bFDKyDQCBc2wAx2
+    meta:
+      chartId: 79
+      height: 37
+      sliceName: 'Acid Consumed YTD, '
+      uuid: 072fa863-1258-4573-9754-a1796e0de327
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-l5hXZKW3pMP7HhUt0syk5
+    type: CHART
+  CHART-zbtM6daB8h5u9BMJd8AiY:
+    children: []
+    id: CHART-zbtM6daB8h5u9BMJd8AiY
+    meta:
+      chartId: 72
+      height: 40
+      sliceName: 'Water Dump Time Standardized Lastday, '
+      uuid: 54e4c3ff-fa05-4d29-8239-7508f13be9fa
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-d_vUmchJHuV6HKqSEDi76
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-KCu3yZGEKvdqUPd7V56s7:
+    children: []
+    id: DIVIDER-KCu3yZGEKvdqUPd7V56s7
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - ROW-qgOFNYKx20UeBj72dYhAa
+    - ROW-SKe-7KApbLwJLyoTXF5kv
+    - DIVIDER-KCu3yZGEKvdqUPd7V56s7
+    - ROW-GTwzOBNDtDgBUzbpkpbUh
+    - ROW-x0SX94KBkT6bHVevsao4p
+    - HEADER-wWluJLI6DMbI5WZV4tMbk
+    - ROW-LJM9Ly80INIzY1n2pXj3m
+    - ROW-fbf0evkJzFjBLZCPLtKLA
+    - HEADER-k0P_31J3RjWl5jKpbxIWp
+    - ROW-vUTdimBy9m_wUxf4G2gmw
+    - ROW-d_vUmchJHuV6HKqSEDi76
+    - HEADER-D0ggbSByXcfGZfqGpoBb-
+    - ROW-tH_g8fb_A0CkXNg12XehA
+    - ROW-wZAdPyKme98hFdKY0Q42w
+    - HEADER-HhXdl3DawSfPVES3XIRxw
+    - ROW-l5hXZKW3pMP7HhUt0syk5
+    - ROW-q-FsmnoZpWlJzRy-QQO_Y
+    - HEADER-UqwTktyMSe6tsw-LWcVo3
+    - ROW-Zoi9v2aJJeYg4KH5B8ws8
+    - ROW-BG8ZVFdPOlY24rsv1U8gh
+    - HEADER-tfg2oSG3ng_1nTX4G6mhK
+    - ROW-RLZ_T8mbMGVevwCnLOeh0
+    - ROW-P529ZByUV7S7pCF84iIRO
+    - HEADER-HFbvDyqZIRbYGxRg2mT1_
+    - ROW-cQbAB2z5V0_iU490jMqtf
+    - ROW-UooBa6cQnbh2dROzUst3A
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER-D0ggbSByXcfGZfqGpoBb-:
+    children: []
+    id: HEADER-D0ggbSByXcfGZfqGpoBb-
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: Air Cooling Temperature
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-HFbvDyqZIRbYGxRg2mT1_:
+    children: []
+    id: HEADER-HFbvDyqZIRbYGxRg2mT1_
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: Density
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-HhXdl3DawSfPVES3XIRxw:
+    children: []
+    id: HEADER-HhXdl3DawSfPVES3XIRxw
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: Acid Consumed
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-UqwTktyMSe6tsw-LWcVo3:
+    children: []
+    id: HEADER-UqwTktyMSe6tsw-LWcVo3
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: DM Water
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-k0P_31J3RjWl5jKpbxIWp:
+    children: []
+    id: HEADER-k0P_31J3RjWl5jKpbxIWp
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: Water Dump Time
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-tfg2oSG3ng_1nTX4G6mhK:
+    children: []
+    id: HEADER-tfg2oSG3ng_1nTX4G6mhK
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: Penetration
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-wWluJLI6DMbI5WZV4tMbk:
+    children: []
+    id: HEADER-wWluJLI6DMbI5WZV4tMbk
+    meta:
+      background: BACKGROUND_WHITE
+      headerSize: MEDIUM_HEADER
+      text: Peak Temperature
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Floor Level Dashboard
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-BG8ZVFdPOlY24rsv1U8gh:
+    children:
+    - CHART-v645Bu_q2hPEvdj-lLRDi
+    - CHART-1Tl_YYstr7l_0A9nE7wga
+    - CHART-cPSVgMiffSuM5yXlXp23f
+    id: ROW-BG8ZVFdPOlY24rsv1U8gh
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-GTwzOBNDtDgBUzbpkpbUh:
+    children:
+    - CHART-Y0_MTo0ttmoBaHDyzLePT
+    id: ROW-GTwzOBNDtDgBUzbpkpbUh
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-LJM9Ly80INIzY1n2pXj3m:
+    children:
+    - CHART-WeI_rMfNpEuomLQUibu5O
+    - CHART-fzfSL9YDtB2ZDwpIi9eZ2
+    - CHART-hU-X3xCch4jTQLJj7Cyfe
+    - CHART-JaS4l2VRolYexkHvWoU8a
+    id: ROW-LJM9Ly80INIzY1n2pXj3m
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-P529ZByUV7S7pCF84iIRO:
+    children:
+    - CHART-8kBppKO3XwnPD1oQvsjsG
+    - CHART-2CjwVUIZySBa_uKNTUJSi
+    - CHART-Ssmzc74a27xSb9QWAdI4e
+    id: ROW-P529ZByUV7S7pCF84iIRO
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-RLZ_T8mbMGVevwCnLOeh0:
+    children:
+    - CHART-dAIoyy76nTIX_5V4RU6YT
+    - CHART-NHgLQGrIlpkGbly4PB1_L
+    - CHART-Si4TfhO1o8U12RP8lCBcX
+    id: ROW-RLZ_T8mbMGVevwCnLOeh0
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-SKe-7KApbLwJLyoTXF5kv:
+    children:
+    - CHART-sFsYt549NMNs3ET546G94
+    - CHART-ezPYA2N4a8aPsxQbb7dzH
+    id: ROW-SKe-7KApbLwJLyoTXF5kv
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-UooBa6cQnbh2dROzUst3A:
+    children:
+    - CHART-explore-100-1
+    - CHART-explore-101-1
+    - CHART-explore-102-1
+    id: ROW-UooBa6cQnbh2dROzUst3A
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Zoi9v2aJJeYg4KH5B8ws8:
+    children:
+    - CHART-O3Is-ksiojy8EN-YOqR8K
+    - CHART-AXavpIvQvsS5ghP4br-z8
+    - CHART-JndwW-pmSVv9qtl6oOM1v
+    id: ROW-Zoi9v2aJJeYg4KH5B8ws8
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-cQbAB2z5V0_iU490jMqtf:
+    children:
+    - CHART-explore-97-1
+    - CHART-explore-98-1
+    - CHART-explore-99-1
+    id: ROW-cQbAB2z5V0_iU490jMqtf
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-d_vUmchJHuV6HKqSEDi76:
+    children:
+    - CHART-Nq72WkOJxPfMFHwMIahtv
+    - CHART-i4eFCl_3qsB9Nzq_-9Xe9
+    - CHART-zbtM6daB8h5u9BMJd8AiY
+    id: ROW-d_vUmchJHuV6HKqSEDi76
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-fbf0evkJzFjBLZCPLtKLA:
+    children:
+    - CHART-vEAUMdKptmuYgx1fgl_Fa
+    - CHART-C7k07DvO4GXv5GHS7VOc9
+    - CHART-fc_MCZnxKaxHvtC3wZbx6
+    id: ROW-fbf0evkJzFjBLZCPLtKLA
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-l5hXZKW3pMP7HhUt0syk5:
+    children:
+    - CHART-ywNhi-bFDKyDQCBc2wAx2
+    - CHART-ePC-HrHxUSDAkLF1HIyUP
+    - CHART-IjJy42AQzvoHKa5hnZYkq
+    id: ROW-l5hXZKW3pMP7HhUt0syk5
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-q-FsmnoZpWlJzRy-QQO_Y:
+    children:
+    - CHART-s_e6OcawYKymAd10cjeyy
+    - CHART-aQpw18v_1iecqZmD2x8us
+    - CHART-HSXwzV0l1TLo8xVR4Legl
+    id: ROW-q-FsmnoZpWlJzRy-QQO_Y
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-qgOFNYKx20UeBj72dYhAa:
+    children:
+    - CHART-oGCvCALOLfMD0W-2J5XCm
+    - CHART-_-T76MP_rf2WyLPv0aqCp
+    - CHART-DIDTlVJQsNUysyV04-bhQ
+    - CHART-4Qj9d3dM916lPUE8gp9g-
+    id: ROW-qgOFNYKx20UeBj72dYhAa
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-tH_g8fb_A0CkXNg12XehA:
+    children:
+    - CHART-tTN5eLyyajbTleEGYZke_
+    - CHART-dWuVwPkIHxL80f_IM9QeU
+    - CHART-GlHLVAW2JwGltZq3Flg_A
+    id: ROW-tH_g8fb_A0CkXNg12XehA
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-vUTdimBy9m_wUxf4G2gmw:
+    children:
+    - CHART-427vyipyrCbVSonzlo02F
+    - CHART-ZPuR_gytbanEsLZJhmSlq
+    - CHART-x6nxwi5VdeAgYSOfl0kow
+    id: ROW-vUTdimBy9m_wUxf4G2gmw
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-wZAdPyKme98hFdKY0Q42w:
+    children:
+    - CHART-7PkCOqR_9zCd_zWiiOwlq
+    - CHART-2stFfYB0_gm5NW0nQ-aGY
+    - CHART-oAN9MpOwPb41YJvPXjbuP
+    id: ROW-wZAdPyKme98hFdKY0Q42w
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-x0SX94KBkT6bHVevsao4p:
+    children:
+    - CHART-explore-9-1
+    id: ROW-x0SX94KBkT6bHVevsao4p
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '7':
+      id: 7
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '9':
+      id: 9
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '43':
+      id: 43
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '49':
+      id: 49
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '54':
+      id: 54
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '64':
+      id: 64
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '65':
+      id: 65
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '66':
+      id: 66
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '67':
+      id: 67
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '68':
+      id: 68
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '69':
+      id: 69
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '70':
+      id: 70
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '71':
+      id: 71
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '72':
+      id: 72
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '73':
+      id: 73
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '74':
+      id: 74
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '75':
+      id: 75
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '76':
+      id: 76
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '77':
+      id: 77
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '78':
+      id: 78
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '79':
+      id: 79
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '80':
+      id: 80
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '81':
+      id: 81
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '82':
+      id: 82
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '83':
+      id: 83
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '84':
+      id: 84
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '85':
+      id: 85
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '86':
+      id: 86
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '87':
+      id: 87
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '88':
+      id: 88
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '89':
+      id: 89
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '90':
+      id: 90
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '91':
+      id: 91
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '92':
+      id: 92
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '93':
+      id: 93
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '94':
+      id: 94
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '95':
+      id: 95
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '96':
+      id: 96
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '97':
+      id: 97
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+    '98':
+      id: 98
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 99
+        - 100
+        - 101
+        - 102
+    '99':
+      id: 99
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 100
+        - 101
+        - 102
+    '100':
+      id: 100
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 101
+        - 102
+    '101':
+      id: 101
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 102
+    '102':
+      id: 102
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 17
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 9
+    - 17
+    - 43
+    - 49
+    - 54
+    - 64
+    - 65
+    - 66
+    - 67
+    - 68
+    - 69
+    - 70
+    - 71
+    - 72
+    - 73
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 80
+    - 81
+    - 82
+    - 83
+    - 84
+    - 85
+    - 86
+    - 87
+    - 88
+    - 89
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+    - 96
+    - 97
+    - 98
+    - 99
+    - 100
+    - 101
+    - 102
+  map_label_colors:
+    Density: '#1FA8C9'
+    Density Standardized: '#454E7C'
+    Peak Temp: '#1FA8C9'
+    peak temp standardized: '#1FA8C9'
+    water dump time: '#1FA8C9'
+    water dump time standardized: '#1FA8C9'
+    Air Cooling Temp: '#1FA8C9'
+    Air Cooling Temp Standardized: '#1FA8C9'
+    Acid Consumed: '#1FA8C9'
+    Acid Consumed Standardized: '#1FA8C9'
+    DM Water: '#1FA8C9'
+    DM Water Standardized: '#1FA8C9'
+    Penetration: '#1FA8C9'
+    Penetration standardized: '#1FA8C9'
+  color_scheme: ''
+  refresh_frequency: 0
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  shared_label_colors:
+  - Acid Consumed
+  - Acid Consumed Standardized
+  - Air Cooling Temp
+  - Air Cooling Temp Standardized
+  - COUNT(acid_addition_zscore)
+  - COUNT(air_cooling_temp)
+  - COUNT(air_cooling_temp_zscore)
+  - COUNT(dm_water)
+  - COUNT(water_dump_time)
+  - COUNT(water_dump_time_zscore)
+  - DM Water
+  - DM Water Standardized
+  - Density
+  - Density Standardized
+  - Highest Mixer Temp
+  - Highest Mixer Temp Zscore
+  - Peak Temp
+  - Penetration
+  - peak temp standardized
+  - water dump time
+  - water dump time standardized
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: false
+  default_filters: '{}'
+  native_filter_configuration: []
+version: 1.0.0

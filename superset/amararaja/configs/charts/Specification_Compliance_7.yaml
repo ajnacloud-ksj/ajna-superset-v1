@@ -1,0 +1,79 @@
+slice_name: 'Specification Compliance, '
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 4__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 7
+  x_axis: category
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Compliance
+    optionName: metric_2btvzjb5ay1_p61twlntnj9
+    sqlExpression: ROUND(SUM(compliance) * 100.0 / NULLIF(SUM(compliance) + SUM(non_compliance),
+      0), 2)/100
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Non-Compliance
+    optionName: metric_vtrjlldtzm_zojvvod5cwr
+    sqlExpression: ROUND(SUM(non_compliance) * 100.0 / NULLIF(SUM(compliance) + SUM(non_compliance),
+      0), 2)/100
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: datetime_fmt
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  time_shift_color: true
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelRotation: 45
+  y_axis_format: ',.1%'
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  showTooltipPercentage: false
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"category","label":"category","expressionType":"SQL"}],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Compliance","optionName":"metric_2btvzjb5ay1_p61twlntnj9","sqlExpression":"ROUND(SUM(compliance)
+  * 100.0 / NULLIF(SUM(compliance) + SUM(non_compliance), 0), 2)/100"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Non-Compliance","optionName":"metric_vtrjlldtzm_zojvvod5cwr","sqlExpression":"ROUND(SUM(non_compliance)
+  * 100.0 / NULLIF(SUM(compliance) + SUM(non_compliance), 0), 2)/100"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Compliance","optionName":"metric_2btvzjb5ay1_p61twlntnj9","sqlExpression":"ROUND(SUM(compliance)
+  * 100.0 / NULLIF(SUM(compliance) + SUM(non_compliance), 0), 2)/100"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["category"],"columns":[],"aggregates":{"Compliance":{"operator":"mean"},"Non-Compliance":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"flatten"}]}],"form_data":{"datasource":"4__table","viz_type":"echarts_timeseries_bar","slice_id":7,"x_axis":"category","x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Compliance","optionName":"metric_2btvzjb5ay1_p61twlntnj9","sqlExpression":"ROUND(SUM(compliance)
+  * 100.0 / NULLIF(SUM(compliance) + SUM(non_compliance), 0), 2)/100"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Non-Compliance","optionName":"metric_vtrjlldtzm_zojvvod5cwr","sqlExpression":"ROUND(SUM(non_compliance)
+  * 100.0 / NULLIF(SUM(compliance) + SUM(non_compliance), 0), 2)/100"}],"groupby":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"datetime_fmt"}],"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"annotation_layers":[],"orientation":"vertical","x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","time_shift_color":true,"only_total":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","xAxisLabelRotation":45,"y_axis_format":",.1%","y_axis_bounds":[null,null],"truncateXAxis":true,"rich_tooltip":true,"showTooltipTotal":true,"showTooltipPercentage":false,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: c7429585-b095-4af2-a6c8-f71231a73e5d
+version: 1.0.0
+dataset_uuid: d4e3fcf1-dd88-422d-8375-60126a08894e

@@ -31,6 +31,7 @@ from .sf_population_polygons import load_sf_population_polygons
 from .supported_charts_dashboard import load_supported_charts_dashboard
 from .tabbed_dashboard import load_tabbed_dashboard
 from .utils import load_examples_from_configs
+from .utils import load_amararaja_from_configs
 from .world_bank import load_world_bank_health_n_pop
 
 __all__ = [
@@ -51,5 +52,6 @@ __all__ = [
     "load_supported_charts_dashboard",
     "load_tabbed_dashboard",
     "load_examples_from_configs",
+    "load_amararaja_from_configs",
     "load_world_bank_health_n_pop",
 ]

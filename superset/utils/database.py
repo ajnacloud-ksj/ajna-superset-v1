@@ -66,6 +66,9 @@ def get_or_create_db(
 def get_example_database() -> Database:
     return get_or_create_db("examples", current_app.config["SQLALCHEMY_EXAMPLES_URI"])
 
+def get_Amararaja_database() -> Database:
+    return get_or_create_db("superset", current_app.config["SQLALCHEMY_EXAMPLES_URI"])
+
 
 def get_main_database() -> Database:
     db_uri = current_app.config["SQLALCHEMY_DATABASE_URI"]
