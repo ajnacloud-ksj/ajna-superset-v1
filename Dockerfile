@@ -119,7 +119,7 @@ RUN useradd --user-group -d ${SUPERSET_HOME} -m --no-log-init --shell /bin/bash 
 # Some bash scripts needed throughout the layers
 COPY --chmod=755 docker/*.sh /app/docker/
 
-RUN pip install --no-cache-dir --upgrade uv
+RUN pip install --no-cache-dir --upgrade uv==0.5.26
 
 # Using uv as it's faster/simpler than pip
 RUN uv venv /app/.venv
