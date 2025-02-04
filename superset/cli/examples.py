@@ -42,6 +42,8 @@ def load_examples_run(
 
     examples.load_css_templates()
 
+    # Commented as we do not need example dashboards
+    '''
     if load_test_data:
         logger.info("Loading energy related dataset")
         examples.load_energy(only_metadata, force)
@@ -83,6 +85,7 @@ def load_examples_run(
     if load_big_data:
         logger.info("Loading big synthetic data for tests")
         examples.load_big_data()
+    '''
 
     # load examples that are stored as YAML config files
     #examples.load_examples_from_configs(force, load_test_data)
