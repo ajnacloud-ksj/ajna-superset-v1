@@ -83,7 +83,7 @@ def load_amararaja_from_configs(
 
 def load_amararaja_contents(load_test_data: bool = False) -> dict[str, Any]:
     """Traverse configs directory and load contents"""
-    root = files("superset") / "amararaja/configs"
+    root = files("superset") / "examples/amararaja/configs"
     resource_names = (files("superset") / str(root)).iterdir()
     queue = [root / str(resource_name) for resource_name in resource_names]
 
