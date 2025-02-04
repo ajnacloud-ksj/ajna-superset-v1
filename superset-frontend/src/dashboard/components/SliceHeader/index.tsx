@@ -223,17 +223,13 @@ const SliceHeader = forwardRef<HTMLDivElement, SliceHeaderProps>(
               url={canExplore ? exploreUrl : undefined}
             />
           </Tooltip>
-          {sliceName?.split(",").length > 1 && (
+            {sliceName?.split(",").length > 1 && sliceName.split(",")[1]?.trim() && (
             <a href={sliceName.split(",")[1]} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
               <span style={{ cursor: 'pointer', display: 'inline-flex', alignItems: 'center' }}>
-                <img
-                  src={redirectIcon}
-                  alt="Redirect"
-                  style={{ width: '24px', height: '24px' }}
-                />
-              </span>
+                Drilldown
+                </span>
             </a>
-          )}
+            )}
           {!!Object.values(annotationQuery).length && (
             <Tooltip
               id="annotations-loading-tooltip"
