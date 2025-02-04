@@ -36,7 +36,6 @@ import Icons from 'src/components/Icons';
 import { RootState } from 'src/dashboard/types';
 import { getSliceHeaderTooltip } from 'src/dashboard/util/getSliceHeaderTooltip';
 import { DashboardPageIdContext } from 'src/dashboard/containers/DashboardPage';
-import redirectIcon from '../../../assets/images/icons/redirectIcon.png';
 
 const extensionsRegistry = getExtensionsRegistry();
 
