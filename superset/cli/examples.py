@@ -85,7 +85,7 @@ def load_examples_run(
         examples.load_big_data()
 
     # load examples that are stored as YAML config files
-    examples.load_examples_from_configs(force, load_test_data)
+    #examples.load_examples_from_configs(force, load_test_data)
     examples.load_amararaja_from_configs(force, load_test_data)
 
 
