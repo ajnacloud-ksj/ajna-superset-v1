@@ -1,0 +1,77 @@
+slice_name: Parameter Wise CpK
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 2__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 9
+  x_axis: category
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: cpk
+    optionName: metric_7abpvytnn1p_469hvic2is4
+    sqlExpression: "ROUND(LEAST(\r\n        (AVG(category_value) - max(lsl)) / NULLIF(3\
+      \ * (AVG(abs_diff) / 1.128)::numeric, 0),\r\n        (MAX(usl) - AVG(category_value))\
+      \ / NULLIF(3 * (AVG(abs_diff) / 1.128)::numeric, 0)\r\n    )::numeric, 2)"
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: datetime_fmt
+  order_desc: true
+  row_limit: 1000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelRotation: 45
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  showTooltipPercentage: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":2,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"category","label":"category","expressionType":"SQL"}],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"cpk","optionName":"metric_7abpvytnn1p_469hvic2is4","sqlExpression":"ROUND(LEAST(\r\n        (AVG(category_value)
+  - max(lsl)) / NULLIF(3 * (AVG(abs_diff) / 1.128)::numeric, 0),\r\n        (MAX(usl)
+  - AVG(category_value)) / NULLIF(3 * (AVG(abs_diff) / 1.128)::numeric, 0)\r\n    )::numeric,
+  2)"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"cpk","optionName":"metric_7abpvytnn1p_469hvic2is4","sqlExpression":"ROUND(LEAST(\r\n        (AVG(category_value)
+  - max(lsl)) / NULLIF(3 * (AVG(abs_diff) / 1.128)::numeric, 0),\r\n        (MAX(usl)
+  - AVG(category_value)) / NULLIF(3 * (AVG(abs_diff) / 1.128)::numeric, 0)\r\n    )::numeric,
+  2)"},false]],"annotation_layers":[],"row_limit":1000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["category"],"columns":[],"aggregates":{"cpk":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"flatten"}]}],"form_data":{"datasource":"2__table","viz_type":"echarts_timeseries_bar","slice_id":9,"x_axis":"category","x_axis_sort_asc":true,"x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"cpk","optionName":"metric_7abpvytnn1p_469hvic2is4","sqlExpression":"ROUND(LEAST(\r\n        (AVG(category_value)
+  - max(lsl)) / NULLIF(3 * (AVG(abs_diff) / 1.128)::numeric, 0),\r\n        (MAX(usl)
+  - AVG(category_value)) / NULLIF(3 * (AVG(abs_diff) / 1.128)::numeric, 0)\r\n    )::numeric,
+  2)"}],"groupby":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"datetime_fmt"}],"order_desc":true,"row_limit":1000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","xAxisLabelRotation":45,"y_axis_format":"SMART_NUMBER","y_axis_bounds":[null,null],"truncateXAxis":true,"rich_tooltip":true,"showTooltipTotal":true,"showTooltipPercentage":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: c6ab9436-e95e-439f-b0e1-7352b85acc5e
+version: 1.0.0
+dataset_uuid: 3e93ce4d-3318-4187-9dc8-efde89a083c0

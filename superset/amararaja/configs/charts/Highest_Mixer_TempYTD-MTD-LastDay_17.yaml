@@ -1,0 +1,55 @@
+slice_name: 'Highest Mixer Temp(YTD-MTD-LastDay), '
+description: null
+certified_by: null
+certification_details: null
+viz_type: handlebars
+params:
+  datasource: 3__table
+  viz_type: handlebars
+  query_mode: raw
+  groupby: []
+  metrics: []
+  all_columns:
+  - avg_lead_oxide_last_year
+  - avg_lead_oxide_last_month
+  - avg_lead_oxide_last_day
+  percent_metrics: []
+  order_by_cols: []
+  row_limit: 1000
+  adhoc_filters: []
+  handlebarsTemplate: "<table class=\"table\" style=\"width: auto; border: 1px solid\
+    \ black; border-collapse: collapse; table-layout: fixed;\">\r\n  \r\n  <tr>\r\n\
+    \    <td style=\"padding: 2px 4px; border: 1px solid black; font-weight: bold;\
+    \ font-size: 12px;\">YTD</td>\r\n    <td style=\"padding: 2px 4px; border: 1px\
+    \ solid black; font-size: 12px;\">{{data.[0].avg_lead_oxide_last_year}}</td>\r\
+    \n  </tr>\r\n  <tr>\r\n    <td style=\"padding: 2px 4px; border: 1px solid black;\
+    \ font-weight: bold; font-size: 12px;\">MTD</td>\r\n    <td style=\"padding: 2px\
+    \ 4px; border: 1px solid black; font-size: 12px;\">{{data.[0].avg_lead_oxide_last_month}}</td>\r\
+    \n  </tr>\r\n  <tr>\r\n    <td style=\"padding: 2px 4px; border: 1px solid black;\
+    \ font-weight: bold; font-size: 12px;\">LastDay</td>\r\n    <td style=\"padding:\
+    \ 2px 4px; border: 1px solid black; font-size: 12px;\">{{data.[0].avg_lead_oxide_last_day}}</td>\r\
+    \n  </tr>\r\n</table>\r\n\r\n<style>\r\n  @media (max-width: 600px) {\r\n    .table\
+    \ tr {\r\n      display: block;\r\n      width: 100%;\r\n    }\r\n    .table td\
+    \ {\r\n      display: block;\r\n      width: 100%;\r\n      box-sizing: border-box;\r\
+    \n      margin-bottom: 2px;\r\n      padding: 2px 4px;\r\n    }\r\n  }\r\n</style>\r\
+    \n"
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":3,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["avg_lead_oxide_last_year","avg_lead_oxide_last_month","avg_lead_oxide_last_day"],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"3__table","viz_type":"handlebars","query_mode":"raw","groupby":[],"metrics":[],"all_columns":["avg_lead_oxide_last_year","avg_lead_oxide_last_month","avg_lead_oxide_last_day"],"percent_metrics":[],"order_by_cols":[],"row_limit":1000,"adhoc_filters":[],"handlebarsTemplate":"<table
+  class=\"table\" style=\"width: auto; border: 1px solid black; border-collapse: collapse;
+  table-layout: fixed;\">\r\n  \r\n  <tr>\r\n    <td style=\"padding: 2px 4px; border:
+  1px solid black; font-weight: bold; font-size: 12px;\">YTD</td>\r\n    <td style=\"padding:
+  2px 4px; border: 1px solid black; font-size: 12px;\">{{data.[0].avg_lead_oxide_last_year}}</td>\r\n  </tr>\r\n  <tr>\r\n    <td
+  style=\"padding: 2px 4px; border: 1px solid black; font-weight: bold; font-size:
+  12px;\">MTD</td>\r\n    <td style=\"padding: 2px 4px; border: 1px solid black; font-size:
+  12px;\">{{data.[0].avg_lead_oxide_last_month}}</td>\r\n  </tr>\r\n  <tr>\r\n    <td
+  style=\"padding: 2px 4px; border: 1px solid black; font-weight: bold; font-size:
+  12px;\">LastDay</td>\r\n    <td style=\"padding: 2px 4px; border: 1px solid black;
+  font-size: 12px;\">{{data.[0].avg_lead_oxide_last_day}}</td>\r\n  </tr>\r\n</table>\r\n\r\n<style>\r\n  @media
+  (max-width: 600px) {\r\n    .table tr {\r\n      display: block;\r\n      width:
+  100%;\r\n    }\r\n    .table td {\r\n      display: block;\r\n      width: 100%;\r\n      box-sizing:
+  border-box;\r\n      margin-bottom: 2px;\r\n      padding: 2px 4px;\r\n    }\r\n  }\r\n</style>\r\n","extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: ce8e8fbe-5822-4632-84c4-5f9aa756549c
+version: 1.0.0
+dataset_uuid: de0dab58-dce1-4008-a2f4-66fe83da2757
