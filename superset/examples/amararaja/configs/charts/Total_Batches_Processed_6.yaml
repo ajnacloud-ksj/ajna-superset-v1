@@ -35,6 +35,7 @@ params:
   conditional_formatting: []
   extra_form_data: {}
   dashboards: []
+  annotation_layers: []
 query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"COUNT(
   DISTINCT batch_no)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"avg_batch_duration_hours","optionName":"metric_8adzofx24fn_lj2m6ix7ver"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"1__table","viz_type":"big_number_total","slice_id":5,"metric":{"expressionType":"SQL","sqlExpression":"COUNT(

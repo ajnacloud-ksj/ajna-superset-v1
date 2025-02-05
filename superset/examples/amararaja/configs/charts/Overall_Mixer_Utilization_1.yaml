@@ -30,6 +30,7 @@ params:
   conditional_formatting: []
   extra_form_data: {}
   dashboards: []
+  annotation_layers: []
 query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"(SUM(total_mix_time)
   / (COUNT(DISTINCT DATE(datetime_fmt)) *8*3* 60.0))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"(SUM(total_mix_time)

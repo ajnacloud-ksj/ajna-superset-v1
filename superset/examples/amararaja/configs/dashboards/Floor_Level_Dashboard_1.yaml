@@ -4,7 +4,7 @@ css: ''
 slug: null
 certified_by: ''
 certification_details: ''
-published: false
+published: true
 uuid: 91cf20d3-320b-4605-8cb5-4545141c1981
 position:
   CHART--6yHaO2fFIQUaS4LCakYU:
@@ -15,11 +15,25 @@ position:
       height: 35
       sliceName: Wet Mix Time (Lastday)
       uuid: a6360c5d-c5f5-4f0f-bcd7-55ca3470d1cd
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-SjuqWngtCjygPpey8GGQW
+    - ROW-tQBWMPBqv0ibigoSpa_D_
+    type: CHART
+  CHART--C5gHeME9gOzcV_Jj2mtA:
+    children: []
+    id: CHART--C5gHeME9gOzcV_Jj2mtA
+    meta:
+      chartId: 170
+      height: 37
+      sliceName: Acid Dump Time Standardized Lastday
+      uuid: ef79c1d9-afb1-418d-b3e3-d71f9b92f383
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-pDbBo3i3dTEEAB6Rktp-a
     type: CHART
   CHART--qNd18ewPdrLqP2F8tD9z:
     children: []
@@ -29,11 +43,11 @@ position:
       height: 37
       sliceName: Lead Oxide Consumed (MTD)
       uuid: 06002c7e-9cba-48c9-964f-ed085734cf60
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-ycxaTkgGlq4lY_c_-lq9C
+    - ROW-aIgpmU8P6VBYUqnD9Xgk9
     type: CHART
   CHART-1Tl_YYstr7l_0A9nE7wga:
     children: []
@@ -43,7 +57,7 @@ position:
       height: 37
       sliceName: 'DM Water Standardized MTD, '
       uuid: ef959aae-869a-4526-b348-314a1835d710
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -57,11 +71,25 @@ position:
       height: 32
       sliceName: 'Penetration Standardized MTD, '
       uuid: 7d5a777d-82c1-44d6-af96-d4b472e8936b
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-P529ZByUV7S7pCF84iIRO
+    type: CHART
+  CHART-2MVsMAHCEOT_deLX7SQWk:
+    children: []
+    id: CHART-2MVsMAHCEOT_deLX7SQWk
+    meta:
+      chartId: 166
+      height: 26
+      sliceName: Quality Compliance Percentage
+      uuid: 1bb0e113-fe98-4e9c-b905-a96618d384cb
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SKe-7KApbLwJLyoTXF5kv
     type: CHART
   CHART-2c5f7DWlp2BT2PjvX_EJa:
     children: []
@@ -71,11 +99,11 @@ position:
       height: 38
       sliceName: Water Cooling In Temp Standardized (YTD)
       uuid: f08b6aec-d855-4381-a260-99c1058c238b
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-kts0-RL_L_8Fv9loXKxfw
+    - ROW-h2D6EuGa3tmKh2E0-tmSH
     type: CHART
   CHART-2stFfYB0_gm5NW0nQ-aGY:
     children: []
@@ -85,7 +113,7 @@ position:
       height: 41
       sliceName: 'Air Cooling Temp Standardized MTD, '
       uuid: f65243dc-c9f8-49d7-aa9e-bc8c25bcfe24
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -99,11 +127,11 @@ position:
       height: 35
       sliceName: Water Cooling In Temp (MTD)
       uuid: 4134e0df-3b80-495d-895b-b416a8e77a18
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-pQmj6OBAQaHmIBT0_VPqw
+    - ROW-vn7HSZncsPPXbMgbVwiqz
     type: CHART
   CHART-427vyipyrCbVSonzlo02F:
     children: []
@@ -113,7 +141,7 @@ position:
       height: 40
       sliceName: 'Water Dump Time YTD, '
       uuid: 1b4182fd-f13b-43a5-b841-762ffdbc036e
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -141,11 +169,11 @@ position:
       height: 36
       sliceName: Dry Mix Time (YTD)
       uuid: 563e6af4-e6a4-4170-a800-48aeff72d93d
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-zhDkaoF4SlB7Dg2hLtfeV
+    - ROW--9v6bp4btOft84BUnJST5
     type: CHART
   CHART-7PkCOqR_9zCd_zWiiOwlq:
     children: []
@@ -155,7 +183,7 @@ position:
       height: 41
       sliceName: 'Air Cooling Temp Standardized YTD, '
       uuid: e34841ef-fca4-431c-9914-b5b88cdef56c
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -169,11 +197,25 @@ position:
       height: 35
       sliceName: Final Water (Lastday)
       uuid: 2878123a-338a-43de-adae-b3d769ad8cec
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-0rFWKMcONNVK0Pnq-KglS
+    - ROW-CiNaPOqqUyl4JtEjNbBzZ
+    type: CHART
+  CHART-8c5I0dnz2aAe7EotLxKgK:
+    children: []
+    id: CHART-8c5I0dnz2aAe7EotLxKgK
+    meta:
+      chartId: 151
+      height: 19
+      sliceName: Peak Temp Avgs
+      uuid: b7a171fe-acd5-4641-a40b-ba282b6bd676
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-o8jlMUuBT8tY2zdb5skTr
     type: CHART
   CHART-8kBppKO3XwnPD1oQvsjsG:
     children: []
@@ -183,7 +225,7 @@ position:
       height: 33
       sliceName: 'Penetration Standardized YTD, '
       uuid: 44752782-0e52-4631-a892-ced5dfbc45f7
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -197,11 +239,25 @@ position:
       height: 41
       sliceName: 'DM Water MTD, '
       uuid: badb4d08-3620-409b-acc9-1957b20584e7
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-Zoi9v2aJJeYg4KH5B8ws8
+    type: CHART
+  CHART-BS8AbtCeuNydFYFinAJL7:
+    children: []
+    id: CHART-BS8AbtCeuNydFYFinAJL7
+    meta:
+      chartId: 164
+      height: 19
+      sliceName: Dry Mix Time Avgs
+      uuid: b18bc176-b0d0-4960-abdd-f624f7bcb21b
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-NMwK87_abYR4KpcWxZ22T
     type: CHART
   CHART-C7k07DvO4GXv5GHS7VOc9:
     children: []
@@ -211,7 +267,7 @@ position:
       height: 45
       sliceName: 'Peak Temp Standardized MTD, '
       uuid: 84dc6bf4-6e2e-4a29-afa9-9db2e226dc1d
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -225,11 +281,11 @@ position:
       height: 35
       sliceName: Wet Mix Time Standardized (Lastday)
       uuid: e9d531c1-f296-405c-a768-199fec875c91
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-uQWtR-WBBIfp1RZJQEYk4
+    - ROW-EZjW3A9jrtuyXIZDdLowT
     type: CHART
   CHART-DIDTlVJQsNUysyV04-bhQ:
     children: []
@@ -253,11 +309,11 @@ position:
       height: 37
       sliceName: Dry Mix Time (MTD)
       uuid: 7dd2ccf1-7e52-44f8-974c-eab758efc81a
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-zhDkaoF4SlB7Dg2hLtfeV
+    - ROW--9v6bp4btOft84BUnJST5
     type: CHART
   CHART-E_l3y9yqvhfCowPBcRHGi:
     children: []
@@ -267,11 +323,39 @@ position:
       height: 36
       sliceName: Final Water Standardized (Lastday)
       uuid: 24b7de97-e963-4486-aa49-a1b9236a0f16
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-lBTgFIkbYKLw6vAhQpUft
+    - ROW-tIeC7ZXxvyLC1owPUb9dZ
+    type: CHART
+  CHART-FrQccqm3DN8B1uwyGQvBZ:
+    children: []
+    id: CHART-FrQccqm3DN8B1uwyGQvBZ
+    meta:
+      chartId: 155
+      height: 19
+      sliceName: Penetration Avgs
+      uuid: 39eae31a-af1f-4a64-9cc4-97ea7276800f
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6Ny5lfSLjlHfTAg_VY-8m
+    type: CHART
+  CHART-GLodZfI3H5OpE9zNtjCCn:
+    children: []
+    id: CHART-GLodZfI3H5OpE9zNtjCCn
+    meta:
+      chartId: 171
+      height: 37
+      sliceName: Acid Dump Time Standardized YTD
+      uuid: 0273fb59-0ba5-4af6-8bc7-3d206d45bfce
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-pDbBo3i3dTEEAB6Rktp-a
     type: CHART
   CHART-GlHLVAW2JwGltZq3Flg_A:
     children: []
@@ -281,11 +365,25 @@ position:
       height: 37
       sliceName: 'Air Cooling Temp Lastday, '
       uuid: 892ebfff-4756-42bb-9ef0-fb386ee2e1e4
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-tH_g8fb_A0CkXNg12XehA
+    type: CHART
+  CHART-H9dI8iGVzAII3-NZ9rmKF:
+    children: []
+    id: CHART-H9dI8iGVzAII3-NZ9rmKF
+    meta:
+      chartId: 169
+      height: 36
+      sliceName: Acid Dump Time Lastday
+      uuid: 2996f3ba-7129-4806-9233-0e4bac8e356f
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Ay-z00vyoLlZRlHw8STdQ
     type: CHART
   CHART-HSXwzV0l1TLo8xVR4Legl:
     children: []
@@ -295,7 +393,7 @@ position:
       height: 38
       sliceName: 'Acid Consumed Standardized Lastday, '
       uuid: 5c8865e8-a7f3-4a30-b848-c05e2772560b
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -309,26 +407,11 @@ position:
       height: 38
       sliceName: Acid Consumed Lastday
       uuid: c8d74e88-20c0-4d24-b953-272251c29653
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-l5hXZKW3pMP7HhUt0syk5
-    type: CHART
-  CHART-JaS4l2VRolYexkHvWoU8a:
-    children: []
-    id: CHART-JaS4l2VRolYexkHvWoU8a
-    meta:
-      chartId: 17
-      height: 40
-      sliceName: 'Highest Mixer Temp(YTD-MTD-LastDay), '
-      sliceNameOverride: Peak Temp(YTD-MTD-LastDay)
-      uuid: ce8e8fbe-5822-4632-84c4-5f9aa756549c
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-LJM9Ly80INIzY1n2pXj3m
     type: CHART
   CHART-JndwW-pmSVv9qtl6oOM1v:
     children: []
@@ -338,11 +421,39 @@ position:
       height: 41
       sliceName: 'DM Water Lastday, '
       uuid: f3196439-bf67-4c7e-a9bb-d4c2e13ba57a
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-Zoi9v2aJJeYg4KH5B8ws8
+    type: CHART
+  CHART-L2aeSvaRD_SpjvapvIJCx:
+    children: []
+    id: CHART-L2aeSvaRD_SpjvapvIJCx
+    meta:
+      chartId: 156
+      height: 19
+      sliceName: Density Avgs
+      uuid: 9bcf86cb-5414-4d58-a668-6d0c0a7b7da9
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-X4SU4SbEGN-WKNC7q_3xJ
+    type: CHART
+  CHART-LTzH-ZgucKiQitKDwkbz2:
+    children: []
+    id: CHART-LTzH-ZgucKiQitKDwkbz2
+    meta:
+      chartId: 157
+      height: 19
+      sliceName: Acid Consumed Avgs
+      uuid: 6d77b4a8-ae6f-4852-a103-ef7e7642fef6
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-deahG5gqrxZp1n7nASPMB
     type: CHART
   CHART-LvZA-zox274guyh7Bxm4L:
     children: []
@@ -352,11 +463,11 @@ position:
       height: 38
       sliceName: Water Cooling In Temp Standardized (MTD)
       uuid: 2cca022d-ff5a-4fb3-8f05-8b84ed54858a
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-kts0-RL_L_8Fv9loXKxfw
+    - ROW-h2D6EuGa3tmKh2E0-tmSH
     type: CHART
   CHART-MOM8vVpIa3Tc3OT_Um_7r:
     children: []
@@ -366,11 +477,11 @@ position:
       height: 35
       sliceName: Wet Mix Time Standardized (MTD)
       uuid: c0296790-71db-4939-9917-8e346d8d1c8e
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-uQWtR-WBBIfp1RZJQEYk4
+    - ROW-EZjW3A9jrtuyXIZDdLowT
     type: CHART
   CHART-NHgLQGrIlpkGbly4PB1_L:
     children: []
@@ -380,7 +491,7 @@ position:
       height: 35
       sliceName: 'Penetration MTD, '
       uuid: 480ec6ec-2779-4b83-a306-97944726d962
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -394,11 +505,11 @@ position:
       height: 35
       sliceName: Final Water (MTD)
       uuid: 42919b4a-f891-4071-b8db-574c06af210f
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-0rFWKMcONNVK0Pnq-KglS
+    - ROW-CiNaPOqqUyl4JtEjNbBzZ
     type: CHART
   CHART-Nq72WkOJxPfMFHwMIahtv:
     children: []
@@ -408,7 +519,7 @@ position:
       height: 40
       sliceName: 'Water Dump Time Standardized YTD, '
       uuid: 82d9674c-4047-46c6-9ede-b54066c658fd
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -422,7 +533,7 @@ position:
       height: 41
       sliceName: 'DM Water YTD, '
       uuid: b04ad007-4605-45ae-a26b-ff0a6321a5f0
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -436,11 +547,11 @@ position:
       height: 37
       sliceName: Mixer Dump Temp Standardized (YTD)
       uuid: ae90a508-0261-459e-bf75-eda3ef57e00b
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-20u-nSKNTFP2S7MrW-Z-A
+    - ROW-PfjF_kPl397XSoblKLmor
     type: CHART
   CHART-QNEVBJw-9cwa2l1d3t9-d:
     children: []
@@ -450,11 +561,11 @@ position:
       height: 34
       sliceName: Cooling On Temp Standardized (MTD)
       uuid: 71dcb1db-48a6-4f4f-a773-741643039189
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-DOWeLcxxQWyOyqbUraiHV
+    - ROW-dQAwCEtmMSNUfGD20U_Km
     type: CHART
   CHART-QuAHd1d_rhMqtXm-ee0BB:
     children: []
@@ -464,11 +575,11 @@ position:
       height: 35
       sliceName: Cooling On Temp (YTD)
       uuid: 19162b15-7aab-4daf-85f8-88aa735a1ef2
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-tz37M5o5uSEyMoakih06b
+    - ROW-gtuAG0h-pQUzrXlcGyDG3
     type: CHART
   CHART-S5BAGmq_oXrwM5QfnUyRN:
     children: []
@@ -478,11 +589,11 @@ position:
       height: 37
       sliceName: Lead Oxide Consumed Standardized (Lastday)
       uuid: 2864332b-3456-4321-bc48-08538d7e0f17
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-WIoBw4p3l1EQKljDNrvBv
+    - ROW-bSlcZ2-87P9QGr7nRKfDM
     type: CHART
   CHART-Si4TfhO1o8U12RP8lCBcX:
     children: []
@@ -492,7 +603,7 @@ position:
       height: 35
       sliceName: 'Penetration Lastday, '
       uuid: 0a21987a-f65c-40b8-a5c5-9efa97174fe0
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -506,11 +617,25 @@ position:
       height: 32
       sliceName: 'Penetration Standardized Lastday, '
       uuid: cf95d6c1-0527-4a8e-965d-31ea0f1acf92
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-P529ZByUV7S7pCF84iIRO
+    type: CHART
+  CHART-Uc0YvqWs8IacnOSH2bdM3:
+    children: []
+    id: CHART-Uc0YvqWs8IacnOSH2bdM3
+    meta:
+      chartId: 160
+      height: 19
+      sliceName: Mixer Dump Temp Avgs
+      uuid: 79597bd3-8ad2-4d60-956c-c37eaf1a5688
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-PXueKyvar17RzEzx8omme
     type: CHART
   CHART-Um976wgbsNeySXgf00lkQ:
     children: []
@@ -520,11 +645,25 @@ position:
       height: 36
       sliceName: Final Water Standardized (YTD)
       uuid: bc93d027-f276-4c83-940c-1fa63c0aa021
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-lBTgFIkbYKLw6vAhQpUft
+    - ROW-tIeC7ZXxvyLC1owPUb9dZ
+    type: CHART
+  CHART-VElOatihoi6YAKmUCccJp:
+    children: []
+    id: CHART-VElOatihoi6YAKmUCccJp
+    meta:
+      chartId: 158
+      height: 18
+      sliceName: DM Water Avgs
+      uuid: c2f6ed12-a03c-4adf-b23a-84ffb9ffb433
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ujgGJhP6voBS8p5WE_K6H
     type: CHART
   CHART-Vsg5kvwJgh7eY8zzSULNi:
     children: []
@@ -534,11 +673,11 @@ position:
       height: 35
       sliceName: Water Cooling In Temp (Lastday)
       uuid: c769817b-a984-4bad-83f1-c66312b2109c
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-pQmj6OBAQaHmIBT0_VPqw
+    - ROW-vn7HSZncsPPXbMgbVwiqz
     type: CHART
   CHART-WeI_rMfNpEuomLQUibu5O:
     children: []
@@ -548,7 +687,7 @@ position:
       height: 40
       sliceName: 'Peak Temp YTD, '
       uuid: 985eb6ff-000c-461a-bdce-7149c8d48c33
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -560,13 +699,13 @@ position:
     meta:
       chartId: 115
       height: 37
-      sliceName: Mixer Dump Temp (YTD)
+      sliceName: Dump Temp (YTD)
       uuid: 1563ff64-9b09-460b-a679-620d1546f821
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-SJNnAE4Zw1CMwGdeSnFhl
+    - ROW-FpUSfnQ9OmVIi38xcb7Ke
     type: CHART
   CHART-WtOJ9BqgOVE2afbzHytfa:
     children: []
@@ -576,11 +715,11 @@ position:
       height: 37
       sliceName: Mixer Dump Temp (Lastday)
       uuid: 25ba7c73-cb6b-4e28-a198-85806f947f9d
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-SJNnAE4Zw1CMwGdeSnFhl
+    - ROW-FpUSfnQ9OmVIi38xcb7Ke
     type: CHART
   CHART-XLPbdg9cQOcHg0IAJ27FQ:
     children: []
@@ -590,11 +729,25 @@ position:
       height: 37
       sliceName: Mixer Dump Temp Standardized (MTD)
       uuid: 96fa4a54-2796-426a-827e-e3d8b0378ed8
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-20u-nSKNTFP2S7MrW-Z-A
+    - ROW-PfjF_kPl397XSoblKLmor
+    type: CHART
+  CHART-XS7Ag3uRkLbZ9sRF2Uo9P:
+    children: []
+    id: CHART-XS7Ag3uRkLbZ9sRF2Uo9P
+    meta:
+      chartId: 163
+      height: 19
+      sliceName: Cooling On Temp Avgs
+      uuid: 42692f0d-0525-4beb-a64a-75048da2d722
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wbfUvNwadWd3L5bEufvVX
     type: CHART
   CHART-Y0_MTo0ttmoBaHDyzLePT:
     children: []
@@ -618,11 +771,11 @@ position:
       height: 35
       sliceName: Wet Mix Time Standardized (YTD)
       uuid: 6e6dd86c-7ca1-4df6-8f9a-1c6884e0c07f
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-uQWtR-WBBIfp1RZJQEYk4
+    - ROW-EZjW3A9jrtuyXIZDdLowT
     type: CHART
   CHART-ZPuR_gytbanEsLZJhmSlq:
     children: []
@@ -632,11 +785,25 @@ position:
       height: 40
       sliceName: 'Water Dump Time MTD, '
       uuid: 9a5dac72-4057-4e04-abdc-db65852ea061
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-vUTdimBy9m_wUxf4G2gmw
+    type: CHART
+  CHART-ZfDuqCxC0nWxt5gVY_nQV:
+    children: []
+    id: CHART-ZfDuqCxC0nWxt5gVY_nQV
+    meta:
+      chartId: 153
+      height: 19
+      sliceName: Acid Dump Time Avgs
+      uuid: fb68a912-f675-4621-80de-448afcf8b4ad
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-o0kvYqWPfYFNQgNSxPBwB
     type: CHART
   CHART-_-T76MP_rf2WyLPv0aqCp:
     children: []
@@ -660,7 +827,7 @@ position:
       height: 38
       sliceName: 'Acid Consumed Standardized MTD, '
       uuid: 5bd0f998-4831-4d43-8a4f-f0c4dcce4d2d
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -674,11 +841,11 @@ position:
       height: 34
       sliceName: Dry Mix Time Standardized (Lastday)
       uuid: 15f3e2c9-5d96-428b-88e1-e8dcafe7f582
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW--OsM-C0GaUjLb5fV0TDX-
+    - ROW-wp-btLGnCzV6vd8Mcsz4m
     type: CHART
   CHART-bXR2ngi1inOi7M223_Tx-:
     children: []
@@ -688,11 +855,11 @@ position:
       height: 37
       sliceName: Mixer Dump Temp (MTD)
       uuid: 2e87a71e-e4b4-4937-b953-6ed33095f6d7
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-SJNnAE4Zw1CMwGdeSnFhl
+    - ROW-FpUSfnQ9OmVIi38xcb7Ke
     type: CHART
   CHART-cPSVgMiffSuM5yXlXp23f:
     children: []
@@ -702,11 +869,25 @@ position:
       height: 37
       sliceName: 'DM Water Standardized Lastday, '
       uuid: 0f08de08-5829-4b04-9885-ab7c7f780e61
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-BG8ZVFdPOlY24rsv1U8gh
+    type: CHART
+  CHART-d4Qn-gMHOUS16A_vF2I6Z:
+    children: []
+    id: CHART-d4Qn-gMHOUS16A_vF2I6Z
+    meta:
+      chartId: 172
+      height: 37
+      sliceName: Acid Dump Time Standardized MTD
+      uuid: ade3153a-8d26-40c1-a1dc-92ce953dd65a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-pDbBo3i3dTEEAB6Rktp-a
     type: CHART
   CHART-dAIoyy76nTIX_5V4RU6YT:
     children: []
@@ -716,7 +897,7 @@ position:
       height: 35
       sliceName: 'Penetration YTD, '
       uuid: ddc02b0e-a5e4-4ae5-9b1e-ed880b6dd42f
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -730,7 +911,7 @@ position:
       height: 36
       sliceName: 'Air Cooling Temp MTD, '
       uuid: 65c20205-826c-43ce-8877-2a586e6fac0d
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -744,11 +925,11 @@ position:
       height: 34
       sliceName: Cooling On Temp Standardized (YTD)
       uuid: be56136b-7cf1-4e10-8f1e-947f262996ec
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-DOWeLcxxQWyOyqbUraiHV
+    - ROW-dQAwCEtmMSNUfGD20U_Km
     type: CHART
   CHART-eEN-TNcBfNR14LYDN61Bt:
     children: []
@@ -758,11 +939,11 @@ position:
       height: 35
       sliceName: Wet Mix Time (MTD)
       uuid: a24d397d-81aa-47aa-8edc-66cc88c57491
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-SjuqWngtCjygPpey8GGQW
+    - ROW-tQBWMPBqv0ibigoSpa_D_
     type: CHART
   CHART-ePC-HrHxUSDAkLF1HIyUP:
     children: []
@@ -772,7 +953,7 @@ position:
       height: 38
       sliceName: 'Acid Consumed MTD, '
       uuid: 551b2fbe-7152-48b5-b322-ac62e19980f4
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -786,7 +967,7 @@ position:
       height: 34
       sliceName: 'Density Standardized YTD, '
       uuid: 93687fa0-4631-4081-bcf6-a24f2f9408fb
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -800,7 +981,7 @@ position:
       height: 34
       sliceName: 'Density Standardized MTD, '
       uuid: 7797614c-3882-40ad-b834-0c44c8be19ed
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -814,7 +995,7 @@ position:
       height: 34
       sliceName: 'Density Standardized Lastday, '
       uuid: 37b4a9cd-943f-4e85-b6e4-29dd44982fe7
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -842,7 +1023,7 @@ position:
       height: 33
       sliceName: 'Density YTD, '
       uuid: 4971f199-a810-4346-b2e3-db43d0428a2d
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -856,7 +1037,7 @@ position:
       height: 33
       sliceName: 'Density MTD, '
       uuid: b70f0721-d8b3-4929-98a6-08bb06132fa6
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -870,7 +1051,7 @@ position:
       height: 33
       sliceName: 'Density Lastday, '
       uuid: beb86cb6-2030-4d0b-8585-18fc092575b8
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -884,11 +1065,11 @@ position:
       height: 37
       sliceName: Mixer Dump Temp Standardized (Lastday)
       uuid: fd8c8c71-563b-45e9-8f18-e7bff16921b9
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-20u-nSKNTFP2S7MrW-Z-A
+    - ROW-PfjF_kPl397XSoblKLmor
     type: CHART
   CHART-ezPYA2N4a8aPsxQbb7dzH:
     children: []
@@ -912,7 +1093,7 @@ position:
       height: 45
       sliceName: 'Peak Temp Standardized Lastday, '
       uuid: 6897785e-6025-46b6-9df3-f09cd17d7c10
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -926,7 +1107,7 @@ position:
       height: 40
       sliceName: 'Peak Temp MTD, '
       uuid: 06c8be6c-06f6-4840-b46e-1d8e33fa2f93
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -940,11 +1121,11 @@ position:
       height: 35
       sliceName: Wet Mix Time (YTD)
       uuid: fef90b59-2884-4bd7-a717-dc8f3cbcbd8b
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-SjuqWngtCjygPpey8GGQW
+    - ROW-tQBWMPBqv0ibigoSpa_D_
     type: CHART
   CHART-hU-X3xCch4jTQLJj7Cyfe:
     children: []
@@ -954,7 +1135,7 @@ position:
       height: 40
       sliceName: 'Peak Temp Last Day, '
       uuid: d7f6ad64-c054-45bc-8bb4-9d9409361def
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -968,11 +1149,11 @@ position:
       height: 37
       sliceName: Lead Oxide Consumed (YTD)
       uuid: a473dd22-9f72-4d7a-8221-78b4dbdfec8a
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-ycxaTkgGlq4lY_c_-lq9C
+    - ROW-aIgpmU8P6VBYUqnD9Xgk9
     type: CHART
   CHART-hvYwTZjdYZwY5WjjZMN0T:
     children: []
@@ -982,11 +1163,11 @@ position:
       height: 34
       sliceName: Cooling On Temp Standardized (Lastday)
       uuid: 9d49c0d2-162e-49f1-a39a-0f32a375df88
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-DOWeLcxxQWyOyqbUraiHV
+    - ROW-dQAwCEtmMSNUfGD20U_Km
     type: CHART
   CHART-i4eFCl_3qsB9Nzq_-9Xe9:
     children: []
@@ -996,7 +1177,7 @@ position:
       height: 40
       sliceName: 'Water Dump Time Standardized MTD, '
       uuid: c62cb797-d184-484c-836b-31f133f1f478
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -1010,11 +1191,25 @@ position:
       height: 35
       sliceName: Water Cooling In Temp (YTD)
       uuid: 2b614062-31f5-47d0-854d-ca6299726729
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-pQmj6OBAQaHmIBT0_VPqw
+    - ROW-vn7HSZncsPPXbMgbVwiqz
+    type: CHART
+  CHART-j3xvFKIqF7C4VyE_2J-Qd:
+    children: []
+    id: CHART-j3xvFKIqF7C4VyE_2J-Qd
+    meta:
+      chartId: 162
+      height: 19
+      sliceName: Final Water Avgs
+      uuid: ab58493e-4f7f-4e25-975c-2934dfdd711b
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-BNZVpqJfvzmgboqk5b9BQ
     type: CHART
   CHART-j9AV-73GiPU1GKQF3iT3w:
     children: []
@@ -1024,11 +1219,11 @@ position:
       height: 37
       sliceName: Lead Oxide Consumed Standardized (YTD)
       uuid: 044eb737-9269-47f9-a65c-e220b8bc2e51
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-WIoBw4p3l1EQKljDNrvBv
+    - ROW-bSlcZ2-87P9QGr7nRKfDM
     type: CHART
   CHART-jUKN3TxYMQ0E0jd1ySP63:
     children: []
@@ -1038,11 +1233,11 @@ position:
       height: 35
       sliceName: Cooling On Temp (MTD)
       uuid: 5970bc7b-41f4-4bb1-9041-d0143d28cb40
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-tz37M5o5uSEyMoakih06b
+    - ROW-gtuAG0h-pQUzrXlcGyDG3
     type: CHART
   CHART-kuY5saFgeYL--B2ANcsLD:
     children: []
@@ -1052,11 +1247,11 @@ position:
       height: 36
       sliceName: Final Water Standardized (MTD)
       uuid: 9aa840f6-1d2a-43c3-94fe-6e871aa5c4ff
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-lBTgFIkbYKLw6vAhQpUft
+    - ROW-tIeC7ZXxvyLC1owPUb9dZ
     type: CHART
   CHART-n3OWeD0v2GkXyDkDFLiFc:
     children: []
@@ -1066,11 +1261,39 @@ position:
       height: 38
       sliceName: Water Cooling In Temp Standardized (Lastday)
       uuid: 6e21f7b1-be5c-423b-bc66-b629c42aab83
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-kts0-RL_L_8Fv9loXKxfw
+    - ROW-h2D6EuGa3tmKh2E0-tmSH
+    type: CHART
+  CHART-nIbk3iBzXeanNeUfiCI-X:
+    children: []
+    id: CHART-nIbk3iBzXeanNeUfiCI-X
+    meta:
+      chartId: 159
+      height: 18
+      sliceName: Lead Oxide Consumed Avgs
+      uuid: 775fb777-2ea3-4093-a19d-ba2eef5eb33d
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-q4x7MlQZXKYfM-_dbGklf
+    type: CHART
+  CHART-naVYzp85s6tr9vKO6WYDb:
+    children: []
+    id: CHART-naVYzp85s6tr9vKO6WYDb
+    meta:
+      chartId: 161
+      height: 19
+      sliceName: Water Cooling In Temp Avgs
+      uuid: f6bfaf08-f028-46b0-ba2d-98b505cbc4c7
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-jJv_b5MGXPipmtTBvZPns
     type: CHART
   CHART-oAN9MpOwPb41YJvPXjbuP:
     children: []
@@ -1080,7 +1303,7 @@ position:
       height: 41
       sliceName: 'Air Cooling Temp Standardized Lastday, '
       uuid: a5608980-0d8a-412f-a34f-720222a6fe79
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -1100,12 +1323,40 @@ position:
     - GRID_ID
     - ROW-qgOFNYKx20UeBj72dYhAa
     type: CHART
+  CHART-q_uOfY1OS4QpqitxJ-N14:
+    children: []
+    id: CHART-q_uOfY1OS4QpqitxJ-N14
+    meta:
+      chartId: 152
+      height: 19
+      sliceName: Water Dumping Time  Avgs
+      uuid: c79e1dfa-a200-4c29-9b06-cfd8baca2f80
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW--Izp6z0JhB6Fr-UBnAmWh
+    type: CHART
+  CHART-rIsdMK8TYV9j2JS_x-D_O:
+    children: []
+    id: CHART-rIsdMK8TYV9j2JS_x-D_O
+    meta:
+      chartId: 165
+      height: 18
+      sliceName: Wet Mix Time Avgs
+      uuid: 1630936a-f7b0-4ddd-9d27-9cf4461ddcf1
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-yHqjU0TQTf8iVDYq-RXMW
+    type: CHART
   CHART-sFsYt549NMNs3ET546G94:
     children: []
     id: CHART-sFsYt549NMNs3ET546G94
     meta:
       chartId: 5
-      height: 25
+      height: 26
       sliceName: Average Batch Duration (Minutes)
       uuid: faffb25b-ce2d-4f20-ad8b-5235726ea80b
       width: 3
@@ -1122,7 +1373,7 @@ position:
       height: 38
       sliceName: 'Acid Consumed Standardized YTD, '
       uuid: dc9222c3-cf78-4e1c-b572-50ad7fe68f1c
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -1136,11 +1387,25 @@ position:
       height: 37
       sliceName: Lead Oxide Consumed Standardized (MTD)
       uuid: e12b799c-a2de-4b5a-a180-a3767e679848
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-WIoBw4p3l1EQKljDNrvBv
+    - ROW-bSlcZ2-87P9QGr7nRKfDM
+    type: CHART
+  CHART-tH-HDIP_EUdFv8kMVmX0T:
+    children: []
+    id: CHART-tH-HDIP_EUdFv8kMVmX0T
+    meta:
+      chartId: 168
+      height: 36
+      sliceName: Acid Dump Time MTD
+      uuid: d0e27feb-f457-444d-a11a-f1d67db775df
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Ay-z00vyoLlZRlHw8STdQ
     type: CHART
   CHART-tTN5eLyyajbTleEGYZke_:
     children: []
@@ -1150,7 +1415,7 @@ position:
       height: 36
       sliceName: 'Air Cooling Temp YTD, '
       uuid: c156e5f5-26ac-40ee-80f9-9dc2400d5544
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -1164,11 +1429,11 @@ position:
       height: 37
       sliceName: Lead Oxide Consumed (Lastday)
       uuid: edf8b5b0-15a0-4888-8e2e-d302ff1d5548
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-ycxaTkgGlq4lY_c_-lq9C
+    - ROW-aIgpmU8P6VBYUqnD9Xgk9
     type: CHART
   CHART-uByz2SOkWXyVxcaylPQkv:
     children: []
@@ -1178,11 +1443,11 @@ position:
       height: 35
       sliceName: Cooling On Temp (Lastday)
       uuid: b8f1439c-d4d0-4538-9dc9-8f78dfaba068
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-tz37M5o5uSEyMoakih06b
+    - ROW-gtuAG0h-pQUzrXlcGyDG3
     type: CHART
   CHART-v645Bu_q2hPEvdj-lLRDi:
     children: []
@@ -1192,7 +1457,7 @@ position:
       height: 37
       sliceName: 'DM Water Standardized YTD, '
       uuid: 781a9f09-e4a4-49f4-b149-d6a623ddde59
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -1206,11 +1471,11 @@ position:
       height: 34
       sliceName: Dry Mix Time Standardized (YTD)
       uuid: 56407dd2-3d2a-491a-8ea2-776a81645cec
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW--OsM-C0GaUjLb5fV0TDX-
+    - ROW-wp-btLGnCzV6vd8Mcsz4m
     type: CHART
   CHART-vEAUMdKptmuYgx1fgl_Fa:
     children: []
@@ -1220,11 +1485,25 @@ position:
       height: 45
       sliceName: 'Peak Temp Standardized YTD, '
       uuid: 84fe70d6-2601-4215-be36-46e7607751a1
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-fbf0evkJzFjBLZCPLtKLA
+    type: CHART
+  CHART-wNxiTQgsOOiVW8yho2qa-:
+    children: []
+    id: CHART-wNxiTQgsOOiVW8yho2qa-
+    meta:
+      chartId: 154
+      height: 19
+      sliceName: Air Cooling Temp Avgs
+      uuid: 0f3a7dc0-1d2e-4aab-8087-78527bf69a6f
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-9m41W5NV4TvnA742zMa1u
     type: CHART
   CHART-x6nxwi5VdeAgYSOfl0kow:
     children: []
@@ -1234,7 +1513,7 @@ position:
       height: 40
       sliceName: 'Water Dump Time Lastday, '
       uuid: e501f528-31e3-416e-8483-ba18bb3de665
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -1248,11 +1527,11 @@ position:
       height: 37
       sliceName: Dry Mix Time (Lastday)
       uuid: b2ff478c-525a-4306-902b-1b118e1e0ec3
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-zhDkaoF4SlB7Dg2hLtfeV
+    - ROW--9v6bp4btOft84BUnJST5
     type: CHART
   CHART-yuhmA-7wbiwnigPxGOLAV:
     children: []
@@ -1262,11 +1541,11 @@ position:
       height: 34
       sliceName: Dry Mix Time Standardized (MTD)
       uuid: 157b1858-e2a5-422b-978a-c49c8b4b5265
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW--OsM-C0GaUjLb5fV0TDX-
+    - ROW-wp-btLGnCzV6vd8Mcsz4m
     type: CHART
   CHART-ywNhi-bFDKyDQCBc2wAx2:
     children: []
@@ -1276,7 +1555,7 @@ position:
       height: 37
       sliceName: 'Acid Consumed YTD, '
       uuid: 072fa863-1258-4573-9754-a1796e0de327
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -1290,11 +1569,11 @@ position:
       height: 35
       sliceName: Final Water (YTD)
       uuid: 873e84d4-22a8-4885-96e5-3f976a47076f
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-0rFWKMcONNVK0Pnq-KglS
+    - ROW-CiNaPOqqUyl4JtEjNbBzZ
     type: CHART
   CHART-zbtM6daB8h5u9BMJd8AiY:
     children: []
@@ -1304,11 +1583,25 @@ position:
       height: 40
       sliceName: 'Water Dump Time Standardized Lastday, '
       uuid: 54e4c3ff-fa05-4d29-8239-7508f13be9fa
-      width: 3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-d_vUmchJHuV6HKqSEDi76
+    type: CHART
+  CHART-zeq2gcFGFnBkpJ-2McIql:
+    children: []
+    id: CHART-zeq2gcFGFnBkpJ-2McIql
+    meta:
+      chartId: 167
+      height: 36
+      sliceName: Acid Dump Time YTD
+      uuid: 40adb533-8400-4e7a-9e6f-b497eb84e3dc
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Ay-z00vyoLlZRlHw8STdQ
     type: CHART
   DASHBOARD_VERSION_KEY: v2
   DIVIDER-KCu3yZGEKvdqUPd7V56s7:
@@ -1327,49 +1620,65 @@ position:
     - ROW-GTwzOBNDtDgBUzbpkpbUh
     - ROW-x0SX94KBkT6bHVevsao4p
     - HEADER-wWluJLI6DMbI5WZV4tMbk
+    - ROW-o8jlMUuBT8tY2zdb5skTr
     - ROW-LJM9Ly80INIzY1n2pXj3m
     - ROW-fbf0evkJzFjBLZCPLtKLA
     - HEADER-k0P_31J3RjWl5jKpbxIWp
+    - ROW--Izp6z0JhB6Fr-UBnAmWh
     - ROW-vUTdimBy9m_wUxf4G2gmw
     - ROW-d_vUmchJHuV6HKqSEDi76
+    - HEADER-if3FIowynG8DUAj4hx6Hy
+    - ROW-o0kvYqWPfYFNQgNSxPBwB
+    - ROW-Ay-z00vyoLlZRlHw8STdQ
+    - ROW-pDbBo3i3dTEEAB6Rktp-a
     - HEADER-D0ggbSByXcfGZfqGpoBb-
+    - ROW-9m41W5NV4TvnA742zMa1u
     - ROW-tH_g8fb_A0CkXNg12XehA
     - ROW-wZAdPyKme98hFdKY0Q42w
     - HEADER-HhXdl3DawSfPVES3XIRxw
+    - ROW-deahG5gqrxZp1n7nASPMB
     - ROW-l5hXZKW3pMP7HhUt0syk5
     - ROW-q-FsmnoZpWlJzRy-QQO_Y
     - HEADER-UqwTktyMSe6tsw-LWcVo3
+    - ROW-ujgGJhP6voBS8p5WE_K6H
     - ROW-Zoi9v2aJJeYg4KH5B8ws8
     - ROW-BG8ZVFdPOlY24rsv1U8gh
     - HEADER-tfg2oSG3ng_1nTX4G6mhK
+    - ROW-6Ny5lfSLjlHfTAg_VY-8m
     - ROW-RLZ_T8mbMGVevwCnLOeh0
     - ROW-P529ZByUV7S7pCF84iIRO
     - HEADER-HFbvDyqZIRbYGxRg2mT1_
+    - ROW-X4SU4SbEGN-WKNC7q_3xJ
     - ROW-cQbAB2z5V0_iU490jMqtf
     - ROW-UooBa6cQnbh2dROzUst3A
     - HEADER-Wu6xM-vjSlux_GfaV9lvB
+    - ROW-yHqjU0TQTf8iVDYq-RXMW
     - ROW-tQBWMPBqv0ibigoSpa_D_
     - ROW-EZjW3A9jrtuyXIZDdLowT
     - HEADER-WcG3YuDyWSIgX5RPvawBE
+    - ROW-NMwK87_abYR4KpcWxZ22T
     - ROW--9v6bp4btOft84BUnJST5
     - ROW-wp-btLGnCzV6vd8Mcsz4m
     - HEADER-TAPQiWplNJkK5Q4WGoX0_
+    - ROW-wbfUvNwadWd3L5bEufvVX
     - ROW-gtuAG0h-pQUzrXlcGyDG3
     - ROW-dQAwCEtmMSNUfGD20U_Km
     - HEADER-paEgt_rokpZjTxf0kZpsN
+    - ROW-BNZVpqJfvzmgboqk5b9BQ
     - ROW-CiNaPOqqUyl4JtEjNbBzZ
     - ROW-tIeC7ZXxvyLC1owPUb9dZ
     - HEADER-uW3CrG14mrfZlsWwYffWx
+    - ROW-jJv_b5MGXPipmtTBvZPns
     - ROW-vn7HSZncsPPXbMgbVwiqz
     - ROW-h2D6EuGa3tmKh2E0-tmSH
     - HEADER-41-vGM0cQtVGJ8-3kRd5H
+    - ROW-PXueKyvar17RzEzx8omme
     - ROW-FpUSfnQ9OmVIi38xcb7Ke
     - ROW-PfjF_kPl397XSoblKLmor
     - HEADER-nFElOekv72vqBA4-Fhufb
+    - ROW-q4x7MlQZXKYfM-_dbGklf
     - ROW-aIgpmU8P6VBYUqnD9Xgk9
     - ROW-bSlcZ2-87P9QGr7nRKfDM
-    - HEADER-7M7kJUMXwTOb1PEQ7h-4a
-    - HEADER-asqQM4nV-ypmrwgVJtcBk
     id: GRID_ID
     parents:
     - ROOT_ID
@@ -1381,17 +1690,6 @@ position:
       background: BACKGROUND_TRANSPARENT
       headerSize: MEDIUM_HEADER
       text: Mixer Dump Temperature
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    type: HEADER
-  HEADER-7M7kJUMXwTOb1PEQ7h-4a:
-    children: []
-    id: HEADER-7M7kJUMXwTOb1PEQ7h-4a
-    meta:
-      background: BACKGROUND_TRANSPARENT
-      headerSize: MEDIUM_HEADER
-      text: New header
     parents:
     - ROOT_ID
     - GRID_ID
@@ -1473,13 +1771,13 @@ position:
     - ROOT_ID
     - GRID_ID
     type: HEADER
-  HEADER-asqQM4nV-ypmrwgVJtcBk:
+  HEADER-if3FIowynG8DUAj4hx6Hy:
     children: []
-    id: HEADER-asqQM4nV-ypmrwgVJtcBk
+    id: HEADER-if3FIowynG8DUAj4hx6Hy
     meta:
       background: BACKGROUND_TRANSPARENT
       headerSize: MEDIUM_HEADER
-      text: New header
+      text: Acid Dump Time
     parents:
     - ROOT_ID
     - GRID_ID
@@ -1572,6 +1870,48 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW--Izp6z0JhB6Fr-UBnAmWh:
+    children:
+    - CHART-q_uOfY1OS4QpqitxJ-N14
+    id: ROW--Izp6z0JhB6Fr-UBnAmWh
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-6Ny5lfSLjlHfTAg_VY-8m:
+    children:
+    - CHART-FrQccqm3DN8B1uwyGQvBZ
+    id: ROW-6Ny5lfSLjlHfTAg_VY-8m
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-9m41W5NV4TvnA742zMa1u:
+    children:
+    - CHART-wNxiTQgsOOiVW8yho2qa-
+    id: ROW-9m41W5NV4TvnA742zMa1u
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Ay-z00vyoLlZRlHw8STdQ:
+    children:
+    - CHART-zeq2gcFGFnBkpJ-2McIql
+    - CHART-tH-HDIP_EUdFv8kMVmX0T
+    - CHART-H9dI8iGVzAII3-NZ9rmKF
+    id: ROW-Ay-z00vyoLlZRlHw8STdQ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
   ROW-BG8ZVFdPOlY24rsv1U8gh:
     children:
     - CHART-v645Bu_q2hPEvdj-lLRDi
@@ -1580,6 +1920,16 @@ position:
     id: ROW-BG8ZVFdPOlY24rsv1U8gh
     meta:
       '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-BNZVpqJfvzmgboqk5b9BQ:
+    children:
+    - CHART-j3xvFKIqF7C4VyE_2J-Qd
+    id: ROW-BNZVpqJfvzmgboqk5b9BQ
+    meta:
       background: BACKGROUND_TRANSPARENT
     parents:
     - ROOT_ID
@@ -1636,10 +1986,19 @@ position:
     - CHART-WeI_rMfNpEuomLQUibu5O
     - CHART-fzfSL9YDtB2ZDwpIi9eZ2
     - CHART-hU-X3xCch4jTQLJj7Cyfe
-    - CHART-JaS4l2VRolYexkHvWoU8a
     id: ROW-LJM9Ly80INIzY1n2pXj3m
     meta:
       '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-NMwK87_abYR4KpcWxZ22T:
+    children:
+    - CHART-BS8AbtCeuNydFYFinAJL7
+    id: ROW-NMwK87_abYR4KpcWxZ22T
+    meta:
       background: BACKGROUND_TRANSPARENT
     parents:
     - ROOT_ID
@@ -1651,6 +2010,16 @@ position:
     - CHART-2CjwVUIZySBa_uKNTUJSi
     - CHART-Ssmzc74a27xSb9QWAdI4e
     id: ROW-P529ZByUV7S7pCF84iIRO
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-PXueKyvar17RzEzx8omme:
+    children:
+    - CHART-Uc0YvqWs8IacnOSH2bdM3
+    id: ROW-PXueKyvar17RzEzx8omme
     meta:
       background: BACKGROUND_TRANSPARENT
     parents:
@@ -1683,6 +2052,7 @@ position:
     type: ROW
   ROW-SKe-7KApbLwJLyoTXF5kv:
     children:
+    - CHART-2MVsMAHCEOT_deLX7SQWk
     - CHART-sFsYt549NMNs3ET546G94
     - CHART-ezPYA2N4a8aPsxQbb7dzH
     id: ROW-SKe-7KApbLwJLyoTXF5kv
@@ -1700,6 +2070,16 @@ position:
     id: ROW-UooBa6cQnbh2dROzUst3A
     meta:
       '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-X4SU4SbEGN-WKNC7q_3xJ:
+    children:
+    - CHART-L2aeSvaRD_SpjvapvIJCx
+    id: ROW-X4SU4SbEGN-WKNC7q_3xJ
+    meta:
       background: BACKGROUND_TRANSPARENT
     parents:
     - ROOT_ID
@@ -1779,6 +2159,16 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-deahG5gqrxZp1n7nASPMB:
+    children:
+    - CHART-LTzH-ZgucKiQitKDwkbz2
+    id: ROW-deahG5gqrxZp1n7nASPMB
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
   ROW-fbf0evkJzFjBLZCPLtKLA:
     children:
     - CHART-vEAUMdKptmuYgx1fgl_Fa
@@ -1815,6 +2205,16 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-jJv_b5MGXPipmtTBvZPns:
+    children:
+    - CHART-naVYzp85s6tr9vKO6WYDb
+    id: ROW-jJv_b5MGXPipmtTBvZPns
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
   ROW-l5hXZKW3pMP7HhUt0syk5:
     children:
     - CHART-ywNhi-bFDKyDQCBc2wAx2
@@ -1828,12 +2228,54 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-o0kvYqWPfYFNQgNSxPBwB:
+    children:
+    - CHART-ZfDuqCxC0nWxt5gVY_nQV
+    id: ROW-o0kvYqWPfYFNQgNSxPBwB
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-o8jlMUuBT8tY2zdb5skTr:
+    children:
+    - CHART-8c5I0dnz2aAe7EotLxKgK
+    id: ROW-o8jlMUuBT8tY2zdb5skTr
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-pDbBo3i3dTEEAB6Rktp-a:
+    children:
+    - CHART-GLodZfI3H5OpE9zNtjCCn
+    - CHART-d4Qn-gMHOUS16A_vF2I6Z
+    - CHART--C5gHeME9gOzcV_Jj2mtA
+    id: ROW-pDbBo3i3dTEEAB6Rktp-a
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
   ROW-q-FsmnoZpWlJzRy-QQO_Y:
     children:
     - CHART-s_e6OcawYKymAd10cjeyy
     - CHART-aQpw18v_1iecqZmD2x8us
     - CHART-HSXwzV0l1TLo8xVR4Legl
     id: ROW-q-FsmnoZpWlJzRy-QQO_Y
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-q4x7MlQZXKYfM-_dbGklf:
+    children:
+    - CHART-nIbk3iBzXeanNeUfiCI-X
+    id: ROW-q4x7MlQZXKYfM-_dbGklf
     meta:
       background: BACKGROUND_TRANSPARENT
     parents:
@@ -1890,6 +2332,16 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-ujgGJhP6voBS8p5WE_K6H:
+    children:
+    - CHART-VElOatihoi6YAKmUCccJp
+    id: ROW-ujgGJhP6voBS8p5WE_K6H
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
   ROW-vUTdimBy9m_wUxf4G2gmw:
     children:
     - CHART-427vyipyrCbVSonzlo02F
@@ -1928,6 +2380,16 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-wbfUvNwadWd3L5bEufvVX:
+    children:
+    - CHART-XS7Ag3uRkLbZ9sRF2Uo9P
+    id: ROW-wbfUvNwadWd3L5bEufvVX
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
   ROW-wp-btLGnCzV6vd8Mcsz4m:
     children:
     - CHART-v8AKFeiFYzJdk6fDshuqw
@@ -1950,6 +2412,16 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-yHqjU0TQTf8iVDYq-RXMW:
+    children:
+    - CHART-rIsdMK8TYV9j2JS_x-D_O
+    id: ROW-yHqjU0TQTf8iVDYq-RXMW
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
 metadata:
   chart_configuration:
     '7':
@@ -1964,7 +2436,6 @@ metadata:
         - 5
         - 6
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -2049,6 +2520,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '9':
       id: 9
       crossFilters:
@@ -2061,7 +2554,6 @@ metadata:
         - 5
         - 6
         - 7
-        - 17
         - 43
         - 49
         - 54
@@ -2146,6 +2638,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '43':
       id: 43
       crossFilters:
@@ -2159,7 +2673,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 49
         - 54
         - 64
@@ -2243,6 +2756,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '49':
       id: 49
       crossFilters:
@@ -2256,7 +2791,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 54
         - 64
@@ -2340,6 +2874,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '54':
       id: 54
       crossFilters:
@@ -2353,7 +2909,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 64
@@ -2437,6 +2992,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '64':
       id: 64
       crossFilters:
@@ -2450,7 +3027,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -2534,6 +3110,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '65':
       id: 65
       crossFilters:
@@ -2547,7 +3145,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -2631,6 +3228,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '66':
       id: 66
       crossFilters:
@@ -2644,7 +3263,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -2728,6 +3346,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '67':
       id: 67
       crossFilters:
@@ -2741,7 +3381,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -2825,6 +3464,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '68':
       id: 68
       crossFilters:
@@ -2838,7 +3499,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -2922,6 +3582,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '69':
       id: 69
       crossFilters:
@@ -2935,7 +3617,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3019,6 +3700,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '70':
       id: 70
       crossFilters:
@@ -3032,7 +3735,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3116,6 +3818,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '71':
       id: 71
       crossFilters:
@@ -3129,7 +3853,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3213,6 +3936,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '72':
       id: 72
       crossFilters:
@@ -3226,7 +3971,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3310,6 +4054,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '73':
       id: 73
       crossFilters:
@@ -3323,7 +4089,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3407,6 +4172,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '74':
       id: 74
       crossFilters:
@@ -3420,7 +4207,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3504,6 +4290,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '75':
       id: 75
       crossFilters:
@@ -3517,7 +4325,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3601,6 +4408,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '76':
       id: 76
       crossFilters:
@@ -3614,7 +4443,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3698,6 +4526,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '77':
       id: 77
       crossFilters:
@@ -3711,7 +4561,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3795,6 +4644,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '78':
       id: 78
       crossFilters:
@@ -3808,7 +4679,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3892,6 +4762,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '79':
       id: 79
       crossFilters:
@@ -3905,7 +4797,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -3989,6 +4880,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '80':
       id: 80
       crossFilters:
@@ -4002,7 +4915,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -4086,6 +4998,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '81':
       id: 81
       crossFilters:
@@ -4099,7 +5033,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -4183,6 +5116,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '82':
       id: 82
       crossFilters:
@@ -4196,7 +5151,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -4280,6 +5234,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '83':
       id: 83
       crossFilters:
@@ -4293,7 +5269,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -4377,6 +5352,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '84':
       id: 84
       crossFilters:
@@ -4390,7 +5387,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -4474,6 +5470,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '85':
       id: 85
       crossFilters:
@@ -4487,7 +5505,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -4571,6 +5588,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '86':
       id: 86
       crossFilters:
@@ -4584,7 +5623,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -4668,6 +5706,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '87':
       id: 87
       crossFilters:
@@ -4681,7 +5741,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -4765,6 +5824,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '88':
       id: 88
       crossFilters:
@@ -4778,7 +5859,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -4862,6 +5942,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '89':
       id: 89
       crossFilters:
@@ -4875,7 +5977,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -4959,6 +6060,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '90':
       id: 90
       crossFilters:
@@ -4972,7 +6095,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -5056,6 +6178,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '91':
       id: 91
       crossFilters:
@@ -5069,7 +6213,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -5153,6 +6296,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '92':
       id: 92
       crossFilters:
@@ -5166,7 +6331,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -5250,6 +6414,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '93':
       id: 93
       crossFilters:
@@ -5263,7 +6449,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -5347,6 +6532,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '94':
       id: 94
       crossFilters:
@@ -5360,7 +6567,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -5444,6 +6650,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '95':
       id: 95
       crossFilters:
@@ -5457,7 +6685,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -5541,6 +6768,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '96':
       id: 96
       crossFilters:
@@ -5554,7 +6803,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -5638,6 +6886,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '97':
       id: 97
       crossFilters:
@@ -5651,7 +6921,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -5735,6 +7004,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '98':
       id: 98
       crossFilters:
@@ -5748,7 +7039,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -5832,6 +7122,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '99':
       id: 99
       crossFilters:
@@ -5845,7 +7157,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -5929,6 +7240,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '100':
       id: 100
       crossFilters:
@@ -5942,7 +7275,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6026,6 +7358,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '101':
       id: 101
       crossFilters:
@@ -6039,7 +7393,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6123,6 +7476,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '102':
       id: 102
       crossFilters:
@@ -6136,7 +7511,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6220,6 +7594,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '109':
       id: 109
       crossFilters:
@@ -6233,7 +7629,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6317,6 +7712,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '110':
       id: 110
       crossFilters:
@@ -6330,7 +7747,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6414,6 +7830,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '111':
       id: 111
       crossFilters:
@@ -6427,7 +7865,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6511,6 +7948,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '112':
       id: 112
       crossFilters:
@@ -6524,7 +7983,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6608,6 +8066,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '113':
       id: 113
       crossFilters:
@@ -6621,7 +8101,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6705,6 +8184,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '114':
       id: 114
       crossFilters:
@@ -6718,7 +8219,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6802,6 +8302,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '115':
       id: 115
       crossFilters:
@@ -6815,7 +8337,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6899,6 +8420,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '116':
       id: 116
       crossFilters:
@@ -6912,7 +8455,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -6996,6 +8538,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '117':
       id: 117
       crossFilters:
@@ -7009,7 +8573,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -7093,6 +8656,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '118':
       id: 118
       crossFilters:
@@ -7106,7 +8691,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -7190,6 +8774,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '119':
       id: 119
       crossFilters:
@@ -7203,7 +8809,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -7287,6 +8892,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '120':
       id: 120
       crossFilters:
@@ -7300,7 +8927,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -7384,6 +9010,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '121':
       id: 121
       crossFilters:
@@ -7397,7 +9045,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -7481,6 +9128,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '122':
       id: 122
       crossFilters:
@@ -7494,7 +9163,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -7578,6 +9246,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '123':
       id: 123
       crossFilters:
@@ -7591,7 +9281,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -7675,6 +9364,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '124':
       id: 124
       crossFilters:
@@ -7688,7 +9399,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -7772,6 +9482,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '125':
       id: 125
       crossFilters:
@@ -7785,7 +9517,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -7869,6 +9600,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '126':
       id: 126
       crossFilters:
@@ -7882,7 +9635,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -7966,6 +9718,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '127':
       id: 127
       crossFilters:
@@ -7979,7 +9753,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -8063,6 +9836,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '128':
       id: 128
       crossFilters:
@@ -8076,7 +9871,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -8160,6 +9954,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '129':
       id: 129
       crossFilters:
@@ -8173,7 +9989,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -8257,6 +10072,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '130':
       id: 130
       crossFilters:
@@ -8270,7 +10107,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -8354,6 +10190,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '131':
       id: 131
       crossFilters:
@@ -8367,7 +10225,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -8451,6 +10308,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '132':
       id: 132
       crossFilters:
@@ -8464,7 +10343,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -8548,6 +10426,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '133':
       id: 133
       crossFilters:
@@ -8561,7 +10461,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -8645,6 +10544,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '134':
       id: 134
       crossFilters:
@@ -8658,7 +10579,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -8742,6 +10662,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '135':
       id: 135
       crossFilters:
@@ -8755,7 +10697,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -8839,6 +10780,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '136':
       id: 136
       crossFilters:
@@ -8852,7 +10815,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -8936,6 +10898,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '137':
       id: 137
       crossFilters:
@@ -8949,7 +10933,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -9033,6 +11016,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '138':
       id: 138
       crossFilters:
@@ -9046,7 +11051,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -9130,6 +11134,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '139':
       id: 139
       crossFilters:
@@ -9143,7 +11169,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -9227,6 +11252,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '140':
       id: 140
       crossFilters:
@@ -9240,7 +11287,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -9324,6 +11370,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '141':
       id: 141
       crossFilters:
@@ -9337,7 +11405,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -9421,6 +11488,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '142':
       id: 142
       crossFilters:
@@ -9434,7 +11523,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -9518,6 +11606,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '143':
       id: 143
       crossFilters:
@@ -9531,7 +11641,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -9615,6 +11724,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '144':
       id: 144
       crossFilters:
@@ -9628,7 +11759,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -9712,6 +11842,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '145':
       id: 145
       crossFilters:
@@ -9725,7 +11877,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -9809,6 +11960,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '146':
       id: 146
       crossFilters:
@@ -9822,7 +11995,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -9906,6 +12078,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '147':
       id: 147
       crossFilters:
@@ -9919,7 +12113,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -10003,6 +12196,28 @@ metadata:
         - 148
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '148':
       id: 148
       crossFilters:
@@ -10016,7 +12231,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -10100,6 +12314,28 @@ metadata:
         - 147
         - 149
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '149':
       id: 149
       crossFilters:
@@ -10113,7 +12349,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -10197,6 +12432,28 @@ metadata:
         - 147
         - 148
         - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
     '150':
       id: 150
       crossFilters:
@@ -10210,7 +12467,6 @@ metadata:
         - 6
         - 7
         - 9
-        - 17
         - 43
         - 49
         - 54
@@ -10294,6 +12550,736 @@ metadata:
         - 147
         - 148
         - 149
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+    '167':
+      id: 167
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 109
+        - 110
+        - 111
+        - 112
+        - 113
+        - 114
+        - 115
+        - 116
+        - 117
+        - 118
+        - 119
+        - 120
+        - 121
+        - 122
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 128
+        - 129
+        - 130
+        - 131
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+        - 137
+        - 138
+        - 139
+        - 140
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 149
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+    '168':
+      id: 168
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 109
+        - 110
+        - 111
+        - 112
+        - 113
+        - 114
+        - 115
+        - 116
+        - 117
+        - 118
+        - 119
+        - 120
+        - 121
+        - 122
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 128
+        - 129
+        - 130
+        - 131
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+        - 137
+        - 138
+        - 139
+        - 140
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 149
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 169
+        - 170
+        - 171
+        - 172
+    '169':
+      id: 169
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 109
+        - 110
+        - 111
+        - 112
+        - 113
+        - 114
+        - 115
+        - 116
+        - 117
+        - 118
+        - 119
+        - 120
+        - 121
+        - 122
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 128
+        - 129
+        - 130
+        - 131
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+        - 137
+        - 138
+        - 139
+        - 140
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 149
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 170
+        - 171
+        - 172
+    '170':
+      id: 170
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 109
+        - 110
+        - 111
+        - 112
+        - 113
+        - 114
+        - 115
+        - 116
+        - 117
+        - 118
+        - 119
+        - 120
+        - 121
+        - 122
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 128
+        - 129
+        - 130
+        - 131
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+        - 137
+        - 138
+        - 139
+        - 140
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 149
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 171
+        - 172
+    '171':
+      id: 171
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 109
+        - 110
+        - 111
+        - 112
+        - 113
+        - 114
+        - 115
+        - 116
+        - 117
+        - 118
+        - 119
+        - 120
+        - 121
+        - 122
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 128
+        - 129
+        - 130
+        - 131
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+        - 137
+        - 138
+        - 139
+        - 140
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 149
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 172
+    '172':
+      id: 172
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 9
+        - 43
+        - 49
+        - 54
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 109
+        - 110
+        - 111
+        - 112
+        - 113
+        - 114
+        - 115
+        - 116
+        - 117
+        - 118
+        - 119
+        - 120
+        - 121
+        - 122
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 128
+        - 129
+        - 130
+        - 131
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+        - 137
+        - 138
+        - 139
+        - 140
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 149
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
   global_chart_configuration:
     scope:
       rootPath:
@@ -10308,7 +13294,6 @@ metadata:
     - 6
     - 7
     - 9
-    - 17
     - 43
     - 49
     - 54
@@ -10393,11 +13378,31 @@ metadata:
     - 148
     - 149
     - 150
+    - 151
+    - 152
+    - 153
+    - 154
+    - 155
+    - 156
+    - 157
+    - 158
+    - 159
+    - 160
+    - 161
+    - 162
+    - 163
+    - 164
+    - 165
+    - 166
+    - 167
+    - 168
+    - 169
+    - 170
+    - 171
+    - 172
   map_label_colors:
-    Peak Temp: '#1FA8C9'
-    COUNT(wet_mix_time): '#1FA8C9'
-    COUNT(wet_mix_time_zscore): '#1FA8C9'
     cpk: '#1FA8C9'
+    Peak Temp: '#1FA8C9'
     peak temp standardized: '#1FA8C9'
     Non-Compliance: '#1FA8C9'
     Compliance: '#454E7C'
@@ -10406,13 +13411,17 @@ metadata:
     Air Cooling Temp: '#1FA8C9'
     Air Cooling Temp Standardized: '#1FA8C9'
     Acid Consumed: '#1FA8C9'
+    COUNT(acid_dump_time): '#1FA8C9'
+    COUNT(acid_dump_time_zscore): '#1FA8C9'
     Acid Consumed Standardized: '#1FA8C9'
     DM Water: '#1FA8C9'
     DM Water Standardized: '#1FA8C9'
     Penetration: '#1FA8C9'
     Penetration standardized: '#1FA8C9'
     Density: '#1FA8C9'
-    Density Standardized: '#454E7C'
+    Density Standardized: '#1FA8C9'
+    COUNT(wet_mix_time): '#1FA8C9'
+    COUNT(wet_mix_time_zscore): '#1FA8C9'
     COUNT(dry_mix_time): '#1FA8C9'
     COUNT(dry_mix_time_zscore): '#1FA8C9'
     COUNT(cooling_on_temp): '#1FA8C9'
@@ -10436,6 +13445,8 @@ metadata:
   - Air Cooling Temp
   - Air Cooling Temp Standardized
   - COUNT(acid_addition_zscore)
+  - COUNT(acid_dump_time)
+  - COUNT(acid_dump_time_zscore)
   - COUNT(air_cooling_temp)
   - COUNT(air_cooling_temp_zscore)
   - COUNT(cooling_on_temp)

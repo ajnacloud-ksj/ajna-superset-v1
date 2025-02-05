@@ -48,6 +48,7 @@ params:
   conditional_formatting: []
   extra_form_data: {}
   dashboards: []
+  annotation_layers: []
 query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"},{"col":"shift","op":"IN","val":["SECOND_SHIFT"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"(SUM(total_mix_time)
   / (COUNT(DISTINCT DATE(datetime_fmt)) *8* 60.0))","optionName":"metric_8adzofx24fn_lj2m6ix7ver","sqlExpression":"(SUM(total_mix_time)
