@@ -57,8 +57,6 @@ export default function transformProps(
   } = formData;
   const { data } = queriesData[0];
 
-  // Attempt to retrieve the spec values.
-  // If they aren’t available (due to histogram operator post‑processing), fall back to defaults.
   const rawMinValue = data.length > 0 ? data[0][min_column] : undefined;
   const rawMaxValue = data.length > 0 ? data[0][max_column] : undefined;
   const minValue =
@@ -71,28 +69,22 @@ export default function transformProps(
       : 4.6999998;
   console.log("minValue:", minValue, "maxValue:", maxValue);
 
-  // Set up color and formatters.
+
   const colorFn = CategoricalColorNamespace.getScale(colorScheme);
-  // Use INTEGER formatter for the histogram bars if not normalized.
+
   const formatter = getNumberFormatter(
     normalize ? NumberFormats.FLOAT_2_POINT : NumberFormats.INTEGER
   );
-  // Use FLOAT_2_POINT formatter for spec values so decimals are preserved.
+
   const specFormatter = getNumberFormatter(NumberFormats.FLOAT_2_POINT);
   const percentFormatter = getPercentFormatter(NumberFormats.PERCENT_2_POINT);
   const groupbySet = new Set(groupby);
 
-  // Extract bin labels from the data.
-  // These are produced by the histogram operator for the primary column.
   const xAxisData: string[] = Object.keys(data[0]).filter(
     key => !groupbySet.has(key) && key !== min_column && key !== max_column
   );
   console.log("xAxisData:", xAxisData);
-  // Expected output: e.g. ["4 - 4", "4 - 5", "5 - 5", "5 - 6"]
 
-  // Improved findBin function.
-  // Assumes bin labels are in the format "a - b".
-  // Uses a left-closed, right-open interval [a, b) for all bins except the last one (which is closed).
   const findBin = (value: number, bins: string[]): string | null => {
     for (let i = 0; i < bins.length; i++) {
       const parts = bins[i].split('-').map(p => p.trim());
@@ -119,7 +111,7 @@ export default function transformProps(
     console.warn(`Warning: maxValue (${maxValue}) does not fall within any bin range.`);
   }
 
-  // Build the main histogram bar series.
+
   const barSeries: BarSeriesOption[] = data.map(datum => {
     const seriesName =
       groupby.length > 0
@@ -144,21 +136,21 @@ export default function transformProps(
     };
   });
 
-  // Compute numeric indices for the bins in which the spec values fall.
+
   let minBinIndex = computedMinBin ? xAxisData.findIndex(bin => bin === computedMinBin) : -1;
   let maxBinIndex = computedMaxBin ? xAxisData.findIndex(bin => bin === computedMaxBin) : -1;
   console.log("minBinIndex:", minBinIndex, "maxBinIndex:", maxBinIndex);
 
-  // If both spec values fall into the same bin, offset them slightly so that two vertical lines are visible.
+
   let minLinePos = minBinIndex;
   let maxLinePos = maxBinIndex;
   if (minBinIndex === maxBinIndex && minBinIndex >= 0) {
-    minLinePos = minBinIndex - 0.2; // offset min spec line to the left
-    maxLinePos = maxBinIndex + 0.2; // offset max spec line to the right
+    minLinePos = minBinIndex - 0.2;
+    maxLinePos = maxBinIndex + 0.2;
   }
   console.log("Adjusted positions: minLinePos:", minLinePos, "maxLinePos:", maxLinePos);
 
-  // Create two separate dummy series for the vertical reference lines.
+
   const dummyData = xAxisData.map(() => 0);
   const dummyMinSeries: BarSeriesOption = {
     name: 'Min Reference',
@@ -201,7 +193,7 @@ export default function transformProps(
     },
   };
 
-  // Combine the main histogram series with the dummy reference series.
+
   const finalSeries = [...barSeries, dummyMinSeries, dummyMaxSeries];
   const legendOptions = finalSeries.map(series => series.name as string);
   if (isEmpty(legendState)) {
@@ -210,7 +202,7 @@ export default function transformProps(
     });
   }
 
-  // Tooltip formatter.
+
   const tooltipFormatter = (params: CallbackDataParams[]) => {
     const title = params[0].name;
     const rows = params.map(param => {

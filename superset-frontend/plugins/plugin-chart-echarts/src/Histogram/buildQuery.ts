@@ -23,12 +23,12 @@ import { HistogramFormData } from './types';
 export default function buildQuery(formData: HistogramFormData) {
   const { column, min_column, max_column, groupby = [] } = formData;
 
-  // If the controls return objects, extract the column name.
+
   const primaryColumn = column && typeof column === 'object' ? column.value : column;
   const minColumn = min_column && typeof min_column === 'object' ? min_column.value : min_column;
   const maxColumn = max_column && typeof max_column === 'object' ? max_column.value : max_column;
 
-  // Build the list of columns. Only include non-null values.
+
   const columns = [...groupby, primaryColumn];
   if (minColumn) {
     columns.push(minColumn);
