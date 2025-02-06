@@ -20,22 +20,18 @@ import { buildQueryContext } from '@superset-ui/core';
 import { histogramOperator } from '@superset-ui/chart-controls';
 import { HistogramFormData } from './types';
 
+function getColumnName(column: any): string {
+  return typeof column === 'object' && column ? column.columnName || column.name || '' : column;
+}
+
 export default function buildQuery(formData: HistogramFormData) {
   const { column, min_column, max_column, groupby = [] } = formData;
 
+  const primaryColumn = getColumnName(column);
+  const minColumn = getColumnName(min_column);
+  const maxColumn = getColumnName(max_column);
 
-  const primaryColumn = column && typeof column === 'object' ? column.value : column;
-  const minColumn = min_column && typeof min_column === 'object' ? min_column.value : min_column;
-  const maxColumn = max_column && typeof max_column === 'object' ? max_column.value : max_column;
-
-
-  const columns = [...groupby, primaryColumn];
-  if (minColumn) {
-    columns.push(minColumn);
-  }
-  if (maxColumn) {
-    columns.push(maxColumn);
-  }
+  const columns = [...groupby, primaryColumn, minColumn, maxColumn];
 
   return buildQueryContext(formData, baseQueryObject => [
     {
@@ -45,6 +41,8 @@ export default function buildQuery(formData: HistogramFormData) {
       metrics: undefined,
     },
   ]);
+}
+
 }
 
 

@@ -35,6 +35,10 @@ import { getLegendProps } from '../utils/series';
 import { getDefaultTooltip } from '../utils/tooltip';
 import { getPercentFormatter } from '../utils/formatters';
 
+function getColumnName(column: any): string {
+  return typeof column === 'object' && column ? column.columnName || column.name || '' : column;
+}
+
 export default function transformProps(
   chartProps: HistogramChartProps,
 ): HistogramTransformedProps {
@@ -57,8 +61,13 @@ export default function transformProps(
   } = formData;
   const { data } = queriesData[0];
 
-  const rawMinValue = data.length > 0 ? data[0][min_column] : undefined;
-  const rawMaxValue = data.length > 0 ? data[0][max_column] : undefined;
+
+  const minColName = getColumnName(min_column);
+  const maxColName = getColumnName(max_column);
+
+
+  const rawMinValue = data.length > 0 ? data[0][minColName] : undefined;
+  const rawMaxValue = data.length > 0 ? data[0][maxColName] : undefined;
   const minValue =
     rawMinValue !== undefined && !isNaN(Number(rawMinValue))
       ? Number(rawMinValue)
@@ -72,16 +81,14 @@ export default function transformProps(
 
   const colorFn = CategoricalColorNamespace.getScale(colorScheme);
 
-  const formatter = getNumberFormatter(
-    normalize ? NumberFormats.FLOAT_2_POINT : NumberFormats.INTEGER
-  );
+  const formatter = getNumberFormatter(normalize ? NumberFormats.FLOAT_2_POINT : NumberFormats.INTEGER);
 
   const specFormatter = getNumberFormatter(NumberFormats.FLOAT_2_POINT);
   const percentFormatter = getPercentFormatter(NumberFormats.PERCENT_2_POINT);
   const groupbySet = new Set(groupby);
 
   const xAxisData: string[] = Object.keys(data[0]).filter(
-    key => !groupbySet.has(key) && key !== min_column && key !== max_column
+    key => !groupbySet.has(key) && key !== minColName && key !== maxColName,
   );
   console.log("xAxisData:", xAxisData);
 
@@ -111,14 +118,13 @@ export default function transformProps(
     console.warn(`Warning: maxValue (${maxValue}) does not fall within any bin range.`);
   }
 
-
   const barSeries: BarSeriesOption[] = data.map(datum => {
     const seriesName =
       groupby.length > 0
         ? groupby.map(key => datum[getColumnLabel(key)]).join(', ')
         : getColumnLabel(column);
     const seriesData = Object.keys(datum)
-      .filter(key => !groupbySet.has(key) && key !== min_column && key !== max_column)
+      .filter(key => !groupbySet.has(key) && key !== minColName && key !== maxColName)
       .map(key => datum[key] as number);
     return {
       name: seriesName,
@@ -136,20 +142,17 @@ export default function transformProps(
     };
   });
 
-
   let minBinIndex = computedMinBin ? xAxisData.findIndex(bin => bin === computedMinBin) : -1;
   let maxBinIndex = computedMaxBin ? xAxisData.findIndex(bin => bin === computedMaxBin) : -1;
   console.log("minBinIndex:", minBinIndex, "maxBinIndex:", maxBinIndex);
 
-
   let minLinePos = minBinIndex;
   let maxLinePos = maxBinIndex;
   if (minBinIndex === maxBinIndex && minBinIndex >= 0) {
-    minLinePos = minBinIndex - 0.2;
-    maxLinePos = maxBinIndex + 0.2;
+    minLinePos = minBinIndex - 0.2; // offset min spec line to the left
+    maxLinePos = maxBinIndex + 0.2; // offset max spec line to the right
   }
   console.log("Adjusted positions: minLinePos:", minLinePos, "maxLinePos:", maxLinePos);
-
 
   const dummyData = xAxisData.map(() => 0);
   const dummyMinSeries: BarSeriesOption = {
@@ -193,7 +196,6 @@ export default function transformProps(
     },
   };
 
-
   const finalSeries = [...barSeries, dummyMinSeries, dummyMaxSeries];
   const legendOptions = finalSeries.map(series => series.name as string);
   if (isEmpty(legendState)) {
@@ -201,7 +203,6 @@ export default function transformProps(
       legendState[legend] = true;
     });
   }
-
 
   const tooltipFormatter = (params: CallbackDataParams[]) => {
     const title = params[0].name;
@@ -284,6 +285,7 @@ export default function transformProps(
     onLegendStateChanged,
   };
 }
+
 
 
 
