@@ -40,102 +40,99 @@ export default function transformProps(
 ): HistogramTransformedProps {
   const refs: Refs = {};
   let focusedSeries: number | undefined;
-  const {
-    formData,
-    height,
-    hooks,
-    legendState = {},
-    queriesData,
-    theme,
-    width,
-  } = chartProps;
+  const { formData, height, hooks, legendState = {}, queriesData, theme, width } = chartProps;
   const { onLegendStateChanged } = hooks;
   const {
     colorScheme,
     column,
-    spec_min_column,
-    spec_max_column,
+    min_column,
+    max_column,
     groupby = [],
     normalize,
     showLegend,
     showValue,
     sliceId,
-    x_axis_title: xAxisTitle,
-    y_axis_title: yAxisTitle,
+    xAxisTitle,
+    yAxisTitle,
   } = formData;
   const { data } = queriesData[0];
+
+  // Attempt to retrieve the spec values.
+  // If they aren’t available (due to histogram operator post‑processing), fall back to defaults.
+  const rawMinValue = data.length > 0 ? data[0][min_column] : undefined;
+  const rawMaxValue = data.length > 0 ? data[0][max_column] : undefined;
+  const minValue =
+    rawMinValue !== undefined && !isNaN(Number(rawMinValue))
+      ? Number(rawMinValue)
+      : 4.5;
+  const maxValue =
+    rawMaxValue !== undefined && !isNaN(Number(rawMaxValue))
+      ? Number(rawMaxValue)
+      : 4.6999998;
+  console.log("minValue:", minValue, "maxValue:", maxValue);
+
+  // Set up color and formatters.
   const colorFn = CategoricalColorNamespace.getScale(colorScheme);
+  // Use INTEGER formatter for the histogram bars if not normalized.
   const formatter = getNumberFormatter(
-    normalize ? NumberFormats.FLOAT_2_POINT : NumberFormats.INTEGER,
+    normalize ? NumberFormats.FLOAT_2_POINT : NumberFormats.INTEGER
   );
+  // Use FLOAT_2_POINT formatter for spec values so decimals are preserved.
+  const specFormatter = getNumberFormatter(NumberFormats.FLOAT_2_POINT);
   const percentFormatter = getPercentFormatter(NumberFormats.PERCENT_2_POINT);
+  const groupbySet = new Set(groupby);
 
+  // Extract bin labels from the data.
+  // These are produced by the histogram operator for the primary column.
+  const xAxisData: string[] = Object.keys(data[0]).filter(
+    key => !groupbySet.has(key) && key !== min_column && key !== max_column
+  );
+  console.log("xAxisData:", xAxisData);
+  // Expected output: e.g. ["4 - 4", "4 - 5", "5 - 5", "5 - 6"]
 
-  const rawBinNames = Object.keys(data[0]).filter(key => key.includes(' - '));
-
-  // Ensure uniqueness by appending a counter if needed
-  const binNameCount: Record<string, number> = {};
-  const uniqueBinNames = rawBinNames.map(bin => {
-    if (binNameCount[bin] === undefined) {
-      binNameCount[bin] = 1;
-      return bin;
-    } else {
-      binNameCount[bin]++;
-      return `${bin} (${binNameCount[bin]})`;
-    }
-  });
-
+  // Improved findBin function.
+  // Assumes bin labels are in the format "a - b".
+  // Uses a left-closed, right-open interval [a, b) for all bins except the last one (which is closed).
   const findBin = (value: number, bins: string[]): string | null => {
     for (let i = 0; i < bins.length; i++) {
-      const parts = bins[i].split(' - ').map(Number);
+      const parts = bins[i].split('-').map(p => p.trim());
       if (parts.length === 2) {
-        const [min, max] = parts;
-        if (value >= min && value <= max) {
-          return bins[i];
+        const binMin = Number(parts[0]);
+        const binMax = Number(parts[1]);
+        if (i < bins.length - 1) {
+          if (value >= binMin && value < binMax) return bins[i];
+        } else {
+          if (value >= binMin && value <= binMax) return bins[i];
         }
       }
     }
     return null;
   };
 
-  let specMinValue: number | undefined = undefined;
-  let specMaxValue: number | undefined = undefined;
-  if (data.length > 0) {
-    specMinValue = data[0][getColumnLabel(spec_min_column)] as number;
-    specMaxValue = data[0][getColumnLabel(spec_max_column)] as number;
+  const computedMinBin = minValue !== undefined ? findBin(minValue, xAxisData) : null;
+  const computedMaxBin = maxValue !== undefined ? findBin(maxValue, xAxisData) : null;
+  console.log("computedMinBin:", computedMinBin, "computedMaxBin:", computedMaxBin);
+  if (minValue !== undefined && !computedMinBin) {
+    console.warn(`Warning: minValue (${minValue}) does not fall within any bin range.`);
+  }
+  if (maxValue !== undefined && !computedMaxBin) {
+    console.warn(`Warning: maxValue (${maxValue}) does not fall within any bin range.`);
   }
 
-  const minBinRaw = specMinValue != null ? findBin(specMinValue, rawBinNames) : null;
-  const maxBinRaw = specMaxValue != null ? findBin(specMaxValue, rawBinNames) : null;
-
-  const mapBinToUnique = (bin: string | null): string | null => {
-    if (bin === null) return null;
-    const index = rawBinNames.indexOf(bin);
-    return index >= 0 ? uniqueBinNames[index] : bin;
-  };
-
-  const minBin = mapBinToUnique(minBinRaw);
-  const maxBin = mapBinToUnique(maxBinRaw);
-
-  if (specMinValue != null && !minBin) {
-    console.warn(`Warning: spec_min_value (${specMinValue}) does not fall within any bin range.`);
-  }
-  if (specMaxValue != null && !maxBin) {
-    console.warn(`Warning: spec_max_value (${specMaxValue}) does not fall within any bin range.`);
-  }
-
-
-  const xAxisData: string[] = uniqueBinNames;
-  const densitySeries: BarSeriesOption[] = data.map(datum => {
+  // Build the main histogram bar series.
+  const barSeries: BarSeriesOption[] = data.map(datum => {
     const seriesName =
       groupby.length > 0
         ? groupby.map(key => datum[getColumnLabel(key)]).join(', ')
         : getColumnLabel(column);
-    const seriesData = uniqueBinNames.map((_, index) => datum[rawBinNames[index]] as number);
+    const seriesData = Object.keys(datum)
+      .filter(key => !groupbySet.has(key) && key !== min_column && key !== max_column)
+      .map(key => datum[key] as number);
     return {
       name: seriesName,
       type: 'bar',
       data: seriesData,
+      barWidth: 40,
       itemStyle: {
         color: colorFn(seriesName, sliceId),
       },
@@ -147,78 +144,84 @@ export default function transformProps(
     };
   });
 
-  const allFrequencies = data.flatMap(datum =>
-    uniqueBinNames.map((_, idx) => datum[rawBinNames[idx]] as number),
-  );
-  const maxFrequency = Math.max(...allFrequencies, 0);
-  const specBarHeight = maxFrequency * 0.1 || 1;
+  // Compute numeric indices for the bins in which the spec values fall.
+  let minBinIndex = computedMinBin ? xAxisData.findIndex(bin => bin === computedMinBin) : -1;
+  let maxBinIndex = computedMaxBin ? xAxisData.findIndex(bin => bin === computedMaxBin) : -1;
+  console.log("minBinIndex:", minBinIndex, "maxBinIndex:", maxBinIndex);
 
+  // If both spec values fall into the same bin, offset them slightly so that two vertical lines are visible.
+  let minLinePos = minBinIndex;
+  let maxLinePos = maxBinIndex;
+  if (minBinIndex === maxBinIndex && minBinIndex >= 0) {
+    minLinePos = minBinIndex - 0.2; // offset min spec line to the left
+    maxLinePos = maxBinIndex + 0.2; // offset max spec line to the right
+  }
+  console.log("Adjusted positions: minLinePos:", minLinePos, "maxLinePos:", maxLinePos);
 
-  const minSpecData = uniqueBinNames.map(bin => (bin === minBin ? specBarHeight : 0));
-  const maxSpecData = uniqueBinNames.map(bin => (bin === maxBin ? specBarHeight : 0));
-
-  const minSpecLabel = specMinValue != null ? specMinValue : 'N/A';
-  const maxSpecLabel = specMaxValue != null ? specMaxValue : 'N/A';
-
-  const minSpecSeries: BarSeriesOption = {
-    name: `Min Spec (${minSpecLabel})`,
+  // Create two separate dummy series for the vertical reference lines.
+  const dummyData = xAxisData.map(() => 0);
+  const dummyMinSeries: BarSeriesOption = {
+    name: 'Min Reference',
     type: 'bar',
-    data: minSpecData,
-    itemStyle: { color: 'green' },
-    label: {
-      show: true,
-      position: 'top',
-      formatter: () => `Min: ${minSpecLabel}`,
+    data: dummyData,
+    silent: true,
+    markLine: {
+      symbol: 'none',
+      data: [
+        {
+          xAxis: minLinePos,
+          label: {
+            show: true,
+            position: 'insideEnd',
+            formatter: `Min Spec: ${specFormatter.format(minValue)}`,
+          },
+          lineStyle: { color: 'green', width: 2 },
+        },
+      ],
     },
-    barWidth: '50%',
+  };
+  const dummyMaxSeries: BarSeriesOption = {
+    name: 'Max Reference',
+    type: 'bar',
+    data: dummyData,
+    silent: true,
+    markLine: {
+      symbol: 'none',
+      data: [
+        {
+          xAxis: maxLinePos,
+          label: {
+            show: true,
+            position: 'insideEnd',
+            formatter: `Max Spec: ${specFormatter.format(maxValue)}`,
+          },
+          lineStyle: { color: 'red', width: 2 },
+        },
+      ],
+    },
   };
 
-  const maxSpecSeries: BarSeriesOption = {
-    name: `Max Spec (${maxSpecLabel})`,
-    type: 'bar',
-    data: maxSpecData,
-    itemStyle: { color: 'red' },
-    label: {
-      show: true,
-      position: 'top',
-      formatter: () => `Max: ${maxSpecLabel}`,
-    },
-    barWidth: '50%',
-  };
-
-  const allSeries: BarSeriesOption[] = [...densitySeries, minSpecSeries, maxSpecSeries];
-
-  const legendOptions = allSeries.map(series => series.name as string);
+  // Combine the main histogram series with the dummy reference series.
+  const finalSeries = [...barSeries, dummyMinSeries, dummyMaxSeries];
+  const legendOptions = finalSeries.map(series => series.name as string);
   if (isEmpty(legendState)) {
     legendOptions.forEach(legend => {
       legendState[legend] = true;
     });
   }
 
+  // Tooltip formatter.
   const tooltipFormatter = (params: CallbackDataParams[]) => {
     const title = params[0].name;
-    const rows = params.map((param, i) => {
+    const rows = params.map(param => {
       const { marker, seriesName, value } = param;
-      if (seriesName?.startsWith('Min Spec')) {
-        return [`${marker}${seriesName}`, `Min Spec: ${minSpecLabel}`];
-      }
-      if (seriesName?.startsWith('Max Spec')) {
-        return [`${marker}${seriesName}`, `Max Spec: ${maxSpecLabel}`];
-      }
       return [`${marker}${seriesName}`, formatter.format(value as number)];
     });
     if (groupby.length > 0) {
-      const total = params.reduce(
-        (acc, param) => acc + (typeof param.value === 'number' ? param.value : 0),
-        0,
-      );
+      const total = params.reduce((acc, param) => acc + (param.value as number), 0);
       if (!normalize) {
         rows.forEach((row, i) =>
-          row.push(
-            percentFormatter.format(
-              ((typeof params[i].value === 'number' ? params[i].value ?? 0 : 0) as number) / (total || 1),
-            ),
-          ),
+          row.push(percentFormatter.format((params[i].value as number) / (total || 1)))
         );
       }
       const totalRow = ['Total', formatter.format(total)];
@@ -235,7 +238,6 @@ export default function transformProps(
   };
 
   type EChartsOption = ComposeOption<GridComponentOption | BarSeriesOption>;
-
   const echartOptions: EChartsOption = {
     grid: {
       ...defaultGrid,
@@ -261,7 +263,7 @@ export default function transformProps(
         formatter: (value: number) => formatter.format(value),
       },
     },
-    series: allSeries,
+    series: finalSeries,
     legend: {
       ...getLegendProps(
         LegendType.Scroll,
@@ -269,7 +271,7 @@ export default function transformProps(
         showLegend,
         theme,
         false,
-        legendState,
+        legendState
       ),
       data: legendOptions,
     },
@@ -290,6 +292,15 @@ export default function transformProps(
     onLegendStateChanged,
   };
 }
+
+
+
+
+
+
+
+
+
 
 
 

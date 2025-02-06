@@ -16,23 +16,35 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import { buildQueryContext, getColumnLabel } from '@superset-ui/core';
+import { buildQueryContext } from '@superset-ui/core';
 import { histogramOperator } from '@superset-ui/chart-controls';
 import { HistogramFormData } from './types';
 
 export default function buildQuery(formData: HistogramFormData) {
-  const { column, spec_min_column, spec_max_column, groupby = [] } = formData;
-  const extraColumns: string[] = [];
-  if (spec_min_column) extraColumns.push(getColumnLabel(spec_min_column));
-  if (spec_max_column) extraColumns.push(getColumnLabel(spec_max_column));
+  const { column, min_column, max_column, groupby = [] } = formData;
+
+  // If the controls return objects, extract the column name.
+  const primaryColumn = column && typeof column === 'object' ? column.value : column;
+  const minColumn = min_column && typeof min_column === 'object' ? min_column.value : min_column;
+  const maxColumn = max_column && typeof max_column === 'object' ? max_column.value : max_column;
+
+  // Build the list of columns. Only include non-null values.
+  const columns = [...groupby, primaryColumn];
+  if (minColumn) {
+    columns.push(minColumn);
+  }
+  if (maxColumn) {
+    columns.push(maxColumn);
+  }
 
   return buildQueryContext(formData, baseQueryObject => [
     {
       ...baseQueryObject,
-      columns: [...groupby, getColumnLabel(column), ...extraColumns],
+      columns: columns,
       post_processing: [histogramOperator(formData, baseQueryObject)],
       metrics: undefined,
     },
   ]);
 }
+
 

@@ -36,6 +36,10 @@ export default class EchartsHistogramChartPlugin extends ChartPlugin<
    * registered in respective registries that are used throughout the library
    * and application. A more thorough description of each property is given in
    * the respective imported file.
+   *
+   * It is worth noting that `buildQuery` and is optional, and only needed for
+   * advanced visualizations that require either post processing operations
+   * (pivoting, rolling aggregations, sorting etc) or submitting multiple queries.
    */
   constructor() {
     super({
@@ -48,12 +52,11 @@ export default class EchartsHistogramChartPlugin extends ChartPlugin<
         description: t(
           `The histogram chart displays the distribution of a dataset by
           representing the frequency or count of values within different ranges or bins.
-          It helps visualise patterns, clusters, and outliers in the data and provides
-          insights into its shape, central tendency, and spread. Vertical reference lines
-          indicate the specification thresholds.`,
+          It helps visualize patterns, clusters, and outliers in the data and provides
+          insights into its shape, central tendency, and spread.`,
         ),
         exampleGallery: [{ url: example1 }, { url: example2 }],
-        name: t('Histogram with Spec Thresholds'),
+        name: t('Histogram with Min/Max threshold'),
         tags: [t('Comparison'), t('ECharts'), t('Pattern'), t('Range')],
         thumbnail,
       }),
@@ -61,4 +64,3 @@ export default class EchartsHistogramChartPlugin extends ChartPlugin<
     });
   }
 }
-
