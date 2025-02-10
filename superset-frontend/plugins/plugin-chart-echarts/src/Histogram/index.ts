@@ -56,7 +56,7 @@ export default class EchartsHistogramChartPlugin extends ChartPlugin<
           insights into its shape, central tendency, and spread.`,
         ),
         exampleGallery: [{ url: example1 }, { url: example2 }],
-        name: t('Histogram'),
+        name: t('Histogram with Min/Max threshold'),
         tags: [t('Comparison'), t('ECharts'), t('Pattern'), t('Range')],
         thumbnail,
       }),

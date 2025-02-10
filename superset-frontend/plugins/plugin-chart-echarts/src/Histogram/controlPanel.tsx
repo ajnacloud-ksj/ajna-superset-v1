@@ -16,15 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import {
-  GenericDataType,
-  t,
-  validateInteger,
-  validateNonEmpty,
-} from '@superset-ui/core';
+import { GenericDataType, t, validateNonEmpty } from '@superset-ui/core';
 import {
   ControlPanelConfig,
-  formatSelectOptionsForRange,
   dndGroupByControl,
   columnsByType,
   sections,
@@ -42,9 +36,41 @@ const config: ControlPanelConfig = {
             name: 'column',
             config: {
               ...dndGroupByControl,
-              label: t('Column'),
+              label: t('Primary Column'),
               multi: false,
               description: t('Numeric column used to calculate the histogram.'),
+              validators: [validateNonEmpty],
+              freeForm: false,
+              disabledTabs: new Set(['saved', 'sqlExpression']),
+              mapStateToProps: ({ datasource }) => ({
+                options: columnsByType(datasource, GenericDataType.Numeric),
+              }),
+            },
+          },
+        ],
+        [
+          {
+            name: 'min_column',
+            config: {
+              ...dndGroupByControl,
+              label: t('Min Threshold Column'),
+              multi: false,
+              description: t('Column representing the minimum acceptable threshold value.'),
+              validators: [validateNonEmpty],
+              freeForm: false,
+              disabledTabs: new Set(['saved', 'sqlExpression']),
+              mapStateToProps: ({ datasource }) => ({
+                options: columnsByType(datasource, GenericDataType.Numeric),
+              }),
+            },
+          },
+          {
+            name: 'max_column',
+            config: {
+              ...dndGroupByControl,
+              label: t('Max Threshold Column'),
+              multi: false,
+              description: t('Column representing the maximum acceptable threshold value.'),
               validators: [validateNonEmpty],
               freeForm: false,
               disabledTabs: new Set(['saved', 'sqlExpression']),
@@ -65,9 +91,12 @@ const config: ControlPanelConfig = {
               freeForm: true,
               label: t('Bins'),
               default: 5,
-              choices: formatSelectOptionsForRange(5, 20, 5),
+              choices: [...Array(4)].map((_, i) => [
+                (i + 1) * 5,
+                ((i + 1) * 5).toString(),
+              ]),
               description: t('The number of bins for the histogram'),
-              validators: [validateInteger],
+              validators: [validateNonEmpty],
             },
           },
         ],
@@ -77,12 +106,7 @@ const config: ControlPanelConfig = {
             config: {
               type: 'CheckboxControl',
               label: t('Normalize'),
-              description: t(`
-                The normalize option transforms the histogram values into proportions or
-                probabilities by dividing each bin's count by the total count of data points.
-                This normalization process ensures that the resulting values sum up to 1,
-                enabling a relative comparison of the data's distribution and providing a
-                clearer understanding of the proportion of data points within each bin.`),
+              description: t('Transform counts into proportions to aid comparison.'),
               default: false,
             },
           },
@@ -93,12 +117,7 @@ const config: ControlPanelConfig = {
             config: {
               type: 'CheckboxControl',
               label: t('Cumulative'),
-              description: t(`
-                The cumulative option allows you to see how your data accumulates over different
-                values. When enabled, the histogram bars represent the running total of frequencies
-                up to each bin. This helps you understand how likely it is to encounter values
-                below a certain point. Keep in mind that enabling cumulative doesn't change your
-                original data, it just changes the way the histogram is displayed.`),
+              description: t('Display the running total of frequencies.'),
               default: false,
             },
           },
@@ -113,9 +132,33 @@ const config: ControlPanelConfig = {
         ['color_scheme'],
         [showValueControl],
         [showLegendControl],
+        [
+          {
+            name: 'x_axis_title',
+            config: {
+              type: 'TextControl',
+              label: t('X Axis Title'),
+              renderTrigger: true,
+              default: '',
+            },
+          },
+        ],
+        [
+          {
+            name: 'y_axis_title',
+            config: {
+              type: 'TextControl',
+              label: t('Y Axis Title'),
+              renderTrigger: true,
+              default: '',
+            },
+          },
+        ],
       ],
     },
   ],
 };
 
 export default config;
+
+

@@ -22,6 +22,8 @@ import { BaseChartProps, BaseTransformedProps } from '../types';
 export type HistogramFormData = QueryFormData & {
   bins: number;
   column: QueryFormColumn;
+  min_column: QueryFormColumn;
+  max_column: QueryFormColumn;
   colorScheme?: string;
   cumulative: boolean;
   normalize: boolean;

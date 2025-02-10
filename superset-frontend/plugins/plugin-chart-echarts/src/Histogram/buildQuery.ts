@@ -20,14 +20,50 @@ import { buildQueryContext } from '@superset-ui/core';
 import { histogramOperator } from '@superset-ui/chart-controls';
 import { HistogramFormData } from './types';
 
+function getColumnName(column: any): string {
+  if (typeof column === 'string') return column;
+  if (typeof column === 'object' && column) {
+    if (column.label) return column.label;
+    return column.columnName || column.name || '';
+  }
+  return '';
+}
+
 export default function buildQuery(formData: HistogramFormData) {
-  const { column, groupby = [] } = formData;
-  return buildQueryContext(formData, baseQueryObject => [
-    {
+  const { column, min_column, max_column, groupby = [] } = formData;
+
+  // Get the actual column names from the form data
+  const primaryColumn = getColumnName(column);
+  const minColumn = getColumnName(min_column);
+  const maxColumn = getColumnName(max_column);
+
+  console.log('Building query with columns:', { primaryColumn, minColumn, maxColumn });
+
+  return buildQueryContext(formData, baseQueryObject => {
+    // Create histogram query
+    const histogramQuery = {
       ...baseQueryObject,
-      columns: [...groupby, column],
+      columns: [...groupby, primaryColumn],
       post_processing: [histogramOperator(formData, baseQueryObject)],
       metrics: undefined,
-    },
-  ]);
+    };
+
+    // Create spec values query
+    const specQuery = {
+      ...baseQueryObject,
+      columns: [minColumn, maxColumn],
+      row_limit: 1,
+      metrics: undefined,
+      post_processing: [],
+    };
+
+    return [histogramQuery, specQuery];
+  });
 }
+
+
+
+
+
+
+
