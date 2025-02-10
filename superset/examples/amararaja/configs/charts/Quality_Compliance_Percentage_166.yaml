@@ -40,6 +40,7 @@ params:
   extra_form_data: {}
   dashboards:
   - 1
+  annotation_layers: []
 query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Compliance
   Batch Percentage","optionName":"metric_3th1a5tream_7nxhps9ndw","sqlExpression":"(SUM(\r\n        CASE\r\n            WHEN

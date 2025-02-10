@@ -47,6 +47,7 @@ params:
     \n    }\r\n  }\r\n</style>"
   extra_form_data: {}
   dashboards: []
+  annotation_layers: []
 query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"label":"YTD","sqlExpression":"ROUND(CAST(AVG(water_cooling_temp_in)
   FILTER (WHERE datetime_fmt >= NOW() - INTERVAL ''1 year'') AS NUMERIC), 2)","expressionType":"SQL"},{"label":"MTD","sqlExpression":"ROUND(CAST(AVG(water_cooling_temp_in)
