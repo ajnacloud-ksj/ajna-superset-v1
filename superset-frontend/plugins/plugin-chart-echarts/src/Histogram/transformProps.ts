@@ -258,12 +258,15 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
         return [`${customMarker}${seriesName}`, specFormatter.format(maxValue || 0)];
       }
 
-      return [`${customMarker}${seriesName}`, formatter.format(value as number)];
+      return [`${customMarker}${seriesName || ''}`, formatter.format(value as number)];
     });
 
     if (groupby.length > 0) {
       const total = params
-        .filter(param => !['Min Reference', 'Max Reference'].includes(param.seriesName))
+        .filter(param => {
+          const name = param.seriesName || '';
+          return !['Min Reference', 'Max Reference'].includes(name);
+        })
         .reduce((acc, param) => acc + (param.value as number), 0);
 
       if (!normalize) {
