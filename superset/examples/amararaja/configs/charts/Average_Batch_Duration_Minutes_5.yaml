@@ -9,7 +9,7 @@ params:
   slice_id: 4
   metric:
     expressionType: SQL
-    sqlExpression: AVG(batch_duration_ms)/60000
+    sqlExpression: AVG(batch_duration)/60000
     column: null
     aggregate: null
     datasourceWarning: false
@@ -37,7 +37,7 @@ params:
   dashboards: []
   annotation_layers: []
 query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
-  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"AVG(batch_duration_ms)/60000","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"avg_batch_duration_hours","optionName":"metric_8adzofx24fn_lj2m6ix7ver"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"1__table","viz_type":"big_number_total","slice_id":4,"metric":{"expressionType":"SQL","sqlExpression":"AVG(batch_duration_ms)/60000","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"avg_batch_duration_hours","optionName":"metric_8adzofx24fn_lj2m6ix7ver"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"AVG(batch_duration)/60000","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"avg_batch_duration_hours","optionName":"metric_8adzofx24fn_lj2m6ix7ver"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"1__table","viz_type":"big_number_total","slice_id":4,"metric":{"expressionType":"SQL","sqlExpression":"AVG(batch_duration)/60000","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"avg_batch_duration_hours","optionName":"metric_8adzofx24fn_lj2m6ix7ver"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"No
   filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_wmkyn309c8g_3pt7clivtdx"}],"subheader":"Average
   Batch Duration","header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
 cache_timeout: null

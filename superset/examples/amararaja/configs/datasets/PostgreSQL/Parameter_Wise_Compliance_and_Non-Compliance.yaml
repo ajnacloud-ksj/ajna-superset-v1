@@ -10,7 +10,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \       water_dump_time AS category_value,\r\n        water_dump_time_spec_min AS\
   \ LSL,\r\n        water_dump_time_spec_max AS USL,\r\n        ABS(LAG(water_dump_time)\
   \ OVER (ORDER BY datetime_fmt) - water_dump_time) AS abs_diff,\r\n        datetime_fmt,\r\
-  \n        source_table,\r\n        name\r\n        \r\n    FROM abd1_mixers_all\r\
+  \n        source_table_name,\r\n        name\r\n        \r\n    FROM abd1_mixers_all\r\
   \n    WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
   \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
   \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
@@ -18,7 +18,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \n        acid_dump_time AS category_value,\r\n        acid_add_time_spec_min AS\
   \ LSL,\r\n        acid_add_time_spec_max AS USL,\r\n        ABS(LAG(acid_dump_time)\
   \ OVER (ORDER BY datetime_fmt) - acid_dump_time) AS abs_diff,\r\n        datetime_fmt,\r\
-  \n        source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE\
+  \n        source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE\
   \ (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}'\
   \ AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
   \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
@@ -26,7 +26,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \        air_cooling_temp AS category_value,\r\n        air_cooing_temp_spec_min\
   \ AS LSL,\r\n        air_cooing_temp_spec_max AS USL,\r\n        ABS(LAG(air_cooling_temp)\
   \ OVER (ORDER BY datetime_fmt) - air_cooling_temp) AS abs_diff,\r\n        datetime_fmt,\r\
-  \n        source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE\
+  \n        source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE\
   \ (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}'\
   \ AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
   \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
@@ -34,14 +34,14 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \n        pentration AS category_value,\r\n        pentration_value_spec_min AS\
   \ LSL,\r\n        pentration_value_spec_max AS USL,\r\n        ABS(LAG(pentration)\
   \ OVER (ORDER BY datetime_fmt) - pentration) AS abs_diff,\r\n        datetime_fmt,\r\
-  \n        source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE\
+  \n        source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE\
   \ (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}'\
   \ AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
   \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
   \    UNION ALL\r\n\r\n    SELECT \r\n        'Density of Paste' AS category,\r\n\
   \        density AS category_value,\r\n        past_density_spec_min AS LSL,\r\n\
   \        past_density_spec_max AS USL,\r\n        ABS(LAG(density) OVER (ORDER BY\
-  \ datetime_fmt) - density) AS abs_diff,\r\n        datetime_fmt,\r\n        source_table,\r\
+  \ datetime_fmt) - density) AS abs_diff,\r\n        datetime_fmt,\r\n        source_table_name,\r\
   \n        name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm\
   \ %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\
   \n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n\
@@ -49,7 +49,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \    SELECT \r\n        'Acid Consumed' AS category,\r\n        acid_addition AS\
   \ category_value,\r\n        acid_weight_spec_min AS LSL,\r\n        acid_weight_spec_max\
   \ AS USL,\r\n        ABS(LAG(acid_addition) OVER (ORDER BY datetime_fmt) - acid_addition)\
-  \ AS abs_diff,\r\n        datetime_fmt,\r\n        source_table,\r\n        name\r\
+  \ AS abs_diff,\r\n        datetime_fmt,\r\n        source_table_name,\r\n        name\r\
   \n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm %}\r\n   \
   \         datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\n      \
   \  {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n      \
@@ -57,7 +57,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \ \r\n        'DM Water' AS category,\r\n        dm_water AS category_value,\r\n\
   \        water_weight_spec_min AS LSL,\r\n        water_weight_spec_max AS USL,\r\
   \n        ABS(LAG(dm_water) OVER (ORDER BY datetime_fmt) - dm_water) AS abs_diff,\r\
-  \n        datetime_fmt,\r\n        source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\
+  \n        datetime_fmt,\r\n        source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\
   \n     WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
   \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
   \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
@@ -65,14 +65,14 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \n        lead_oxide AS category_value,\r\n        lead_oxide_spec_min AS LSL,\r\
   \n        lead_oxide_spec_max AS USL,\r\n        ABS(LAG(lead_oxide) OVER (ORDER\
   \ BY datetime_fmt) - lead_oxide) AS abs_diff,\r\n        datetime_fmt,\r\n     \
-  \   source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n\
+  \   source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n\
   \        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\
   \n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt <\
   \ '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n    \r\
   \n\r\n    UNION ALL\r\n\r\n    SELECT \r\n        'Mixer Dump Temp' AS category,\r\
   \n        dump_temp AS category_value,\r\n        dump_temp_spec_min AS LSL,\r\n\
   \        dump_temp_spec_max AS USL,\r\n        ABS(LAG(dump_temp) OVER (ORDER BY\
-  \ datetime_fmt) - dump_temp) AS abs_diff,\r\n        datetime_fmt,\r\n        source_table,\r\
+  \ datetime_fmt) - dump_temp) AS abs_diff,\r\n        datetime_fmt,\r\n        source_table_name,\r\
   \n        name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm\
   \ %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\
   \n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n\
@@ -80,7 +80,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \ \r\n        'Highest Mixer Temp' AS category,\r\n        peak_temp AS category_value,\r\
   \n        peak_temp_spec_min AS LSL,\r\n        peak_temp_spec_max AS USL,\r\n \
   \       ABS(LAG(peak_temp) OVER (ORDER BY datetime_fmt) - peak_temp) AS abs_diff,\r\
-  \n        datetime_fmt,\r\n        source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\
+  \n        datetime_fmt,\r\n        source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\
   \n     WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
   \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
   \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
@@ -88,7 +88,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \n        water_cooling_temp_in AS category_value,\r\n        water_cooling_temp_in_spec_min\
   \ AS LSL,\r\n        water_cooling_temp_in_spec_max AS USL,\r\n        ABS(LAG(water_cooling_temp_in)\
   \ OVER (ORDER BY datetime_fmt) - water_cooling_temp_in) AS abs_diff,\r\n       \
-  \ datetime_fmt,\r\n        source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\
+  \ datetime_fmt,\r\n        source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\
   \n     WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
   \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
   \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
@@ -96,7 +96,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \        final_water AS category_value,\r\n        trim_water_spec_min AS LSL,\r\
   \n        trim_water_spec_max AS USL,\r\n        ABS(LAG(final_water) OVER (ORDER\
   \ BY datetime_fmt) - final_water) AS abs_diff,\r\n        datetime_fmt,\r\n    \
-  \    source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\
+  \    source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\
   \n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\
   \n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt <\
   \ '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n \
@@ -104,7 +104,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \n        cooling_on_temp AS category_value,\r\n        cooling_on_temp_spec_min\
   \ AS LSL,\r\n        cooling_on_temp_spec_max AS USL,\r\n        ABS(LAG(cooling_on_temp)\
   \ OVER (ORDER BY datetime_fmt) - cooling_on_temp) AS abs_diff,\r\n        datetime_fmt,\r\
-  \n        source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE\
+  \n        source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE\
   \ (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}'\
   \ AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
   \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
@@ -112,7 +112,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \n        dry_mix_time AS category_value,\r\n        dry_mix_time_spec_min AS LSL,\r\
   \n        dry_mix_time_spec_max AS USL,\r\n        ABS(LAG(dry_mix_time) OVER (ORDER\
   \ BY datetime_fmt) - dry_mix_time) AS abs_diff,\r\n        datetime_fmt,\r\n   \
-  \     source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\
+  \     source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\
   \n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\
   \n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt <\
   \ '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n \
@@ -120,7 +120,7 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \        wet_mix_time AS category_value,\r\n        wet_mix_time_spec_min AS LSL,\r\
   \n        wet_mix_time_spec_max AS USL,\r\n        ABS(LAG(wet_mix_time) OVER (ORDER\
   \ BY datetime_fmt) - wet_mix_time) AS abs_diff,\r\n        datetime_fmt,\r\n   \
-  \     source_table,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\
+  \     source_table_name,\r\n        name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\
   \n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\
   \n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt <\
   \ '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )"
@@ -203,7 +203,7 @@ columns:
   description: null
   python_date_format: null
   extra: null
-- column_name: source_table
+- column_name: source_table_name
   verbose_name: null
   is_dttm: false
   is_active: true
