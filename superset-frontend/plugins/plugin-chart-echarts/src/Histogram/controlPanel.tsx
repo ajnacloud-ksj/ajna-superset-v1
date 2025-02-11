@@ -25,6 +25,7 @@ import {
 } from '@superset-ui/chart-controls';
 import { showLegendControl, showValueControl } from '../controls';
 
+// Define the control panel configuration for the histogram chart
 const config: ControlPanelConfig = {
   controlPanelSections: [
     {
@@ -39,9 +40,10 @@ const config: ControlPanelConfig = {
               label: t('Primary Column'),
               multi: false,
               description: t('Numeric column used to calculate the histogram.'),
-              validators: [validateNonEmpty],
+              validators: [validateNonEmpty], // Ensures a value is selected
               freeForm: false,
               disabledTabs: new Set(['saved', 'sqlExpression']),
+              // Dynamically populate column options based on available numeric columns
               mapStateToProps: ({ datasource }) => ({
                 options: columnsByType(datasource, GenericDataType.Numeric),
               }),
@@ -80,9 +82,9 @@ const config: ControlPanelConfig = {
             },
           },
         ],
-        ['groupby'],
-        ['adhoc_filters'],
-        ['row_limit'],
+        ['groupby'], // Allows grouping data
+        ['adhoc_filters'], // Allows applying ad-hoc filters
+        ['row_limit'], // Defines maximum number of rows to retrieve
         [
           {
             name: 'bins',
@@ -96,7 +98,7 @@ const config: ControlPanelConfig = {
                 ((i + 1) * 5).toString(),
               ]),
               description: t('The number of bins for the histogram'),
-              validators: [validateNonEmpty],
+              validators: [validateNonEmpty], // Ensure bins value is set
             },
           },
         ],
@@ -124,14 +126,14 @@ const config: ControlPanelConfig = {
         ],
       ],
     },
-    sections.titleControls,
+    sections.titleControls, // Title-related controls
     {
       label: t('Chart Options'),
       expanded: true,
       controlSetRows: [
-        ['color_scheme'],
-        [showValueControl],
-        [showLegendControl],
+        ['color_scheme'], // Controls the color scheme selection
+        [showValueControl], // Toggles value display
+        [showLegendControl], // Toggles legend display
         [
           {
             name: 'x_axis_title',
@@ -160,5 +162,6 @@ const config: ControlPanelConfig = {
 };
 
 export default config;
+
 
 

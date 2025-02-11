@@ -218,7 +218,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     /app/docker/pip-install.sh --requires-build-essential -r requirements/base.txt
 
 RUN --mount=type=cache,target=/root/.cache/uv \
-    pip install pydruid prometheus-flask-exporter
+    pip install pydruid prometheus-flask-exporter redis pylibmc
 
 
 # Install the superset package

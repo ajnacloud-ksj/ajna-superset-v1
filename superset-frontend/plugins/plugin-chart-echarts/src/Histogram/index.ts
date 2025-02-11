@@ -26,41 +26,30 @@ import example1 from './images/example1.png';
 import example2 from './images/example2.png';
 import { HistogramChartProps, HistogramFormData } from './types';
 
-// TODO: Implement cross filtering
+// Define the main class for the Histogram chart plugin
 export default class EchartsHistogramChartPlugin extends ChartPlugin<
   HistogramFormData,
   HistogramChartProps
 > {
-  /**
-   * The constructor is used to pass relevant metadata and callbacks that get
-   * registered in respective registries that are used throughout the library
-   * and application. A more thorough description of each property is given in
-   * the respective imported file.
-   *
-   * It is worth noting that `buildQuery` and is optional, and only needed for
-   * advanced visualizations that require either post processing operations
-   * (pivoting, rolling aggregations, sorting etc) or submitting multiple queries.
-   */
   constructor() {
     super({
-      buildQuery,
-      controlPanel,
-      loadChart: () => import('./Histogram'),
+      buildQuery, // Function to build database queries
+      controlPanel, // UI controls for the chart
+      loadChart: () => import('./Histogram'), // Dynamically loads the chart component
       metadata: new ChartMetadata({
         credits: ['https://echarts.apache.org'],
         category: t('Distribution'),
         description: t(
           `The histogram chart displays the distribution of a dataset by
-          representing the frequency or count of values within different ranges or bins.
-          It helps visualize patterns, clusters, and outliers in the data and provides
-          insights into its shape, central tendency, and spread.`,
+          representing the frequency or count of values within different ranges or bins.`,
         ),
         exampleGallery: [{ url: example1 }, { url: example2 }],
         name: t('Histogram with Min/Max threshold'),
         tags: [t('Comparison'), t('ECharts'), t('Pattern'), t('Range')],
         thumbnail,
       }),
-      transformProps,
+      transformProps, // Data transformation logic
     });
   }
 }
+
