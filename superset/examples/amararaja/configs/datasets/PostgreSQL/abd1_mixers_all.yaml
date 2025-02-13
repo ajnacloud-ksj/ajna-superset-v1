@@ -53,6 +53,19 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
+- column_name: not_in_use_2
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DOUBLE PRECISION
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
 - column_name: silo_2_weight
   verbose_name: null
   is_dttm: false
@@ -1093,7 +1106,7 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: batch_duration
+- column_name: batch_duration_ms
   verbose_name: null
   is_dttm: false
   is_active: true
@@ -1704,6 +1717,19 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
+- column_name: not_in_use_1
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(256)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
 - column_name: day_of_the_week
   verbose_name: null
   is_dttm: false
@@ -1782,7 +1808,7 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: source_table_name
+- column_name: source_table
   verbose_name: null
   is_dttm: false
   is_active: true
@@ -1900,4 +1926,4 @@ columns:
   extra:
     warning_markdown: null
 version: 1.0.0
-database_uuid: 3e04cd3d-58b1-4be7-972b-83cea53f0d2a
+database_uuid: 8a84ac09-12d0-449a-89b7-298c962653ed
