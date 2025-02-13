@@ -10,5 +10,5 @@ allow_csv_upload: false
 extra:
   allows_virtual_table_explore: true
 impersonate_user: false
-uuid: e1542db1-6b53-46a6-ade2-18cbb0d452d0
+uuid: 3e04cd3d-58b1-4be7-972b-83cea53f0d2a
 version: 1.0.0
