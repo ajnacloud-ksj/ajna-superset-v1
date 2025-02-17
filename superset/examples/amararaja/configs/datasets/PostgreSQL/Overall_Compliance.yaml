@@ -8,18 +8,18 @@ catalog: postgres
 schema: public
 sql: " SELECT \r\n    'Non-Compliance Batches' AS category,\r\n    SUM(\r\n      \
   \      CASE WHEN batch_deviation_ind = 1 THEN 1 ELSE 0 END\r\n            \r\n \
-  \       ) AS value,\r\n    quater,\r\n    source_table,\r\n    name,\r\n    datetime_fmt\r\
+  \       ) AS value,\r\n    quater,\r\n    source_table,\r\n    battery_name,\r\n    datetime_fmt\r\
   \nFROM \r\n    abd1_mixers_all\r\n    WHERE (\r\n        {% if from_dttm %}\r\n\
   \            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\n   \
   \     {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n   \
-  \     {% endif %}\r\n        1 = 1\r\n    )\r\n  GROUP BY quater,source_table,name,datetime_fmt\r\
+  \     {% endif %}\r\n        1 = 1\r\n    )\r\n  GROUP BY quater,source_table,battery_name,datetime_fmt\r\
   \n\r\nUNION ALL\r\n\r\nSELECT \r\n    'Compliance Batches' AS category,\r\n    SUM(\r\
   \n            CASE WHEN batch_deviation_ind = 0 THEN 1 ELSE 0 END \r\n        )\
-  \ AS value,\r\n    quater,\r\n    source_table,\r\n    name,\r\n    datetime_fmt\r\
+  \ AS value,\r\n    quater,\r\n    source_table,\r\n    battery_name,\r\n    datetime_fmt\r\
   \n    \r\nFROM \r\n    abd1_mixers_all\r\n  WHERE (\r\n        {% if from_dttm %}\r\
   \n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\n  \
   \      {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n  \
-  \      {% endif %}\r\n        1 = 1\r\n    )\r\n  GROUP BY quater,source_table,name,datetime_fmt\r\
+  \      {% endif %}\r\n        1 = 1\r\n    )\r\n  GROUP BY quater,source_table,battery_name,datetime_fmt\r\
   \n    \r\n"
 params: null
 template_params: null
@@ -88,7 +88,7 @@ columns:
   description: null
   python_date_format: null
   extra: null
-- column_name: name
+- column_name: battery_name
   verbose_name: null
   is_dttm: false
   is_active: true

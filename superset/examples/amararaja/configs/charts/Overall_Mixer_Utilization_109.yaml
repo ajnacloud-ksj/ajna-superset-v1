@@ -4,24 +4,36 @@ certified_by: null
 certification_details: null
 viz_type: big_number_total
 params:
-  datasource: 1__table
+  datasource: 5__table
   viz_type: big_number_total
+  slice_id: 74
   metric:
-    expressionType: SQL
-    sqlExpression: (SUM(total_mix_time) / (COUNT(DISTINCT DATE(datetime_fmt)) *8*3*
-      60.0))
-    column: null
-    aggregate: null
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2025-02-17T10:20:08.326430'
+      column_name: abd1_overall_mixer_utilization
+      created_on: '2025-02-17T10:20:08.326426'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 176
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: FLOAT
+      type_generic: 0
+      uuid: 52364f69-98fa-49c6-a6f0-784dcd301771
+      verbose_name: null
+    aggregate: MAX
+    sqlExpression: null
     datasourceWarning: false
     hasCustomLabel: false
-    label: (SUM(total_mix_time) / (COUNT(DISTINCT DATE(datetime_fmt)) *8*3* 60.0))
+    label: MAX(abd1_overall_mixer_utilization)
     optionName: metric_8adzofx24fn_lj2m6ix7ver
-  adhoc_filters:
-  - clause: WHERE
-    subject: datetime_fmt
-    operator: TEMPORAL_RANGE
-    comparator: No filter
-    expressionType: SIMPLE
+  adhoc_filters: []
   subheader: Mixer Utilization Percentage
   header_font_size: 0.4
   subheader_font_size: 0.15
@@ -29,16 +41,11 @@ params:
   time_format: smart_date
   conditional_formatting: []
   extra_form_data: {}
-  dashboards: []
-  annotation_layers: []
-query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
-  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"(SUM(total_mix_time)
-  / (COUNT(DISTINCT DATE(datetime_fmt)) *8*3* 60.0))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"(SUM(total_mix_time)
-  / (COUNT(DISTINCT DATE(datetime_fmt)) *8*3* 60.0))","optionName":"metric_8adzofx24fn_lj2m6ix7ver"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"1__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"(SUM(total_mix_time)
-  / (COUNT(DISTINCT DATE(datetime_fmt)) *8*3* 60.0))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"(SUM(total_mix_time)
-  / (COUNT(DISTINCT DATE(datetime_fmt)) *8*3* 60.0))","optionName":"metric_8adzofx24fn_lj2m6ix7ver"},"adhoc_filters":[{"clause":"WHERE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"No
-  filter","expressionType":"SIMPLE"}],"subheader":"Mixer Utilization Percentage","header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":",.1%","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":5,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-02-17T10:20:08.326430","column_name":"abd1_overall_mixer_utilization","created_on":"2025-02-17T10:20:08.326426","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":176,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"FLOAT","type_generic":0,"uuid":"52364f69-98fa-49c6-a6f0-784dcd301771","verbose_name":null},"aggregate":"MAX","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"MAX(abd1_overall_mixer_utilization)","optionName":"metric_8adzofx24fn_lj2m6ix7ver"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"5__table","viz_type":"big_number_total","slice_id":74,"metric":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-02-17T10:20:08.326430","column_name":"abd1_overall_mixer_utilization","created_on":"2025-02-17T10:20:08.326426","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":176,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"FLOAT","type_generic":0,"uuid":"52364f69-98fa-49c6-a6f0-784dcd301771","verbose_name":null},"aggregate":"MAX","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"MAX(abd1_overall_mixer_utilization)","optionName":"metric_8adzofx24fn_lj2m6ix7ver"},"adhoc_filters":[],"subheader":"Mixer
+  Utilization Percentage","header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":",.1%","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
 cache_timeout: null
-uuid: 333bbd58-6cef-4d9c-b569-1c374c8d8e63
+uuid: 2feaf3fe-c645-4df8-8842-5214f658f425
 version: 1.0.0
-dataset_uuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781
+dataset_uuid: da8b59f0-c1a2-4843-8d61-f025eebd6679

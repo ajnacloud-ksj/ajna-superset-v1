@@ -1,0 +1,90 @@
+table_name: ABD1_Mixer_Utilization
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: postgres
+schema: public
+sql: "SELECT\r\n  -- Overall Mixer Utilization: Sum of all mixers' total time divided\
+  \ by total available time for all mixers across all days\r\n  SUM(daily_time) /\
+  \ (1440 * 3 * COUNT(DISTINCT mix_date)) AS abd1_overall_mixer_utilization,\r\n \
+  \ -- Per Mixer Utilization: Sum of each mixer's total time divided by total available\
+  \ time for one mixer across all days\r\n  COALESCE(SUM(CASE WHEN source_table_name\
+  \ = 'ABD1_Mixer_1_ajna' THEN daily_time END), 0) / (1440 * COUNT(DISTINCT mix_date))\
+  \ AS abd1_mixer1_utilization,\r\n  COALESCE(SUM(CASE WHEN source_table_name = 'ABD1_Mixer_2_ajna'\
+  \ THEN daily_time END), 0) / (1440 * COUNT(DISTINCT mix_date)) AS abd1_mixer2_utilization,\r\
+  \n  COALESCE(SUM(CASE WHEN source_table_name = 'ABD1_Mixer_3_ajna' THEN daily_time\
+  \ END), 0) / (1440 * COUNT(DISTINCT mix_date)) AS abd1_mixer3_utilization\r\nFROM\
+  \ (\r\n  SELECT \r\n    DATE(datetime_fmt) AS mix_date, \r\n    source_table_name,\
+  \ \r\n    SUM(total_mix_time) AS daily_time\r\n  FROM public.abd1_mixers_all\r\n\
+  \  GROUP BY DATE(datetime_fmt), source_table_name\r\n) AS daily_mixer_time;"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: da8b59f0-c1a2-4843-8d61-f025eebd6679
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: abd1_mixer1_utilization
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: abd1_mixer2_utilization
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: abd1_mixer3_utilization
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: abd1_overall_mixer_utilization
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: a2950944-cf70-4e2f-a3f8-bcc74f10caef
