@@ -153,8 +153,8 @@ position:
     meta:
       chartId: 73
       height: 28
-      sliceName: Mixer Utilization (Shift-3)
-      uuid: 340b0b52-5b4e-4b95-a014-067c008eab32
+      sliceName: Mixer Utilization (Mixer-3)
+      uuid: efcb9b80-9a31-40be-88bc-6aa5e0033b28
       width: 3
     parents:
     - ROOT_ID
@@ -293,8 +293,8 @@ position:
     meta:
       chartId: 50
       height: 28
-      sliceName: Mixer Utilization (Shift-2)
-      uuid: 1ea605a6-10e3-4c2b-9034-3956a2923a1f
+      sliceName: Mixer Utilization (Mixer-2)
+      uuid: efcb9b80-9a31-40be-88bc-6aa5e0033b27
       width: 3
     parents:
     - ROOT_ID
@@ -811,8 +811,8 @@ position:
     meta:
       chartId: 36
       height: 28
-      sliceName: Mixer Utilization (Shift-1)
-      uuid: 2764c9ca-51b6-4358-acf2-cda358e1b6df
+      sliceName: Mixer Utilization (Mixer-1)
+      uuid: efcb9b80-9a31-40be-88bc-6aa5e0033b26
       width: 3
     parents:
     - ROOT_ID
