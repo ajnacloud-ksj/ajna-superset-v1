@@ -1,0 +1,43 @@
+slice_name: 'Peak Temp Standardized MTD, '
+description: null
+certified_by: null
+certification_details: null
+viz_type: histogram_v2
+params:
+  datasource: 3__table
+  viz_type: histogram_v2
+  slice_id: 67
+  column: peak_temp_zscore
+  min_column: zscore_min
+  max_column: zscore_max
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: Last month
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_opnuoktrxob_4gvw0ck8csv
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: datetime_fmt
+  row_limit: 10000
+  bins: 5
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  color_scheme: supersetColors
+  show_legend: true
+  extra_form_data: {}
+  dashboards:
+  - 2
+  annotation_layers: []
+query_context: '{"datasource":{"id":3,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"Last
+  month"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["peak_temp_zscore"],"annotation_layers":[],"row_limit":10000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"histogram","options":{"column":"peak_temp_zscore","groupby":[],"bins":5}}]},{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"Last
+  month"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["zscore_min","zscore_max"],"annotation_layers":[],"row_limit":1,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"3__table","viz_type":"histogram_v2","slice_id":67,"column":"peak_temp_zscore","min_column":"zscore_min","max_column":"zscore_max","groupby":[],"adhoc_filters":[{"clause":"WHERE","comparator":"Last
+  month","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_opnuoktrxob_4gvw0ck8csv","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"datetime_fmt"}],"row_limit":10000,"bins":5,"x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","color_scheme":"supersetColors","show_legend":true,"extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 84dc6bf4-6e2e-4a29-afa9-9db2e226dc1d
+version: 1.0.0
+dataset_uuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781
