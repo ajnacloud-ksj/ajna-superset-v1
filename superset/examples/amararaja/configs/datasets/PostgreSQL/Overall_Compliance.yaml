@@ -8,19 +8,19 @@ catalog: postgres
 schema: public
 sql: " SELECT \r\n    'Non-Compliance Batches' AS category,\r\n    SUM(\r\n      \
   \      CASE WHEN batch_deviation_ind = 1 THEN 1 ELSE 0 END\r\n            \r\n \
-  \       ) AS value,\r\n    quater,\r\n    source_table,\r\n    battery_name,\r\n    datetime_fmt\r\
-  \nFROM \r\n    abd1_mixers_all\r\n    WHERE (\r\n        {% if from_dttm %}\r\n\
-  \            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\n   \
-  \     {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n   \
-  \     {% endif %}\r\n        1 = 1\r\n    )\r\n  GROUP BY quater,source_table,battery_name,datetime_fmt\r\
+  \       ) AS value,\r\n    quarter,\r\n    source_table_name,\r\n    battery_name,\r\
+  \n    datetime_fmt\r\nFROM \r\n    abd1_mixers_all\r\n    WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n  GROUP BY quarter,source_table_name,battery_name,datetime_fmt\r\
   \n\r\nUNION ALL\r\n\r\nSELECT \r\n    'Compliance Batches' AS category,\r\n    SUM(\r\
   \n            CASE WHEN batch_deviation_ind = 0 THEN 1 ELSE 0 END \r\n        )\
-  \ AS value,\r\n    quater,\r\n    source_table,\r\n    battery_name,\r\n    datetime_fmt\r\
-  \n    \r\nFROM \r\n    abd1_mixers_all\r\n  WHERE (\r\n        {% if from_dttm %}\r\
-  \n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\n  \
-  \      {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n  \
-  \      {% endif %}\r\n        1 = 1\r\n    )\r\n  GROUP BY quater,source_table,battery_name,datetime_fmt\r\
-  \n    \r\n"
+  \ AS value,\r\n    quarter,\r\n    source_table_name,\r\n    battery_name,\r\n \
+  \   datetime_fmt\r\n    \r\nFROM \r\n    abd1_mixers_all\r\n  WHERE (\r\n      \
+  \  {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n  \
+  \      {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{\
+  \ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n  GROUP BY\
+  \ quarter,source_table_name,battery_name,datetime_fmt\r\n    \r\n"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -37,7 +37,8 @@ metrics:
   description: null
   d3format: null
   currency: null
-  extra: null
+  extra:
+    warning_markdown: ''
   warning_text: null
 columns:
 - column_name: datetime_fmt
@@ -51,7 +52,7 @@ columns:
   expression: ''
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: value
   verbose_name: null
   is_dttm: false
@@ -63,31 +64,7 @@ columns:
   expression: ''
   description: null
   python_date_format: null
-  extra: null
-- column_name: source_table
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: STRING
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: ''
-  description: null
-  python_date_format: null
-  extra: null
-- column_name: category
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: STRING
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: ''
-  description: null
-  python_date_format: null
-  extra: null
+  extra: {}
 - column_name: battery_name
   verbose_name: null
   is_dttm: false
@@ -99,8 +76,8 @@ columns:
   expression: ''
   description: null
   python_date_format: null
-  extra: null
-- column_name: quater
+  extra: {}
+- column_name: category
   verbose_name: null
   is_dttm: false
   is_active: true
@@ -111,6 +88,30 @@ columns:
   expression: ''
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
+- column_name: source_table_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: quarter
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
 version: 1.0.0
 database_uuid: a2950944-cf70-4e2f-a3f8-bcc74f10caef

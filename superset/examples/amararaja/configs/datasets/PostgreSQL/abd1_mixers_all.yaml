@@ -27,6 +27,19 @@ metrics:
     warning_markdown: ''
   warning_text: null
 columns:
+- column_name: batch_end_time_repeat
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP WITHOUT TIME ZONE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
 - column_name: datetime_fmt
   verbose_name: null
   is_dttm: true
@@ -44,20 +57,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: not_in_use_2
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -70,7 +70,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -83,7 +83,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -96,7 +96,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -109,7 +109,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -122,7 +122,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -135,7 +135,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -148,7 +148,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -161,7 +161,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -174,7 +174,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -187,7 +187,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -200,7 +200,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -213,7 +213,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -226,7 +226,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -239,7 +239,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -252,7 +252,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -265,20 +265,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: final_mix_temp_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -291,7 +278,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -304,7 +291,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -317,7 +304,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -330,7 +317,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -343,7 +330,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -356,7 +343,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -369,7 +356,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -382,20 +369,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: final_mix_temp_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -408,7 +382,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -421,7 +395,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -434,7 +408,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -447,7 +421,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -460,7 +434,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -473,7 +447,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -486,46 +460,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: carbon_black_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: lamp_black_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: barium_surlfate_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -538,7 +473,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -551,7 +486,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -564,7 +499,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -577,85 +512,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: carbon_black_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: lamp_black_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: batch_end_time_repeat
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: barium_surlfate_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: pan_fiber_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: seed_crystal_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -668,7 +525,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -681,7 +538,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -694,7 +551,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -707,7 +564,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -720,20 +577,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: vanisperse_p_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -746,7 +590,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -759,7 +603,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -772,7 +616,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -785,7 +629,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -798,7 +642,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -811,7 +655,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -824,20 +668,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: pan_fiber_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -850,20 +681,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: seed_crystal_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -876,7 +694,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -889,7 +707,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -902,7 +720,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -915,7 +733,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -928,7 +746,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -941,7 +759,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -954,20 +772,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: vanisperse_p_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -980,7 +785,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -993,7 +798,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1006,7 +811,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1019,7 +824,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1032,7 +837,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1045,7 +850,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1058,7 +863,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1071,7 +876,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1084,7 +889,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1093,24 +898,11 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: carbon_spec_max
+- column_name: batch_deviation_ind
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: batch_duration_ms
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1123,20 +915,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: expander_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1149,33 +928,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: carbon_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: binder_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1188,7 +941,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1201,20 +954,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: expander_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1227,7 +967,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1240,7 +980,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1253,7 +993,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1266,20 +1006,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: lingnin_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1292,20 +1019,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: spth_spec_max
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1318,7 +1032,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1331,7 +1045,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1344,7 +1058,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1357,410 +1071,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: binder_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: dump_temp_zscore
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: lingnin_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: cooling_on_temp
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: spth_spec_min
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: dry_mix_time
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: wet_mix_time
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: acid_addition
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: raw_datetime
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: penentration_final
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: final_water
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: batch_no
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: cooling_delta
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: pentration_zscore
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: lead_oxide
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: aditive_weight
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: density_final
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: dm_water
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: peak_temp
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: start_time
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: density_zscore
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: end_time
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: dump_temp
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: datetime
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: pentration
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: number
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: density
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: DOUBLE PRECISION
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: not_in_use_1
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: VARCHAR(256)
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: day_of_the_week
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: VARCHAR(256)
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: qa_inspector_code
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: VARCHAR(256)
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: start_time_fmt
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: VARCHAR(256)
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1773,7 +1084,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1782,11 +1093,11 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: end_time_fmt
+- column_name: dump_temp_zscore
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1795,11 +1106,11 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: rp_type_mixer
+- column_name: cooling_on_temp
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1808,11 +1119,11 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: source_table
+- column_name: dry_mix_time
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1821,11 +1132,89 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: operator_code
+- column_name: wet_mix_time
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: batch_duration
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: acid_addition
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: penentration_final
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: final_water
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: battery_number
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: cooling_delta
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1838,7 +1227,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1847,11 +1236,11 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: day_type
+- column_name: pentration_zscore
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1860,11 +1249,76 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: plate_type
+- column_name: lead_oxide
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: aditive_weight
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: density_final
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: dm_water
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: peak_temp
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: start_time
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1877,7 +1331,7 @@ columns:
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1886,11 +1340,11 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: name
+- column_name: density_zscore
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1899,11 +1353,11 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: season
+- column_name: end_time
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -1912,11 +1366,206 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: shift
+- column_name: dump_temp
   verbose_name: null
   is_dttm: false
   is_active: true
-  type: VARCHAR(256)
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: pentration
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: partition
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: density
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: offset
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: source_table_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: qa_inspector_code
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: start_time_fmt
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: end_time_fmt
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: rp_type_mixer
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: battery_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: batch_no
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: operator_code
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: plate_type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: datetime
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: quarter
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
   advanced_data_type: null
   groupby: true
   filterable: true
