@@ -10,116 +10,122 @@ sql: "\r\n\r\n    SELECT \r\n        'Water Dumping Time (Sec)' AS category,\r\n
   \       water_dump_time AS category_value,\r\n        CASE WHEN water_dump_time_deviation_ind\
   \ = 1 THEN 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN water_dump_time_deviation_ind\
   \ = 0 THEN 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
-  \n        battery_name\r\n        \r\n    FROM abd1_mixers_all\r\n    WHERE (\r\n      \
-  \  {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n  \
-  \      {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{\
-  \ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\r\n \
-  \   UNION ALL\r\n\r\n    SELECT \r\n        'Acid Dump Time (Sec)' AS category,\r\
+  \n        battery_name\r\n        \r\n    FROM abd1_mixers_all\r\n    WHERE (\r\n\
+  \        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\
+  \n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt <\
+  \ '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\r\
+  \n    UNION ALL\r\n\r\n    SELECT \r\n        'Acid Dump Time (Sec)' AS category,\r\
   \n        acid_dump_time AS category_value,\r\n        CASE WHEN acid_dump_time_deviation_ind\
   \ = 1 THEN 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN acid_dump_time_deviation_ind\
   \ = 0 THEN 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
-  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm\
-  \ %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\
-  \n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n\
-  \        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\n\r\n    SELECT\
-  \ \r\n        'Air Cooling Temp' AS category,\r\n        air_cooling_temp AS category_value,\r\
-  \n        CASE WHEN air_cooling_temp_deviation_ind = 1 THEN 1 ELSE 0 END AS non_compliance,\r\
-  \n        CASE WHEN air_cooling_temp_deviation_ind = 0 THEN 1 ELSE 0 END AS compliance,\r\
-  \n        datetime_fmt,\r\n        source_table_name,\r\n        battery_name\r\n    FROM abd1_mixers_all\r\
-  \n     WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
-  \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
-  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
-  \    UNION ALL\r\n\r\n    SELECT \r\n        'Penetration of Paste' AS category,\r\
-  \n        pentration AS category_value,\r\n        CASE WHEN pentration_deviation_ind\
-  \ = 1 THEN 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN pentration_deviation_ind\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\
+  \n\r\n    SELECT \r\n        'Air Cooling Temp' AS category,\r\n        air_cooling_temp\
+  \ AS category_value,\r\n        CASE WHEN air_cooling_temp_deviation_ind = 1 THEN\
+  \ 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN air_cooling_temp_deviation_ind\
   \ = 0 THEN 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
-  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm\
-  \ %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\
-  \n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n\
-  \        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\r\n    UNION ALL\r\n\r\n\
-  \    SELECT \r\n        'Density of Paste' AS category,\r\n        density AS category_value,\r\
-  \n        CASE WHEN density_deviation_ind = 1 THEN 1 ELSE 0 END AS non_compliance,\r\
-  \n        CASE WHEN density_deviation_ind = 0 THEN 1 ELSE 0 END AS compliance,\r\
-  \n        datetime_fmt,\r\n        source_table_name,\r\n        battery_name\r\n    FROM abd1_mixers_all\r\
-  \n     WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
-  \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
-  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
-  \    UNION ALL\r\n  \r\n    SELECT \r\n        'Acid Consumed' AS category,\r\n\
-  \        acid_addition AS category_value,\r\n        CASE WHEN acid_addition_deviation_ind\
-  \ = 1 THEN 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN acid_addition_deviation_ind\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\
+  \n\r\n    SELECT \r\n        'Penetration of Paste' AS category,\r\n        pentration\
+  \ AS category_value,\r\n        CASE WHEN pentration_deviation_ind = 1 THEN 1 ELSE\
+  \ 0 END AS non_compliance,\r\n        CASE WHEN pentration_deviation_ind = 0 THEN\
+  \ 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\r\n    UNION\
+  \ ALL\r\n\r\n    SELECT \r\n        'Density of Paste' AS category,\r\n        density\
+  \ AS category_value,\r\n        CASE WHEN density_deviation_ind = 1 THEN 1 ELSE\
+  \ 0 END AS non_compliance,\r\n        CASE WHEN density_deviation_ind = 0 THEN 1\
+  \ ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\
+  \n  \r\n    SELECT \r\n        'Acid Consumed' AS category,\r\n        acid_addition\
+  \ AS category_value,\r\n        CASE WHEN acid_addition_deviation_ind = 1 THEN 1\
+  \ ELSE 0 END AS non_compliance,\r\n        CASE WHEN acid_addition_deviation_ind\
   \ = 0 THEN 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
-  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm\
-  \ %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\
-  \n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n\
-  \        {% endif %}\r\n        1 = 1\r\n    )\r\n  \r\n\r\n    UNION ALL\r\n\r\n\
-  \    SELECT \r\n        'DM Water' AS category,\r\n        dm_water AS category_value,\r\
-  \n        CASE WHEN dm_water_deviation_ind = 1 THEN 1 ELSE 0 END AS non_compliance,\r\
-  \n        CASE WHEN dm_water_deviation_ind = 0 THEN 1 ELSE 0 END AS compliance,\r\
-  \n        datetime_fmt,\r\n        source_table_name,\r\n        battery_name\r\n    FROM abd1_mixers_all\r\
-  \n     WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
-  \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
-  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
-  \    UNION ALL\r\n\r\n\r\n    SELECT \r\n        'Lead Oxide Consumed' AS category,\r\
-  \n        lead_oxide AS category_value,\r\n        CASE WHEN lead_oxide_deviation_ind\
-  \ = 1 THEN 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN lead_oxide_deviation_ind\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n  \r\n\r\n    UNION\
+  \ ALL\r\n\r\n    SELECT \r\n        'DM Water' AS category,\r\n        dm_water\
+  \ AS category_value,\r\n        CASE WHEN dm_water_deviation_ind = 1 THEN 1 ELSE\
+  \ 0 END AS non_compliance,\r\n        CASE WHEN dm_water_deviation_ind = 0 THEN\
+  \ 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\
+  \n\r\n\r\n    SELECT \r\n        'Lead Oxide Consumed' AS category,\r\n        lead_oxide\
+  \ AS category_value,\r\n        CASE WHEN lead_oxide_deviation_ind = 1 THEN 1 ELSE\
+  \ 0 END AS non_compliance,\r\n        CASE WHEN lead_oxide_deviation_ind = 0 THEN\
+  \ 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n    \r\n\r\n    UNION\
+  \ ALL\r\n\r\n    SELECT \r\n        'Mixer Dump Temp' AS category,\r\n        dump_temp\
+  \ AS category_value,\r\n        CASE WHEN dump_temp_deviation_ind = 1 THEN 1 ELSE\
+  \ 0 END AS non_compliance,\r\n        CASE WHEN dump_temp_deviation_ind = 0 THEN\
+  \ 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\
+  \n\r\n    SELECT \r\n        'Highest Mixer Temp' AS category,\r\n        peak_temp\
+  \ AS category_value,\r\n        CASE WHEN peak_temp_deviation_ind = 1 THEN 1 ELSE\
+  \ 0 END AS non_compliance,\r\n        CASE WHEN peak_temp_deviation_ind = 0 THEN\
+  \ 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\
+  \n\r\n    SELECT \r\n        'Water Cooling In Temp' AS category,\r\n        water_cooling_temp_in\
+  \ AS category_value,\r\n        CASE WHEN water_cooling_temp_in_deviation_ind =\
+  \ 1 THEN 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN water_cooling_temp_in_deviation_ind\
   \ = 0 THEN 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
-  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm\
-  \ %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\
-  \n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n\
-  \        {% endif %}\r\n        1 = 1\r\n    )\r\n    \r\n\r\n    UNION ALL\r\n\r\
-  \n    SELECT \r\n        'Mixer Dump Temp' AS category,\r\n        dump_temp AS\
-  \ category_value,\r\n        CASE WHEN dump_temp_deviation_ind = 1 THEN 1 ELSE 0\
-  \ END AS non_compliance,\r\n        CASE WHEN dump_temp_deviation_ind = 0 THEN 1\
-  \ ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\n\
-  \        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm\
-  \ %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\
-  \n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n\
-  \        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\n\r\n    SELECT\
-  \ \r\n        'Highest Mixer Temp' AS category,\r\n        peak_temp AS category_value,\r\
-  \n        CASE WHEN peak_temp_deviation_ind = 1 THEN 1 ELSE 0 END AS non_compliance,\r\
-  \n        CASE WHEN peak_temp_deviation_ind = 0 THEN 1 ELSE 0 END AS compliance,\r\
-  \n        datetime_fmt,\r\n        source_table_name,\r\n        battery_name\r\n    FROM abd1_mixers_all\r\
-  \n     WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
-  \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
-  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
-  \    UNION ALL\r\n\r\n    SELECT \r\n        'Water Cooling In Temp' AS category,\r\
-  \n        water_cooling_temp_in AS category_value,\r\n        CASE WHEN water_cooling_temp_in_deviation_ind\
-  \ = 1 THEN 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN water_cooling_temp_in_deviation_ind\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\
+  \n    \r\n    SELECT \r\n        'Final Water' AS category,\r\n        final_water\
+  \ AS category_value,\r\n        CASE WHEN trim_water_deviation_ind = 1 THEN 1 ELSE\
+  \ 0 END AS non_compliance,\r\n        CASE WHEN trim_water_deviation_ind = 0 THEN\
+  \ 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\
+  \n    \r\n    SELECT \r\n        'Cooling On Temp' AS category,\r\n        cooling_on_temp\
+  \ AS category_value,\r\n        CASE WHEN cooling_on_temp_deviation_ind = 1 THEN\
+  \ 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN cooling_on_temp_deviation_ind\
   \ = 0 THEN 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
-  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm\
-  \ %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\
-  \n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n\
-  \        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\n    \r\n\
-  \    SELECT \r\n        'Final Water' AS category,\r\n        final_water AS category_value,\r\
-  \n        CASE WHEN trim_water_deviation_ind = 1 THEN 1 ELSE 0 END AS non_compliance,\r\
-  \n        CASE WHEN trim_water_deviation_ind = 0 THEN 1 ELSE 0 END AS compliance,\r\
-  \n        datetime_fmt,\r\n        source_table_name,\r\n        battery_name\r\n    FROM abd1_mixers_all\r\
-  \n     WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
-  \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
-  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
-  \    UNION ALL\r\n    \r\n    SELECT \r\n        'Cooling On Temp' AS category,\r\
-  \n        cooling_on_temp AS category_value,\r\n        CASE WHEN cooling_on_temp_deviation_ind\
-  \ = 1 THEN 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN cooling_on_temp_deviation_ind\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\
+  \n\r\n    SELECT \r\n        'Dry Mix Time (Sec)' AS category,\r\n        dry_mix_time\
+  \ AS category_value,\r\n        CASE WHEN dry_mix_time_deviation_ind = 1 THEN 1\
+  \ ELSE 0 END AS non_compliance,\r\n        CASE WHEN dry_mix_time_deviation_ind\
   \ = 0 THEN 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
-  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm\
-  \ %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\
-  \n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n\
-  \        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\n\r\n    SELECT\
-  \ \r\n        'Dry Mix Time (Sec)' AS category,\r\n        dry_mix_time AS category_value,\r\
-  \n        CASE WHEN dry_mix_time_deviation_ind = 1 THEN 1 ELSE 0 END AS non_compliance,\r\
-  \n        CASE WHEN dry_mix_time_deviation_ind = 0 THEN 1 ELSE 0 END AS compliance,\r\
-  \n        datetime_fmt,\r\n        source_table_name,\r\n        battery_name\r\n    FROM abd1_mixers_all\r\
-  \n     WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
-  \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
-  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n\
-  \    UNION ALL\r\n\r\n    SELECT \r\n        'Wet Mix Time (Sec)' AS category,\r\
-  \n        wet_mix_time AS category_value,\r\n        CASE WHEN wet_mix_time_deviation_ind\
-  \ = 1 THEN 1 ELSE 0 END AS non_compliance,\r\n        CASE WHEN wet_mix_time_deviation_ind\
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n\r\n    UNION ALL\r\
+  \n\r\n    SELECT \r\n        'Wet Mix Time (Sec)' AS category,\r\n        wet_mix_time\
+  \ AS category_value,\r\n        CASE WHEN wet_mix_time_deviation_ind = 1 THEN 1\
+  \ ELSE 0 END AS non_compliance,\r\n        CASE WHEN wet_mix_time_deviation_ind\
   \ = 0 THEN 1 ELSE 0 END AS compliance,\r\n        datetime_fmt,\r\n        source_table_name,\r\
-  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {% if from_dttm\
-  \ %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\
-  \n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n\
-  \        {% endif %}\r\n        1 = 1\r\n    )"
+  \n        battery_name\r\n    FROM abd1_mixers_all\r\n     WHERE (\r\n        {%\
+  \ if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm }}' AND\r\n      \
+  \  {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -199,7 +205,7 @@ columns:
   description: null
   python_date_format: null
   extra: null
-- column_name: category
+- column_name: battery_name
   verbose_name: null
   is_dttm: false
   is_active: true
@@ -211,7 +217,7 @@ columns:
   description: null
   python_date_format: null
   extra: null
-- column_name: battery_name
+- column_name: category
   verbose_name: null
   is_dttm: false
   is_active: true
