@@ -203,7 +203,9 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
         ],
       },
     };
+    const originalSeries = finalSeries.pop();
     finalSeries.push(dummyMinSeries);
+    finalSeries.push(originalSeries as BarSeriesOption);
   }
 
   if (maxValue !== undefined && maxLinePos >= 0) {
