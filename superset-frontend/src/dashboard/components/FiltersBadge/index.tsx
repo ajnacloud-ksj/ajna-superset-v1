@@ -286,6 +286,12 @@ export const FiltersBadge = ({ chartId }: FiltersBadgeProps) => {
   if (!appliedCrossFilterIndicators.length && !appliedIndicators.length) {
     return null;
   }
+  {
+    appliedIndicators.map(indicator => (
+
+      console.log("applied filter name " + indicator.name + " & column " + indicator.column)
+    ))
+  }
 
   return (
     <DetailsPanelPopover

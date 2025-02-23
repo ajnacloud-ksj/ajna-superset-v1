@@ -18,6 +18,8 @@
  */
 /* eslint-env browser */
 import cx from 'classnames';
+// import CustomHistogramComponent from '../../../../plugins/custom-histogram-component/CustomHistogramComponent';
+// import CustomChartContainer from '../../../../plugins/custom-histogram-component/CustomChartContainer';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   addAlpha,
@@ -145,11 +147,11 @@ const DashboardContentWrapper = styled.div`
       & .dashboard-component-tabs {
         box-shadow: 0 ${theme.gridUnit}px ${theme.gridUnit}px 0
           ${addAlpha(
-            theme.colors.grayscale.dark2,
-            parseFloat(theme.opacity.light) / 100,
-          )};
+  theme.colors.grayscale.dark2,
+  parseFloat(theme.opacity.light) / 100,
+)};
         padding-left: ${theme.gridUnit *
-        2}px; /* note this is added to tab-level padding, to match header */
+    2}px; /* note this is added to tab-level padding, to match header */
       }
 
       .dropdown-toggle.btn.btn-primary .caret {
@@ -274,6 +276,14 @@ const DashboardContentWrapper = styled.div`
         bottom: ${-theme.gridUnit * 4}px;
       }
     }
+      /* Add the Hello text div */
+    & .hello-text {
+      margin-top: auto;
+      padding: ${theme.gridUnit * 2}px;
+      text-align: center;
+      background-color: ${theme.colors.grayscale.light2};
+      color: ${theme.colors.primary.base};
+    }
   `}
 `;
 
@@ -304,10 +314,9 @@ const StyledDashboardContent = styled.div<{
       margin-left: ${marginLeft}px;
 
       ${editMode &&
-      `
-      max-width: calc(100% - ${
-        BUILDER_SIDEPANEL_WIDTH + theme.gridUnit * 16
-      }px);
+    `
+      max-width: calc(100% - ${BUILDER_SIDEPANEL_WIDTH + theme.gridUnit * 16
+    }px);
     `}
 
       /* this is the ParentSize wrapper */
@@ -341,9 +350,9 @@ const StyledDashboardContent = styled.div<{
           inset 0 0 0 2px ${theme.colors.primary.base},
           0 0 0 3px
             ${addAlpha(
-              theme.colors.primary.base,
-              parseFloat(theme.opacity.light) / 100,
-            )};
+      theme.colors.primary.base,
+      parseFloat(theme.opacity.light) / 100,
+    )};
       }
 
       &.fade-out {
@@ -489,9 +498,9 @@ const DashboardBuilder = () => {
     () => ({
       marginLeft:
         dashboardFiltersOpen ||
-        editMode ||
-        !nativeFiltersEnabled ||
-        filterBarOrientation === FilterBarOrientation.Horizontal
+          editMode ||
+          !nativeFiltersEnabled ||
+          filterBarOrientation === FilterBarOrientation.Horizontal
           ? 0
           : -32,
     }),
@@ -577,9 +586,9 @@ const DashboardBuilder = () => {
 
   const dashboardContentMarginLeft =
     !dashboardFiltersOpen &&
-    !editMode &&
-    nativeFiltersEnabled &&
-    filterBarOrientation !== FilterBarOrientation.Horizontal
+      !editMode &&
+      nativeFiltersEnabled &&
+      filterBarOrientation !== FilterBarOrientation.Horizontal
       ? 0
       : theme.gridUnit * 8;
 
@@ -718,8 +727,14 @@ const DashboardBuilder = () => {
             ) : (
               <Loading />
             )}
+
             {editMode && <BuilderComponentPane topOffset={barTopOffset} />}
           </StyledDashboardContent>
+
+
+          {/* <CustomChartContainer topLevelTabs={topLevelTabs} /> */}
+          {/* <CustomHistogramComponent dateRange="2023-01-01 to 2023-12-31" /> */}
+
         </DashboardContentWrapper>
       </StyledContent>
       {dashboardIsSaving && (

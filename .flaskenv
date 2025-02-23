@@ -16,3 +16,4 @@
 #
 FLASK_APP="superset.app:create_app()"
 FLASK_DEBUG=true
+WDS_SOCKET_PORT=0

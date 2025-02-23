@@ -65,6 +65,7 @@ import { getColorNamespace, resetColors } from 'src/utils/colorScheme';
 import { NATIVE_FILTER_DIVIDER_PREFIX } from '../nativeFilters/FiltersConfigModal/utils';
 import { findTabsWithChartsInScope } from '../nativeFilters/utils';
 import { getRootLevelTabsComponent } from './utils';
+import CustomHistogramComponent from '../../../../plugins/custom-histogram-component/CustomHistogramComponent';
 
 type DashboardContainerProps = {
   topLevelTabs?: LayoutItem;
@@ -85,19 +86,27 @@ const useRenderedChartIds = () => {
   return useMemo(() => renderedChartIds, [JSON.stringify(renderedChartIds)]);
 };
 
+var myFilters: Pick<Filter, "id" | "type" | "scope">[];
+
 const useNativeFilterScopes = () => {
   const nativeFilters = useSelector<RootState, Filters>(
     state => state.nativeFilters?.filters,
   );
-  return useMemo(
+  // console.log("native filters : " + Object.keys(nativeFilters));
+  const filters = useMemo(
     () =>
       nativeFilters
         ? Object.values(nativeFilters).map((filter: Filter) =>
-            pick(filter, ['id', 'scope', 'type']),
-          )
+          pick(filter, ['id', 'scope', 'type']),
+        )
         : [],
     [nativeFilters],
   );
+
+  myFilters = filters;
+  console.log("All filters: ", filters);
+
+  return filters;
 };
 
 const TOP_OF_PAGE_RANGE = 220;
@@ -311,9 +320,12 @@ const DashboardContainer: FC<DashboardContainerProps> = ({ topLevelTabs }) => {
     [activeKey, childIds, dashboardLayout, handleFocus, renderTabBar, tabIndex],
   );
 
+  console.log(myFilters);
   return (
     <div className="grid-container" data-test="grid-container">
       <ParentSize>{renderParentSizeChildren}</ParentSize>
+
+      <CustomHistogramComponent dateRange={`${Object.keys(myFilters[0])} ${Object.values(myFilters[0])}`} filters={myFilters} />
     </div>
   );
 };

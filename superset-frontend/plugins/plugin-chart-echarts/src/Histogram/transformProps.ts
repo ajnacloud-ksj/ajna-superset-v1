@@ -113,10 +113,51 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
   const percentFormatter = getPercentFormatter(NumberFormats.PERCENT_2_POINT);
   const groupbySet = new Set(groupby);
 
-  const xAxisData: string[] = Object.keys(histogramData[0]).filter(
-    key => !groupbySet.has(key) && key !== minColName && key !== maxColName,
-  );
+  // const xAxisData: string[] = Object.keys(histogramData[0]).filter(
+  //   key => !groupbySet.has(key) && key !== minColName && key !== maxColName,
+  // );
+  // const defaultMin = 0;
+  // const defaultMax = 100;
+
+  // const finalMinValue = typeof minValue !== "undefined" ? minValue : defaultMin;
+  // const finalMaxValue = typeof maxValue !== "undefined" ? maxValue : defaultMax;
+
+  // const binSize = (finalMaxValue - finalMinValue) / 10;
+
+  // const xAxisData = Array.from({ length: 10 }, (_, i) => {
+  //   const start = finalMinValue + i * binSize;
+  //   const end = start + binSize;
+  //   return `${start}-${end}`;
+  // });
+  // console.log(minColName, minValue, maxColName, maxValue);
+  // console.log("xAxisData:", xAxisData);
+  const defaultMin = 0;
+  const defaultMax = 100;
+
+  const finalMinValue = typeof minValue !== "undefined" ? minValue : defaultMin;
+  const finalMaxValue = typeof maxValue !== "undefined" ? maxValue : defaultMax;
+
+  // Determine last bin range dynamically using a logarithmic approach
+  const magnitude = Math.pow(10, Math.floor(Math.log10(finalMaxValue)) + 1);
+  const lastBinEnd = Math.max(magnitude, 10); // Ensures a minimum of 10
+
+  // Calculate bin size for middle bins (always 8 bins)
+  const binSize = (finalMaxValue - finalMinValue) / 8;
+
+  // Generate the xAxisData array
+  const xAxisData = [
+    `0 - ${finalMinValue}`, // First bin: Captures values below minValue
+    ...Array.from({ length: 8 }, (_, i) => {
+      const start = finalMinValue + i * binSize;
+      const end = start + binSize;
+      return `${Math.round(start)} - ${Math.round(end)}`;
+    }),
+    `${finalMaxValue} - ${lastBinEnd}`, // Last bin: Dynamically scaled
+  ];
+
   console.log("xAxisData:", xAxisData);
+  console.log("myxAxisData:", xAxisData);
+
 
   const findBin = (value: number, bins: string[]): string | null => {
     if (!value || !bins || bins.length === 0) return null;
@@ -163,6 +204,67 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
     const seriesData = Object.keys(datum)
       .filter(key => !groupbySet.has(key) && key !== minColName && key !== maxColName)
       .map(key => datum[key] as number);
+    // Default min & max
+    // const defaultMin = 0;
+    // const defaultMax = 100;
+
+    // const finalMinValue = typeof minValue !== "undefined" ? minValue : defaultMin;
+    // const finalMaxValue = typeof maxValue !== "undefined" ? maxValue : defaultMax;
+
+    // // Compute last bin range dynamically
+    // const magnitude = Math.pow(10, Math.floor(Math.log10(finalMaxValue)) + 1);
+    // const lastBinEnd = Math.max(magnitude, 10);
+
+    // Default min & max values
+    const defaultMin = 0;
+    const defaultMax = 100;
+
+    const finalMinValue = typeof minValue !== "undefined" ? minValue : defaultMin;
+    const finalMaxValue = typeof maxValue !== "undefined" ? maxValue : defaultMax;
+
+    // Compute last bin dynamically (scales to nearest power of 10)
+    const magnitude = Math.pow(10, Math.floor(Math.log10(finalMaxValue)) + 1);
+    const lastBinEnd = Math.max(magnitude, 10);
+
+    // Define bin edges
+    const binEdges = [
+      finalMinValue, // First bin captures everything below minValue
+      ...Array.from({ length: 8 }, (_, i) => finalMinValue + i * ((finalMaxValue - finalMinValue) / 8)),
+      finalMaxValue, // Last defined bin
+      lastBinEnd, // Last bin captures everything above maxValue
+    ];
+
+    // Initialize bin counts
+    const binCounts = new Array(binEdges.length - 1).fill(0);
+
+
+    console.log("histogramData", histogramData);
+    console.log("datum keys", Object.keys(datum));
+    console.log("datum values", Object.values(datum));
+    console.log("groupby", Object.keys(groupby));
+
+    // Process each datum value and classify into correct bins
+    Object.keys(datum)
+      .filter(key => !groupbySet.has(key) && key !== minColName && key !== maxColName)
+      .forEach(key => {
+        console.log(key);
+        const value = Number(key); // Convert key from string to number
+        if (isNaN(value)) return; // Skip non-numeric keys
+
+        // Find correct bin for value
+        for (let i = 0; i < binEdges.length - 1; i++) {
+          if (value >= binEdges[i] && value < binEdges[i + 1]) {
+            binCounts[i] += datum[key] as number; // Accumulate frequency
+            break;
+          }
+        }
+      });
+    console.log("bincounts : " + binCounts);
+
+    // const seriesData = binCounts;
+
+    console.log("seriesData:", seriesData);
+
     return {
       name: seriesName,
       type: 'bar',
@@ -180,6 +282,30 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
   });
 
   const dummyData = xAxisData.map(() => 0);
+  barSeries[0].markLine = {
+    symbol: 'none',
+    data: [
+      {
+        xAxis: minLinePos,
+        label: {
+          show: true,
+          position: 'insideEndTop',
+          formatter: `Min Spec: ${specFormatter.format(minValue)}`,
+        },
+        lineStyle: { color: 'green', width: 2 },
+      },
+      {
+        xAxis: maxLinePos,
+        label: {
+          show: true,
+          position: 'insideEndTop',
+          formatter: `Max Spec: ${specFormatter.format(maxValue)}`,
+        },
+        lineStyle: { color: 'red', width: 2 },
+      },
+    ],
+  };
+  console.log("barseries", barSeries);
   const finalSeries = [...barSeries];
 
   if (minValue !== undefined && minLinePos >= 0) {
@@ -203,9 +329,11 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
         ],
       },
     };
-    const originalSeries = finalSeries.pop();
-    finalSeries.push(dummyMinSeries);
-    finalSeries.push(originalSeries as BarSeriesOption);
+    // console.log("dummyinSeries keys" + Object.keys(dummyData));
+    // console.log("dummyinSeries values" + Object.values(dummyData));
+    // const originalSeries = finalSeries.pop();
+    // finalSeries.push(dummyMinSeries);
+    // finalSeries.push(originalSeries as BarSeriesOption);
   }
 
   if (maxValue !== undefined && maxLinePos >= 0) {
@@ -229,7 +357,8 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
         ],
       },
     };
-    finalSeries.push(dummyMaxSeries);
+    console.log("dummyaxSeries" + dummyMaxSeries);
+    // finalSeries.push(dummyMaxSeries);
   }
 
   const legendOptions = finalSeries.map(series => series.name as string);
@@ -291,6 +420,7 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
   const onFocusedSeries = (index?: number | undefined) => {
     focusedSeries = index;
   };
+  console.log(xAxisData);
 
   type EChartsOption = ComposeOption<GridComponentOption | BarSeriesOption>;
   const echartOptions: EChartsOption = {
