@@ -20,7 +20,6 @@ const ChartsContainer = styled.div`
   flex-wrap: wrap;
 `;
 
-
 const ChartContainer = styled.div`
   flex: 1 1 49%;
   max-width: 49%;
@@ -38,9 +37,10 @@ interface Filter {
 interface ChartComponentProps {
   dateRange: string;
   filters: Filter[];
+  selectedDashboard: string;
 }
 
-const CustomHistogramComponent: React.FC<ChartComponentProps> = ({ dateRange, filters }) => {
+const CustomHistogramComponent: React.FC<ChartComponentProps> = ({ dateRange, filters, selectedDashboard }) => {
   const [chartUrl1, setChartUrl1] = useState<string | null>(null);
   const [chartUrl2, setChartUrl2] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -119,25 +119,37 @@ const CustomHistogramComponent: React.FC<ChartComponentProps> = ({ dateRange, fi
     return <ChartWrapper>{error}</ChartWrapper>;
   }
 
+  let chartContent;
+  switch (selectedDashboard) {
+    case 'dashboard1':
+      chartContent = (
+
+        <div>
+          {selectedDashboard}
+          <ChartContainer>
+            {chartUrl1 ? <ChartImage src={chartUrl1} alt="Chart 1" /> : 'No chart available for date range: ' + dateRange}
+          </ChartContainer>
+        </div>
+      );
+      break;
+    case 'dashboard2':
+      chartContent = (
+        <div>
+          {selectedDashboard}
+          <ChartContainer>
+            {chartUrl2 ? <ChartImage src={chartUrl2} alt="Chart 2" /> : 'No chart available for date range: ' + dateRange}
+          </ChartContainer>
+        </div>
+      );
+      break;
+    default:
+      chartContent = <div>{(selectedDashboard != "none") ? selectedDashboard : ""}</div>;
+  }
+
   return (
     <ChartWrapper>
-      <div>Filters:</div>
-      <ul>
-        {filters.map(filter => (
-          <li key={filter.id}>
-            <strong>ID:</strong> {filter.id} <br />
-            <strong>Type:</strong> {filter.type} <br />
-            <strong>Scope:</strong> Excluded: {filter.scope.excluded.join(', ')}, Root Path: {filter.scope.rootPath.join(', ')}
-          </li>
-        ))}
-      </ul>
       <ChartsContainer>
-        <ChartContainer>
-          {chartUrl1 ? <ChartImage src={chartUrl1} alt="Chart 1" /> : 'No chart available for date range: ' + dateRange}
-        </ChartContainer>
-        <ChartContainer>
-          {chartUrl2 ? <ChartImage src={chartUrl2} alt="Chart 2" /> : 'No chart available for date range: ' + dateRange}
-        </ChartContainer>
+        {chartContent}
       </ChartsContainer>
     </ChartWrapper>
   );

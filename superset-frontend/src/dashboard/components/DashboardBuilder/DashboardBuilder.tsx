@@ -453,6 +453,12 @@ const DashboardBuilder = () => {
 
   const [barTopOffset, setBarTopOffset] = useState(0);
 
+  const [selectedDashboard, setSelectedDashboard] = useState('none');
+
+  const handleDashboardSelect = (value: string) => {
+    setSelectedDashboard(value);
+  };
+
   useEffect(() => {
     setBarTopOffset(headerRef.current?.getBoundingClientRect()?.height || 0);
 
@@ -722,18 +728,14 @@ const DashboardBuilder = () => {
                   />
                 </div>
               ) : (
-                <DashboardContainer topLevelTabs={topLevelTabs} />
+                <DashboardContainer topLevelTabs={topLevelTabs} selectedDashboard={selectedDashboard} />
               )
             ) : (
               <Loading />
             )}
 
-            {editMode && <BuilderComponentPane topOffset={barTopOffset} />}
+            {editMode && <BuilderComponentPane topOffset={barTopOffset} onDashboardSelect={handleDashboardSelect} />}
           </StyledDashboardContent>
-
-
-          {/* <CustomChartContainer topLevelTabs={topLevelTabs} /> */}
-          {/* <CustomHistogramComponent dateRange="2023-01-01 to 2023-12-31" /> */}
 
         </DashboardContentWrapper>
       </StyledContent>

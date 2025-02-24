@@ -69,6 +69,7 @@ import CustomHistogramComponent from '../../../../plugins/custom-histogram-compo
 
 type DashboardContainerProps = {
   topLevelTabs?: LayoutItem;
+  selectedDashboard?: string;
 };
 
 export const renderedChartIdsSelector = createSelector(
@@ -111,7 +112,7 @@ const useNativeFilterScopes = () => {
 
 const TOP_OF_PAGE_RANGE = 220;
 
-const DashboardContainer: FC<DashboardContainerProps> = ({ topLevelTabs }) => {
+const DashboardContainer: FC<DashboardContainerProps> = ({ topLevelTabs, selectedDashboard }) => {
   const nativeFilterScopes = useNativeFilterScopes();
   const dispatch = useDispatch();
 
@@ -125,6 +126,10 @@ const DashboardContainer: FC<DashboardContainerProps> = ({ topLevelTabs }) => {
     state => state.dashboardState.directPathToChild,
   );
   const chartIds = useChartIds();
+  // const [selectedDashboard, setSelectedDashboard] = useState('none');
+  // const handleDashboardSelect = (value: string) => {
+  //   setSelectedDashboard(value);
+  // };
 
   const renderedChartIds = useRenderedChartIds();
 
@@ -277,7 +282,7 @@ const DashboardContainer: FC<DashboardContainerProps> = ({ topLevelTabs }) => {
     ) {
       // prevent window from jumping down when tabbing
       // if already at the top of the page
-      // to help with accessibility when using keyboard navigation
+      // to `hel`p with accessibility when using keyboard navigation
       window.scrollTo(window.scrollX, 0);
     }
   }, []);
@@ -325,7 +330,7 @@ const DashboardContainer: FC<DashboardContainerProps> = ({ topLevelTabs }) => {
     <div className="grid-container" data-test="grid-container">
       <ParentSize>{renderParentSizeChildren}</ParentSize>
 
-      <CustomHistogramComponent dateRange={`${Object.keys(myFilters[0])} ${Object.values(myFilters[0])}`} filters={myFilters} />
+      <CustomHistogramComponent dateRange={`${Object.keys(myFilters[0] ?? {})} ${Object.values(myFilters[0] ?? {})}`} filters={myFilters ?? null} selectedDashboard={selectedDashboard ?? "not selected"} />
     </div>
   );
 };
