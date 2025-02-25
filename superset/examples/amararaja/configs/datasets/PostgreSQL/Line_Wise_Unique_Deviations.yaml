@@ -1,0 +1,194 @@
+table_name: Line Wise Unique Deviations
+main_dttm_col: datetime_fmt
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: postgres
+schema: public
+sql: "SELECT 'param_1' AS deviated_param,\n          CASE\n              WHEN source_table_name\
+  \ = 'ABD1_Mixer_1' THEN 'Line1'\n              WHEN source_table_name = 'ABD1_Mixer_2'\
+  \ THEN 'Line2'\n              WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n\
+  \              ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n          END AS line_name,\n          source_table_name,\n          datetime_fmt,\n\
+  \          battery_name\n   FROM abd1_mixers_all\n   WHERE density_deviation_ind\
+  \ = 1\n   UNION SELECT 'param_2',\n                CASE\n                    WHEN\
+  \ source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n                    WHEN source_table_name\
+  \ = 'ABD1_Mixer_2' THEN 'Line2'\n                    WHEN source_table_name = 'ABD1_Mixer_3'\
+  \ THEN 'Line3'\n                    ELSE source_table_name -- Ensures non-matching\
+  \ values are retained\n\n                END AS line_name,\n                source_table_name,\n\
+  \                datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE dm_water_deviation_ind = 1\n   UNION SELECT 'param_3',\n             \
+  \   CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
+  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
+  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE dump_temp_deviation_ind = 1\n   UNION SELECT 'param_4',\n            \
+  \    CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
+  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
+  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE dry_mix_time_deviation_ind = 1\n   UNION SELECT 'param_5',\n         \
+  \       CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
+  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
+  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE lead_oxide_deviation_ind = 1\n   UNION SELECT 'param_6',\n           \
+  \     CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
+  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
+  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE acid_dump_time_deviation_ind = 1\n   UNION SELECT 'param_7',\n       \
+  \         CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
+  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
+  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE peak_temp_deviation_ind = 1\n   UNION SELECT 'param_8',\n            \
+  \    CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
+  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
+  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE acid_addition_deviation_ind = 1\n   UNION SELECT 'param_9',\n        \
+  \        CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
+  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
+  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE pentration_deviation_ind = 1\n   UNION SELECT 'param_10',\n          \
+  \      CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
+  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
+  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE trim_water_deviation_ind = 1\n   UNION SELECT 'param_11',\n          \
+  \      CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
+  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
+  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE water_dump_time_deviation_ind = 1\n   UNION SELECT 'param_12',\n     \
+  \           CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
+  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
+  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE wet_mix_time_deviation_ind = 1\n   UNION SELECT 'param_13',\n        \
+  \        CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
+  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
+  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE cooling_on_temp_deviation_ind = 1\n   UNION SELECT 'param_14',\n     \
+  \           CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
+  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
+  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE air_cooling_temp_deviation_ind = 1\n   UNION SELECT 'param_15',\n    \
+  \            CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
+  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
+  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
+  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
+  \n                END AS line_name,\n                source_table_name,\n      \
+  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
+  \   WHERE water_cooling_temp_in_deviation_ind = 1"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 154e0e5d-cd51-4b19-9716-8e6b781ef044
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: datetime_fmt
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: source_table_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: deviated_param
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: battery_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: line_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: 639ad6ad-9253-46ba-ac67-04355896a05c

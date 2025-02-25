@@ -1,0 +1,239 @@
+dashboard_title: Senior management Dashboard
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: true
+uuid: a78aa776-0ef9-424f-99ba-ce2ebf4b2d8f
+position:
+  CHART-explore-122-1:
+    children: []
+    id: CHART-explore-122-1
+    meta:
+      chartId: 83
+      height: 50
+      sliceName: Batch Wise Quarterly  Compliance And Non-Compliance Count
+      uuid: f5cc2310-b9f2-4ac6-be82-0d0260e1c262
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-HdlQy1j_rvYsXSCUXETKc
+    type: CHART
+  CHART-explore-123-1:
+    children: []
+    id: CHART-explore-123-1
+    meta:
+      chartId: 117
+      height: 50
+      sliceName: ABD1 Mixer1 Spec Compliance
+      uuid: 3d6458fa-da97-4a8e-8db2-4ba23931000b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Ku07iyo56rxbFgMBLs0Tp
+    type: CHART
+  CHART-explore-124-1:
+    children: []
+    id: CHART-explore-124-1
+    meta:
+      chartId: 106
+      height: 50
+      sliceName: ABD1 Mixer2 Spec Compliance
+      uuid: 76142126-a98b-4a46-8d7d-c52d957ff50b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Ku07iyo56rxbFgMBLs0Tp
+    type: CHART
+  CHART-explore-125-1:
+    children: []
+    id: CHART-explore-125-1
+    meta:
+      chartId: 92
+      height: 50
+      sliceName: ABD1 Mixer3 Spec Compliance
+      uuid: ed0dfef7-df1b-4f23-a3b5-cb1c5be56511
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Ku07iyo56rxbFgMBLs0Tp
+    type: CHART
+  CHART-explore-173-1:
+    children: []
+    id: CHART-explore-173-1
+    meta:
+      chartId: 111
+      height: 50
+      sliceName: Count Of Total Compliance And Non-Compliance
+      uuid: 5678bf4c-1268-481c-91f3-aaa3ec9b25fa
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-HdlQy1j_rvYsXSCUXETKc
+    type: CHART
+  CHART-explore-178-1:
+    children: []
+    id: CHART-explore-178-1
+    meta:
+      chartId: 115
+      height: 30
+      sliceName: Count Of Specification Parameters
+      uuid: 957783b4-528e-4344-bf66-93fcd1ff5b99
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YJSzd3l24pi5A-cFDw3IB
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - HEADER-1JRDjxsBuaB9XEPtfFSJ6
+    - ROW-YJSzd3l24pi5A-cFDw3IB
+    - ROW-HdlQy1j_rvYsXSCUXETKc
+    - ROW-Ku07iyo56rxbFgMBLs0Tp
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER-1JRDjxsBuaB9XEPtfFSJ6:
+    children: []
+    id: HEADER-1JRDjxsBuaB9XEPtfFSJ6
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: ABD1
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Senior management Dashboard
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-HdlQy1j_rvYsXSCUXETKc:
+    children:
+    - CHART-explore-173-1
+    - CHART-explore-122-1
+    id: ROW-HdlQy1j_rvYsXSCUXETKc
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Ku07iyo56rxbFgMBLs0Tp:
+    children:
+    - CHART-explore-123-1
+    - CHART-explore-124-1
+    - CHART-explore-125-1
+    id: ROW-Ku07iyo56rxbFgMBLs0Tp
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-YJSzd3l24pi5A-cFDw3IB:
+    children:
+    - CHART-explore-178-1
+    id: ROW-YJSzd3l24pi5A-cFDw3IB
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '100':
+      id: 100
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 109
+        - 122
+        - 123
+        - 124
+        - 125
+    '122':
+      id: 122
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 100
+        - 109
+        - 123
+        - 124
+        - 125
+    '123':
+      id: 123
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 100
+        - 109
+        - 122
+        - 124
+        - 125
+    '124':
+      id: 124
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 100
+        - 109
+        - 122
+        - 123
+        - 125
+    '125':
+      id: 125
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 100
+        - 109
+        - 122
+        - 123
+        - 124
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 100
+    - 109
+    - 122
+    - 123
+    - 124
+    - 125
+  map_label_colors:
+    Non-Compliance Batches: '#1FA8C9'
+    Compliance Batches: '#454E7C'
+  color_scheme: ''
+  refresh_frequency: 0
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  shared_label_colors:
+  - Compliance Batches
+  - Non-Compliance Batches
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+version: 1.0.0

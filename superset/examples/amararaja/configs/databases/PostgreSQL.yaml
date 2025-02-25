@@ -6,7 +6,7 @@ allow_run_async: false
 allow_ctas: false
 allow_cvas: false
 allow_dml: false
-allow_csv_upload: false
+allow_file_upload: false
 extra:
   allows_virtual_table_explore: true
 impersonate_user: false

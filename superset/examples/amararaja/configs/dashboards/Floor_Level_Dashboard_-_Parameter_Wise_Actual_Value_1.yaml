@@ -1,0 +1,1288 @@
+dashboard_title: Floor Level Dashboard - Parameter Wise Actual Value
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: true
+uuid: 460a349f-95ce-4f64-aec3-700036b25775
+position:
+  CHART--I9DCQysXy7_TndSfnQl6:
+    children: []
+    id: CHART--I9DCQysXy7_TndSfnQl6
+    meta:
+      chartId: 36
+      height: 33
+      sliceName: Cooling On Temp (YTD)
+      uuid: 19162b15-7aab-4daf-85f8-88aa735a1ef2
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RUQCe7xsA5EFbtEZOSy1H
+    type: CHART
+  CHART-0UrRv3O7kFZeKFzQjoykJ:
+    children: []
+    id: CHART-0UrRv3O7kFZeKFzQjoykJ
+    meta:
+      chartId: 10
+      height: 33
+      sliceName: 'Density YTD, '
+      uuid: 4971f199-a810-4346-b2e3-db43d0428a2d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-J5G7V-jRgkfV7vuA3PEMk
+    type: CHART
+  CHART-0eDwtyAqQok1KxKimarSF:
+    children: []
+    id: CHART-0eDwtyAqQok1KxKimarSF
+    meta:
+      chartId: 108
+      height: 33
+      sliceName: Wet Mix Time (MTD)
+      uuid: a24d397d-81aa-47aa-8edc-66cc88c57491
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-XLP5XLJhKQ-daDteSnG9t
+    type: CHART
+  CHART-0rMwUStu7Xoe9u-YkG8dF:
+    children: []
+    id: CHART-0rMwUStu7Xoe9u-YkG8dF
+    meta:
+      chartId: 54
+      height: 29
+      sliceName: 'DM Water Lastday, '
+      uuid: f3196439-bf67-4c7e-a9bb-d4c2e13ba57a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RbKwu3-qNSzMue3E1HHOH
+    type: CHART
+  CHART-2S1nChNRApaio0zLZivy-:
+    children: []
+    id: CHART-2S1nChNRApaio0zLZivy-
+    meta:
+      chartId: 20
+      height: 33
+      sliceName: Wet Mix Time (Lastday)
+      uuid: a6360c5d-c5f5-4f0f-bcd7-55ca3470d1cd
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-XLP5XLJhKQ-daDteSnG9t
+    type: CHART
+  CHART-2_sYvC9WrmwwQygOYUu4i:
+    children: []
+    id: CHART-2_sYvC9WrmwwQygOYUu4i
+    meta:
+      chartId: 109
+      height: 32
+      sliceName: Acid Dump Time MTD
+      uuid: d0e27feb-f457-444d-a11a-f1d67db775df
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-75TYKzm9X7PpgKUxYtAV6
+    type: CHART
+  CHART-2daRna5XnyZKVM8_IlVZ2:
+    children: []
+    id: CHART-2daRna5XnyZKVM8_IlVZ2
+    meta:
+      chartId: 2
+      height: 33
+      sliceName: 'Density MTD, '
+      uuid: b70f0721-d8b3-4929-98a6-08bb06132fa6
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-J5G7V-jRgkfV7vuA3PEMk
+    type: CHART
+  CHART-3efn7qWmYUs9s1PYjMgj8:
+    children: []
+    id: CHART-3efn7qWmYUs9s1PYjMgj8
+    meta:
+      chartId: 58
+      height: 32
+      sliceName: 'Penetration YTD, '
+      uuid: ddc02b0e-a5e4-4ae5-9b1e-ed880b6dd42f
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-aH4hdH-LuFYse0HV4MWKZ
+    type: CHART
+  CHART-3whDUoHXv6gOpzJxzxomc:
+    children: []
+    id: CHART-3whDUoHXv6gOpzJxzxomc
+    meta:
+      chartId: 16
+      height: 31
+      sliceName: Acid Consumed Lastday
+      uuid: c8d74e88-20c0-4d24-b953-272251c29653
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-nc04EGyJwX-GKDotDQ_1i
+    type: CHART
+  CHART-4vL84QTHO_k4c2IxwHhZN:
+    children: []
+    id: CHART-4vL84QTHO_k4c2IxwHhZN
+    meta:
+      chartId: 27
+      height: 33
+      sliceName: 'Water Dump Time Lastday, '
+      uuid: e501f528-31e3-416e-8483-ba18bb3de665
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-OHIPBVgpdS5elTW1Gpiz1
+    type: CHART
+  CHART-6J1igXrCbxc53OwKONaXk:
+    children: []
+    id: CHART-6J1igXrCbxc53OwKONaXk
+    meta:
+      chartId: 5
+      height: 30
+      sliceName: Final Water (MTD)
+      uuid: 42919b4a-f891-4071-b8db-574c06af210f
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-yoXZToKOQ51dl3HWBWMlL
+    type: CHART
+  CHART-6fn9f9pMZzKMhHIS8Vhf4:
+    children: []
+    id: CHART-6fn9f9pMZzKMhHIS8Vhf4
+    meta:
+      chartId: 113
+      height: 34
+      sliceName: Dry Mix Time (Lastday)
+      uuid: b2ff478c-525a-4306-902b-1b118e1e0ec3
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-KncGV-dt6zz-_afhotuQZ
+    type: CHART
+  CHART-6s1HbXhab1ZpV7ErKzrqf:
+    children: []
+    id: CHART-6s1HbXhab1ZpV7ErKzrqf
+    meta:
+      chartId: 80
+      height: 30
+      sliceName: Final Water (YTD)
+      uuid: 873e84d4-22a8-4885-96e5-3f976a47076f
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-yoXZToKOQ51dl3HWBWMlL
+    type: CHART
+  CHART-7I5w4GNJZblIyIvWwMXV1:
+    children: []
+    id: CHART-7I5w4GNJZblIyIvWwMXV1
+    meta:
+      chartId: 3
+      height: 31
+      sliceName: Water Cooling In Temp (MTD)
+      uuid: 4134e0df-3b80-495d-895b-b416a8e77a18
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-j_J_ZMW1wRdLbZL6cxGFS
+    type: CHART
+  CHART-AZdR2boVSIy8oebiPhEK8:
+    children: []
+    id: CHART-AZdR2boVSIy8oebiPhEK8
+    meta:
+      chartId: 13
+      height: 32
+      sliceName: Water Cooling In Temp (Lastday)
+      uuid: c769817b-a984-4bad-83f1-c66312b2109c
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-j_J_ZMW1wRdLbZL6cxGFS
+    type: CHART
+  CHART-DGls_d76RWZwgQtDAvgqR:
+    children: []
+    id: CHART-DGls_d76RWZwgQtDAvgqR
+    meta:
+      chartId: 86
+      height: 30
+      sliceName: 'Peak Temp YTD, '
+      uuid: 985eb6ff-000c-461a-bdce-7149c8d48c33
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-QcC5ZZDBL5x9M-_yDZknE
+    type: CHART
+  CHART-DMrZz3oVkmd7JddMLT9eQ:
+    children: []
+    id: CHART-DMrZz3oVkmd7JddMLT9eQ
+    meta:
+      chartId: 43
+      height: 33
+      sliceName: 'Water Dump Time MTD, '
+      uuid: 9a5dac72-4057-4e04-abdc-db65852ea061
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-OHIPBVgpdS5elTW1Gpiz1
+    type: CHART
+  CHART-DdZHIl4h0Eqd8XqD95gZF:
+    children: []
+    id: CHART-DdZHIl4h0Eqd8XqD95gZF
+    meta:
+      chartId: 1
+      height: 29
+      sliceName: 'DM Water MTD, '
+      uuid: badb4d08-3620-409b-acc9-1957b20584e7
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RbKwu3-qNSzMue3E1HHOH
+    type: CHART
+  CHART-FmD-P8fAt5kRFhRMrOfXd:
+    children: []
+    id: CHART-FmD-P8fAt5kRFhRMrOfXd
+    meta:
+      chartId: 25
+      height: 31
+      sliceName: 'Acid Consumed MTD, '
+      uuid: 551b2fbe-7152-48b5-b322-ac62e19980f4
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-nc04EGyJwX-GKDotDQ_1i
+    type: CHART
+  CHART-HGUaF_Hk5rKK13jkmUOxX:
+    children: []
+    id: CHART-HGUaF_Hk5rKK13jkmUOxX
+    meta:
+      chartId: 53
+      height: 32
+      sliceName: 'Air Cooling Temp MTD, '
+      uuid: 65c20205-826c-43ce-8877-2a586e6fac0d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wkueaTcsK5cK9EoZ_QKKV
+    type: CHART
+  CHART-Har3D7RVPWGrJD8PqU4oJ:
+    children: []
+    id: CHART-Har3D7RVPWGrJD8PqU4oJ
+    meta:
+      chartId: 93
+      height: 32
+      sliceName: Acid Dump Time YTD
+      uuid: 40adb533-8400-4e7a-9e6f-b497eb84e3dc
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-75TYKzm9X7PpgKUxYtAV6
+    type: CHART
+  CHART-I_WiR6di_IG1smc7oViUH:
+    children: []
+    id: CHART-I_WiR6di_IG1smc7oViUH
+    meta:
+      chartId: 9
+      height: 31
+      sliceName: 'Acid Consumed YTD, '
+      uuid: 072fa863-1258-4573-9754-a1796e0de327
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-nc04EGyJwX-GKDotDQ_1i
+    type: CHART
+  CHART-IffIamDkyteXIJ9IMd5Ep:
+    children: []
+    id: CHART-IffIamDkyteXIJ9IMd5Ep
+    meta:
+      chartId: 62
+      height: 30
+      sliceName: 'Peak Temp Last Day, '
+      uuid: d7f6ad64-c054-45bc-8bb4-9d9409361def
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-QcC5ZZDBL5x9M-_yDZknE
+    type: CHART
+  CHART-KtoWcTGpZCf4yN3qMcsgu:
+    children: []
+    id: CHART-KtoWcTGpZCf4yN3qMcsgu
+    meta:
+      chartId: 34
+      height: 33
+      sliceName: Wet Mix Time (YTD)
+      uuid: fef90b59-2884-4bd7-a717-dc8f3cbcbd8b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-XLP5XLJhKQ-daDteSnG9t
+    type: CHART
+  CHART-MdQjy3FhJHWQq0BzvsZeW:
+    children: []
+    id: CHART-MdQjy3FhJHWQq0BzvsZeW
+    meta:
+      chartId: 30
+      height: 32
+      sliceName: 'Air Cooling Temp YTD, '
+      uuid: c156e5f5-26ac-40ee-80f9-9dc2400d5544
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wkueaTcsK5cK9EoZ_QKKV
+    type: CHART
+  CHART-PGNsOguO-09NSq3Ah07IN:
+    children: []
+    id: CHART-PGNsOguO-09NSq3Ah07IN
+    meta:
+      chartId: 48
+      height: 33
+      sliceName: Cooling On Temp (Lastday)
+      uuid: b8f1439c-d4d0-4538-9dc9-8f78dfaba068
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RUQCe7xsA5EFbtEZOSy1H
+    type: CHART
+  CHART-Q-TpASg531IVa7nf9ObGs:
+    children: []
+    id: CHART-Q-TpASg531IVa7nf9ObGs
+    meta:
+      chartId: 35
+      height: 32
+      sliceName: Acid Dump Time Lastday
+      uuid: 2996f3ba-7129-4806-9233-0e4bac8e356f
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-75TYKzm9X7PpgKUxYtAV6
+    type: CHART
+  CHART-Z9tYptu2aa2i7WyM5qSQv:
+    children: []
+    id: CHART-Z9tYptu2aa2i7WyM5qSQv
+    meta:
+      chartId: 88
+      height: 30
+      sliceName: Final Water (Lastday)
+      uuid: 2878123a-338a-43de-adae-b3d769ad8cec
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-yoXZToKOQ51dl3HWBWMlL
+    type: CHART
+  CHART-cZ_851JX0KnF6zRS-2Y_L:
+    children: []
+    id: CHART-cZ_851JX0KnF6zRS-2Y_L
+    meta:
+      chartId: 12
+      height: 33
+      sliceName: Cooling On Temp (MTD)
+      uuid: 5970bc7b-41f4-4bb1-9041-d0143d28cb40
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RUQCe7xsA5EFbtEZOSy1H
+    type: CHART
+  CHART-eBZFbbUXP4b3JDcNPvpe_:
+    children: []
+    id: CHART-eBZFbbUXP4b3JDcNPvpe_
+    meta:
+      chartId: 39
+      height: 33
+      sliceName: Dump Temp (YTD)
+      uuid: 1563ff64-9b09-460b-a679-620d1546f821
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-qndRak4TXXK3u63_YMhn2
+    type: CHART
+  CHART-eOEMYUOeeEusvNawcJUy-:
+    children: []
+    id: CHART-eOEMYUOeeEusvNawcJUy-
+    meta:
+      chartId: 104
+      height: 31
+      sliceName: Lead Oxide Consumed (MTD)
+      uuid: 06002c7e-9cba-48c9-964f-ed085734cf60
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-A-Upb6Ih8WSXUhZbf7_Gp
+    type: CHART
+  CHART-hcbFivzYvA2otrsN-ffem:
+    children: []
+    id: CHART-hcbFivzYvA2otrsN-ffem
+    meta:
+      chartId: 49
+      height: 34
+      sliceName: Dry Mix Time (YTD)
+      uuid: 563e6af4-e6a4-4170-a800-48aeff72d93d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-KncGV-dt6zz-_afhotuQZ
+    type: CHART
+  CHART-hyuGv-GJ5Ycs039S7xfF6:
+    children: []
+    id: CHART-hyuGv-GJ5Ycs039S7xfF6
+    meta:
+      chartId: 105
+      height: 32
+      sliceName: 'Air Cooling Temp Lastday, '
+      uuid: 892ebfff-4756-42bb-9ef0-fb386ee2e1e4
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wkueaTcsK5cK9EoZ_QKKV
+    type: CHART
+  CHART-iz-nJob-VhyYpjiNkVhXB:
+    children: []
+    id: CHART-iz-nJob-VhyYpjiNkVhXB
+    meta:
+      chartId: 32
+      height: 29
+      sliceName: 'DM Water YTD, '
+      uuid: b04ad007-4605-45ae-a26b-ff0a6321a5f0
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RbKwu3-qNSzMue3E1HHOH
+    type: CHART
+  CHART-k_jcSNXa83sPjVpiP9PE3:
+    children: []
+    id: CHART-k_jcSNXa83sPjVpiP9PE3
+    meta:
+      chartId: 8
+      height: 30
+      sliceName: 'Peak Temp MTD, '
+      uuid: 06c8be6c-06f6-4840-b46e-1d8e33fa2f93
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-QcC5ZZDBL5x9M-_yDZknE
+    type: CHART
+  CHART-lBmgt7kuen1kLa9m02ofG:
+    children: []
+    id: CHART-lBmgt7kuen1kLa9m02ofG
+    meta:
+      chartId: 11
+      height: 31
+      sliceName: Water Cooling In Temp (YTD)
+      uuid: 2b614062-31f5-47d0-854d-ca6299726729
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-j_J_ZMW1wRdLbZL6cxGFS
+    type: CHART
+  CHART-mb7k51pygMho6VCTKy_vL:
+    children: []
+    id: CHART-mb7k51pygMho6VCTKy_vL
+    meta:
+      chartId: 101
+      height: 33
+      sliceName: 'Density Lastday, '
+      uuid: beb86cb6-2030-4d0b-8585-18fc092575b8
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-J5G7V-jRgkfV7vuA3PEMk
+    type: CHART
+  CHART-mwi3DLguxknsgRf1b6029:
+    children: []
+    id: CHART-mwi3DLguxknsgRf1b6029
+    meta:
+      chartId: 74
+      height: 33
+      sliceName: 'Water Dump Time YTD, '
+      uuid: 1b4182fd-f13b-43a5-b841-762ffdbc036e
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-OHIPBVgpdS5elTW1Gpiz1
+    type: CHART
+  CHART-oph9WUZ0zjeS5gHty63bc:
+    children: []
+    id: CHART-oph9WUZ0zjeS5gHty63bc
+    meta:
+      chartId: 57
+      height: 32
+      sliceName: 'Penetration Lastday, '
+      uuid: 0a21987a-f65c-40b8-a5c5-9efa97174fe0
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-aH4hdH-LuFYse0HV4MWKZ
+    type: CHART
+  CHART-qdj2jc0AR-AGpihmdR_6Y:
+    children: []
+    id: CHART-qdj2jc0AR-AGpihmdR_6Y
+    meta:
+      chartId: 79
+      height: 33
+      sliceName: Dump Temp (MTD)
+      uuid: 2e87a71e-e4b4-4937-b953-6ed33095f6d7
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-qndRak4TXXK3u63_YMhn2
+    type: CHART
+  CHART-qjaK_XIfZTvFOtaNm2YG-:
+    children: []
+    id: CHART-qjaK_XIfZTvFOtaNm2YG-
+    meta:
+      chartId: 99
+      height: 34
+      sliceName: Dry Mix Time (MTD)
+      uuid: 7dd2ccf1-7e52-44f8-974c-eab758efc81a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-KncGV-dt6zz-_afhotuQZ
+    type: CHART
+  CHART-qnROAJKpZ7ElPRE2BQVDX:
+    children: []
+    id: CHART-qnROAJKpZ7ElPRE2BQVDX
+    meta:
+      chartId: 89
+      height: 31
+      sliceName: Lead Oxide Consumed (YTD)
+      uuid: a473dd22-9f72-4d7a-8221-78b4dbdfec8a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-A-Upb6Ih8WSXUhZbf7_Gp
+    type: CHART
+  CHART-uMaBYCiYA8qrmYtllTa4x:
+    children: []
+    id: CHART-uMaBYCiYA8qrmYtllTa4x
+    meta:
+      chartId: 14
+      height: 32
+      sliceName: 'Penetration MTD, '
+      uuid: 480ec6ec-2779-4b83-a306-97944726d962
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-aH4hdH-LuFYse0HV4MWKZ
+    type: CHART
+  CHART-wpycwY4yKD15IzlP3xsjb:
+    children: []
+    id: CHART-wpycwY4yKD15IzlP3xsjb
+    meta:
+      chartId: 60
+      height: 33
+      sliceName: Dump Temp (Lastday)
+      uuid: 25ba7c73-cb6b-4e28-a198-85806f947f9d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-qndRak4TXXK3u63_YMhn2
+    type: CHART
+  CHART-ykZIo4bqRylO3lw4ukpuQ:
+    children: []
+    id: CHART-ykZIo4bqRylO3lw4ukpuQ
+    meta:
+      chartId: 70
+      height: 31
+      sliceName: Lead Oxide Consumed (Lastday)
+      uuid: edf8b5b0-15a0-4888-8e2e-d302ff1d5548
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-A-Upb6Ih8WSXUhZbf7_Gp
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-QcC5ZZDBL5x9M-_yDZknE
+    - ROW-OHIPBVgpdS5elTW1Gpiz1
+    - ROW-75TYKzm9X7PpgKUxYtAV6
+    - ROW-wkueaTcsK5cK9EoZ_QKKV
+    - ROW-nc04EGyJwX-GKDotDQ_1i
+    - ROW-RbKwu3-qNSzMue3E1HHOH
+    - ROW-aH4hdH-LuFYse0HV4MWKZ
+    - ROW-J5G7V-jRgkfV7vuA3PEMk
+    - ROW-XLP5XLJhKQ-daDteSnG9t
+    - ROW-KncGV-dt6zz-_afhotuQZ
+    - ROW-RUQCe7xsA5EFbtEZOSy1H
+    - ROW-yoXZToKOQ51dl3HWBWMlL
+    - ROW-j_J_ZMW1wRdLbZL6cxGFS
+    - ROW-qndRak4TXXK3u63_YMhn2
+    - ROW-A-Upb6Ih8WSXUhZbf7_Gp
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Floor Level Dashboard - Parameter Wise Actual Value
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-75TYKzm9X7PpgKUxYtAV6:
+    children:
+    - CHART-Har3D7RVPWGrJD8PqU4oJ
+    - CHART-2_sYvC9WrmwwQygOYUu4i
+    - CHART-Q-TpASg531IVa7nf9ObGs
+    id: ROW-75TYKzm9X7PpgKUxYtAV6
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-A-Upb6Ih8WSXUhZbf7_Gp:
+    children:
+    - CHART-qnROAJKpZ7ElPRE2BQVDX
+    - CHART-eOEMYUOeeEusvNawcJUy-
+    - CHART-ykZIo4bqRylO3lw4ukpuQ
+    id: ROW-A-Upb6Ih8WSXUhZbf7_Gp
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-J5G7V-jRgkfV7vuA3PEMk:
+    children:
+    - CHART-0UrRv3O7kFZeKFzQjoykJ
+    - CHART-2daRna5XnyZKVM8_IlVZ2
+    - CHART-mb7k51pygMho6VCTKy_vL
+    id: ROW-J5G7V-jRgkfV7vuA3PEMk
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-KncGV-dt6zz-_afhotuQZ:
+    children:
+    - CHART-hcbFivzYvA2otrsN-ffem
+    - CHART-qjaK_XIfZTvFOtaNm2YG-
+    - CHART-6fn9f9pMZzKMhHIS8Vhf4
+    id: ROW-KncGV-dt6zz-_afhotuQZ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-OHIPBVgpdS5elTW1Gpiz1:
+    children:
+    - CHART-mwi3DLguxknsgRf1b6029
+    - CHART-DMrZz3oVkmd7JddMLT9eQ
+    - CHART-4vL84QTHO_k4c2IxwHhZN
+    id: ROW-OHIPBVgpdS5elTW1Gpiz1
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-QcC5ZZDBL5x9M-_yDZknE:
+    children:
+    - CHART-DGls_d76RWZwgQtDAvgqR
+    - CHART-k_jcSNXa83sPjVpiP9PE3
+    - CHART-IffIamDkyteXIJ9IMd5Ep
+    id: ROW-QcC5ZZDBL5x9M-_yDZknE
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-RUQCe7xsA5EFbtEZOSy1H:
+    children:
+    - CHART--I9DCQysXy7_TndSfnQl6
+    - CHART-cZ_851JX0KnF6zRS-2Y_L
+    - CHART-PGNsOguO-09NSq3Ah07IN
+    id: ROW-RUQCe7xsA5EFbtEZOSy1H
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-RbKwu3-qNSzMue3E1HHOH:
+    children:
+    - CHART-iz-nJob-VhyYpjiNkVhXB
+    - CHART-DdZHIl4h0Eqd8XqD95gZF
+    - CHART-0rMwUStu7Xoe9u-YkG8dF
+    id: ROW-RbKwu3-qNSzMue3E1HHOH
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-XLP5XLJhKQ-daDteSnG9t:
+    children:
+    - CHART-KtoWcTGpZCf4yN3qMcsgu
+    - CHART-0eDwtyAqQok1KxKimarSF
+    - CHART-2S1nChNRApaio0zLZivy-
+    id: ROW-XLP5XLJhKQ-daDteSnG9t
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-aH4hdH-LuFYse0HV4MWKZ:
+    children:
+    - CHART-3efn7qWmYUs9s1PYjMgj8
+    - CHART-uMaBYCiYA8qrmYtllTa4x
+    - CHART-oph9WUZ0zjeS5gHty63bc
+    id: ROW-aH4hdH-LuFYse0HV4MWKZ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-j_J_ZMW1wRdLbZL6cxGFS:
+    children:
+    - CHART-lBmgt7kuen1kLa9m02ofG
+    - CHART-7I5w4GNJZblIyIvWwMXV1
+    - CHART-AZdR2boVSIy8oebiPhEK8
+    id: ROW-j_J_ZMW1wRdLbZL6cxGFS
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-nc04EGyJwX-GKDotDQ_1i:
+    children:
+    - CHART-I_WiR6di_IG1smc7oViUH
+    - CHART-FmD-P8fAt5kRFhRMrOfXd
+    - CHART-3whDUoHXv6gOpzJxzxomc
+    id: ROW-nc04EGyJwX-GKDotDQ_1i
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-qndRak4TXXK3u63_YMhn2:
+    children:
+    - CHART-eBZFbbUXP4b3JDcNPvpe_
+    - CHART-qdj2jc0AR-AGpihmdR_6Y
+    - CHART-wpycwY4yKD15IzlP3xsjb
+    id: ROW-qndRak4TXXK3u63_YMhn2
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-wkueaTcsK5cK9EoZ_QKKV:
+    children:
+    - CHART-MdQjy3FhJHWQq0BzvsZeW
+    - CHART-HGUaF_Hk5rKK13jkmUOxX
+    - CHART-hyuGv-GJ5Ycs039S7xfF6
+    id: ROW-wkueaTcsK5cK9EoZ_QKKV
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-yoXZToKOQ51dl3HWBWMlL:
+    children:
+    - CHART-6s1HbXhab1ZpV7ErKzrqf
+    - CHART-6J1igXrCbxc53OwKONaXk
+    - CHART-Z9tYptu2aa2i7WyM5qSQv
+    id: ROW-yoXZToKOQ51dl3HWBWMlL
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '19':
+      id: 19
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 16
+        - 18
+        - 21
+        - 24
+        - 26
+        - 29
+        - 31
+        - 32
+        - 33
+        - 35
+        - 37
+        - 40
+        - 43
+        - 44
+        - 45
+        - 48
+        - 57
+        - 65
+        - 68
+        - 71
+        - 73
+        - 82
+        - 85
+        - 88
+        - 94
+        - 96
+        - 97
+        - 101
+        - 105
+        - 106
+        - 111
+        - 112
+        - 113
+        - 119
+        - 120
+    '24':
+      id: 24
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 16
+        - 18
+        - 19
+        - 21
+        - 26
+        - 29
+        - 31
+        - 32
+        - 33
+        - 35
+        - 37
+        - 40
+        - 43
+        - 44
+        - 45
+        - 48
+        - 57
+        - 65
+        - 68
+        - 71
+        - 73
+        - 82
+        - 85
+        - 88
+        - 94
+        - 96
+        - 97
+        - 101
+        - 105
+        - 106
+        - 111
+        - 112
+        - 113
+        - 119
+        - 120
+    '31':
+      id: 31
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 16
+        - 18
+        - 19
+        - 21
+        - 24
+        - 26
+        - 29
+        - 32
+        - 33
+        - 35
+        - 37
+        - 40
+        - 43
+        - 44
+        - 45
+        - 48
+        - 57
+        - 65
+        - 68
+        - 71
+        - 73
+        - 82
+        - 85
+        - 88
+        - 94
+        - 96
+        - 97
+        - 101
+        - 105
+        - 106
+        - 111
+        - 112
+        - 113
+        - 119
+        - 120
+    '57':
+      id: 57
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 16
+        - 18
+        - 19
+        - 21
+        - 24
+        - 26
+        - 29
+        - 31
+        - 32
+        - 33
+        - 35
+        - 37
+        - 40
+        - 43
+        - 44
+        - 45
+        - 48
+        - 65
+        - 68
+        - 71
+        - 73
+        - 82
+        - 85
+        - 88
+        - 94
+        - 96
+        - 97
+        - 101
+        - 105
+        - 106
+        - 111
+        - 112
+        - 113
+        - 119
+        - 120
+    '71':
+      id: 71
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 16
+        - 18
+        - 19
+        - 21
+        - 24
+        - 26
+        - 29
+        - 31
+        - 32
+        - 33
+        - 35
+        - 37
+        - 40
+        - 43
+        - 44
+        - 45
+        - 48
+        - 57
+        - 65
+        - 68
+        - 73
+        - 82
+        - 85
+        - 88
+        - 94
+        - 96
+        - 97
+        - 101
+        - 105
+        - 106
+        - 111
+        - 112
+        - 113
+        - 119
+        - 120
+    '73':
+      id: 73
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 16
+        - 18
+        - 19
+        - 21
+        - 24
+        - 26
+        - 29
+        - 31
+        - 32
+        - 33
+        - 35
+        - 37
+        - 40
+        - 43
+        - 44
+        - 45
+        - 48
+        - 57
+        - 65
+        - 68
+        - 71
+        - 82
+        - 85
+        - 88
+        - 94
+        - 96
+        - 97
+        - 101
+        - 105
+        - 106
+        - 111
+        - 112
+        - 113
+        - 119
+        - 120
+    '82':
+      id: 82
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 16
+        - 18
+        - 19
+        - 21
+        - 24
+        - 26
+        - 29
+        - 31
+        - 32
+        - 33
+        - 35
+        - 37
+        - 40
+        - 43
+        - 44
+        - 45
+        - 48
+        - 57
+        - 65
+        - 68
+        - 71
+        - 73
+        - 85
+        - 88
+        - 94
+        - 96
+        - 97
+        - 101
+        - 105
+        - 106
+        - 111
+        - 112
+        - 113
+        - 119
+        - 120
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 16
+    - 18
+    - 19
+    - 21
+    - 24
+    - 26
+    - 29
+    - 31
+    - 32
+    - 33
+    - 35
+    - 37
+    - 40
+    - 43
+    - 44
+    - 45
+    - 48
+    - 57
+    - 65
+    - 68
+    - 71
+    - 73
+    - 82
+    - 85
+    - 88
+    - 94
+    - 96
+    - 97
+    - 101
+    - 105
+    - 106
+    - 111
+    - 112
+    - 113
+    - 119
+    - 120
+  map_label_colors:
+    peak_temp: '#1FA8C9'
+    water_dump_time: '#1FA8C9'
+    acid_dump_time: '#1FA8C9'
+    air_cooling_temp: '#1FA8C9'
+    acid_addition: '#1FA8C9'
+    dm_water: '#1FA8C9'
+    pentration: '#1FA8C9'
+    density: '#1FA8C9'
+    wet_mix_time: '#1FA8C9'
+    dry_mix_time: '#1FA8C9'
+    cooling_on_temp: '#1FA8C9'
+    final_water: '#1FA8C9'
+    water_cooling_temp_in: '#1FA8C9'
+    dump_temp: '#1FA8C9'
+    COUNT(lead_oxide): '#1FA8C9'
+  shared_label_colors:
+  - COUNT(lead_oxide)
+  - acid_addition
+  - acid_dump_time
+  - air_cooling_temp
+  - cooling_on_temp
+  - density
+  - dm_water
+  - dry_mix_time
+  - dump_temp
+  - final_water
+  - peak_temp
+  - pentration
+  - water_cooling_temp_in
+  - water_dump_time
+  - wet_mix_time
+  color_scheme: ''
+  refresh_frequency: 0
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+version: 1.0.0

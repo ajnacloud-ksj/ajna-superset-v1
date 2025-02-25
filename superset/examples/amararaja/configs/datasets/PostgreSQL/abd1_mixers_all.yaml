@@ -23,8 +23,7 @@ metrics:
   description: null
   d3format: null
   currency: null
-  extra:
-    warning_markdown: ''
+  extra: {}
   warning_text: null
 columns:
 - column_name: batch_end_time_repeat
@@ -38,8 +37,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: datetime_fmt
   verbose_name: null
   is_dttm: true
@@ -51,8 +49,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: silo_1_weight
   verbose_name: null
   is_dttm: false
@@ -64,8 +61,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: silo_2_weight
   verbose_name: null
   is_dttm: false
@@ -77,8 +73,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: silo_3_weight
   verbose_name: null
   is_dttm: false
@@ -90,8 +85,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: silo_4_weight
   verbose_name: null
   is_dttm: false
@@ -103,8 +97,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: silo_5_weight
   verbose_name: null
   is_dttm: false
@@ -116,8 +109,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: silo_6_weight
   verbose_name: null
   is_dttm: false
@@ -129,8 +121,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: silo_7_weight
   verbose_name: null
   is_dttm: false
@@ -142,8 +133,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: silo_8_weight
   verbose_name: null
   is_dttm: false
@@ -155,8 +145,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_cooling_temp_in_spec_max
   verbose_name: null
   is_dttm: false
@@ -168,8 +157,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_cooling_temp_in_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -181,8 +169,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_cooling_temp_in_spec_min
   verbose_name: null
   is_dttm: false
@@ -194,8 +181,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: acid_add_time_spec_max
   verbose_name: null
   is_dttm: false
@@ -207,8 +193,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: acid_add_time_spec_min
   verbose_name: null
   is_dttm: false
@@ -220,8 +205,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: air_cooing_temp_spec_max
   verbose_name: null
   is_dttm: false
@@ -233,8 +217,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: acid_dump_time_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -246,8 +229,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: air_cooling_temp_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -259,8 +241,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_dump_time_spec_max
   verbose_name: null
   is_dttm: false
@@ -272,8 +253,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_dump_time_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -285,8 +265,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_cooling_temp_in_zscore
   verbose_name: null
   is_dttm: false
@@ -298,8 +277,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: air_cooing_temp_spec_min
   verbose_name: null
   is_dttm: false
@@ -311,8 +289,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: cooling_on_temp_spec_max
   verbose_name: null
   is_dttm: false
@@ -324,8 +301,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: cooling_on_temp_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -337,8 +313,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_dump_time_spec_min
   verbose_name: null
   is_dttm: false
@@ -350,8 +325,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dry_mix_time_spec_max
   verbose_name: null
   is_dttm: false
@@ -363,8 +337,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: wet_mix_time_spec_max
   verbose_name: null
   is_dttm: false
@@ -376,8 +349,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dry_mix_time_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -389,8 +361,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: wet_mix_time_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -402,8 +373,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: wet_to_dry_mix_ratio
   verbose_name: null
   is_dttm: false
@@ -415,8 +385,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: cooling_on_temp_spec_min
   verbose_name: null
   is_dttm: false
@@ -428,8 +397,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dry_mix_time_spec_min
   verbose_name: null
   is_dttm: false
@@ -441,8 +409,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: wet_mix_time_spec_min
   verbose_name: null
   is_dttm: false
@@ -454,8 +421,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: reporting_time_temp_of_mixer
   verbose_name: null
   is_dttm: false
@@ -467,8 +433,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: acid_addition_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -480,8 +445,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: lead_to_acid_ratio
   verbose_name: null
   is_dttm: false
@@ -493,8 +457,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: pentration_value_spec_max
   verbose_name: null
   is_dttm: false
@@ -506,8 +469,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: initial_pentration_of_paste
   verbose_name: null
   is_dttm: false
@@ -519,8 +481,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: acid_weight_spec_max
   verbose_name: null
   is_dttm: false
@@ -532,8 +493,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: lead_oxide_spec_max
   verbose_name: null
   is_dttm: false
@@ -545,8 +505,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: past_density_spec_max
   verbose_name: null
   is_dttm: false
@@ -558,8 +517,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_weight_spec_max
   verbose_name: null
   is_dttm: false
@@ -571,8 +529,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: pentration_value_spec_min
   verbose_name: null
   is_dttm: false
@@ -584,8 +541,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: peak_temp_spec_max
   verbose_name: null
   is_dttm: false
@@ -597,8 +553,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: trim_water_spec_max
   verbose_name: null
   is_dttm: false
@@ -610,8 +565,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: lead_oxide_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -623,8 +577,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dm_water_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -636,8 +589,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: peak_temp_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -649,8 +601,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: trim_water_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -662,8 +613,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: initial_density_of_paste
   verbose_name: null
   is_dttm: false
@@ -675,8 +625,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: acid_dump_time_zscore
   verbose_name: null
   is_dttm: false
@@ -688,8 +637,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: acid_weight_spec_min
   verbose_name: null
   is_dttm: false
@@ -701,8 +649,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: air_cooling_temp_zscore
   verbose_name: null
   is_dttm: false
@@ -714,8 +661,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: lead_oxide_spec_min
   verbose_name: null
   is_dttm: false
@@ -727,8 +673,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_dump_time_zscore
   verbose_name: null
   is_dttm: false
@@ -740,8 +685,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: past_density_spec_min
   verbose_name: null
   is_dttm: false
@@ -753,8 +697,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dump_temp_spec_max
   verbose_name: null
   is_dttm: false
@@ -766,8 +709,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_weight_spec_min
   verbose_name: null
   is_dttm: false
@@ -779,8 +721,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: peak_temp_spec_min
   verbose_name: null
   is_dttm: false
@@ -792,8 +733,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_cooling_temp_in
   verbose_name: null
   is_dttm: false
@@ -805,8 +745,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_cooling_temp_out
   verbose_name: null
   is_dttm: false
@@ -818,8 +757,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: trim_water_spec_min
   verbose_name: null
   is_dttm: false
@@ -831,8 +769,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dump_temp_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -844,8 +781,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: cooling_on_temp_zscore
   verbose_name: null
   is_dttm: false
@@ -857,8 +793,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dry_mix_time_zscore
   verbose_name: null
   is_dttm: false
@@ -870,8 +805,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dump_temp_spec_min
   verbose_name: null
   is_dttm: false
@@ -883,8 +817,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: wet_mix_time_zscore
   verbose_name: null
   is_dttm: false
@@ -896,8 +829,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: batch_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -909,8 +841,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: acid_addition_zscore
   verbose_name: null
   is_dttm: false
@@ -922,8 +853,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: pentration_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -935,8 +865,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: lead_oxide_zscore
   verbose_name: null
   is_dttm: false
@@ -948,8 +877,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: acid_dump_time
   verbose_name: null
   is_dttm: false
@@ -961,8 +889,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dm_water_zscore
   verbose_name: null
   is_dttm: false
@@ -974,8 +901,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: peak_temp_zscore
   verbose_name: null
   is_dttm: false
@@ -987,8 +913,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: trim_water_zscore
   verbose_name: null
   is_dttm: false
@@ -1000,8 +925,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: jacket_on_temp
   verbose_name: null
   is_dttm: false
@@ -1013,8 +937,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: air_cooling_temp
   verbose_name: null
   is_dttm: false
@@ -1026,8 +949,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: density_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -1039,8 +961,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: water_dump_time
   verbose_name: null
   is_dttm: false
@@ -1052,8 +973,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: final_mix_time
   verbose_name: null
   is_dttm: false
@@ -1065,8 +985,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: total_mix_time
   verbose_name: null
   is_dttm: false
@@ -1078,8 +997,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: mix_efficiency_score
   verbose_name: null
   is_dttm: false
@@ -1091,8 +1009,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dump_temp_zscore
   verbose_name: null
   is_dttm: false
@@ -1104,8 +1021,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: cooling_on_temp
   verbose_name: null
   is_dttm: false
@@ -1117,8 +1033,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dry_mix_time
   verbose_name: null
   is_dttm: false
@@ -1130,8 +1045,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: wet_mix_time
   verbose_name: null
   is_dttm: false
@@ -1143,8 +1057,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: batch_duration
   verbose_name: null
   is_dttm: false
@@ -1156,8 +1069,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: acid_addition
   verbose_name: null
   is_dttm: false
@@ -1169,8 +1081,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: penentration_final
   verbose_name: null
   is_dttm: false
@@ -1182,8 +1093,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: final_water
   verbose_name: null
   is_dttm: false
@@ -1195,8 +1105,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: battery_number
   verbose_name: null
   is_dttm: false
@@ -1208,8 +1117,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: cooling_delta
   verbose_name: null
   is_dttm: false
@@ -1221,8 +1129,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: fl_percentage
   verbose_name: null
   is_dttm: false
@@ -1234,8 +1141,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: pentration_zscore
   verbose_name: null
   is_dttm: false
@@ -1247,8 +1153,19 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
+- column_name: zscore_max
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: lead_oxide
   verbose_name: null
   is_dttm: false
@@ -1260,8 +1177,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: aditive_weight
   verbose_name: null
   is_dttm: false
@@ -1273,8 +1189,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: density_final
   verbose_name: null
   is_dttm: false
@@ -1286,8 +1201,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dm_water
   verbose_name: null
   is_dttm: false
@@ -1299,8 +1213,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: peak_temp
   verbose_name: null
   is_dttm: false
@@ -1312,8 +1225,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: start_time
   verbose_name: null
   is_dttm: false
@@ -1325,8 +1237,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: cooling_efficiency
   verbose_name: null
   is_dttm: false
@@ -1338,8 +1249,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: density_zscore
   verbose_name: null
   is_dttm: false
@@ -1351,8 +1261,19 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
+- column_name: zscore_min
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: end_time
   verbose_name: null
   is_dttm: false
@@ -1364,8 +1285,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: dump_temp
   verbose_name: null
   is_dttm: false
@@ -1377,8 +1297,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: pentration
   verbose_name: null
   is_dttm: false
@@ -1390,8 +1309,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: partition
   verbose_name: null
   is_dttm: false
@@ -1403,8 +1321,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: density
   verbose_name: null
   is_dttm: false
@@ -1416,8 +1333,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: offset
   verbose_name: null
   is_dttm: false
@@ -1429,8 +1345,19 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
+- column_name: battery_charge_type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: source_table_name
   verbose_name: null
   is_dttm: false
@@ -1442,8 +1369,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: qa_inspector_code
   verbose_name: null
   is_dttm: false
@@ -1455,8 +1381,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: start_time_fmt
   verbose_name: null
   is_dttm: false
@@ -1468,8 +1393,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: end_time_fmt
   verbose_name: null
   is_dttm: false
@@ -1481,8 +1405,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: rp_type_mixer
   verbose_name: null
   is_dttm: false
@@ -1494,8 +1417,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: battery_name
   verbose_name: null
   is_dttm: false
@@ -1507,8 +1429,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: batch_no
   verbose_name: null
   is_dttm: false
@@ -1520,8 +1441,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: operator_code
   verbose_name: null
   is_dttm: false
@@ -1533,8 +1453,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: plate_type
   verbose_name: null
   is_dttm: false
@@ -1546,8 +1465,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: datetime
   verbose_name: null
   is_dttm: false
@@ -1559,8 +1477,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: quarter
   verbose_name: null
   is_dttm: false
@@ -1572,7 +1489,6 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 version: 1.0.0
 database_uuid: 639ad6ad-9253-46ba-ac67-04355896a05c
