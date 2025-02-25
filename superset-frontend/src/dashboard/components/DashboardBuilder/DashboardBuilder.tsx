@@ -377,7 +377,6 @@ const getFirstWordFromMarkdown = (dashboardLayout: DashboardLayout): string | nu
     if (component.type === 'MARKDOWN') {
       const firstWord = component.meta?.code;
       if (firstWord) {
-        delete dashboardLayout[componentId];
         return firstWord;
       }
     }
@@ -456,12 +455,6 @@ const DashboardBuilder = () => {
     isReport;
 
   const [barTopOffset, setBarTopOffset] = useState(0);
-
-  // const [selectedDashboard, setSelectedDashboard] = useState('none');
-
-  // const handleDashboardSelect = (value: string) => {
-  //   setSelectedDashboard(value);
-  // };
 
   useEffect(() => {
     setBarTopOffset(headerRef.current?.getBoundingClientRect()?.height || 0);

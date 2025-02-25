@@ -93,7 +93,6 @@ const useNativeFilterScopes = () => {
   const nativeFilters = useSelector<RootState, Filters>(
     state => state.nativeFilters?.filters,
   );
-  // console.log("native filters : " + Object.keys(nativeFilters));
   const filters = useMemo(
     () =>
       nativeFilters
@@ -105,7 +104,6 @@ const useNativeFilterScopes = () => {
   );
 
   myFilters = filters;
-  console.log("All filters: ", filters);
 
   return filters;
 };
@@ -325,7 +323,6 @@ const DashboardContainer: FC<DashboardContainerProps> = ({ topLevelTabs, selecte
     [activeKey, childIds, dashboardLayout, handleFocus, renderTabBar, tabIndex],
   );
 
-  console.log(myFilters);
   return (
     <div className="grid-container" data-test="grid-container">
       <ParentSize>{renderParentSizeChildren}</ParentSize>

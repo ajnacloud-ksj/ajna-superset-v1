@@ -132,13 +132,21 @@ const CustomHistogramComponent: React.FC<ChartComponentProps> = ({ dateRange, fi
 
   let chartContent;
   switch (selectedDashboard) {
-    case 'dashboard1':
+    case 'Parameterwise actual value histogram':
       chartContent = <IframeContainer>
         <iframe src="https://www.wikipedia.org/" frameBorder="0"></iframe>
       </IframeContainer>
       break;
-    default:
+    case 'Parameterwise standardized value histogram':
+      chartContent = <IframeContainer>
+        <iframe src="https://www.wikipedia.org/" frameBorder="0"></iframe>
+      </IframeContainer>
+      break;
+    case 'none':
       chartContent = <div></div>
+      break
+    default:
+      chartContent = <div>Error loading Dashboard</div>
   }
 
   return (
