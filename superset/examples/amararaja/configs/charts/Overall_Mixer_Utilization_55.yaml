@@ -31,6 +31,7 @@ params:
   extra_form_data: {}
   dashboards:
   - 2
+  annotation_layers: []
 query_context: '{"datasource":{"id":3,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(SUM(total_mix_time))
   OVER () / (1440 * 3 * COUNT(DISTINCT DATE(datetime_fmt)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Overall

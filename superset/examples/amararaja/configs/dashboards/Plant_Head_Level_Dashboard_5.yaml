@@ -81,13 +81,37 @@ position:
     - GRID_ID
     - ROW-N-0EFLUZUD
 metadata:
-  chart_configuration: {}
+  chart_configuration:
+    '121':
+      id: 121
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 122
+        - 123
+    '122':
+      id: 122
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 123
+    '123':
+      id: 123
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 122
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
-    chartsInScope: []
+    chartsInScope:
+    - 121
+    - 122
+    - 123
   map_label_colors: {}
   color_scheme: ''
   refresh_frequency: 0
@@ -95,9 +119,29 @@ metadata:
   expanded_slices: {}
   label_colors: {}
   shared_label_colors:
-  - Not Ok Parameters
-  - Ok Parameters
+  - Ok Mixes
   timed_refresh_immune_slices: []
-  cross_filters_enabled: true
+  cross_filters_enabled: false
   default_filters: '{}'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-hfUFw8rFlrUY9JTiIXn9t
+    controlValues:
+      enableEmptyFilter: false
+    name: Time Range
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData:
+        time_range: Current day
+      filterState:
+        value: Current day
+    cascadeParentIds: []
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    type: NATIVE_FILTER
+    description: ''
+  filter_bar_orientation: HORIZONTAL
 version: 1.0.0

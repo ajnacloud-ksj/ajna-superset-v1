@@ -1746,7 +1746,17 @@ metadata:
   - Air Cooling Temp Standardized
   - COUNT(acid_dump_time_zscore)
   - COUNT(lead_oxide_zscore)
+  - cooling_on_temp_zscore
+  - density_zscore
+  - dm_water_zscore
+  - dry_mix_time_zscore
+  - dump_temp_zscore
+  - peak_temp_zscore
+  - pentration_zscore
+  - trim_water_zscore
   - water dump time standardized
+  - water_cooling_temp_in_zscore
+  - wet_mix_time_zscore
   color_scheme: ''
   refresh_frequency: 0
   color_scheme_domain: []

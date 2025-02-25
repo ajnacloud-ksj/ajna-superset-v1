@@ -32,6 +32,7 @@ params:
   extra_form_data: {}
   dashboards:
   - 2
+  annotation_layers: []
 query_context: '{"datasource":{"id":3,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(CASE
   WHEN source_table_name = ''ABD1_Mixer_1'' THEN total_mix_time ELSE 0 END) \r\n    /

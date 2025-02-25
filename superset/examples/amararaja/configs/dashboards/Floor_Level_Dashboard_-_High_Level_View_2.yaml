@@ -258,11 +258,116 @@ metadata:
   timed_refresh_immune_slices: []
   cross_filters_enabled: false
   default_filters: '{}'
-  native_filter_configuration: []
+  native_filter_configuration:
+  - id: NATIVE_FILTER-ROJNgiOGsdFY9cZXQ3Zhz
+    controlValues:
+      enableEmptyFilter: true
+      defaultToFirstItem: false
+      multiSelect: false
+      searchAllOptions: false
+      inverseSelection: false
+    name: Line Name
+    filterType: filter_select
+    targets:
+    - column:
+        name: source_table_name
+      datasetUuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781
+    defaultDataMask:
+      extraFormData:
+        filters:
+        - col: source_table_name
+          op: IN
+          val:
+          - ABD1_Mixer_1
+      filterState:
+        label: ABD1_Mixer_1
+        validateMessage: false
+        validateStatus: false
+        value:
+        - ABD1_Mixer_1
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 73
+      - 56
+      - 37
+      - 55
+    type: NATIVE_FILTER
+    description: ''
+  - id: NATIVE_FILTER-cSNXYzcq8x1dzeBs1u--r
+    controlValues:
+      enableEmptyFilter: true
+      defaultToFirstItem: false
+      multiSelect: false
+      searchAllOptions: false
+      inverseSelection: false
+    name: Recipe
+    filterType: filter_select
+    targets:
+    - column:
+        name: battery_name
+      datasetUuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781
+    defaultDataMask:
+      extraFormData:
+        filters:
+        - col: battery_name
+          op: IN
+          val:
+          - EFB(+)ve_Orifice
+      filterState:
+        label: EFB(+)ve_Orifice
+        validateMessage: false
+        validateStatus: false
+        value:
+        - EFB(+)ve_Orifice
+    cascadeParentIds:
+    - NATIVE_FILTER-ROJNgiOGsdFY9cZXQ3Zhz
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 73
+      - 56
+      - 37
+      - 55
+    type: NATIVE_FILTER
+    description: ''
+  - cascadeParentIds: []
+    chartsInScope:
+    - 42
+    - 82
+    controlValues:
+      enableEmptyFilter: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_time
+    id: NATIVE_FILTER-HSY25WQwJvtbDaAqx_Q1o
+    name: Time Range
+    scope:
+      excluded:
+      - 73
+      - 56
+      - 21
+      - 37
+      - 112
+      - 55
+      - 29
+      rootPath:
+      - ROOT_ID
+    tabsInScope: []
+    targets:
+    - {}
+    type: NATIVE_FILTER
   shared_label_colors: []
   map_label_colors:
     Compliance: '#1FA8C9'
     Non-Compliance: '#454E7C'
     cpk: '#1FA8C9'
   color_scheme_domain: []
+  filter_bar_orientation: HORIZONTAL
 version: 1.0.0

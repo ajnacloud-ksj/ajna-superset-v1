@@ -6,110 +6,25 @@ offset: 0
 cache_timeout: null
 catalog: postgres
 schema: public
-sql: "SELECT 'param_1' AS deviated_param,\n          CASE\n              WHEN source_table_name\
-  \ = 'ABD1_Mixer_1' THEN 'Line1'\n              WHEN source_table_name = 'ABD1_Mixer_2'\
-  \ THEN 'Line2'\n              WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n\
-  \              ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n          END AS line_name,\n          source_table_name,\n          datetime_fmt,\n\
-  \          battery_name\n   FROM abd1_mixers_all\n   WHERE density_deviation_ind\
-  \ = 1\n   UNION SELECT 'param_2',\n                CASE\n                    WHEN\
-  \ source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n                    WHEN source_table_name\
-  \ = 'ABD1_Mixer_2' THEN 'Line2'\n                    WHEN source_table_name = 'ABD1_Mixer_3'\
-  \ THEN 'Line3'\n                    ELSE source_table_name -- Ensures non-matching\
-  \ values are retained\n\n                END AS line_name,\n                source_table_name,\n\
-  \                datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE dm_water_deviation_ind = 1\n   UNION SELECT 'param_3',\n             \
-  \   CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
-  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
-  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE dump_temp_deviation_ind = 1\n   UNION SELECT 'param_4',\n            \
-  \    CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
-  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
-  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE dry_mix_time_deviation_ind = 1\n   UNION SELECT 'param_5',\n         \
-  \       CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
-  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
-  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE lead_oxide_deviation_ind = 1\n   UNION SELECT 'param_6',\n           \
-  \     CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
-  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
-  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE acid_dump_time_deviation_ind = 1\n   UNION SELECT 'param_7',\n       \
-  \         CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
-  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
-  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE peak_temp_deviation_ind = 1\n   UNION SELECT 'param_8',\n            \
-  \    CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
-  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
-  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE acid_addition_deviation_ind = 1\n   UNION SELECT 'param_9',\n        \
-  \        CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
-  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
-  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE pentration_deviation_ind = 1\n   UNION SELECT 'param_10',\n          \
-  \      CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
-  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
-  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE trim_water_deviation_ind = 1\n   UNION SELECT 'param_11',\n          \
-  \      CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n    \
-  \                WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n        \
-  \            ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE water_dump_time_deviation_ind = 1\n   UNION SELECT 'param_12',\n     \
-  \           CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
-  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
-  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE wet_mix_time_deviation_ind = 1\n   UNION SELECT 'param_13',\n        \
-  \        CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
-  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
-  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE cooling_on_temp_deviation_ind = 1\n   UNION SELECT 'param_14',\n     \
-  \           CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
-  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
-  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE air_cooling_temp_deviation_ind = 1\n   UNION SELECT 'param_15',\n    \
-  \            CASE\n                    WHEN source_table_name = 'ABD1_Mixer_1' THEN\
-  \ 'Line1'\n                    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
-  \                    WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n    \
-  \                ELSE source_table_name -- Ensures non-matching values are retained\n\
-  \n                END AS line_name,\n                source_table_name,\n      \
-  \          datetime_fmt,\n                battery_name\n   FROM abd1_mixers_all\n\
-  \   WHERE water_cooling_temp_in_deviation_ind = 1"
+sql: "SELECT \n        CASE \n            WHEN source_table_name = 'ABD1_Mixer_1'\
+  \ THEN 'Line1'\n            WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\n\
+  \            WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\n            ELSE\
+  \ source_table_name\n        END AS line_name,\n        source_table_name,\n   \
+  \     batch_no,\n        datetime_fmt,\n        UNNEST(ARRAY[\n            CASE\
+  \ WHEN density_deviation_ind = 1 THEN 'param_1' END,\n            CASE WHEN dm_water_deviation_ind\
+  \ = 1 THEN 'param_2' END,\n            CASE WHEN dump_temp_deviation_ind = 1 THEN\
+  \ 'param_3' END,\n            CASE WHEN dry_mix_time_deviation_ind = 1 THEN 'param_4'\
+  \ END,\n            CASE WHEN lead_oxide_deviation_ind = 1 THEN 'param_5' END,\n\
+  \            CASE WHEN acid_dump_time_deviation_ind = 1 THEN 'param_6' END,\n  \
+  \          CASE WHEN peak_temp_deviation_ind = 1 THEN 'param_7' END,\n         \
+  \   CASE WHEN acid_addition_deviation_ind = 1 THEN 'param_8' END,\n            CASE\
+  \ WHEN pentration_deviation_ind = 1 THEN 'param_9' END,\n            CASE WHEN trim_water_deviation_ind\
+  \ = 1 THEN 'param_10' END,\n            CASE WHEN water_dump_time_deviation_ind\
+  \ = 1 THEN 'param_11' END,\n            CASE WHEN wet_mix_time_deviation_ind = 1\
+  \ THEN 'param_12' END,\n            CASE WHEN cooling_on_temp_deviation_ind = 1\
+  \ THEN 'param_13' END,\n            CASE WHEN air_cooling_temp_deviation_ind = 1\
+  \ THEN 'param_14' END,\n            CASE WHEN water_cooling_temp_in_deviation_ind\
+  \ = 1 THEN 'param_15' END\n        ]) AS deviated_param\n    FROM abd1_mixers_all"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -141,7 +56,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra: null
 - column_name: source_table_name
   verbose_name: null
   is_dttm: false
@@ -153,7 +68,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra: null
 - column_name: deviated_param
   verbose_name: null
   is_dttm: false
@@ -165,8 +80,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
-- column_name: battery_name
+  extra: null
+- column_name: batch_no
   verbose_name: null
   is_dttm: false
   is_active: true
@@ -177,7 +92,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra: null
 - column_name: line_name
   verbose_name: null
   is_dttm: false
@@ -189,6 +104,6 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra: null
 version: 1.0.0
 database_uuid: 639ad6ad-9253-46ba-ac67-04355896a05c
