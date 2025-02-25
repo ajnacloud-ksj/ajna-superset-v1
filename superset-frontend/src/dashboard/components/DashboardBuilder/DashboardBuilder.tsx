@@ -18,8 +18,6 @@
  */
 /* eslint-env browser */
 import cx from 'classnames';
-// import CustomHistogramComponent from '../../../../plugins/custom-histogram-component/CustomHistogramComponent';
-// import CustomChartContainer from '../../../../plugins/custom-histogram-component/CustomChartContainer';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   addAlpha,
@@ -276,14 +274,6 @@ const DashboardContentWrapper = styled.div`
         bottom: ${-theme.gridUnit * 4}px;
       }
     }
-      /* Add the Hello text div */
-    & .hello-text {
-      margin-top: auto;
-      padding: ${theme.gridUnit * 2}px;
-      text-align: center;
-      background-color: ${theme.colors.grayscale.light2};
-      color: ${theme.colors.primary.base};
-    }
   `}
 `;
 
@@ -467,11 +457,11 @@ const DashboardBuilder = () => {
 
   const [barTopOffset, setBarTopOffset] = useState(0);
 
-  const [selectedDashboard, setSelectedDashboard] = useState('none');
+  // const [selectedDashboard, setSelectedDashboard] = useState('none');
 
-  const handleDashboardSelect = (value: string) => {
-    setSelectedDashboard(value);
-  };
+  // const handleDashboardSelect = (value: string) => {
+  //   setSelectedDashboard(value);
+  // };
 
   useEffect(() => {
     setBarTopOffset(headerRef.current?.getBoundingClientRect()?.height || 0);
@@ -748,7 +738,7 @@ const DashboardBuilder = () => {
             ) : (
               <Loading />
             )}
-            {editMode && <BuilderComponentPane topOffset={barTopOffset} onDashboardSelect={handleDashboardSelect} />}
+            {editMode && <BuilderComponentPane topOffset={barTopOffset} />}
           </StyledDashboardContent>
         </DashboardContentWrapper>
       </StyledContent>

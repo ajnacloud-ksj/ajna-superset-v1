@@ -65,7 +65,7 @@ import { getColorNamespace, resetColors } from 'src/utils/colorScheme';
 import { NATIVE_FILTER_DIVIDER_PREFIX } from '../nativeFilters/FiltersConfigModal/utils';
 import { findTabsWithChartsInScope } from '../nativeFilters/utils';
 import { getRootLevelTabsComponent } from './utils';
-import CustomHistogramComponent from '../../../../plugins/custom-dashboard-component/CustomDashboardComponent';
+import CustomDashboardComponent from '../../../../plugins/custom-dashboard-component/CustomDashboardComponent';
 
 type DashboardContainerProps = {
   topLevelTabs?: LayoutItem;
@@ -330,7 +330,7 @@ const DashboardContainer: FC<DashboardContainerProps> = ({ topLevelTabs, selecte
     <div className="grid-container" data-test="grid-container">
       <ParentSize>{renderParentSizeChildren}</ParentSize>
 
-      <CustomHistogramComponent dateRange={`${Object.keys(myFilters[0] ?? {})} ${Object.values(myFilters[0] ?? {})}`} filters={myFilters ?? null} selectedDashboard={selectedDashboard ?? "not selected"} />
+      <CustomDashboardComponent dateRange={`${Object.keys(myFilters[0] ?? {})} ${Object.values(myFilters[0] ?? {})}`} filters={myFilters ?? null} selectedDashboard={selectedDashboard ?? "not selected"} />
     </div>
   );
 };

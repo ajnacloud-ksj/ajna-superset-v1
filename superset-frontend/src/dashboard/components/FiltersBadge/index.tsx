@@ -176,9 +176,9 @@ export const FiltersBadge = ({ chartId }: FiltersBadgeProps) => {
     } else if (prevChartStatus !== 'success') {
       if (
         chart?.queriesResponse?.[0]?.rejected_filters !==
-          prevChart?.queriesResponse?.[0]?.rejected_filters ||
+        prevChart?.queriesResponse?.[0]?.rejected_filters ||
         chart?.queriesResponse?.[0]?.applied_filters !==
-          prevChart?.queriesResponse?.[0]?.applied_filters ||
+        prevChart?.queriesResponse?.[0]?.applied_filters ||
         dashboardFilters !== prevDashboardFilters ||
         datasources !== prevDatasources
       ) {
@@ -216,9 +216,9 @@ export const FiltersBadge = ({ chartId }: FiltersBadgeProps) => {
     } else if (prevChartStatus !== 'success') {
       if (
         chart?.queriesResponse?.[0]?.rejected_filters !==
-          prevChart?.queriesResponse?.[0]?.rejected_filters ||
+        prevChart?.queriesResponse?.[0]?.rejected_filters ||
         chart?.queriesResponse?.[0]?.applied_filters !==
-          prevChart?.queriesResponse?.[0]?.applied_filters ||
+        prevChart?.queriesResponse?.[0]?.applied_filters ||
         nativeFilters !== prevNativeFilters ||
         chartLayoutItems !== prevChartLayoutItems ||
         dataMask !== prevDataMask ||
@@ -285,12 +285,6 @@ export const FiltersBadge = ({ chartId }: FiltersBadgeProps) => {
 
   if (!appliedCrossFilterIndicators.length && !appliedIndicators.length) {
     return null;
-  }
-  {
-    appliedIndicators.map(indicator => (
-
-      console.log("applied filter name " + indicator.name + " & column " + indicator.column)
-    ))
   }
 
   return (

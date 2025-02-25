@@ -92,7 +92,7 @@ const config: ControlPanelConfig = {
               type: 'SelectControl',
               freeForm: true,
               label: t('Bins'),
-              default: 10,
+              default: 5,
               choices: [...Array(4)].map((_, i) => [
                 (i + 1) * 5,
                 ((i + 1) * 5).toString(),
