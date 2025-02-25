@@ -138,9 +138,7 @@ const CustomHistogramComponent: React.FC<ChartComponentProps> = ({ dateRange, fi
       </IframeContainer>
       break;
     default:
-      chartContent = <IframeContainer>
-        <iframe src="https://www.wikipedia.org/" frameBorder="0"></iframe>
-      </IframeContainer>
+      chartContent = <div></div>
   }
 
   return (
