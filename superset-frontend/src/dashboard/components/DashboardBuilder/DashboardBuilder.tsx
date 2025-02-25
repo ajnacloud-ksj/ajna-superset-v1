@@ -381,6 +381,20 @@ const ELEMENT_ON_SCREEN_OPTIONS = {
   threshold: [1],
 };
 
+const getFirstWordFromMarkdown = (dashboardLayout: DashboardLayout): string | null => {
+  for (const componentId in dashboardLayout) {
+    const component = dashboardLayout[componentId];
+    if (component.type === 'MARKDOWN') {
+      const firstWord = component.meta?.code;
+      if (firstWord) {
+        delete dashboardLayout[componentId];
+        return firstWord;
+      }
+    }
+  }
+  return null;
+};
+
 const DashboardBuilder = () => {
   const dispatch = useDispatch();
   const uiConfig = useUiConfig();
@@ -635,6 +649,7 @@ const DashboardBuilder = () => {
     ],
   );
 
+  const firstWordFromMarkdown = useMemo(() => getFirstWordFromMarkdown(dashboardLayout), [dashboardLayout]);
   return (
     <DashboardWrapper>
       {showFilterBar &&
@@ -728,15 +743,13 @@ const DashboardBuilder = () => {
                   />
                 </div>
               ) : (
-                <DashboardContainer topLevelTabs={topLevelTabs} selectedDashboard={selectedDashboard} />
+                <DashboardContainer topLevelTabs={topLevelTabs} selectedDashboard={firstWordFromMarkdown ?? 'none'} />
               )
             ) : (
               <Loading />
             )}
-
             {editMode && <BuilderComponentPane topOffset={barTopOffset} onDashboardSelect={handleDashboardSelect} />}
           </StyledDashboardContent>
-
         </DashboardContentWrapper>
       </StyledContent>
       {dashboardIsSaving && (

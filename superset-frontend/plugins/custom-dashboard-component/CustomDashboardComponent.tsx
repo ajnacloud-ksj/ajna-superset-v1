@@ -21,8 +21,19 @@ const ChartsContainer = styled.div`
 `;
 
 const ChartContainer = styled.div`
-  flex: 1 1 49%;
-  max-width: 49%;
+  flex: 1 1 48%;
+  max-width: 48%;
+`;
+
+const IframeContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    border: none;
+  }
 `;
 
 interface Filter {
@@ -122,28 +133,14 @@ const CustomHistogramComponent: React.FC<ChartComponentProps> = ({ dateRange, fi
   let chartContent;
   switch (selectedDashboard) {
     case 'dashboard1':
-      chartContent = (
-
-        <div>
-          {selectedDashboard}
-          <ChartContainer>
-            {chartUrl1 ? <ChartImage src={chartUrl1} alt="Chart 1" /> : 'No chart available for date range: ' + dateRange}
-          </ChartContainer>
-        </div>
-      );
-      break;
-    case 'dashboard2':
-      chartContent = (
-        <div>
-          {selectedDashboard}
-          <ChartContainer>
-            {chartUrl2 ? <ChartImage src={chartUrl2} alt="Chart 2" /> : 'No chart available for date range: ' + dateRange}
-          </ChartContainer>
-        </div>
-      );
+      chartContent = <IframeContainer>
+        <iframe src="https://www.wikipedia.org/" frameBorder="0"></iframe>
+      </IframeContainer>
       break;
     default:
-      chartContent = <div>{(selectedDashboard != "none") ? selectedDashboard : ""}</div>;
+      chartContent = <IframeContainer>
+        <iframe src="https://www.wikipedia.org/" frameBorder="0"></iframe>
+      </IframeContainer>
   }
 
   return (

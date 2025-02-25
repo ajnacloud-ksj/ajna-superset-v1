@@ -68,7 +68,6 @@
     "./plugins/*/types/**/*",
     "./packages/*/test/**/*",
     "./plugins/*/test/**/*",
-    "plugins/custom-histogram-component/CustomHistogramComponent.tsx",
-    "plugins/custom-histogram-component/CustomChartContainer.tsx"
+    "plugins/custom-dashboard-component/CustomDashboardComponent.tsx",
   ]
 }

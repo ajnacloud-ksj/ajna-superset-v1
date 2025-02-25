@@ -65,7 +65,7 @@ import { getColorNamespace, resetColors } from 'src/utils/colorScheme';
 import { NATIVE_FILTER_DIVIDER_PREFIX } from '../nativeFilters/FiltersConfigModal/utils';
 import { findTabsWithChartsInScope } from '../nativeFilters/utils';
 import { getRootLevelTabsComponent } from './utils';
-import CustomHistogramComponent from '../../../../plugins/custom-histogram-component/CustomHistogramComponent';
+import CustomHistogramComponent from '../../../../plugins/custom-dashboard-component/CustomDashboardComponent';
 
 type DashboardContainerProps = {
   topLevelTabs?: LayoutItem;
