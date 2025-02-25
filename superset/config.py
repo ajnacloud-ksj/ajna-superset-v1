@@ -1596,7 +1596,7 @@ DATABASE_OAUTH2_TIMEOUT = timedelta(seconds=30)
 CONTENT_SECURITY_POLICY_WARNING = True
 
 # Do you want Talisman enabled?
-TALISMAN_ENABLED = utils.cast_to_boolean(os.environ.get("TALISMAN_ENABLED", True))
+TALISMAN_ENABLED = utils.cast_to_boolean(os.environ.get("TALISMAN_ENABLED", False))
 
 # If you want Talisman, how do you want it configured??
 TALISMAN_CONFIG = {
@@ -1624,7 +1624,7 @@ TALISMAN_CONFIG = {
             "'unsafe-inline'",
         ],
         "script-src": ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
-        "frame-src": ["'self'", "http://localhost:5000"],
+        "frame-src": ["'self'", "http://localhost:5000","https://www.wikipedia.org/"],
     },
     "content_security_policy_nonce_in": ["script-src"],
     "force_https": False,
@@ -1656,7 +1656,7 @@ TALISMAN_DEV_CONFIG = {
             "'unsafe-inline'",
         ],
         "script-src": ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
-        "frame-src": ["'self'", "http://localhost:5000"],
+        "frame-src": ["'self'", "http://localhost:5000","https://www.wikipedia.org/"],
     },
     "content_security_policy_nonce_in": ["script-src"],
     "force_https": False,

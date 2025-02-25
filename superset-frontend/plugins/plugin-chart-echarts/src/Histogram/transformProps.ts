@@ -163,6 +163,7 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
     const seriesData = Object.keys(datum)
       .filter(key => !groupbySet.has(key) && key !== minColName && key !== maxColName)
       .map(key => datum[key] as number);
+    
     return {
       name: seriesName,
       type: 'bar',
@@ -180,6 +181,30 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
   });
 
   const dummyData = xAxisData.map(() => 0);
+  barSeries[0].markLine = {
+    symbol: 'none',
+    data: [
+      {
+        xAxis: minLinePos,
+        label: {
+          show: true,
+          position: 'insideEndTop',
+          formatter: `Min Spec: ${specFormatter.format(minValue)}`,
+        },
+        lineStyle: { color: 'green', width: 2 },
+      },
+      {
+        xAxis: maxLinePos,
+        label: {
+          show: true,
+          position: 'insideEndTop',
+          formatter: `Max Spec: ${specFormatter.format(maxValue)}`,
+        },
+        lineStyle: { color: 'red', width: 2 },
+      },
+    ],
+  };
+  console.log("barseries", barSeries);
   const finalSeries = [...barSeries];
 
   if (minValue !== undefined && minLinePos >= 0) {
@@ -203,9 +228,11 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
         ],
       },
     };
-    const originalSeries = finalSeries.pop();
-    finalSeries.push(dummyMinSeries);
-    finalSeries.push(originalSeries as BarSeriesOption);
+    // console.log("dummyinSeries keys" + Object.keys(dummyData));
+    // console.log("dummyinSeries values" + Object.values(dummyData));
+    // const originalSeries = finalSeries.pop();
+    // finalSeries.push(dummyMinSeries);
+    // finalSeries.push(originalSeries as BarSeriesOption);
   }
 
   if (maxValue !== undefined && maxLinePos >= 0) {
@@ -229,7 +256,8 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
         ],
       },
     };
-    finalSeries.push(dummyMaxSeries);
+    console.log("dummyaxSeries" + dummyMaxSeries);
+    // finalSeries.push(dummyMaxSeries);
   }
 
   const legendOptions = finalSeries.map(series => series.name as string);
@@ -291,6 +319,7 @@ export default function transformProps(chartProps: HistogramChartProps): Histogr
   const onFocusedSeries = (index?: number | undefined) => {
     focusedSeries = index;
   };
+  console.log(xAxisData);
 
   type EChartsOption = ComposeOption<GridComponentOption | BarSeriesOption>;
   const echartOptions: EChartsOption = {

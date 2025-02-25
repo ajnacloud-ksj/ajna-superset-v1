@@ -145,11 +145,11 @@ const DashboardContentWrapper = styled.div`
       & .dashboard-component-tabs {
         box-shadow: 0 ${theme.gridUnit}px ${theme.gridUnit}px 0
           ${addAlpha(
-            theme.colors.grayscale.dark2,
-            parseFloat(theme.opacity.light) / 100,
-          )};
+  theme.colors.grayscale.dark2,
+  parseFloat(theme.opacity.light) / 100,
+)};
         padding-left: ${theme.gridUnit *
-        2}px; /* note this is added to tab-level padding, to match header */
+    2}px; /* note this is added to tab-level padding, to match header */
       }
 
       .dropdown-toggle.btn.btn-primary .caret {
@@ -304,10 +304,9 @@ const StyledDashboardContent = styled.div<{
       margin-left: ${marginLeft}px;
 
       ${editMode &&
-      `
-      max-width: calc(100% - ${
-        BUILDER_SIDEPANEL_WIDTH + theme.gridUnit * 16
-      }px);
+    `
+      max-width: calc(100% - ${BUILDER_SIDEPANEL_WIDTH + theme.gridUnit * 16
+    }px);
     `}
 
       /* this is the ParentSize wrapper */
@@ -341,9 +340,9 @@ const StyledDashboardContent = styled.div<{
           inset 0 0 0 2px ${theme.colors.primary.base},
           0 0 0 3px
             ${addAlpha(
-              theme.colors.primary.base,
-              parseFloat(theme.opacity.light) / 100,
-            )};
+      theme.colors.primary.base,
+      parseFloat(theme.opacity.light) / 100,
+    )};
       }
 
       &.fade-out {
@@ -370,6 +369,19 @@ const StyledDashboardContent = styled.div<{
 
 const ELEMENT_ON_SCREEN_OPTIONS = {
   threshold: [1],
+};
+
+const getFirstWordFromMarkdown = (dashboardLayout: DashboardLayout): string | null => {
+  for (const componentId in dashboardLayout) {
+    const component = dashboardLayout[componentId];
+    if (component.type === 'MARKDOWN') {
+      const firstWord = component.meta?.code;
+      if (firstWord) {
+        return firstWord;
+      }
+    }
+  }
+  return null;
 };
 
 const DashboardBuilder = () => {
@@ -489,9 +501,9 @@ const DashboardBuilder = () => {
     () => ({
       marginLeft:
         dashboardFiltersOpen ||
-        editMode ||
-        !nativeFiltersEnabled ||
-        filterBarOrientation === FilterBarOrientation.Horizontal
+          editMode ||
+          !nativeFiltersEnabled ||
+          filterBarOrientation === FilterBarOrientation.Horizontal
           ? 0
           : -32,
     }),
@@ -577,9 +589,9 @@ const DashboardBuilder = () => {
 
   const dashboardContentMarginLeft =
     !dashboardFiltersOpen &&
-    !editMode &&
-    nativeFiltersEnabled &&
-    filterBarOrientation !== FilterBarOrientation.Horizontal
+      !editMode &&
+      nativeFiltersEnabled &&
+      filterBarOrientation !== FilterBarOrientation.Horizontal
       ? 0
       : theme.gridUnit * 8;
 
@@ -620,6 +632,7 @@ const DashboardBuilder = () => {
     ],
   );
 
+  const firstWordFromMarkdown = useMemo(() => getFirstWordFromMarkdown(dashboardLayout), [dashboardLayout]);
   return (
     <DashboardWrapper>
       {showFilterBar &&
@@ -713,7 +726,7 @@ const DashboardBuilder = () => {
                   />
                 </div>
               ) : (
-                <DashboardContainer topLevelTabs={topLevelTabs} />
+                <DashboardContainer topLevelTabs={topLevelTabs} selectedDashboard={firstWordFromMarkdown ?? 'none'} />
               )
             ) : (
               <Loading />

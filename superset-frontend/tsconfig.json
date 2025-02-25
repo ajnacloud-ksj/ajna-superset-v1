@@ -6,7 +6,6 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "strictNullChecks": true,
-
     /* Modules */
     "baseUrl": ".",
     "module": "esnext",
@@ -32,7 +31,6 @@
       "@testing-library/jest-dom",
       "@types/node"
     ],
-
     /* Emit */
     "declaration": true,
     "declarationMap": true,
@@ -40,18 +38,14 @@
     "noEmitOnError": true,
     "outDir": "./dist",
     "sourceMap": true,
-
     /* JavaScript Support */
     "allowJs": true,
-
     /* Interop Constraints */
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": false,
     "forceConsistentCasingInFileNames": true,
-
     /* Backwards Compatibility */
     "suppressImplicitAnyIndexErrors": true,
-
     /* Language and Environment */
     "target": "esnext",
     "jsx": "preserve",
@@ -59,7 +53,6 @@
 
     /* Projects */
     "composite": true,
-
     /* Completeness */
     "skipLibCheck": true
   },
@@ -74,6 +67,7 @@
     "./plugins/*/src/**/*",
     "./plugins/*/types/**/*",
     "./packages/*/test/**/*",
-    "./plugins/*/test/**/*"
+    "./plugins/*/test/**/*",
+    "plugins/custom-dashboard-component/CustomDashboardComponent.tsx",
   ]
 }
