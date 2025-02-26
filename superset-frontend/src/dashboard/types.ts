@@ -190,7 +190,6 @@ export type LayoutItem = {
   type: ComponentType;
   id: string;
   meta: {
-    code?:any;
     chartId: number;
     defaultText?: string;
     height: number;
