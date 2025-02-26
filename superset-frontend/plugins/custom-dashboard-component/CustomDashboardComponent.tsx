@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 
 const ChartWrapper = styled.div`
@@ -23,40 +24,23 @@ const IframeContainer = styled.div`
   }
 `;
 
-interface Filter {
-  id: string;
-  type: string;
-  scope: {
-    excluded: number[];
-    rootPath: string[];
-  };
-}
-
 interface ChartComponentProps {
-  dateRange: string;
-  filters: Filter[];
   selectedDashboard: string;
 }
 
-const CustomHistogramComponent: React.FC<ChartComponentProps> = ({ dateRange, filters, selectedDashboard }) => {
+const CustomHistogramComponent: React.FC<ChartComponentProps> = ({selectedDashboard }) => {
+  const [isIframeLoading, setIsIframeLoading] = useState(true);
 
   let chartContent;
-  switch (selectedDashboard) {
-    case 'Parameterwise actual value histogram':
-      chartContent = <IframeContainer>
-        <iframe src="http://10.120.0.108:3000/" frameBorder="0"></iframe>
+  if (selectedDashboard === 'none') {
+    chartContent = <div></div>
+  } else {
+    const iframeLink = `http://10.120.0.108:3000/${selectedDashboard}`;
+    chartContent =
+      <IframeContainer>
+        {isIframeLoading && <div>Loading...</div>}
+        <iframe src={iframeLink} onLoad={() => setIsIframeLoading(false)}></iframe>
       </IframeContainer>
-      break;
-    case 'Parameterwise standardized value histogram':
-      chartContent = <IframeContainer>
-        <iframe src="http://10.120.0.108:3000/" frameBorder="0"></iframe>
-      </IframeContainer>
-      break;
-    case 'none':
-      chartContent = <div></div>
-      break
-    default:
-      chartContent = <div>Error loading Dashboard</div>
   }
 
   return (

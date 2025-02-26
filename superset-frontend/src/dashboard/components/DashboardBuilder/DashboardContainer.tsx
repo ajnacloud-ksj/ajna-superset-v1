@@ -87,7 +87,6 @@ const useRenderedChartIds = () => {
   return useMemo(() => renderedChartIds, [JSON.stringify(renderedChartIds)]);
 };
 
-var myFilters: Pick<Filter, "id" | "type" | "scope">[];
 
 const useNativeFilterScopes = () => {
   const nativeFilters = useSelector<RootState, Filters>(
@@ -102,9 +101,6 @@ const useNativeFilterScopes = () => {
         : [],
     [nativeFilters],
   );
-
-  myFilters = filters;
-
   return filters;
 };
 
@@ -327,7 +323,7 @@ const DashboardContainer: FC<DashboardContainerProps> = ({ topLevelTabs, selecte
     <div className="grid-container" data-test="grid-container">
       <ParentSize>{renderParentSizeChildren}</ParentSize>
 
-      <CustomDashboardComponent dateRange={`${Object.keys(myFilters[0] ?? {})} ${Object.values(myFilters[0] ?? {})}`} filters={myFilters ?? null} selectedDashboard={selectedDashboard ?? "not selected"} />
+      <CustomDashboardComponent selectedDashboard={selectedDashboard ?? "not selected"} />
     </div>
   );
 };
