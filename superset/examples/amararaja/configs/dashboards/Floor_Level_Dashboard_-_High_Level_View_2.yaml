@@ -1,59 +1,19 @@
 dashboard_title: Floor Level Dashboard - High Level View
 description: null
-css: ''
+css: "#chart-id-113 .header-line {  \r\n  color: #b3cde0 !important;  \r\n}\r\n\r\n\
+  #chart-id-7 .header-line {  \r\n  color: #b3cde0 !important;  \r\n}\r\n\r\n#chart-id-82\
+  \ .header-line {  \r\n  color: #b3cde0 !important;  \r\n}"
 slug: null
 certified_by: ''
 certification_details: ''
 published: true
 uuid: 91cf20d3-320b-4605-8cb5-4545141c1981
 position:
-  CHART-4Qj9d3dM916lPUE8gp9g-:
-    children: []
-    id: CHART-4Qj9d3dM916lPUE8gp9g-
-    meta:
-      chartId: 73
-      height: 28
-      sliceName: Mixer Utilization (Mixer-3)
-      uuid: efcb9b80-9a31-40be-88bc-6aa5e0033b28
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-qgOFNYKx20UeBj72dYhAa
-    type: CHART
-  CHART-DIDTlVJQsNUysyV04-bhQ:
-    children: []
-    id: CHART-DIDTlVJQsNUysyV04-bhQ
-    meta:
-      chartId: 56
-      height: 28
-      sliceName: Mixer Utilization (Mixer-2)
-      uuid: efcb9b80-9a31-40be-88bc-6aa5e0033b27
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-qgOFNYKx20UeBj72dYhAa
-    type: CHART
-  CHART-HESpARLWlPG1aibmYiRcP:
-    children: []
-    id: CHART-HESpARLWlPG1aibmYiRcP
-    meta:
-      chartId: 21
-      height: 26
-      sliceName: Quality Compliance Percentage
-      uuid: 93a61b86-61e8-4af4-b1b0-886fb8d8898d
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-SKe-7KApbLwJLyoTXF5kv
-    type: CHART
   CHART-Y0_MTo0ttmoBaHDyzLePT:
     children: []
     id: CHART-Y0_MTo0ttmoBaHDyzLePT
     meta:
-      chartId: 42
+      chartId: 15
       height: 50
       sliceName: 'Specification Compliance, '
       uuid: c7429585-b095-4af2-a6c8-f71231a73e5d
@@ -63,25 +23,86 @@ position:
     - GRID_ID
     - ROW-GTwzOBNDtDgBUzbpkpbUh
     type: CHART
-  CHART-_-T76MP_rf2WyLPv0aqCp:
+  CHART-_9xe7jDHcKxpfkN103NQi:
     children: []
-    id: CHART-_-T76MP_rf2WyLPv0aqCp
+    id: CHART-_9xe7jDHcKxpfkN103NQi
     meta:
-      chartId: 37
-      height: 28
-      sliceName: Mixer Utilization (Mixer-1)
-      uuid: efcb9b80-9a31-40be-88bc-6aa5e0033b26
+      chartId: 109
+      height: 100
+      sliceName: Overall Mixer Utilization
+      uuid: 039bbc9c-4f2e-4625-9ad0-3c381df8c852
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-JD20RDXW0N0gJQzNi87fr
+    type: CHART
+  CHART-explore-110-1:
+    children: []
+    id: CHART-explore-110-1
+    meta:
+      chartId: 110
+      height: 34
+      sliceName: Mixer-1 Utilization
+      uuid: 255fd670-83df-46c8-b819-1140a4345bfa
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-14NMUT7uDI9yljjgjuK2G
+    type: CHART
+  CHART-explore-111-1:
+    children: []
+    id: CHART-explore-111-1
+    meta:
+      chartId: 111
+      height: 31
+      sliceName: Mixer-2 Utilization
+      uuid: c59b8c66-f000-4050-9606-ae56e39b622a
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-14NMUT7uDI9yljjgjuK2G
+    type: CHART
+  CHART-explore-112-1:
+    children: []
+    id: CHART-explore-112-1
+    meta:
+      chartId: 112
+      height: 31
+      sliceName: Mixer-3 Utilization
+      uuid: 02b14b0f-b90d-4a86-96ec-c877b47295e1
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-14NMUT7uDI9yljjgjuK2G
+    type: CHART
+  CHART-explore-113-1:
+    children: []
+    id: CHART-explore-113-1
+    meta:
+      chartId: 113
+      height: 34
+      sliceName: Compliance  Percentage
+      uuid: 2d2b8869-8df0-4050-a8fa-40010f4f162d
       width: 3
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-qgOFNYKx20UeBj72dYhAa
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
     type: CHART
   CHART-explore-9-1:
     children: []
     id: CHART-explore-9-1
     meta:
-      chartId: 82
+      chartId: 44
       height: 50
       sliceName: Parameter Wise CpK
       uuid: c6ab9436-e95e-439f-b0e1-7352b85acc5e
@@ -95,44 +116,72 @@ position:
     children: []
     id: CHART-ezPYA2N4a8aPsxQbb7dzH
     meta:
-      chartId: 112
-      height: 26
+      chartId: 82
+      height: 31
       sliceName: Total Batches Processed
       uuid: e09d5db8-e7b1-4ea4-9cb2-721899193e5c
-      width: 3
+      width: 2
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-SKe-7KApbLwJLyoTXF5kv
-    type: CHART
-  CHART-oGCvCALOLfMD0W-2J5XCm:
-    children: []
-    id: CHART-oGCvCALOLfMD0W-2J5XCm
-    meta:
-      chartId: 55
-      height: 28
-      sliceName: Overall Mixer Utilization
-      uuid: 2feaf3fe-c645-4df8-8842-5214f658f425
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-qgOFNYKx20UeBj72dYhAa
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
     type: CHART
   CHART-sFsYt549NMNs3ET546G94:
     children: []
     id: CHART-sFsYt549NMNs3ET546G94
     meta:
-      chartId: 29
-      height: 26
+      chartId: 7
+      height: 31
       sliceName: Average Batch Duration (Minutes)
       uuid: faffb25b-ce2d-4f20-ad8b-5235726ea80b
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
+    type: CHART
+  COLUMN-14NMUT7uDI9yljjgjuK2G:
+    children:
+    - CHART-explore-110-1
+    - CHART-explore-111-1
+    - CHART-explore-112-1
+    id: COLUMN-14NMUT7uDI9yljjgjuK2G
+    meta:
+      background: BACKGROUND_TRANSPARENT
       width: 3
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-SKe-7KApbLwJLyoTXF5kv
-    type: CHART
+    - ROW-wojus-yvXofYhZhLUs46U
+    type: COLUMN
+  COLUMN-JD20RDXW0N0gJQzNi87fr:
+    children:
+    - CHART-_9xe7jDHcKxpfkN103NQi
+    id: COLUMN-JD20RDXW0N0gJQzNi87fr
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    type: COLUMN
+  COLUMN-wQY7xEn_kXCPor8c0xZ9w:
+    children:
+    - CHART-explore-113-1
+    - CHART-sFsYt549NMNs3ET546G94
+    - CHART-ezPYA2N4a8aPsxQbb7dzH
+    id: COLUMN-wQY7xEn_kXCPor8c0xZ9w
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    type: COLUMN
   DASHBOARD_VERSION_KEY: v2
   DIVIDER-KCu3yZGEKvdqUPd7V56s7:
     children: []
@@ -144,8 +193,7 @@ position:
     type: DIVIDER
   GRID_ID:
     children:
-    - ROW-qgOFNYKx20UeBj72dYhAa
-    - ROW-SKe-7KApbLwJLyoTXF5kv
+    - ROW-wojus-yvXofYhZhLUs46U
     - DIVIDER-KCu3yZGEKvdqUPd7V56s7
     - ROW-GTwzOBNDtDgBUzbpkpbUh
     - ROW-x0SX94KBkT6bHVevsao4p
@@ -173,25 +221,12 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
-  ROW-SKe-7KApbLwJLyoTXF5kv:
+  ROW-wojus-yvXofYhZhLUs46U:
     children:
-    - CHART-HESpARLWlPG1aibmYiRcP
-    - CHART-sFsYt549NMNs3ET546G94
-    - CHART-ezPYA2N4a8aPsxQbb7dzH
-    id: ROW-SKe-7KApbLwJLyoTXF5kv
-    meta:
-      background: BACKGROUND_TRANSPARENT
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    type: ROW
-  ROW-qgOFNYKx20UeBj72dYhAa:
-    children:
-    - CHART-oGCvCALOLfMD0W-2J5XCm
-    - CHART-_-T76MP_rf2WyLPv0aqCp
-    - CHART-DIDTlVJQsNUysyV04-bhQ
-    - CHART-4Qj9d3dM916lPUE8gp9g-
-    id: ROW-qgOFNYKx20UeBj72dYhAa
+    - COLUMN-JD20RDXW0N0gJQzNi87fr
+    - COLUMN-14NMUT7uDI9yljjgjuK2G
+    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
+    id: ROW-wojus-yvXofYhZhLUs46U
     meta:
       background: BACKGROUND_TRANSPARENT
     parents:
@@ -210,51 +245,106 @@ position:
     type: ROW
 metadata:
   chart_configuration:
-    '42':
-      id: 42
+    '15':
+      id: 15
       crossFilters:
         scope: global
         chartsInScope:
-        - 21
-        - 29
-        - 37
-        - 55
-        - 56
-        - 73
+        - 7
+        - 44
         - 82
+        - 109
+        - 110
+        - 111
         - 112
-    '82':
-      id: 82
+        - 113
+    '44':
+      id: 44
       crossFilters:
         scope: global
         chartsInScope:
-        - 21
-        - 29
-        - 37
-        - 42
-        - 55
-        - 56
-        - 73
+        - 7
+        - 15
+        - 82
+        - 109
+        - 110
+        - 111
         - 112
+        - 113
+    '109':
+      id: 109
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 15
+        - 44
+        - 82
+        - 110
+        - 111
+        - 112
+        - 113
+    '110':
+      id: 110
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 15
+        - 44
+        - 82
+        - 109
+        - 111
+        - 112
+        - 113
+    '111':
+      id: 111
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 15
+        - 44
+        - 82
+        - 109
+        - 110
+        - 112
+        - 113
+    '112':
+      id: 112
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 15
+        - 44
+        - 82
+        - 109
+        - 110
+        - 111
+        - 113
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
-    - 21
-    - 29
-    - 37
-    - 42
-    - 55
-    - 56
-    - 73
+    - 7
+    - 15
+    - 44
     - 82
+    - 109
+    - 110
+    - 111
     - 112
+    - 113
   color_scheme: ''
   refresh_frequency: 0
   expanded_slices: {}
-  label_colors: {}
+  label_colors:
+    Compliance: '#b5d343'
+    Non-Compliance: '#952d4b'
+    cpk: '#0196c5'
   timed_refresh_immune_slices: []
   cross_filters_enabled: false
   default_filters: '{}'
@@ -290,12 +380,19 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded:
-      - 73
-      - 56
-      - 37
-      - 55
+      - 109
+      - 110
+      - 111
+      - 112
     type: NATIVE_FILTER
     description: ''
+    chartsInScope:
+    - 7
+    - 15
+    - 44
+    - 82
+    - 93
+    tabsInScope: []
   - id: NATIVE_FILTER-cSNXYzcq8x1dzeBs1u--r
     controlValues:
       enableEmptyFilter: true
@@ -328,46 +425,53 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded:
-      - 73
-      - 56
-      - 37
-      - 55
+      - 109
+      - 110
+      - 111
+      - 112
     type: NATIVE_FILTER
     description: ''
-  - cascadeParentIds: []
     chartsInScope:
-    - 42
+    - 7
+    - 15
+    - 44
     - 82
+    - 93
+    tabsInScope: []
+  - id: NATIVE_FILTER-HSY25WQwJvtbDaAqx_Q1o
     controlValues:
       enableEmptyFilter: false
+    name: Time Range
+    filterType: filter_time
+    targets:
+    - {}
     defaultDataMask:
       extraFormData: {}
       filterState: {}
       ownState: {}
-    description: ''
-    filterType: filter_time
-    id: NATIVE_FILTER-HSY25WQwJvtbDaAqx_Q1o
-    name: Time Range
+    cascadeParentIds: []
     scope:
-      excluded:
-      - 73
-      - 56
-      - 21
-      - 37
-      - 112
-      - 55
-      - 29
       rootPath:
       - ROOT_ID
-    tabsInScope: []
-    targets:
-    - {}
+      excluded:
+      - 72
+      - 42
+      - 8
+      - 81
     type: NATIVE_FILTER
-  shared_label_colors: []
-  map_label_colors:
-    Compliance: '#1FA8C9'
-    Non-Compliance: '#454E7C'
-    cpk: '#1FA8C9'
-  color_scheme_domain: []
+    description: ''
+    chartsInScope:
+    - 7
+    - 15
+    - 44
+    - 82
+    - 93
+    tabsInScope: []
   filter_bar_orientation: HORIZONTAL
+  color_scheme_domain: []
+  shared_label_colors:
+  - ''
+  map_label_colors:
+    ? ''
+    : '#1FA8C9'
 version: 1.0.0
