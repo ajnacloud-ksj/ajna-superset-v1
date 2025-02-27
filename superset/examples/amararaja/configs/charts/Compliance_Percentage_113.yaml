@@ -1,0 +1,54 @@
+slice_name: Compliance  Percentage
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 4__table
+  viz_type: big_number_total
+  slice_id: 93
+  metric:
+    expressionType: SQL
+    sqlExpression: "(SUM(\n        CASE\n            WHEN \n              batch_deviation_ind=0\
+      \ \n            THEN 1\n            ELSE 0\n        END\n    ) * 100.0 /(count\
+      \ (batch_no)))"
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Compliance Batch Percentage
+    optionName: metric_3th1a5tream_7nxhps9ndw
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: datetime_fmt
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_m4tordz3dgh_97adtsir75m
+  subheader: Compliance Percentage
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  currency_format: {}
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 2
+query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"(SUM(\n        CASE\n            WHEN
+  \n              batch_deviation_ind=0 \n            THEN 1\n            ELSE 0\n        END\n    )
+  * 100.0 /(count (batch_no)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Compliance
+  Batch Percentage","optionName":"metric_3th1a5tream_7nxhps9ndw"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"4__table","viz_type":"big_number_total","slice_id":93,"metric":{"expressionType":"SQL","sqlExpression":"(SUM(\n        CASE\n            WHEN
+  \n              batch_deviation_ind=0 \n            THEN 1\n            ELSE 0\n        END\n    )
+  * 100.0 /(count (batch_no)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Compliance
+  Batch Percentage","optionName":"metric_3th1a5tream_7nxhps9ndw"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_m4tordz3dgh_97adtsir75m"}],"subheader":"Compliance
+  Percentage","header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","currency_format":{},"time_format":"smart_date","extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 2d2b8869-8df0-4050-a8fa-40010f4f162d
+version: 1.0.0
+dataset_uuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781

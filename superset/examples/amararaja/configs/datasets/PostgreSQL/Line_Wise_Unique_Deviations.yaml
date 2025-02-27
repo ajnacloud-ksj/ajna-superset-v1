@@ -24,7 +24,22 @@ sql: "SELECT \n        CASE \n            WHEN source_table_name = 'ABD1_Mixer_1
   \ THEN 'param_12' END,\n            CASE WHEN cooling_on_temp_deviation_ind = 1\
   \ THEN 'param_13' END,\n            CASE WHEN air_cooling_temp_deviation_ind = 1\
   \ THEN 'param_14' END,\n            CASE WHEN water_cooling_temp_in_deviation_ind\
-  \ = 1 THEN 'param_15' END\n        ]) AS deviated_param\n    FROM abd1_mixers_all"
+  \ = 1 THEN 'param_15' END\n        ]) AS deviated_param,\n        UNNEST(ARRAY[\n\
+  \            CASE WHEN density_deviation_ind = 0 THEN 'param_1_ok' END,\n      \
+  \      CASE WHEN dm_water_deviation_ind = 0 THEN 'param_2_ok' END,\n           \
+  \ CASE WHEN dump_temp_deviation_ind = 0 THEN 'param_3_ok' END,\n            CASE\
+  \ WHEN dry_mix_time_deviation_ind = 0 THEN 'param_4_ok' END,\n            CASE WHEN\
+  \ lead_oxide_deviation_ind = 0 THEN 'param_5_ok' END,\n            CASE WHEN acid_dump_time_deviation_ind\
+  \ = 0 THEN 'param_6_ok' END,\n            CASE WHEN peak_temp_deviation_ind = 0\
+  \ THEN 'param_7_ok' END,\n            CASE WHEN acid_addition_deviation_ind = 0\
+  \ THEN 'param_8_ok' END,\n            CASE WHEN pentration_deviation_ind = 0 THEN\
+  \ 'param_9_ok' END,\n            CASE WHEN trim_water_deviation_ind = 0 THEN 'param_10_ok'\
+  \ END,\n            CASE WHEN water_dump_time_deviation_ind = 0 THEN 'param_11_ok'\
+  \ END,\n            CASE WHEN wet_mix_time_deviation_ind = 0 THEN 'param_12_ok'\
+  \ END,\n            CASE WHEN cooling_on_temp_deviation_ind = 0 THEN 'param_13_ok'\
+  \ END,\n            CASE WHEN air_cooling_temp_deviation_ind = 0 THEN 'param_14_ok'\
+  \ END,\n            CASE WHEN water_cooling_temp_in_deviation_ind = 0 THEN 'param_15_ok'\
+  \ END\n        ]) AS non_deviated_param\n    FROM abd1_mixers_all"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -56,7 +71,19 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
+- column_name: non_deviated_param
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: source_table_name
   verbose_name: null
   is_dttm: false
@@ -68,7 +95,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: deviated_param
   verbose_name: null
   is_dttm: false
@@ -80,7 +107,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: batch_no
   verbose_name: null
   is_dttm: false
@@ -92,7 +119,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: line_name
   verbose_name: null
   is_dttm: false
@@ -104,6 +131,6 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 version: 1.0.0
 database_uuid: 639ad6ad-9253-46ba-ac67-04355896a05c

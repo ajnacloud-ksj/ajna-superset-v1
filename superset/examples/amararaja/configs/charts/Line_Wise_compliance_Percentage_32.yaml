@@ -1,0 +1,77 @@
+slice_name: Line Wise compliance Percentage
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 1__table
+  viz_type: pie
+  slice_id: 32
+  groupby:
+  - line_name
+  metric:
+    expressionType: SQL
+    sqlExpression: '(SUM(value)  * 100.0) /COUNT(batch_no) '
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Compliance %
+    optionName: metric_7cpiu84dp9s_xq7bevt7cz
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: category
+    operator: ==
+    operatorId: EQUALS
+    comparator: Ok Mixes
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_2rap8rtmj0d_a1esby14uwe
+  - expressionType: SIMPLE
+    subject: datetime_fmt
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: true
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_qvgc0pirna_jrpubq17ttg
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  roseType: null
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: key_value_percent
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: true
+  outerRadius: 59
+  donut: true
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"category","op":"==","val":"Ok
+  Mixes"},{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["line_name"],"metrics":[{"expressionType":"SQL","sqlExpression":"(SUM(value)  *
+  100.0) /COUNT(batch_no) ","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Compliance
+  %","optionName":"metric_7cpiu84dp9s_xq7bevt7cz"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"(SUM(value)  *
+  100.0) /COUNT(batch_no) ","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Compliance
+  %","optionName":"metric_7cpiu84dp9s_xq7bevt7cz"},false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"1__table","viz_type":"pie","slice_id":32,"groupby":["line_name"],"metric":{"expressionType":"SQL","sqlExpression":"(SUM(value)  *
+  100.0) /COUNT(batch_no) ","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Compliance
+  %","optionName":"metric_7cpiu84dp9s_xq7bevt7cz"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"category","operator":"==","operatorId":"EQUALS","comparator":"Ok
+  Mixes","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_2rap8rtmj0d_a1esby14uwe"},{"expressionType":"SIMPLE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":true,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_qvgc0pirna_jrpubq17ttg"}],"row_limit":100,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":5,"roseType":null,"show_legend":true,"legendType":"scroll","legendOrientation":"top","label_type":"key_value_percent","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"label_line":true,"show_total":true,"outerRadius":59,"donut":true,"innerRadius":30,"extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: cbaaa288-c398-4af3-98ef-aa9e477d1fac
+version: 1.0.0
+dataset_uuid: 28d8b976-aef2-432b-a804-7859e18413a4
