@@ -1,4 +1,4 @@
-slice_name: Mixer-3 Utilization
+slice_name: Mixer-1 Utilization
 description: null
 certified_by: null
 certification_details: null
@@ -6,7 +6,7 @@ viz_type: gauge_chart
 params:
   datasource: 4__table
   viz_type: gauge_chart
-  slice_id: 112
+  slice_id: 110
   groupby: []
   metric:
     aggregate: null
@@ -16,7 +16,7 @@ params:
     hasCustomLabel: true
     label: Overall utilization
     optionName: metric_ttdxkkx6dc_7d0l8rht7qr
-    sqlExpression: "(SUM(CASE WHEN source_table_name = 'ABD1_Mixer_3' THEN total_mix_time\
+    sqlExpression: "(SUM(CASE WHEN source_table_name = 'ABD1_Mixer_1' THEN total_mix_time\
       \ ELSE 0 END)*100.0) \r\n    / (1440 * COUNT(DISTINCT DATE(datetime_fmt)))"
   adhoc_filters:
   - clause: WHERE
@@ -52,20 +52,21 @@ params:
   extra_form_data: {}
   dashboards:
   - 2
+  annotation_layers: []
 query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Overall
   utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr","sqlExpression":"(SUM(CASE
-  WHEN source_table_name = ''ABD1_Mixer_3'' THEN total_mix_time ELSE 0 END)*100.0)
+  WHEN source_table_name = ''ABD1_Mixer_1'' THEN total_mix_time ELSE 0 END)*100.0)
   \r\n    / (1440 * COUNT(DISTINCT DATE(datetime_fmt)))"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Overall
   utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr","sqlExpression":"(SUM(CASE
-  WHEN source_table_name = ''ABD1_Mixer_3'' THEN total_mix_time ELSE 0 END)*100.0)
-  \r\n    / (1440 * COUNT(DISTINCT DATE(datetime_fmt)))"},false]],"annotation_layers":[],"row_limit":10,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"4__table","viz_type":"gauge_chart","slice_id":112,"groupby":[],"metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Overall
+  WHEN source_table_name = ''ABD1_Mixer_1'' THEN total_mix_time ELSE 0 END)*100.0)
+  \r\n    / (1440 * COUNT(DISTINCT DATE(datetime_fmt)))"},false]],"annotation_layers":[],"row_limit":10,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"4__table","viz_type":"gauge_chart","slice_id":110,"groupby":[],"metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Overall
   utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr","sqlExpression":"(SUM(CASE
-  WHEN source_table_name = ''ABD1_Mixer_3'' THEN total_mix_time ELSE 0 END)*100.0)
+  WHEN source_table_name = ''ABD1_Mixer_1'' THEN total_mix_time ELSE 0 END)*100.0)
   \r\n    / (1440 * COUNT(DISTINCT DATE(datetime_fmt)))"},"adhoc_filters":[{"clause":"WHERE","comparator":"No
   filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_pivi1qsie7p_rtpyjpher2","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"datetime_fmt"}],"row_limit":10,"sort_by_metric":true,"min_val":0,"max_val":100,"start_angle":"220","end_angle":"-45","color_scheme":"supersetColors","font_size":10,"number_format":"SMART_NUMBER","value_formatter":"{value}
   %","show_pointer":true,"animation":true,"show_axis_tick":false,"show_split_line":true,"split_number":10,"show_progress":false,"overlap":true,"round_cap":true,"intervals":"25,50,100","interval_color_indices":"6,4,3","extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
 cache_timeout: null
-uuid: 02b14b0f-b90d-4a86-96ec-c877b47295e1
+uuid: 255fd670-83df-46c8-b819-1140a4345bfa
 version: 1.0.0
 dataset_uuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781

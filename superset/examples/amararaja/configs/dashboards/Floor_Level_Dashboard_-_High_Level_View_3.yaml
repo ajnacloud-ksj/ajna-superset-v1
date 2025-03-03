@@ -13,7 +13,7 @@ position:
     children: []
     id: CHART-Y0_MTo0ttmoBaHDyzLePT
     meta:
-      chartId: 15
+      chartId: 2
       height: 50
       sliceName: 'Specification Compliance, '
       uuid: c7429585-b095-4af2-a6c8-f71231a73e5d
@@ -27,7 +27,7 @@ position:
     children: []
     id: CHART-_9xe7jDHcKxpfkN103NQi
     meta:
-      chartId: 109
+      chartId: 15
       height: 100
       sliceName: Overall Mixer Utilization
       uuid: 039bbc9c-4f2e-4625-9ad0-3c381df8c852
@@ -42,7 +42,7 @@ position:
     children: []
     id: CHART-explore-110-1
     meta:
-      chartId: 110
+      chartId: 8
       height: 34
       sliceName: Mixer-1 Utilization
       uuid: 255fd670-83df-46c8-b819-1140a4345bfa
@@ -57,7 +57,7 @@ position:
     children: []
     id: CHART-explore-111-1
     meta:
-      chartId: 111
+      chartId: 4
       height: 31
       sliceName: Mixer-2 Utilization
       uuid: c59b8c66-f000-4050-9606-ae56e39b622a
@@ -72,7 +72,7 @@ position:
     children: []
     id: CHART-explore-112-1
     meta:
-      chartId: 112
+      chartId: 14
       height: 31
       sliceName: Mixer-3 Utilization
       uuid: 02b14b0f-b90d-4a86-96ec-c877b47295e1
@@ -87,7 +87,7 @@ position:
     children: []
     id: CHART-explore-113-1
     meta:
-      chartId: 113
+      chartId: 12
       height: 34
       sliceName: Compliance  Percentage
       uuid: 2d2b8869-8df0-4050-a8fa-40010f4f162d
@@ -102,7 +102,7 @@ position:
     children: []
     id: CHART-explore-9-1
     meta:
-      chartId: 44
+      chartId: 13
       height: 50
       sliceName: Parameter Wise CpK
       uuid: c6ab9436-e95e-439f-b0e1-7352b85acc5e
@@ -116,7 +116,7 @@ position:
     children: []
     id: CHART-ezPYA2N4a8aPsxQbb7dzH
     meta:
-      chartId: 82
+      chartId: 20
       height: 31
       sliceName: Total Batches Processed
       uuid: e09d5db8-e7b1-4ea4-9cb2-721899193e5c
@@ -131,7 +131,7 @@ position:
     children: []
     id: CHART-sFsYt549NMNs3ET546G94
     meta:
-      chartId: 7
+      chartId: 3
       height: 31
       sliceName: Average Batch Duration (Minutes)
       uuid: faffb25b-ce2d-4f20-ad8b-5235726ea80b
@@ -380,10 +380,10 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded:
-      - 109
-      - 110
-      - 111
-      - 112
+      - 15
+      - 8
+      - 4
+      - 14
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
@@ -425,10 +425,10 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded:
-      - 109
-      - 110
-      - 111
-      - 112
+      - 15
+      - 8
+      - 4
+      - 14
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
@@ -453,11 +453,7 @@ metadata:
     scope:
       rootPath:
       - ROOT_ID
-      excluded:
-      - 72
-      - 42
-      - 8
-      - 81
+      excluded: []
     type: NATIVE_FILTER
     description: ''
     chartsInScope:

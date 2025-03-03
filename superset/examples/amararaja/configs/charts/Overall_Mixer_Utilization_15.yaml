@@ -53,6 +53,7 @@ params:
   dashboards:
   - 2
   - 4
+  annotation_layers: []
 query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Overall
   utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr","sqlExpression":"SUM(SUM(total_mix_time))

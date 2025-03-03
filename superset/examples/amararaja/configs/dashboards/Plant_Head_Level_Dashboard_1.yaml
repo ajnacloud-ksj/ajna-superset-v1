@@ -11,9 +11,9 @@ position:
     children: []
     id: CHART-69A0BEK2
     meta:
-      chartId: 32
+      chartId: 16
       height: 50
-      sliceName: Line Wise compliance Percentage
+      sliceName: Line-1 Compliance & Non-Compliance Percentage
       uuid: cbaaa288-c398-4af3-98ef-aa9e477d1fac
       width: 4
     parents:
@@ -25,7 +25,7 @@ position:
     children: []
     id: CHART-HE7RGL6H
     meta:
-      chartId: 73
+      chartId: 7
       height: 50
       sliceName: Line Wise Total Parameters And Not Ok Parameters
       uuid: 3a4df008-8ad2-4e33-be40-2ba99e136b4d
@@ -39,7 +39,7 @@ position:
     children: []
     id: CHART-ILX4749N
     meta:
-      chartId: 80
+      chartId: 9
       height: 50
       sliceName: Line Wise Ok and Not Ok Mixes
       uuid: 078eda4f-befa-48eb-afe1-237e5ccf961b
@@ -49,10 +49,40 @@ position:
     - GRID_ID
     - ROW-N-0EFLUZUD
     type: CHART
+  CHART-explore-21-1:
+    children: []
+    id: CHART-explore-21-1
+    meta:
+      chartId: 21
+      height: 50
+      sliceName: Line-2 Compliance & Non-Compliance Percentage
+      uuid: aa90ad67-3afb-42e1-80be-99d013a82606
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-MXe20aZmkvFpOew-25IUj
+    type: CHART
+  CHART-explore-22-1:
+    children: []
+    id: CHART-explore-22-1
+    meta:
+      chartId: 22
+      height: 50
+      sliceName: Line-3 Compliance & Non-Compliance Percentage
+      uuid: d229b76c-9f6a-478e-8f94-bd384a9cbb4c
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-MXe20aZmkvFpOew-25IUj
+    type: CHART
   DASHBOARD_VERSION_KEY: v2
   GRID_ID:
     children:
+    - ROW-63ckP4GKzxE6x3DI5ylem
     - ROW-N-0EFLUZUD
+    - ROW-N-RMZF1KTR
     id: GRID_ID
     parents:
     - ROOT_ID
@@ -67,11 +97,22 @@ position:
     - GRID_ID
     id: ROOT_ID
     type: ROOT
+  ROW-63ckP4GKzxE6x3DI5ylem:
+    children:
+    - CHART-69A0BEK2
+    - CHART-explore-21-1
+    - CHART-explore-22-1
+    id: ROW-63ckP4GKzxE6x3DI5ylem
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
   ROW-N-0EFLUZUD:
     children:
     - CHART-HE7RGL6H
     - CHART-ILX4749N
-    - CHART-69A0BEK2
     id: ROW-N-0EFLUZUD
     meta:
       '0': ROOT_ID
@@ -80,38 +121,89 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-N-RMZF1KTR:
+    children:
+    - CHART-OQO2FVER
+    id: ROW-N-RMZF1KTR
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    type: ROW
+    parents:
+    - ROOT_ID
+    - GRID_ID
+  CHART-OQO2FVER:
+    children: []
+    id: CHART-OQO2FVER
+    meta:
+      chartId: 23
+      height: 50
+      sliceName: Count Mixes Based On Line & Recipe
+      uuid: 0ec11798-2d7d-4307-9e46-5cb538902c72
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-RMZF1KTR
 metadata:
   chart_configuration:
-    '32':
-      id: 32
+    '7':
+      id: 7
       crossFilters:
         scope: global
         chartsInScope:
-        - 73
-        - 80
-    '73':
-      id: 73
+        - 9
+        - 16
+        - 21
+        - 22
+    '9':
+      id: 9
       crossFilters:
         scope: global
         chartsInScope:
-        - 32
-        - 80
-    '80':
-      id: 80
+        - 7
+        - 16
+        - 21
+        - 22
+    '16':
+      id: 16
       crossFilters:
         scope: global
         chartsInScope:
-        - 32
-        - 73
+        - 7
+        - 9
+        - 21
+        - 22
+    '21':
+      id: 21
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 9
+        - 16
+        - 22
+    '22':
+      id: 22
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 9
+        - 16
+        - 21
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
-    - 32
-    - 73
-    - 80
+    - 7
+    - 9
+    - 16
+    - 21
+    - 22
   color_scheme: ''
   refresh_frequency: 0
   expanded_slices: {}
@@ -156,7 +248,9 @@ metadata:
     tabsInScope: []
   filter_bar_orientation: HORIZONTAL
   color_scheme_domain: []
-  shared_label_colors: []
+  shared_label_colors:
+  - Not Ok Mixes
+  - Ok Mixes
   map_label_colors:
     Total parameters: '#454E7C'
 version: 1.0.0

@@ -11,7 +11,7 @@ position:
     children: []
     id: CHART-explore-122-1
     meta:
-      chartId: 108
+      chartId: 17
       height: 50
       sliceName: Batch Wise Quarterly  Compliance And Non-Compliance Count
       uuid: f5cc2310-b9f2-4ac6-be82-0d0260e1c262
@@ -25,7 +25,7 @@ position:
     children: []
     id: CHART-explore-123-1
     meta:
-      chartId: 104
+      chartId: 5
       height: 50
       sliceName: ABD1 Mixer1 Spec Compliance
       uuid: 3d6458fa-da97-4a8e-8db2-4ba23931000b
@@ -39,7 +39,7 @@ position:
     children: []
     id: CHART-explore-124-1
     meta:
-      chartId: 67
+      chartId: 1
       height: 50
       sliceName: ABD1 Mixer2 Spec Compliance
       uuid: 76142126-a98b-4a46-8d7d-c52d957ff50b
@@ -53,7 +53,7 @@ position:
     children: []
     id: CHART-explore-125-1
     meta:
-      chartId: 62
+      chartId: 19
       height: 50
       sliceName: ABD1 Mixer3 Spec Compliance
       uuid: ed0dfef7-df1b-4f23-a3b5-cb1c5be56511
@@ -67,7 +67,7 @@ position:
     children: []
     id: CHART-explore-173-1
     meta:
-      chartId: 83
+      chartId: 6
       height: 50
       sliceName: Count Of Total Compliance And Non-Compliance
       uuid: 5678bf4c-1268-481c-91f3-aaa3ec9b25fa
@@ -81,7 +81,7 @@ position:
     children: []
     id: CHART-explore-178-1
     meta:
-      chartId: 47
+      chartId: 11
       height: 61
       sliceName: Count Of Specification Parameters
       uuid: 957783b4-528e-4344-bf66-93fcd1ff5b99
@@ -95,7 +95,7 @@ position:
     children: []
     id: CHART-explore-93-1
     meta:
-      chartId: 93
+      chartId: 18
       height: 56
       sliceName: Compliance &Non-Compliance Percentage & Average Batches Variations
       uuid: 93a61b86-61e8-4af4-b1b0-886fb8d8898d
@@ -109,7 +109,7 @@ position:
     children: []
     id: CHART-ixiid7yrn9HU6-s9hCbao
     meta:
-      chartId: 109
+      chartId: 15
       height: 61
       sliceName: Overall Mixer Utilization
       uuid: 039bbc9c-4f2e-4625-9ad0-3c381df8c852
@@ -322,7 +322,7 @@ metadata:
     name: Time Range
     scope:
       excluded:
-      - 47
+      - 11
       rootPath:
       - ROOT_ID
     targets:

@@ -4,7 +4,7 @@ css: ''
 slug: null
 certified_by: ''
 certification_details: ''
-published: false
+published: true
 uuid: 0f382137-7d67-460d-be46-d63e34423549
 position:
   DASHBOARD_VERSION_KEY: v2

@@ -38,6 +38,7 @@ params:
   extra_form_data: {}
   dashboards:
   - 2
+  annotation_layers: []
 query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"(SUM(\n        CASE\n            WHEN
   \n              batch_deviation_ind=0 \n            THEN 1\n            ELSE 0\n        END\n    )
