@@ -1,0 +1,111 @@
+slice_name: Compliance &Non-Compliance Percentage & Average Batches Variations
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_line
+params:
+  datasource: 4__table
+  viz_type: echarts_timeseries_line
+  slice_id: 93
+  x_axis: quarter
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - expressionType: SQL
+    sqlExpression: "(SUM(\n        CASE\n            WHEN \n              batch_deviation_ind=0\
+      \ \n            THEN 1\n            ELSE 0\n        END\n    ) * 100.0 /(count\
+      \ (batch_no)))"
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Compliance Batch Percentage
+    optionName: metric_3th1a5tream_7nxhps9ndw
+  - expressionType: SQL
+    sqlExpression: "(SUM(\n        CASE\n            WHEN \n              batch_deviation_ind=1\
+      \ \n            THEN 1\n            ELSE 0\n        END\n    ) * 100.0 /(count\
+      \ (batch_no)))"
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Non-Compliance percentage
+    optionName: metric_8j7gzz285iw_b2he8sreu1s
+  - expressionType: SQL
+    sqlExpression: AVG(batch_duration)/60000
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Avg Batch Duration
+    optionName: metric_4cxopcphn3s_ltamszkcaa
+  groupby: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: datetime_fmt
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_m4tordz3dgh_97adtsir75m
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  time_shift_color: true
+  seriesType: line
+  only_total: true
+  opacity: 0.2
+  markerSize: 6
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  showTooltipTotal: true
+  showTooltipPercentage: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  currency_format: {}
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 2
+  - 4
+query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"quarter","label":"quarter","expressionType":"SQL"}],"metrics":[{"expressionType":"SQL","sqlExpression":"(SUM(\n        CASE\n            WHEN
+  \n              batch_deviation_ind=0 \n            THEN 1\n            ELSE 0\n        END\n    )
+  * 100.0 /(count (batch_no)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Compliance
+  Batch Percentage","optionName":"metric_3th1a5tream_7nxhps9ndw"},{"expressionType":"SQL","sqlExpression":"(SUM(\n        CASE\n            WHEN
+  \n              batch_deviation_ind=1 \n            THEN 1\n            ELSE 0\n        END\n    )
+  * 100.0 /(count (batch_no)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Non-Compliance
+  percentage","optionName":"metric_8j7gzz285iw_b2he8sreu1s"},{"expressionType":"SQL","sqlExpression":"AVG(batch_duration)/60000","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Avg
+  Batch Duration","optionName":"metric_4cxopcphn3s_ltamszkcaa"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"(SUM(\n        CASE\n            WHEN
+  \n              batch_deviation_ind=0 \n            THEN 1\n            ELSE 0\n        END\n    )
+  * 100.0 /(count (batch_no)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Compliance
+  Batch Percentage","optionName":"metric_3th1a5tream_7nxhps9ndw"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["quarter"],"columns":[],"aggregates":{"Compliance
+  Batch Percentage":{"operator":"mean"},"Non-Compliance percentage":{"operator":"mean"},"Avg
+  Batch Duration":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"flatten"}]}],"form_data":{"datasource":"4__table","viz_type":"echarts_timeseries_line","slice_id":93,"x_axis":"quarter","x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":[{"expressionType":"SQL","sqlExpression":"(SUM(\n        CASE\n            WHEN
+  \n              batch_deviation_ind=0 \n            THEN 1\n            ELSE 0\n        END\n    )
+  * 100.0 /(count (batch_no)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Compliance
+  Batch Percentage","optionName":"metric_3th1a5tream_7nxhps9ndw"},{"expressionType":"SQL","sqlExpression":"(SUM(\n        CASE\n            WHEN
+  \n              batch_deviation_ind=1 \n            THEN 1\n            ELSE 0\n        END\n    )
+  * 100.0 /(count (batch_no)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Non-Compliance
+  percentage","optionName":"metric_8j7gzz285iw_b2he8sreu1s"},{"expressionType":"SQL","sqlExpression":"AVG(batch_duration)/60000","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Avg
+  Batch Duration","optionName":"metric_4cxopcphn3s_ltamszkcaa"}],"groupby":[],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_m4tordz3dgh_97adtsir75m"}],"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"annotation_layers":[],"x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","time_shift_color":true,"seriesType":"line","only_total":true,"opacity":0.2,"markerSize":6,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","rich_tooltip":true,"showTooltipTotal":true,"showTooltipPercentage":true,"tooltipTimeFormat":"smart_date","y_axis_format":"SMART_NUMBER","currency_format":{},"truncateXAxis":true,"y_axis_bounds":[null,null],"extra_form_data":{},"dashboards":[2,4],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 93a61b86-61e8-4af4-b1b0-886fb8d8898d
+version: 1.0.0
+dataset_uuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781

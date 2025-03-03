@@ -11,11 +11,11 @@ position:
     children: []
     id: CHART-explore-122-1
     meta:
-      chartId: 83
+      chartId: 17
       height: 50
       sliceName: Batch Wise Quarterly  Compliance And Non-Compliance Count
       uuid: f5cc2310-b9f2-4ac6-be82-0d0260e1c262
-      width: 7
+      width: 8
     parents:
     - ROOT_ID
     - GRID_ID
@@ -25,7 +25,7 @@ position:
     children: []
     id: CHART-explore-123-1
     meta:
-      chartId: 117
+      chartId: 5
       height: 50
       sliceName: ABD1 Mixer1 Spec Compliance
       uuid: 3d6458fa-da97-4a8e-8db2-4ba23931000b
@@ -39,7 +39,7 @@ position:
     children: []
     id: CHART-explore-124-1
     meta:
-      chartId: 106
+      chartId: 1
       height: 50
       sliceName: ABD1 Mixer2 Spec Compliance
       uuid: 76142126-a98b-4a46-8d7d-c52d957ff50b
@@ -53,7 +53,7 @@ position:
     children: []
     id: CHART-explore-125-1
     meta:
-      chartId: 92
+      chartId: 19
       height: 50
       sliceName: ABD1 Mixer3 Spec Compliance
       uuid: ed0dfef7-df1b-4f23-a3b5-cb1c5be56511
@@ -67,11 +67,11 @@ position:
     children: []
     id: CHART-explore-173-1
     meta:
-      chartId: 111
+      chartId: 6
       height: 50
       sliceName: Count Of Total Compliance And Non-Compliance
       uuid: 5678bf4c-1268-481c-91f3-aaa3ec9b25fa
-      width: 5
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
@@ -81,11 +81,39 @@ position:
     children: []
     id: CHART-explore-178-1
     meta:
-      chartId: 115
-      height: 30
+      chartId: 11
+      height: 61
       sliceName: Count Of Specification Parameters
       uuid: 957783b4-528e-4344-bf66-93fcd1ff5b99
       width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YJSzd3l24pi5A-cFDw3IB
+    type: CHART
+  CHART-explore-93-1:
+    children: []
+    id: CHART-explore-93-1
+    meta:
+      chartId: 18
+      height: 56
+      sliceName: Compliance &Non-Compliance Percentage & Average Batches Variations
+      uuid: 93a61b86-61e8-4af4-b1b0-886fb8d8898d
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-e29c4J2A11XAzAKZ8n2-Z
+    type: CHART
+  CHART-ixiid7yrn9HU6-s9hCbao:
+    children: []
+    id: CHART-ixiid7yrn9HU6-s9hCbao
+    meta:
+      chartId: 15
+      height: 61
+      sliceName: Overall Mixer Utilization
+      uuid: 039bbc9c-4f2e-4625-9ad0-3c381df8c852
+      width: 9
     parents:
     - ROOT_ID
     - GRID_ID
@@ -97,6 +125,7 @@ position:
     - HEADER-1JRDjxsBuaB9XEPtfFSJ6
     - ROW-YJSzd3l24pi5A-cFDw3IB
     - ROW-HdlQy1j_rvYsXSCUXETKc
+    - ROW-WTYZhvqh-gMaTEGovrjoZ
     - ROW-Ku07iyo56rxbFgMBLs0Tp
     id: GRID_ID
     parents:
@@ -148,9 +177,20 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-WTYZhvqh-gMaTEGovrjoZ:
+    children:
+    - CHART-explore-93-1
+    id: ROW-WTYZhvqh-gMaTEGovrjoZ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
   ROW-YJSzd3l24pi5A-cFDw3IB:
     children:
     - CHART-explore-178-1
+    - CHART-ixiid7yrn9HU6-s9hCbao
     id: ROW-YJSzd3l24pi5A-cFDw3IB
     meta:
       background: BACKGROUND_TRANSPARENT
@@ -160,79 +200,110 @@ position:
     type: ROW
 metadata:
   chart_configuration:
+    '62':
+      id: 62
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 47
+        - 67
+        - 83
+        - 93
+        - 104
+        - 108
+        - 109
+    '67':
+      id: 67
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 47
+        - 62
+        - 83
+        - 93
+        - 104
+        - 108
+        - 109
     '83':
       id: 83
       crossFilters:
         scope: global
         chartsInScope:
-        - 92
-        - 106
-        - 111
-        - 115
-        - 117
-    '92':
-      id: 92
+        - 47
+        - 62
+        - 67
+        - 93
+        - 104
+        - 108
+        - 109
+    '93':
+      id: 93
       crossFilters:
         scope: global
         chartsInScope:
+        - 47
+        - 62
+        - 67
         - 83
-        - 106
-        - 111
-        - 115
-        - 117
-    '106':
-      id: 106
+        - 104
+        - 108
+        - 109
+    '104':
+      id: 104
       crossFilters:
         scope: global
         chartsInScope:
+        - 47
+        - 62
+        - 67
         - 83
-        - 92
-        - 111
-        - 115
-        - 117
-    '111':
-      id: 111
+        - 93
+        - 108
+        - 109
+    '108':
+      id: 108
       crossFilters:
         scope: global
         chartsInScope:
+        - 47
+        - 62
+        - 67
         - 83
-        - 92
-        - 106
-        - 115
-        - 117
-    '117':
-      id: 117
+        - 93
+        - 104
+        - 109
+    '109':
+      id: 109
       crossFilters:
         scope: global
         chartsInScope:
+        - 47
+        - 62
+        - 67
         - 83
-        - 92
-        - 106
-        - 111
-        - 115
+        - 93
+        - 104
+        - 108
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
+    - 47
+    - 62
+    - 67
     - 83
-    - 92
-    - 106
-    - 111
-    - 115
-    - 117
-  map_label_colors:
-    Non-Compliance Batches: '#1FA8C9'
-    Compliance Batches: '#454E7C'
+    - 93
+    - 104
+    - 108
+    - 109
   color_scheme: ''
   refresh_frequency: 0
-  color_scheme_domain: []
   expanded_slices: {}
-  label_colors: {}
-  shared_label_colors:
-  - Compliance Batches
-  - Non-Compliance Batches
+  label_colors:
+    Compliance Batches: '#b5d343'
+    Non-Compliance Batches: '#952d4b'
   timed_refresh_immune_slices: []
   cross_filters_enabled: true
   default_filters: '{}'
@@ -251,7 +322,7 @@ metadata:
     name: Time Range
     scope:
       excluded:
-      - 115
+      - 11
       rootPath:
       - ROOT_ID
     targets:
@@ -265,4 +336,14 @@ metadata:
     - 117
     tabsInScope: []
   filter_bar_orientation: HORIZONTAL
+  shared_label_colors:
+  - Compliance Batches
+  - Non-Compliance Batches
+  map_label_colors:
+    ? ''
+    : '#1FA8C9'
+    Compliance Batch Percentage: '#1FA8C9'
+    Non-Compliance percentage: '#454E7C'
+    Avg Batch Duration: '#5AC189'
+  color_scheme_domain: []
 version: 1.0.0

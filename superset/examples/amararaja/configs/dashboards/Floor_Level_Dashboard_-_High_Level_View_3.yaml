@@ -1,0 +1,473 @@
+dashboard_title: Floor Level Dashboard - High Level View
+description: null
+css: "#chart-id-113 .header-line {  \r\n  color: #b3cde0 !important;  \r\n}\r\n\r\n\
+  #chart-id-7 .header-line {  \r\n  color: #b3cde0 !important;  \r\n}\r\n\r\n#chart-id-82\
+  \ .header-line {  \r\n  color: #b3cde0 !important;  \r\n}"
+slug: null
+certified_by: ''
+certification_details: ''
+published: true
+uuid: 91cf20d3-320b-4605-8cb5-4545141c1981
+position:
+  CHART-Y0_MTo0ttmoBaHDyzLePT:
+    children: []
+    id: CHART-Y0_MTo0ttmoBaHDyzLePT
+    meta:
+      chartId: 2
+      height: 50
+      sliceName: 'Specification Compliance, '
+      uuid: c7429585-b095-4af2-a6c8-f71231a73e5d
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-GTwzOBNDtDgBUzbpkpbUh
+    type: CHART
+  CHART-_9xe7jDHcKxpfkN103NQi:
+    children: []
+    id: CHART-_9xe7jDHcKxpfkN103NQi
+    meta:
+      chartId: 15
+      height: 100
+      sliceName: Overall Mixer Utilization
+      uuid: 039bbc9c-4f2e-4625-9ad0-3c381df8c852
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-JD20RDXW0N0gJQzNi87fr
+    type: CHART
+  CHART-explore-110-1:
+    children: []
+    id: CHART-explore-110-1
+    meta:
+      chartId: 8
+      height: 34
+      sliceName: Mixer-1 Utilization
+      uuid: 255fd670-83df-46c8-b819-1140a4345bfa
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-14NMUT7uDI9yljjgjuK2G
+    type: CHART
+  CHART-explore-111-1:
+    children: []
+    id: CHART-explore-111-1
+    meta:
+      chartId: 4
+      height: 31
+      sliceName: Mixer-2 Utilization
+      uuid: c59b8c66-f000-4050-9606-ae56e39b622a
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-14NMUT7uDI9yljjgjuK2G
+    type: CHART
+  CHART-explore-112-1:
+    children: []
+    id: CHART-explore-112-1
+    meta:
+      chartId: 14
+      height: 31
+      sliceName: Mixer-3 Utilization
+      uuid: 02b14b0f-b90d-4a86-96ec-c877b47295e1
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-14NMUT7uDI9yljjgjuK2G
+    type: CHART
+  CHART-explore-113-1:
+    children: []
+    id: CHART-explore-113-1
+    meta:
+      chartId: 12
+      height: 34
+      sliceName: Compliance  Percentage
+      uuid: 2d2b8869-8df0-4050-a8fa-40010f4f162d
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
+    type: CHART
+  CHART-explore-9-1:
+    children: []
+    id: CHART-explore-9-1
+    meta:
+      chartId: 13
+      height: 50
+      sliceName: Parameter Wise CpK
+      uuid: c6ab9436-e95e-439f-b0e1-7352b85acc5e
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-x0SX94KBkT6bHVevsao4p
+    type: CHART
+  CHART-ezPYA2N4a8aPsxQbb7dzH:
+    children: []
+    id: CHART-ezPYA2N4a8aPsxQbb7dzH
+    meta:
+      chartId: 20
+      height: 31
+      sliceName: Total Batches Processed
+      uuid: e09d5db8-e7b1-4ea4-9cb2-721899193e5c
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
+    type: CHART
+  CHART-sFsYt549NMNs3ET546G94:
+    children: []
+    id: CHART-sFsYt549NMNs3ET546G94
+    meta:
+      chartId: 3
+      height: 31
+      sliceName: Average Batch Duration (Minutes)
+      uuid: faffb25b-ce2d-4f20-ad8b-5235726ea80b
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
+    type: CHART
+  COLUMN-14NMUT7uDI9yljjgjuK2G:
+    children:
+    - CHART-explore-110-1
+    - CHART-explore-111-1
+    - CHART-explore-112-1
+    id: COLUMN-14NMUT7uDI9yljjgjuK2G
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    type: COLUMN
+  COLUMN-JD20RDXW0N0gJQzNi87fr:
+    children:
+    - CHART-_9xe7jDHcKxpfkN103NQi
+    id: COLUMN-JD20RDXW0N0gJQzNi87fr
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    type: COLUMN
+  COLUMN-wQY7xEn_kXCPor8c0xZ9w:
+    children:
+    - CHART-explore-113-1
+    - CHART-sFsYt549NMNs3ET546G94
+    - CHART-ezPYA2N4a8aPsxQbb7dzH
+    id: COLUMN-wQY7xEn_kXCPor8c0xZ9w
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-wojus-yvXofYhZhLUs46U
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-KCu3yZGEKvdqUPd7V56s7:
+    children: []
+    id: DIVIDER-KCu3yZGEKvdqUPd7V56s7
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - ROW-wojus-yvXofYhZhLUs46U
+    - DIVIDER-KCu3yZGEKvdqUPd7V56s7
+    - ROW-GTwzOBNDtDgBUzbpkpbUh
+    - ROW-x0SX94KBkT6bHVevsao4p
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Floor Level Dashboard - High Level View
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-GTwzOBNDtDgBUzbpkpbUh:
+    children:
+    - CHART-Y0_MTo0ttmoBaHDyzLePT
+    id: ROW-GTwzOBNDtDgBUzbpkpbUh
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-wojus-yvXofYhZhLUs46U:
+    children:
+    - COLUMN-JD20RDXW0N0gJQzNi87fr
+    - COLUMN-14NMUT7uDI9yljjgjuK2G
+    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
+    id: ROW-wojus-yvXofYhZhLUs46U
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-x0SX94KBkT6bHVevsao4p:
+    children:
+    - CHART-explore-9-1
+    id: ROW-x0SX94KBkT6bHVevsao4p
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '15':
+      id: 15
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 44
+        - 82
+        - 109
+        - 110
+        - 111
+        - 112
+        - 113
+    '44':
+      id: 44
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 15
+        - 82
+        - 109
+        - 110
+        - 111
+        - 112
+        - 113
+    '109':
+      id: 109
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 15
+        - 44
+        - 82
+        - 110
+        - 111
+        - 112
+        - 113
+    '110':
+      id: 110
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 15
+        - 44
+        - 82
+        - 109
+        - 111
+        - 112
+        - 113
+    '111':
+      id: 111
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 15
+        - 44
+        - 82
+        - 109
+        - 110
+        - 112
+        - 113
+    '112':
+      id: 112
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 15
+        - 44
+        - 82
+        - 109
+        - 110
+        - 111
+        - 113
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 7
+    - 15
+    - 44
+    - 82
+    - 109
+    - 110
+    - 111
+    - 112
+    - 113
+  color_scheme: ''
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors:
+    Compliance: '#b5d343'
+    Non-Compliance: '#952d4b'
+    cpk: '#0196c5'
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: false
+  default_filters: '{}'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-ROJNgiOGsdFY9cZXQ3Zhz
+    controlValues:
+      enableEmptyFilter: true
+      defaultToFirstItem: false
+      multiSelect: false
+      searchAllOptions: false
+      inverseSelection: false
+    name: Line Name
+    filterType: filter_select
+    targets:
+    - column:
+        name: source_table_name
+      datasetUuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781
+    defaultDataMask:
+      extraFormData:
+        filters:
+        - col: source_table_name
+          op: IN
+          val:
+          - ABD1_Mixer_1
+      filterState:
+        label: ABD1_Mixer_1
+        validateMessage: false
+        validateStatus: false
+        value:
+        - ABD1_Mixer_1
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 15
+      - 8
+      - 4
+      - 14
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 7
+    - 15
+    - 44
+    - 82
+    - 93
+    tabsInScope: []
+  - id: NATIVE_FILTER-cSNXYzcq8x1dzeBs1u--r
+    controlValues:
+      enableEmptyFilter: true
+      defaultToFirstItem: false
+      multiSelect: false
+      searchAllOptions: false
+      inverseSelection: false
+    name: Recipe
+    filterType: filter_select
+    targets:
+    - column:
+        name: battery_name
+      datasetUuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781
+    defaultDataMask:
+      extraFormData:
+        filters:
+        - col: battery_name
+          op: IN
+          val:
+          - EFB(+)ve_Orifice
+      filterState:
+        label: EFB(+)ve_Orifice
+        validateMessage: false
+        validateStatus: false
+        value:
+        - EFB(+)ve_Orifice
+    cascadeParentIds:
+    - NATIVE_FILTER-ROJNgiOGsdFY9cZXQ3Zhz
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 15
+      - 8
+      - 4
+      - 14
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 7
+    - 15
+    - 44
+    - 82
+    - 93
+    tabsInScope: []
+  - id: NATIVE_FILTER-HSY25WQwJvtbDaAqx_Q1o
+    controlValues:
+      enableEmptyFilter: false
+    name: Time Range
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 7
+    - 15
+    - 44
+    - 82
+    - 93
+    tabsInScope: []
+  filter_bar_orientation: HORIZONTAL
+  color_scheme_domain: []
+  shared_label_colors:
+  - ''
+  map_label_colors:
+    ? ''
+    : '#1FA8C9'
+version: 1.0.0
