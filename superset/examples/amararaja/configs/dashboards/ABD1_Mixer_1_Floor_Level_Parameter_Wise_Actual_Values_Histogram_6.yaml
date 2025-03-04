@@ -1,16 +1,31 @@
 dashboard_title: ABD1 Mixer 1 Floor Level Parameter Wise Actual Values  Histogram
 description: null
-css: ''
+css: "#GRID_ID-panel-GRID_ID {\n  display: none;\n}"
 slug: null
 certified_by: ''
 certification_details: ''
 published: true
 uuid: dfb99cec-94fd-42a1-978f-b8bab66dd571
 position:
+  CHART-explore-11-1:
+    children: []
+    id: CHART-explore-11-1
+    meta:
+      chartId: 11
+      height: 50
+      sliceName: Count Of Specification Parameters
+      uuid: 957783b4-528e-4344-bf66-93fcd1ff5b99
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-LQ6iBYa5aLWJBgZp9uz5P
+    type: CHART
   DASHBOARD_VERSION_KEY: v2
   GRID_ID:
     children:
     - HEADER-wa4-AE-j0oExIHfF2XxqB
+    - ROW-LQ6iBYa5aLWJBgZp9uz5P
     id: GRID_ID
     parents:
     - ROOT_ID
@@ -36,6 +51,17 @@ position:
     - GRID_ID
     id: ROOT_ID
     type: ROOT
+  ROW-LQ6iBYa5aLWJBgZp9uz5P:
+    children:
+    - CHART-explore-11-1
+    id: ROW-LQ6iBYa5aLWJBgZp9uz5P
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
 metadata:
   chart_configuration: {}
   global_chart_configuration:
@@ -43,7 +69,8 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded: []
-    chartsInScope: []
+    chartsInScope:
+    - 11
   map_label_colors: {}
   color_scheme: ''
   refresh_frequency: 0

@@ -1,16 +1,31 @@
 dashboard_title: ABD1 Mixer 1 Floor Level Data Deviation Validation
 description: null
-css: ''
+css: "#GRID_ID-panel-GRID_ID {\n  display: none;\n}"
 slug: null
 certified_by: ''
 certification_details: ''
 published: true
 uuid: 0f382137-7d67-460d-be46-d63e34423549
 position:
+  CHART-explore-11-1:
+    children: []
+    id: CHART-explore-11-1
+    meta:
+      chartId: 11
+      height: 50
+      sliceName: Count Of Specification Parameters
+      uuid: 957783b4-528e-4344-bf66-93fcd1ff5b99
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-O2O_2lWUiLgLHDUetA34F
+    type: CHART
   DASHBOARD_VERSION_KEY: v2
   GRID_ID:
     children:
     - HEADER-UnpqifCqXHg_OAqbneiCV
+    - ROW-O2O_2lWUiLgLHDUetA34F
     id: GRID_ID
     parents:
     - ROOT_ID
@@ -36,6 +51,17 @@ position:
     - GRID_ID
     id: ROOT_ID
     type: ROOT
+  ROW-O2O_2lWUiLgLHDUetA34F:
+    children:
+    - CHART-explore-11-1
+    id: ROW-O2O_2lWUiLgLHDUetA34F
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
 metadata:
   color_scheme_domain: []
   shared_label_colors: []
@@ -47,7 +73,8 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded: []
-    chartsInScope: []
+    chartsInScope:
+    - 11
   color_scheme: ''
   refresh_frequency: 0
   expanded_slices: {}
