@@ -372,6 +372,17 @@ const ELEMENT_ON_SCREEN_OPTIONS = {
 };
 
 const getFirstWordFromMarkdown = (dashboardLayout: DashboardLayout): string | null => {
+  let chartCount = 0;
+
+  for (const componentId in dashboardLayout) {
+    if (dashboardLayout[componentId].type === 'CHART') {
+      chartCount++;
+      if (chartCount > 1) {
+        return null;
+      }
+    }
+  }
+
   for (const componentId in dashboardLayout) {
     const component = dashboardLayout[componentId];
     if (component.type === 'HEADER') {
