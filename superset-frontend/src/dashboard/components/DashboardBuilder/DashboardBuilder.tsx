@@ -372,23 +372,12 @@ const ELEMENT_ON_SCREEN_OPTIONS = {
 };
 
 const getFirstWordFromMarkdown = (dashboardLayout: DashboardLayout): string | null => {
-  var isChartPresent = false;
   for (const componentId in dashboardLayout) {
     const component = dashboardLayout[componentId];
-    if (component.type === 'CHART') {
-      isChartPresent = true;
-      break;
-    }
-  }
-  if (!isChartPresent) {
-    for (const componentId in dashboardLayout) {
-      const component = dashboardLayout[componentId];
-      console.log("component : " + component.type);
-      if (component.type === 'HEADER') {
-        const firstWord = component.meta.text;
-        if (firstWord) {
-          return firstWord;
-        }
+    if (component.type === 'HEADER') {
+      const firstWord = component.meta.text;
+      if (firstWord) {
+        return firstWord;
       }
     }
   }
