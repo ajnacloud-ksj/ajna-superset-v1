@@ -19,7 +19,7 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-N-0EFLUZUD
+    - ROW-63ckP4GKzxE6x3DI5ylem
     type: CHART
   CHART-HE7RGL6H:
     children: []
@@ -49,6 +49,20 @@ position:
     - GRID_ID
     - ROW-N-0EFLUZUD
     type: CHART
+  CHART-OQO2FVER:
+    children: []
+    id: CHART-OQO2FVER
+    meta:
+      chartId: 23
+      height: 50
+      sliceName: Count Mixes Based On Line & Recipe
+      uuid: 0ec11798-2d7d-4307-9e46-5cb538902c72
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-RMZF1KTR
+    type: CHART
   CHART-explore-21-1:
     children: []
     id: CHART-explore-21-1
@@ -61,7 +75,7 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-MXe20aZmkvFpOew-25IUj
+    - ROW-63ckP4GKzxE6x3DI5ylem
     type: CHART
   CHART-explore-22-1:
     children: []
@@ -75,7 +89,7 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-MXe20aZmkvFpOew-25IUj
+    - ROW-63ckP4GKzxE6x3DI5ylem
     type: CHART
   DASHBOARD_VERSION_KEY: v2
   GRID_ID:
@@ -128,24 +142,10 @@ position:
     meta:
       '0': ROOT_ID
       background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
     type: ROW
-    parents:
-    - ROOT_ID
-    - GRID_ID
-  CHART-OQO2FVER:
-    children: []
-    id: CHART-OQO2FVER
-    meta:
-      chartId: 23
-      height: 50
-      sliceName: Count Mixes Based On Line & Recipe
-      uuid: 0ec11798-2d7d-4307-9e46-5cb538902c72
-      width: 4
-    type: CHART
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-N-RMZF1KTR
 metadata:
   chart_configuration:
     '7':
@@ -157,6 +157,7 @@ metadata:
         - 16
         - 21
         - 22
+        - 23
     '9':
       id: 9
       crossFilters:
@@ -166,6 +167,7 @@ metadata:
         - 16
         - 21
         - 22
+        - 23
     '16':
       id: 16
       crossFilters:
@@ -175,6 +177,7 @@ metadata:
         - 9
         - 21
         - 22
+        - 23
     '21':
       id: 21
       crossFilters:
@@ -184,6 +187,7 @@ metadata:
         - 9
         - 16
         - 22
+        - 23
     '22':
       id: 22
       crossFilters:
@@ -193,6 +197,17 @@ metadata:
         - 9
         - 16
         - 21
+        - 23
+    '23':
+      id: 23
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 9
+        - 16
+        - 21
+        - 22
   global_chart_configuration:
     scope:
       rootPath:
@@ -204,6 +219,7 @@ metadata:
     - 16
     - 21
     - 22
+    - 23
   color_scheme: ''
   refresh_frequency: 0
   expanded_slices: {}

@@ -1,0 +1,72 @@
+slice_name: Season Wise Avg Batches Variation
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 4__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 25
+  x_axis: season
+  xAxisForceCategorical: true
+  metrics:
+  - expressionType: SQL
+    sqlExpression: AVG(batch_duration)/60000
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Avg Batches
+    optionName: metric_ssmaa7mu129_wx9ix1r3hwp
+  groupby: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: datetime_fmt
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_q4vgfaw71a_p4auhh7v0jq
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title: No. Of Readings
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  sort_series_type: sum
+  sort_series_ascending: false
+  color_scheme: supersetColors
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: ~g
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  showTooltipPercentage: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 4
+query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"season","label":"season","expressionType":"SQL"}],"metrics":[{"expressionType":"SQL","sqlExpression":"AVG(batch_duration)/60000","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Avg
+  Batches","optionName":"metric_ssmaa7mu129_wx9ix1r3hwp"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"AVG(batch_duration)/60000","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Avg
+  Batches","optionName":"metric_ssmaa7mu129_wx9ix1r3hwp"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["season"],"columns":[],"aggregates":{"Avg
+  Batches":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"flatten"}]}],"form_data":{"datasource":"4__table","viz_type":"echarts_timeseries_bar","slice_id":25,"x_axis":"season","xAxisForceCategorical":true,"metrics":[{"expressionType":"SQL","sqlExpression":"AVG(batch_duration)/60000","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Avg
+  Batches","optionName":"metric_ssmaa7mu129_wx9ix1r3hwp"}],"groupby":[],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_q4vgfaw71a_p4auhh7v0jq"}],"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"annotation_layers":[],"orientation":"vertical","x_axis_title_margin":15,"y_axis_title":"No.
+  Of Readings","y_axis_title_margin":30,"y_axis_title_position":"Left","sort_series_type":"sum","sort_series_ascending":false,"color_scheme":"supersetColors","show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"~g","y_axis_bounds":[null,null],"truncateXAxis":true,"rich_tooltip":true,"showTooltipTotal":true,"showTooltipPercentage":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[4],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 95205e8a-7bb9-40b6-ab6d-e3076f9168a8
+version: 1.0.0
+dataset_uuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781

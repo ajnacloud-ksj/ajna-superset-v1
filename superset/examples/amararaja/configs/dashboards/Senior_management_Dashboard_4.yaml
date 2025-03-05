@@ -1,4 +1,4 @@
-dashboard_title: Senior management Dashboard
+dashboard_title: SENIOR MANAGEMENT DASHBOARD
 description: null
 css: ''
 slug: null
@@ -91,6 +91,62 @@ position:
     - GRID_ID
     - ROW-YJSzd3l24pi5A-cFDw3IB
     type: CHART
+  CHART-explore-24-1:
+    children: []
+    id: CHART-explore-24-1
+    meta:
+      chartId: 24
+      height: 50
+      sliceName: Shift Wise Utilization Variation
+      uuid: 2bad2740-e95b-4283-bae5-db3342fa0a37
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-eqt7vAMmC5ykCG-oBBxeP
+    type: CHART
+  CHART-explore-25-1:
+    children: []
+    id: CHART-explore-25-1
+    meta:
+      chartId: 25
+      height: 50
+      sliceName: Shift Wise Avg Batches Variation
+      uuid: 07b08f14-8ed0-4a4a-b411-60ad23bc18f3
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-eqt7vAMmC5ykCG-oBBxeP
+    type: CHART
+  CHART-explore-26-1:
+    children: []
+    id: CHART-explore-26-1
+    meta:
+      chartId: 26
+      height: 50
+      sliceName: Season Wise Compliance Percentage Variation
+      uuid: c1878a1d-7dce-4cf2-b43d-9298072ad8c4
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-eqt7vAMmC5ykCG-oBBxeP
+    type: CHART
+  CHART-explore-27-1:
+    children: []
+    id: CHART-explore-27-1
+    meta:
+      chartId: 27
+      height: 50
+      sliceName: Season Wise Avg Batches Variation
+      uuid: 95205e8a-7bb9-40b6-ab6d-e3076f9168a8
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-k8RjBT7yFfyL6xL8Cewrb
+    type: CHART
   CHART-explore-93-1:
     children: []
     id: CHART-explore-93-1
@@ -103,7 +159,7 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-e29c4J2A11XAzAKZ8n2-Z
+    - ROW-WTYZhvqh-gMaTEGovrjoZ
     type: CHART
   CHART-ixiid7yrn9HU6-s9hCbao:
     children: []
@@ -127,6 +183,8 @@ position:
     - ROW-HdlQy1j_rvYsXSCUXETKc
     - ROW-WTYZhvqh-gMaTEGovrjoZ
     - ROW-Ku07iyo56rxbFgMBLs0Tp
+    - ROW-eqt7vAMmC5ykCG-oBBxeP
+    - ROW-k8RjBT7yFfyL6xL8Cewrb
     id: GRID_ID
     parents:
     - ROOT_ID
@@ -145,7 +203,7 @@ position:
   HEADER_ID:
     id: HEADER_ID
     meta:
-      text: Senior management Dashboard
+      text: SENIOR MANAGEMENT DASHBOARD
     type: HEADER
   ROOT_ID:
     children:
@@ -198,106 +256,226 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-eqt7vAMmC5ykCG-oBBxeP:
+    children:
+    - CHART-explore-24-1
+    - CHART-explore-25-1
+    id: ROW-eqt7vAMmC5ykCG-oBBxeP
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-k8RjBT7yFfyL6xL8Cewrb:
+    children:
+    - CHART-explore-27-1
+    - CHART-explore-26-1
+    id: ROW-k8RjBT7yFfyL6xL8Cewrb
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
 metadata:
   chart_configuration:
-    '62':
-      id: 62
+    '1':
+      id: 1
       crossFilters:
         scope: global
         chartsInScope:
-        - 47
-        - 67
-        - 83
-        - 93
-        - 104
-        - 108
-        - 109
-    '67':
-      id: 67
+        - 5
+        - 6
+        - 11
+        - 15
+        - 17
+        - 18
+        - 19
+        - 24
+        - 25
+        - 26
+        - 27
+    '5':
+      id: 5
       crossFilters:
         scope: global
         chartsInScope:
-        - 47
-        - 62
-        - 83
-        - 93
-        - 104
-        - 108
-        - 109
-    '83':
-      id: 83
+        - 1
+        - 6
+        - 11
+        - 15
+        - 17
+        - 18
+        - 19
+        - 24
+        - 25
+        - 26
+        - 27
+    '6':
+      id: 6
       crossFilters:
         scope: global
         chartsInScope:
-        - 47
-        - 62
-        - 67
-        - 93
-        - 104
-        - 108
-        - 109
-    '93':
-      id: 93
+        - 1
+        - 5
+        - 11
+        - 15
+        - 17
+        - 18
+        - 19
+        - 24
+        - 25
+        - 26
+        - 27
+    '15':
+      id: 15
       crossFilters:
         scope: global
         chartsInScope:
-        - 47
-        - 62
-        - 67
-        - 83
-        - 104
-        - 108
-        - 109
-    '104':
-      id: 104
+        - 1
+        - 5
+        - 6
+        - 11
+        - 17
+        - 18
+        - 19
+        - 24
+        - 25
+        - 26
+        - 27
+    '17':
+      id: 17
       crossFilters:
         scope: global
         chartsInScope:
-        - 47
-        - 62
-        - 67
-        - 83
-        - 93
-        - 108
-        - 109
-    '108':
-      id: 108
+        - 1
+        - 5
+        - 6
+        - 11
+        - 15
+        - 18
+        - 19
+        - 24
+        - 25
+        - 26
+        - 27
+    '18':
+      id: 18
       crossFilters:
         scope: global
         chartsInScope:
-        - 47
-        - 62
-        - 67
-        - 83
-        - 93
-        - 104
-        - 109
-    '109':
-      id: 109
+        - 1
+        - 5
+        - 6
+        - 11
+        - 15
+        - 17
+        - 19
+        - 24
+        - 25
+        - 26
+        - 27
+    '19':
+      id: 19
       crossFilters:
         scope: global
         chartsInScope:
-        - 47
-        - 62
-        - 67
-        - 83
-        - 93
-        - 104
-        - 108
+        - 1
+        - 5
+        - 6
+        - 11
+        - 15
+        - 17
+        - 18
+        - 24
+        - 25
+        - 26
+        - 27
+    '24':
+      id: 24
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 5
+        - 6
+        - 11
+        - 15
+        - 17
+        - 18
+        - 19
+        - 25
+        - 26
+        - 27
+    '25':
+      id: 25
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 5
+        - 6
+        - 11
+        - 15
+        - 17
+        - 18
+        - 19
+        - 24
+        - 26
+        - 27
+    '26':
+      id: 26
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 5
+        - 6
+        - 11
+        - 15
+        - 17
+        - 18
+        - 19
+        - 24
+        - 25
+        - 27
+    '27':
+      id: 27
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 5
+        - 6
+        - 11
+        - 15
+        - 17
+        - 18
+        - 19
+        - 24
+        - 25
+        - 26
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
-    - 47
-    - 62
-    - 67
-    - 83
-    - 93
-    - 104
-    - 108
-    - 109
+    - 1
+    - 5
+    - 6
+    - 11
+    - 15
+    - 17
+    - 18
+    - 19
+    - 24
+    - 25
+    - 26
+    - 27
   color_scheme: ''
   refresh_frequency: 0
   expanded_slices: {}
@@ -337,13 +515,19 @@ metadata:
     tabsInScope: []
   filter_bar_orientation: HORIZONTAL
   shared_label_colors:
+  - Avg Batches
   - Compliance Batches
   - Non-Compliance Batches
   map_label_colors:
+    Avg: '#1FA8C9'
+    Avg Batches: '#454E7C'
     ? ''
     : '#1FA8C9'
     Compliance Batch Percentage: '#1FA8C9'
     Non-Compliance percentage: '#454E7C'
     Avg Batch Duration: '#5AC189'
+    Utilization Percentage: '#1FA8C9'
+    Compliance Percentage: '#1FA8C9'
+    Non-Compliance Percentage: '#454E7C'
   color_scheme_domain: []
 version: 1.0.0

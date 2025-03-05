@@ -1,0 +1,77 @@
+slice_name: Shift Wise Utilization Variation
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 4__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 24
+  x_axis: shift
+  time_grain_sqla: P1D
+  metrics:
+  - expressionType: SQL
+    sqlExpression: "(SUM(total_mix_time)*100.0) \r\n    / (1440 * COUNT(DISTINCT DATE(datetime_fmt)))"
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Utilization Percentage
+    optionName: metric_ssmaa7mu129_wx9ix1r3hwp
+  groupby: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: datetime_fmt
+    operator: TEMPORAL_RANGE
+    comparator: Last month
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_q4vgfaw71a_p4auhh7v0jq
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title: Percentage
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: ~g
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  showTooltipPercentage: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 4
+query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"Last
+  month"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"shift","label":"shift","expressionType":"SQL"}],"metrics":[{"expressionType":"SQL","sqlExpression":"(SUM(total_mix_time)*100.0)
+  \r\n    / (1440 * COUNT(DISTINCT DATE(datetime_fmt)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Utilization
+  Percentage","optionName":"metric_ssmaa7mu129_wx9ix1r3hwp"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"(SUM(total_mix_time)*100.0)
+  \r\n    / (1440 * COUNT(DISTINCT DATE(datetime_fmt)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Utilization
+  Percentage","optionName":"metric_ssmaa7mu129_wx9ix1r3hwp"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["shift"],"columns":[],"aggregates":{"Utilization
+  Percentage":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"flatten"}]}],"form_data":{"datasource":"4__table","viz_type":"echarts_timeseries_bar","slice_id":24,"x_axis":"shift","time_grain_sqla":"P1D","metrics":[{"expressionType":"SQL","sqlExpression":"(SUM(total_mix_time)*100.0)
+  \r\n    / (1440 * COUNT(DISTINCT DATE(datetime_fmt)))","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Utilization
+  Percentage","optionName":"metric_ssmaa7mu129_wx9ix1r3hwp"}],"groupby":[],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"Last
+  month","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_q4vgfaw71a_p4auhh7v0jq"}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","x_axis_title_margin":15,"y_axis_title":"Percentage","y_axis_title_margin":30,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"~g","y_axis_bounds":[null,null],"truncateXAxis":true,"rich_tooltip":true,"showTooltipTotal":true,"showTooltipPercentage":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[4],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 2bad2740-e95b-4283-bae5-db3342fa0a37
+version: 1.0.0
+dataset_uuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781
