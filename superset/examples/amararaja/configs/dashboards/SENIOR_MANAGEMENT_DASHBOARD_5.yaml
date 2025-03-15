@@ -11,7 +11,7 @@ position:
     children: []
     id: CHART-explore-122-1
     meta:
-      chartId: 17
+      chartId: 12
       height: 50
       sliceName: Batch Wise Quarterly  Compliance And Non-Compliance Count
       uuid: f5cc2310-b9f2-4ac6-be82-0d0260e1c262
@@ -25,7 +25,7 @@ position:
     children: []
     id: CHART-explore-123-1
     meta:
-      chartId: 5
+      chartId: 9
       height: 50
       sliceName: ABD1 Mixer1 Spec Compliance
       uuid: 3d6458fa-da97-4a8e-8db2-4ba23931000b
@@ -39,7 +39,7 @@ position:
     children: []
     id: CHART-explore-124-1
     meta:
-      chartId: 1
+      chartId: 4
       height: 50
       sliceName: ABD1 Mixer2 Spec Compliance
       uuid: 76142126-a98b-4a46-8d7d-c52d957ff50b
@@ -53,7 +53,7 @@ position:
     children: []
     id: CHART-explore-125-1
     meta:
-      chartId: 19
+      chartId: 14
       height: 50
       sliceName: ABD1 Mixer3 Spec Compliance
       uuid: ed0dfef7-df1b-4f23-a3b5-cb1c5be56511
@@ -67,7 +67,7 @@ position:
     children: []
     id: CHART-explore-173-1
     meta:
-      chartId: 6
+      chartId: 25
       height: 50
       sliceName: Count Of Total Compliance And Non-Compliance
       uuid: 5678bf4c-1268-481c-91f3-aaa3ec9b25fa
@@ -81,7 +81,7 @@ position:
     children: []
     id: CHART-explore-178-1
     meta:
-      chartId: 11
+      chartId: 15
       height: 61
       sliceName: Count Of Specification Parameters
       uuid: 957783b4-528e-4344-bf66-93fcd1ff5b99
@@ -95,7 +95,7 @@ position:
     children: []
     id: CHART-explore-24-1
     meta:
-      chartId: 24
+      chartId: 2
       height: 50
       sliceName: Shift Wise Utilization Variation
       uuid: 2bad2740-e95b-4283-bae5-db3342fa0a37
@@ -109,7 +109,7 @@ position:
     children: []
     id: CHART-explore-25-1
     meta:
-      chartId: 25
+      chartId: 16
       height: 50
       sliceName: Shift Wise Avg Batches Variation
       uuid: 07b08f14-8ed0-4a4a-b411-60ad23bc18f3
@@ -123,7 +123,7 @@ position:
     children: []
     id: CHART-explore-26-1
     meta:
-      chartId: 26
+      chartId: 21
       height: 50
       sliceName: Season Wise Compliance Percentage Variation
       uuid: c1878a1d-7dce-4cf2-b43d-9298072ad8c4
@@ -137,7 +137,7 @@ position:
     children: []
     id: CHART-explore-27-1
     meta:
-      chartId: 27
+      chartId: 6
       height: 50
       sliceName: Season Wise Avg Batches Variation
       uuid: 95205e8a-7bb9-40b6-ab6d-e3076f9168a8
@@ -151,7 +151,7 @@ position:
     children: []
     id: CHART-explore-93-1
     meta:
-      chartId: 18
+      chartId: 3
       height: 56
       sliceName: Compliance &Non-Compliance Percentage & Average Batches Variations
       uuid: 93a61b86-61e8-4af4-b1b0-886fb8d8898d
@@ -165,7 +165,7 @@ position:
     children: []
     id: CHART-ixiid7yrn9HU6-s9hCbao
     meta:
-      chartId: 15
+      chartId: 20
       height: 61
       sliceName: Overall Mixer Utilization
       uuid: 039bbc9c-4f2e-4625-9ad0-3c381df8c852
@@ -500,7 +500,7 @@ metadata:
     name: Time Range
     scope:
       excluded:
-      - 11
+      - 15
       rootPath:
       - ROOT_ID
     targets:
@@ -515,7 +515,6 @@ metadata:
     tabsInScope: []
   filter_bar_orientation: HORIZONTAL
   shared_label_colors:
-  - Avg Batches
   - Compliance Batches
   - Non-Compliance Batches
   map_label_colors:

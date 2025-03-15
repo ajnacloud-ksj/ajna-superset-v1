@@ -1,0 +1,126 @@
+slice_name: Count Of Mixes In Line2
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 7__table
+  viz_type: table
+  slice_id: 29
+  query_mode: aggregate
+  groupby:
+  - Recipe Type
+  temporal_columns_lookup:
+    datetime_fmt: true
+  metrics:
+  - aggregate: COUNT
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: datetime_fmt
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 165
+      is_certified: false
+      is_dttm: true
+      python_date_format: null
+      type: DATETIME
+      type_generic: 2
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: Count Of Mixes
+    optionName: metric_0vfnq4slopje_q52g75g6ych
+    sqlExpression: null
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Compliance Batches
+    optionName: metric_reojnya2tb_6o0q0m5rtfr
+    sqlExpression: SUM(CASE WHEN batch_deviation_ind = 0 THEN 1 ELSE 0 END)
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Non-Compliance Batches
+    optionName: metric_eu1x0atbh7i_jskchr5gztf
+    sqlExpression: SUM(CASE WHEN batch_deviation_ind = 1 THEN 1 ELSE 0 END)
+  all_columns:
+  - Line Name
+  - Recipe Type
+  - datetime_fmt
+  - batch_deviation_ind
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: Line2
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_n8adjy8zj7_i1fgtet0tn9
+    isExtra: false
+    isNew: false
+    operator: ==
+    operatorId: EQUALS
+    sqlExpression: null
+    subject: Line Name
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_dfycku4adhl_iljy0jofa4
+    isExtra: true
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: datetime_fmt
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  show_totals: true
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: false
+  color_pn: false
+  conditional_formatting: []
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":7,"type":"table"},"force":false,"queries":[{"filters":[{"col":"Line
+  Name","op":"==","val":"Line2"},{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["Recipe
+  Type"],"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"datetime_fmt","description":null,"expression":null,"filterable":true,"groupby":true,"id":165,"is_certified":false,"is_dttm":true,"python_date_format":null,"type":"DATETIME","type_generic":2,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Count
+  Of Mixes","optionName":"metric_0vfnq4slopje_q52g75g6ych","sqlExpression":null},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Compliance
+  Batches","optionName":"metric_reojnya2tb_6o0q0m5rtfr","sqlExpression":"SUM(CASE
+  WHEN batch_deviation_ind = 0 THEN 1 ELSE 0 END)"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Non-Compliance
+  Batches","optionName":"metric_eu1x0atbh7i_jskchr5gztf","sqlExpression":"SUM(CASE
+  WHEN batch_deviation_ind = 1 THEN 1 ELSE 0 END)"}],"orderby":[[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"datetime_fmt","description":null,"expression":null,"filterable":true,"groupby":true,"id":165,"is_certified":false,"is_dttm":true,"python_date_format":null,"type":"DATETIME","type_generic":2,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Count
+  Of Mixes","optionName":"metric_0vfnq4slopje_q52g75g6ych","sqlExpression":null},false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]},{"filters":[{"col":"Line
+  Name","op":"==","val":"Line2"},{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"datetime_fmt","description":null,"expression":null,"filterable":true,"groupby":true,"id":165,"is_certified":false,"is_dttm":true,"python_date_format":null,"type":"DATETIME","type_generic":2,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Count
+  Of Mixes","optionName":"metric_0vfnq4slopje_q52g75g6ych","sqlExpression":null},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Compliance
+  Batches","optionName":"metric_reojnya2tb_6o0q0m5rtfr","sqlExpression":"SUM(CASE
+  WHEN batch_deviation_ind = 0 THEN 1 ELSE 0 END)"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Non-Compliance
+  Batches","optionName":"metric_eu1x0atbh7i_jskchr5gztf","sqlExpression":"SUM(CASE
+  WHEN batch_deviation_ind = 1 THEN 1 ELSE 0 END)"}],"annotation_layers":[],"row_limit":0,"row_offset":0,"series_limit":0,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"7__table","viz_type":"table","slice_id":29,"query_mode":"aggregate","groupby":["Recipe
+  Type"],"temporal_columns_lookup":{"datetime_fmt":true},"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"datetime_fmt","description":null,"expression":null,"filterable":true,"groupby":true,"id":165,"is_certified":false,"is_dttm":true,"python_date_format":null,"type":"DATETIME","type_generic":2,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":true,"label":"Count
+  Of Mixes","optionName":"metric_0vfnq4slopje_q52g75g6ych","sqlExpression":null},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Compliance
+  Batches","optionName":"metric_reojnya2tb_6o0q0m5rtfr","sqlExpression":"SUM(CASE
+  WHEN batch_deviation_ind = 0 THEN 1 ELSE 0 END)"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Non-Compliance
+  Batches","optionName":"metric_eu1x0atbh7i_jskchr5gztf","sqlExpression":"SUM(CASE
+  WHEN batch_deviation_ind = 1 THEN 1 ELSE 0 END)"}],"all_columns":["Line Name","Recipe
+  Type","datetime_fmt","batch_deviation_ind"],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"Line2","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_n8adjy8zj7_i1fgtet0tn9","isExtra":false,"isNew":false,"operator":"==","operatorId":"EQUALS","sqlExpression":null,"subject":"Line
+  Name"},{"clause":"WHERE","comparator":"No filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_dfycku4adhl_iljy0jofa4","isExtra":true,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"datetime_fmt"}],"order_by_cols":[],"row_limit":1000,"server_page_length":10,"order_desc":true,"show_totals":true,"table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":false,"color_pn":false,"conditional_formatting":[],"comparison_type":"values","extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: dd7537f1-2d1a-4d38-bd4b-747e23fe16c4
+version: 1.0.0
+dataset_uuid: 68016d9d-e2ff-4644-836c-8cc26e8bf0eb

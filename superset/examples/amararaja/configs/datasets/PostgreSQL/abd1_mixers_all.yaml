@@ -23,11 +23,10 @@ metrics:
   description: null
   d3format: null
   currency: null
-  extra:
-    warning_markdown: ''
+  extra: {}
   warning_text: null
 columns:
-- column_name: batch_end_time_repeat
+- column_name: datetime_fmt
   verbose_name: null
   is_dttm: true
   is_active: true
@@ -39,7 +38,7 @@ columns:
   description: null
   python_date_format: null
   extra: {}
-- column_name: datetime_fmt
+- column_name: timestamp
   verbose_name: null
   is_dttm: true
   is_active: true
@@ -1035,6 +1034,30 @@ columns:
   description: null
   python_date_format: null
   extra: {}
+- column_name: report_end_time
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: mixer_dump_temp
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: dry_mix_time
   verbose_name: null
   is_dttm: false
@@ -1340,6 +1363,18 @@ columns:
   is_dttm: false
   is_active: true
   type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: report_end_time_fmt
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
   advanced_data_type: null
   groupby: true
   filterable: true

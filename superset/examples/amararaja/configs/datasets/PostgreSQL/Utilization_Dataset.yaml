@@ -1,0 +1,149 @@
+table_name: Utilization Dataset
+main_dttm_col: datetime_fmt
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: postgres
+schema: public
+sql: "SELECT \r\n        battery_name,\r\n        source_table_name,\r\n        start_time_fmt,\r\
+  \n        report_end_time_fmt,\r\n        datetime_fmt,\r\n        batch_no,\r\n\
+  \        LAG(report_end_time_fmt) OVER (PARTITION BY source_table_name ORDER BY\
+  \ datetime_fmt) AS prev_report_end_time,\r\n        -- Handle crossing midnight\
+  \ by converting both times to full TIMESTAMP\r\n        CASE \r\n            WHEN\
+  \ LAG(report_end_time_fmt) OVER (PARTITION BY source_table_name ORDER BY datetime_fmt)\
+  \ IS NOT NULL\r\n            THEN \r\n                -- If the previous report_end_time\
+  \ is greater than current start_time, it means we crossed midnight\r\n         \
+  \       CASE \r\n                    WHEN CAST(start_time_fmt AS TIME) < CAST(LAG(report_end_time_fmt)\
+  \ OVER (PARTITION BY source_table_name ORDER BY datetime_fmt) AS TIME)\r\n     \
+  \               THEN \r\n                        -- Add 1 day to the previous report_end_time\
+  \ to account for the next day\r\n                        ABS(EXTRACT(EPOCH FROM\
+  \ (\r\n                            (CAST(datetime_fmt AS DATE) + CAST(start_time_fmt\
+  \ AS TIME)) - \r\n                            ((CAST(datetime_fmt AS DATE) - INTERVAL\
+  \ '1 day') + CAST(LAG(report_end_time_fmt) OVER (PARTITION BY source_table_name\
+  \ ORDER BY datetime_fmt) AS TIME))\r\n                        )))\r\n          \
+  \          ELSE \r\n                        -- Normal case: same day calculation\r\
+  \n                        ABS(EXTRACT(EPOCH FROM (\r\n                         \
+  \   (CAST(datetime_fmt AS DATE) + CAST(start_time_fmt AS TIME)) - \r\n         \
+  \                   (CAST(datetime_fmt AS DATE) + CAST(LAG(report_end_time_fmt)\
+  \ OVER (PARTITION BY source_table_name ORDER BY datetime_fmt) AS TIME))\r\n    \
+  \                    )))\r\n                END\r\n            ELSE NULL\r\n   \
+  \     END AS idle_time_sec\r\n    FROM abd1_mixers_all\r\n    ORDER BY datetime_fmt\
+  \ DESC"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 88fb0441-3ff9-4c95-bd51-4ebfa3dc655f
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: idle_time_sec
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: datetime_fmt
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: prev_report_end_time
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: report_end_time_fmt
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: source_table_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: start_time_fmt
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: battery_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: batch_no
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 18417687-d619-42fe-a78b-7c26e1212281

@@ -22,9 +22,14 @@ import { t } from '@superset-ui/core';
 import { Select } from 'src/components';
 import { isDST, extendedDayjs } from 'src/utils/dates';
 
+// const DEFAULT_TIMEZONE = {
+//   name: 'GMT Standard Time',
+//   value: 'Africa/Abidjan', // timezones are deduped by the first alphabetical value
+// };
+
 const DEFAULT_TIMEZONE = {
-  name: 'GMT Standard Time',
-  value: 'Africa/Abidjan', // timezones are deduped by the first alphabetical value
+  name: 'India Standard Time',
+  value: 'Asia/Kolkata', // IST (UTC+5:30)
 };
 
 const MIN_SELECT_WIDTH = '400px';
@@ -41,7 +46,7 @@ const offsetsToName = {
   '-540-480': ['Alaska Standard Time', 'Alaska Daylight Time'],
   '-600-600': ['Hawaii Standard Time', 'Hawaii Daylight Time'],
   '60120': ['Central European Time', 'Central European Daylight Time'],
-  '00': [DEFAULT_TIMEZONE.name, DEFAULT_TIMEZONE.name],
+  '330': [DEFAULT_TIMEZONE.name, DEFAULT_TIMEZONE.name],
   '060': ['GMT Standard Time - London', 'British Summer Time'],
 };
 
