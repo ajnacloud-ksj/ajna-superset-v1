@@ -3,14 +3,18 @@ import styled from '@emotion/styled';
 
 const ChartWrapper = styled.div`
   width: 100%;
+  height: 90%;
   text-align: center;
   color: ${({ theme }) => theme.colors.primary.base};
+  display: flex;
+  flex-direction: column;
 `;
 
 const ChartsContainer = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  height: 100%;
 `;
 
 const IframeContainer = styled.div`
@@ -19,7 +23,6 @@ const IframeContainer = styled.div`
   iframe {
     width: 100%;
     height: 100%;
-    min-height: 600px;
     border: none;
   }
 `;
