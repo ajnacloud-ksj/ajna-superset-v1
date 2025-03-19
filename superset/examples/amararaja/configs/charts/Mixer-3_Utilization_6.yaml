@@ -1,0 +1,78 @@
+slice_name: Mixer-3 Utilization
+description: null
+certified_by: null
+certification_details: null
+viz_type: gauge_chart
+params:
+  datasource: 5__table
+  viz_type: gauge_chart
+  slice_id: 6
+  groupby: []
+  metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Mixer-3 utilization
+    optionName: metric_ttdxkkx6dc_7d0l8rht7qr
+    sqlExpression: ((SUM(batch_duration)/((count(DISTINCT DATE(datetime_fmt)))*86400*1000))*100.0)
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: source_table_name
+    operator: ==
+    operatorId: EQUALS
+    comparator: ABD1_Mixer_3
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_562xdhoaym5_dbgkzqpctvc
+  - expressionType: SIMPLE
+    subject: datetime_fmt
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: true
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_pivi1qsie7p_rtpyjpher2
+  row_limit: 10
+  sort_by_metric: true
+  min_val: 0
+  max_val: 100
+  start_angle: '220'
+  end_angle: '-45'
+  color_scheme: supersetColors
+  font_size: 10
+  number_format: SMART_NUMBER
+  value_formatter: '{value} %'
+  show_pointer: true
+  animation: true
+  show_axis_tick: false
+  show_split_line: true
+  split_number: 10
+  show_progress: false
+  overlap: true
+  round_cap: true
+  intervals: 25,50,100
+  interval_color_indices: 6,4,3
+  extra_form_data: {}
+  dashboards:
+  - 5
+query_context: '{"datasource":{"id":5,"type":"table"},"force":false,"queries":[{"filters":[{"col":"source_table_name","op":"==","val":"ABD1_Mixer_3"},{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Mixer-3
+  utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr","sqlExpression":"((SUM(batch_duration)/((count(DISTINCT
+  DATE(datetime_fmt)))*86400*1000))*100.0)"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Mixer-3
+  utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr","sqlExpression":"((SUM(batch_duration)/((count(DISTINCT
+  DATE(datetime_fmt)))*86400*1000))*100.0)"},false]],"annotation_layers":[],"row_limit":10,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"5__table","viz_type":"gauge_chart","slice_id":6,"groupby":[],"metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Mixer-3
+  utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr","sqlExpression":"((SUM(batch_duration)/((count(DISTINCT
+  DATE(datetime_fmt)))*86400*1000))*100.0)"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"source_table_name","operator":"==","operatorId":"EQUALS","comparator":"ABD1_Mixer_3","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_562xdhoaym5_dbgkzqpctvc"},{"expressionType":"SIMPLE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":true,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_pivi1qsie7p_rtpyjpher2"}],"row_limit":10,"sort_by_metric":true,"min_val":0,"max_val":100,"start_angle":"220","end_angle":"-45","color_scheme":"supersetColors","font_size":10,"number_format":"SMART_NUMBER","value_formatter":"{value}
+  %","show_pointer":true,"animation":true,"show_axis_tick":false,"show_split_line":true,"split_number":10,"show_progress":false,"overlap":true,"round_cap":true,"intervals":"25,50,100","interval_color_indices":"6,4,3","extra_form_data":{},"dashboards":[5],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 02b14b0f-b90d-4a86-96ec-c877b47295e1
+version: 1.0.0
+dataset_uuid: 7b9f14e2-e2fb-43df-a218-83c68f53c781
