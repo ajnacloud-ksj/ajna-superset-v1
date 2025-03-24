@@ -13,7 +13,7 @@ position:
     meta:
       chartId: 8
       height: 50
-      sliceName: Batch Wise Quarterly  Compliance And Non-Compliance Count
+      sliceName: Batch Wise Compliance V/s Non-Compliance By Quarter
       uuid: f5cc2310-b9f2-4ac6-be82-0d0260e1c262
       width: 8
     parents:
@@ -97,7 +97,7 @@ position:
     meta:
       chartId: 18
       height: 50
-      sliceName: Shift Wise Utilization Variation
+      sliceName: Utilization By Shift
       uuid: 2bad2740-e95b-4283-bae5-db3342fa0a37
       width: 6
     parents:
@@ -111,7 +111,7 @@ position:
     meta:
       chartId: 28
       height: 50
-      sliceName: Shift Wise Avg Batches Variation
+      sliceName: Avg Batch Duration By Shift
       uuid: 07b08f14-8ed0-4a4a-b411-60ad23bc18f3
       width: 6
     parents:
@@ -125,7 +125,7 @@ position:
     meta:
       chartId: 26
       height: 50
-      sliceName: Season Wise Compliance Percentage Variation
+      sliceName: Compliance Percentage  By Seasons
       uuid: c1878a1d-7dce-4cf2-b43d-9298072ad8c4
       width: 6
     parents:
@@ -139,7 +139,7 @@ position:
     meta:
       chartId: 30
       height: 50
-      sliceName: Season Wise Avg Batches Variation
+      sliceName: Avg Batch Duration By Seasons
       uuid: 95205e8a-7bb9-40b6-ab6d-e3076f9168a8
       width: 6
     parents:
@@ -153,7 +153,7 @@ position:
     meta:
       chartId: 14
       height: 56
-      sliceName: Compliance &Non-Compliance Percentage & Average Batches Variations
+      sliceName: Trend - Compliance & Non-Compliance Percentage & Avg Batch Duration
       uuid: 93a61b86-61e8-4af4-b1b0-886fb8d8898d
       width: 12
     parents:
@@ -482,6 +482,7 @@ metadata:
   label_colors:
     Compliance Batches: '#b5d343'
     Non-Compliance Batches: '#952d4b'
+    Compliance Percentage: '#b5d343'
     Non-Compliance Percentage: '#952d4b'
     Avg Batches: '#0196c5'
   timed_refresh_immune_slices: []
@@ -508,6 +509,19 @@ metadata:
       - ROOT_ID
     type: NATIVE_FILTER
     description: ''
+    chartsInScope:
+    - 4
+    - 8
+    - 13
+    - 14
+    - 15
+    - 17
+    - 18
+    - 19
+    - 26
+    - 28
+    - 30
+    tabsInScope: []
   filter_bar_orientation: HORIZONTAL
   color_scheme_domain: []
   shared_label_colors:
@@ -517,9 +531,8 @@ metadata:
     ? ''
     : '#1FA8C9'
     Compliance Batch Percentage: '#1FA8C9'
-    Avg Batch Duration: '#5AC189'
     Non-Compliance percentage: '#454E7C'
+    Avg Batch Duration: '#5AC189'
     Utilization Percentage: '#1FA8C9'
     Avg: '#1FA8C9'
-    Compliance Percentage: '#1FA8C9'
 version: 1.0.0

@@ -62,6 +62,7 @@ params:
   extra_form_data: {}
   dashboards:
   - 5
+  annotation_layers: []
 query_context: '{"datasource":{"id":5,"type":"table"},"force":false,"queries":[{"filters":[{"col":"source_table_name","op":"==","val":"ABD1_Mixer_1"},{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
   filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"100-((SUM(batch_duration)/((count(DISTINCT
   DATE(datetime_fmt)))*86400*1000))*100.0)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Mixer-1

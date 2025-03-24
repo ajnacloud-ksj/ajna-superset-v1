@@ -12,56 +12,56 @@ position:
     id: CHART-69A0BEK2
     meta:
       chartId: 1
-      height: 50
+      height: 33
       sliceName: Line-1 Compliance & Non-Compliance Percentage
       uuid: cbaaa288-c398-4af3-98ef-aa9e477d1fac
       width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-63ckP4GKzxE6x3DI5ylem
+    - ROW-FlbqtVnRcOgfMsdZBNMbI
     type: CHART
   CHART-ErlF3Xi__y_3O2L2GblTC:
     children: []
     id: CHART-ErlF3Xi__y_3O2L2GblTC
     meta:
       chartId: 23
-      height: 50
+      height: 33
       sliceName: Count Of Mixes In Line3
       uuid: 7d7bc9f5-ed69-407a-9dd0-5e038785b53a
       width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-tB_iQlLWKNoE82pQffHMX
+    - ROW-3lYlVMy5Txm-n-gMdO7od
     type: CHART
   CHART-HE7RGL6H:
     children: []
     id: CHART-HE7RGL6H
     meta:
       chartId: 33
-      height: 50
-      sliceName: Line Wise Total Parameters And Not Ok Parameters
+      height: 35
+      sliceName: Line Wise Ok V/s Not Ok Parameters
       uuid: 3a4df008-8ad2-4e33-be40-2ba99e136b4d
-      width: 4
+      width: 6
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-N-0EFLUZUD
+    - ROW-TYIx7yFEE8zrEy6ksnmo8
     type: CHART
   CHART-ILX4749N:
     children: []
     id: CHART-ILX4749N
     meta:
       chartId: 16
-      height: 50
-      sliceName: Line Wise Ok and Not Ok Mixes
+      height: 34
+      sliceName: Line Wise Ok V/s Not Ok Mixes
       uuid: 078eda4f-befa-48eb-afe1-237e5ccf961b
-      width: 4
+      width: 6
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-N-0EFLUZUD
+    - ROW-TYIx7yFEE8zrEy6ksnmo8
     type: CHART
   CHART-_6_II57afLGraYorjklWH:
     children: []
@@ -83,28 +83,28 @@ position:
     id: CHART-explore-21-1
     meta:
       chartId: 5
-      height: 50
+      height: 33
       sliceName: Line-2 Compliance & Non-Compliance Percentage
       uuid: aa90ad67-3afb-42e1-80be-99d013a82606
       width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-63ckP4GKzxE6x3DI5ylem
+    - ROW-FlbqtVnRcOgfMsdZBNMbI
     type: CHART
   CHART-explore-22-1:
     children: []
     id: CHART-explore-22-1
     meta:
       chartId: 7
-      height: 50
+      height: 33
       sliceName: Line-3 Compliance & Non-Compliance Percentage
       uuid: d229b76c-9f6a-478e-8f94-bd384a9cbb4c
       width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-63ckP4GKzxE6x3DI5ylem
+    - ROW-FlbqtVnRcOgfMsdZBNMbI
     type: CHART
   CHART-explore-34-1:
     children: []
@@ -113,13 +113,13 @@ position:
       chartId: 11
       height: 36
       sliceName: Mixer-1 Idle Time Percentage
+      sliceNameOverride: Mixer-1 IdleTime %
       uuid: f64ed0c3-8cc4-41c1-a173-7e344bc1423b
-      width: 4
+      width: 2
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-stToAbnxy3kcCqohY8QNy
-    - COLUMN-dV9HpFAmrI3jIHrtI_YGs
     type: CHART
   CHART-explore-35-1:
     children: []
@@ -128,13 +128,13 @@ position:
       chartId: 24
       height: 36
       sliceName: Mixer-2 Idle Time Percentage
+      sliceNameOverride: Mixer-2 IdleTime %
       uuid: 9f46ef38-b99a-4749-940e-402150574466
-      width: 4
+      width: 2
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-stToAbnxy3kcCqohY8QNy
-    - COLUMN-jSJIuXeZzN4QCj-JKaHc3
     type: CHART
   CHART-explore-36-1:
     children: []
@@ -143,27 +143,27 @@ position:
       chartId: 2
       height: 36
       sliceName: Mixer-3 Idle Time Percentage
+      sliceNameOverride: Mixer-3 IdleTime %
       uuid: f6f5d4d6-aa02-43c0-9f4b-59aed80ff36c
-      width: 4
+      width: 2
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-stToAbnxy3kcCqohY8QNy
-    - COLUMN-rQhAxLeD69CKwc8ffPiZT
     type: CHART
   CHART-in4CAZsc5_Q6EkL1f-JbW:
     children: []
     id: CHART-in4CAZsc5_Q6EkL1f-JbW
     meta:
       chartId: 12
-      height: 50
+      height: 33
       sliceName: Count Of Mixes In Line1
       uuid: 1579217a-58f5-402f-b1df-f336c3969d9f
       width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-tB_iQlLWKNoE82pQffHMX
+    - ROW-3lYlVMy5Txm-n-gMdO7od
     type: CHART
   CHART-piEfb3OAPVHD5YEjblx-L:
     children: []
@@ -200,23 +200,22 @@ position:
     id: CHART-vJovHKNo1OZ39Bg-xft66
     meta:
       chartId: 25
-      height: 50
+      height: 33
       sliceName: Count Of Mixes In Line2
       uuid: dd7537f1-2d1a-4d38-bd4b-747e23fe16c4
       width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-tB_iQlLWKNoE82pQffHMX
+    - ROW-3lYlVMy5Txm-n-gMdO7od
     type: CHART
   COLUMN-dV9HpFAmrI3jIHrtI_YGs:
     children:
     - CHART-piEfb3OAPVHD5YEjblx-L
-    - CHART-explore-34-1
     id: COLUMN-dV9HpFAmrI3jIHrtI_YGs
     meta:
       background: BACKGROUND_TRANSPARENT
-      width: 4
+      width: 2
     parents:
     - ROOT_ID
     - GRID_ID
@@ -225,11 +224,10 @@ position:
   COLUMN-jSJIuXeZzN4QCj-JKaHc3:
     children:
     - CHART-_6_II57afLGraYorjklWH
-    - CHART-explore-35-1
     id: COLUMN-jSJIuXeZzN4QCj-JKaHc3
     meta:
       background: BACKGROUND_TRANSPARENT
-      width: 4
+      width: 2
     parents:
     - ROOT_ID
     - GRID_ID
@@ -238,11 +236,10 @@ position:
   COLUMN-rQhAxLeD69CKwc8ffPiZT:
     children:
     - CHART-tjd9Yc6LMrwKsbjGmW8du
-    - CHART-explore-36-1
     id: COLUMN-rQhAxLeD69CKwc8ffPiZT
     meta:
       background: BACKGROUND_TRANSPARENT
-      width: 4
+      width: 2
     parents:
     - ROOT_ID
     - GRID_ID
@@ -251,10 +248,10 @@ position:
   DASHBOARD_VERSION_KEY: v2
   GRID_ID:
     children:
+    - ROW-FlbqtVnRcOgfMsdZBNMbI
+    - ROW-TYIx7yFEE8zrEy6ksnmo8
+    - ROW-3lYlVMy5Txm-n-gMdO7od
     - ROW-stToAbnxy3kcCqohY8QNy
-    - ROW-63ckP4GKzxE6x3DI5ylem
-    - ROW-tB_iQlLWKNoE82pQffHMX
-    - ROW-N-0EFLUZUD
     id: GRID_ID
     parents:
     - ROOT_ID
@@ -269,25 +266,36 @@ position:
     - GRID_ID
     id: ROOT_ID
     type: ROOT
-  ROW-63ckP4GKzxE6x3DI5ylem:
+  ROW-3lYlVMy5Txm-n-gMdO7od:
     children:
-    - CHART-69A0BEK2
-    - CHART-explore-21-1
-    - CHART-explore-22-1
-    id: ROW-63ckP4GKzxE6x3DI5ylem
+    - CHART-in4CAZsc5_Q6EkL1f-JbW
+    - CHART-vJovHKNo1OZ39Bg-xft66
+    - CHART-ErlF3Xi__y_3O2L2GblTC
+    id: ROW-3lYlVMy5Txm-n-gMdO7od
     meta:
       background: BACKGROUND_TRANSPARENT
     parents:
     - ROOT_ID
     - GRID_ID
     type: ROW
-  ROW-N-0EFLUZUD:
+  ROW-FlbqtVnRcOgfMsdZBNMbI:
+    children:
+    - CHART-69A0BEK2
+    - CHART-explore-21-1
+    - CHART-explore-22-1
+    id: ROW-FlbqtVnRcOgfMsdZBNMbI
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-TYIx7yFEE8zrEy6ksnmo8:
     children:
     - CHART-HE7RGL6H
     - CHART-ILX4749N
-    id: ROW-N-0EFLUZUD
+    id: ROW-TYIx7yFEE8zrEy6ksnmo8
     meta:
-      '0': ROOT_ID
       background: BACKGROUND_TRANSPARENT
     parents:
     - ROOT_ID
@@ -296,21 +304,12 @@ position:
   ROW-stToAbnxy3kcCqohY8QNy:
     children:
     - COLUMN-dV9HpFAmrI3jIHrtI_YGs
+    - CHART-explore-34-1
     - COLUMN-jSJIuXeZzN4QCj-JKaHc3
+    - CHART-explore-35-1
     - COLUMN-rQhAxLeD69CKwc8ffPiZT
+    - CHART-explore-36-1
     id: ROW-stToAbnxy3kcCqohY8QNy
-    meta:
-      background: BACKGROUND_TRANSPARENT
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    type: ROW
-  ROW-tB_iQlLWKNoE82pQffHMX:
-    children:
-    - CHART-in4CAZsc5_Q6EkL1f-JbW
-    - CHART-vJovHKNo1OZ39Bg-xft66
-    - CHART-ErlF3Xi__y_3O2L2GblTC
-    id: ROW-tB_iQlLWKNoE82pQffHMX
     meta:
       background: BACKGROUND_TRANSPARENT
     parents:
@@ -324,253 +323,253 @@ metadata:
       crossFilters:
         scope: global
         chartsInScope:
-        - 8
+        - 2
+        - 5
+        - 6
+        - 7
         - 11
-        - 13
-        - 18
+        - 12
+        - 16
+        - 20
+        - 22
         - 23
         - 24
-        - 26
-        - 28
-        - 29
-        - 30
-        - 34
-        - 35
-        - 36
-    '8':
-      id: 8
+        - 25
+        - 33
+    '2':
+      id: 2
       crossFilters:
         scope: global
         chartsInScope:
         - 1
+        - 5
+        - 6
+        - 7
         - 11
-        - 13
-        - 18
+        - 12
+        - 16
+        - 20
+        - 22
         - 23
         - 24
-        - 26
-        - 28
-        - 29
-        - 30
-        - 34
-        - 35
-        - 36
+        - 25
+        - 33
+    '5':
+      id: 5
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 6
+        - 7
+        - 11
+        - 12
+        - 16
+        - 20
+        - 22
+        - 23
+        - 24
+        - 25
+        - 33
+    '6':
+      id: 6
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 5
+        - 7
+        - 11
+        - 12
+        - 16
+        - 20
+        - 22
+        - 23
+        - 24
+        - 25
+        - 33
+    '7':
+      id: 7
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 5
+        - 6
+        - 11
+        - 12
+        - 16
+        - 20
+        - 22
+        - 23
+        - 24
+        - 25
+        - 33
     '11':
       id: 11
       crossFilters:
         scope: global
         chartsInScope:
         - 1
-        - 8
-        - 13
-        - 18
+        - 2
+        - 5
+        - 6
+        - 7
+        - 12
+        - 16
+        - 20
+        - 22
         - 23
         - 24
-        - 26
-        - 28
-        - 29
-        - 30
-        - 34
-        - 35
-        - 36
-    '13':
-      id: 13
+        - 25
+        - 33
+    '12':
+      id: 12
       crossFilters:
         scope: global
         chartsInScope:
         - 1
-        - 8
+        - 2
+        - 5
+        - 6
+        - 7
         - 11
-        - 18
+        - 16
+        - 20
+        - 22
         - 23
         - 24
-        - 26
-        - 28
-        - 29
-        - 30
-        - 34
-        - 35
-        - 36
-    '18':
-      id: 18
+        - 25
+        - 33
+    '16':
+      id: 16
       crossFilters:
         scope: global
         chartsInScope:
         - 1
-        - 8
+        - 2
+        - 5
+        - 6
+        - 7
         - 11
-        - 13
+        - 12
+        - 20
+        - 22
         - 23
         - 24
-        - 26
-        - 28
-        - 29
-        - 30
-        - 34
-        - 35
-        - 36
+        - 25
+        - 33
+    '20':
+      id: 20
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 5
+        - 6
+        - 7
+        - 11
+        - 12
+        - 16
+        - 22
+        - 23
+        - 24
+        - 25
+        - 33
+    '22':
+      id: 22
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 5
+        - 6
+        - 7
+        - 11
+        - 12
+        - 16
+        - 20
+        - 23
+        - 24
+        - 25
+        - 33
     '23':
       id: 23
       crossFilters:
         scope: global
         chartsInScope:
         - 1
-        - 8
+        - 2
+        - 5
+        - 6
+        - 7
         - 11
-        - 13
-        - 18
+        - 12
+        - 16
+        - 20
+        - 22
         - 24
-        - 26
-        - 28
-        - 29
-        - 30
-        - 34
-        - 35
-        - 36
+        - 25
+        - 33
     '24':
       id: 24
       crossFilters:
         scope: global
         chartsInScope:
         - 1
-        - 8
+        - 2
+        - 5
+        - 6
+        - 7
         - 11
-        - 13
-        - 18
+        - 12
+        - 16
+        - 20
+        - 22
         - 23
-        - 26
-        - 28
-        - 29
-        - 30
-        - 34
-        - 35
-        - 36
-    '26':
-      id: 26
+        - 25
+        - 33
+    '25':
+      id: 25
       crossFilters:
         scope: global
         chartsInScope:
         - 1
-        - 8
+        - 2
+        - 5
+        - 6
+        - 7
         - 11
-        - 13
-        - 18
+        - 12
+        - 16
+        - 20
+        - 22
         - 23
         - 24
-        - 28
-        - 29
-        - 30
-        - 34
-        - 35
-        - 36
-    '28':
-      id: 28
+        - 33
+    '33':
+      id: 33
       crossFilters:
         scope: global
         chartsInScope:
         - 1
-        - 8
+        - 2
+        - 5
+        - 6
+        - 7
         - 11
-        - 13
-        - 18
+        - 12
+        - 16
+        - 20
+        - 22
         - 23
         - 24
-        - 26
-        - 29
-        - 30
-        - 34
-        - 35
-        - 36
-    '29':
-      id: 29
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 1
-        - 8
-        - 11
-        - 13
-        - 18
-        - 23
-        - 24
-        - 26
-        - 28
-        - 30
-        - 34
-        - 35
-        - 36
-    '30':
-      id: 30
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 1
-        - 8
-        - 11
-        - 13
-        - 18
-        - 23
-        - 24
-        - 26
-        - 28
-        - 29
-        - 34
-        - 35
-        - 36
-    '34':
-      id: 34
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 1
-        - 8
-        - 11
-        - 13
-        - 18
-        - 23
-        - 24
-        - 26
-        - 28
-        - 29
-        - 30
-        - 35
-        - 36
-    '35':
-      id: 35
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 1
-        - 8
-        - 11
-        - 13
-        - 18
-        - 23
-        - 24
-        - 26
-        - 28
-        - 29
-        - 30
-        - 34
-        - 36
-    '36':
-      id: 36
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 1
-        - 8
-        - 11
-        - 13
-        - 18
-        - 23
-        - 24
-        - 26
-        - 28
-        - 29
-        - 30
-        - 34
-        - 35
+        - 25
   global_chart_configuration:
     scope:
       rootPath:
@@ -578,19 +577,19 @@ metadata:
       excluded: []
     chartsInScope:
     - 1
-    - 8
+    - 2
+    - 5
+    - 6
+    - 7
     - 11
-    - 13
-    - 18
+    - 12
+    - 16
+    - 20
+    - 22
     - 23
     - 24
-    - 26
-    - 28
-    - 29
-    - 30
-    - 34
-    - 35
-    - 36
+    - 25
+    - 33
   color_scheme: ''
   refresh_frequency: 0
   expanded_slices: {}
@@ -644,7 +643,7 @@ metadata:
   - Not Ok Mixes
   - Ok Mixes
   map_label_colors:
+    Total parameters: '#1FA8C9'
     ? ''
     : '#1FA8C9'
-    Total parameters: '#1FA8C9'
 version: 1.0.0
