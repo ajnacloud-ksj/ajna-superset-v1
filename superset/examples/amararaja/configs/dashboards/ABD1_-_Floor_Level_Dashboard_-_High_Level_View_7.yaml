@@ -13,7 +13,7 @@ position:
     children: []
     id: CHART-Y0_MTo0ttmoBaHDyzLePT
     meta:
-      chartId: 32
+      chartId: 23
       height: 51
       sliceName: 'Specification Compliance, '
       uuid: c7429585-b095-4af2-a6c8-f71231a73e5d
@@ -27,7 +27,7 @@ position:
     children: []
     id: CHART-explore-27-1
     meta:
-      chartId: 27
+      chartId: 30
       height: 107
       sliceName: Compliance Percentage
       uuid: dc2183ea-32b6-4350-8263-53ee50c70be9
@@ -42,7 +42,7 @@ position:
     children: []
     id: CHART-explore-31-1
     meta:
-      chartId: 21
+      chartId: 24
       height: 34
       sliceName: Mixer-1 Compliance Percentage
       uuid: ab001383-c4f1-4d71-854d-2c079854d528
@@ -57,7 +57,7 @@ position:
     children: []
     id: CHART-explore-32-1
     meta:
-      chartId: 29
+      chartId: 2
       height: 35
       sliceName: Mixer-3 Compliance Percentage
       uuid: ac38f022-44e1-48ad-9cf6-986c3303a98f
@@ -72,7 +72,7 @@ position:
     children: []
     id: CHART-explore-33-1
     meta:
-      chartId: 3
+      chartId: 13
       height: 34
       sliceName: Mixer-2 Compliance Percentage
       uuid: 1c89b019-d96f-4613-8c22-0608b3d7004b
@@ -87,7 +87,7 @@ position:
     children: []
     id: CHART-explore-9-1
     meta:
-      chartId: 34
+      chartId: 20
       height: 51
       sliceName: Parameter Wise CpK
       uuid: c6ab9436-e95e-439f-b0e1-7352b85acc5e
@@ -95,13 +95,13 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-Y3WNZmSXih-RIQBgPEAle
+    - ROW-iGl-QfKTv-I0KFHBLjvsy
     type: CHART
   CHART-ezPYA2N4a8aPsxQbb7dzH:
     children: []
     id: CHART-ezPYA2N4a8aPsxQbb7dzH
     meta:
-      chartId: 10
+      chartId: 31
       height: 54
       sliceName: Total Batches Processed
       uuid: e09d5db8-e7b1-4ea4-9cb2-721899193e5c
@@ -229,92 +229,92 @@ position:
     type: ROW
 metadata:
   chart_configuration:
-    '3':
-      id: 3
+    '2':
+      id: 2
       crossFilters:
         scope: global
         chartsInScope:
         - 9
-        - 10
-        - 21
-        - 27
-        - 29
-        - 32
-        - 34
-    '21':
-      id: 21
+        - 13
+        - 20
+        - 23
+        - 24
+        - 30
+        - 31
+    '13':
+      id: 13
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 9
-        - 10
-        - 27
-        - 29
-        - 32
-        - 34
-    '27':
-      id: 27
+        - 20
+        - 23
+        - 24
+        - 30
+        - 31
+    '20':
+      id: 20
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 9
-        - 10
-        - 21
-        - 29
-        - 32
-        - 34
-    '29':
-      id: 29
+        - 13
+        - 23
+        - 24
+        - 30
+        - 31
+    '23':
+      id: 23
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 9
-        - 10
-        - 21
-        - 27
-        - 32
-        - 34
-    '32':
-      id: 32
+        - 13
+        - 20
+        - 24
+        - 30
+        - 31
+    '24':
+      id: 24
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 9
-        - 10
-        - 21
-        - 27
-        - 29
-        - 34
-    '34':
-      id: 34
+        - 13
+        - 20
+        - 23
+        - 30
+        - 31
+    '30':
+      id: 30
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 9
-        - 10
-        - 21
-        - 27
-        - 29
-        - 32
+        - 13
+        - 20
+        - 23
+        - 24
+        - 31
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
-    - 3
+    - 2
     - 9
-    - 10
-    - 21
-    - 27
-    - 29
-    - 32
-    - 34
+    - 13
+    - 20
+    - 23
+    - 24
+    - 30
+    - 31
   color_scheme: ''
   refresh_frequency: 0
   expanded_slices: {}
@@ -357,9 +357,9 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded:
-      - 21
-      - 29
-      - 3
+      - 24
+      - 2
+      - 13
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
@@ -401,9 +401,9 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded:
-      - 21
-      - 29
-      - 3
+      - 24
+      - 2
+      - 13
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
@@ -446,10 +446,10 @@ metadata:
     - 33
     tabsInScope: []
   filter_bar_orientation: HORIZONTAL
+  color_scheme_domain: []
   shared_label_colors:
   - ''
   map_label_colors:
     ? ''
     : '#1FA8C9'
-  color_scheme_domain: []
 version: 1.0.0

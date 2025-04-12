@@ -1,0 +1,138 @@
+slice_name: Line Wise Deviated Parameter Names
+description: null
+certified_by: null
+certification_details: null
+viz_type: handlebars
+params:
+  datasource: 10__table
+  viz_type: handlebars
+  slice_id: 37
+  query_mode: aggregate
+  groupby:
+  - Line_Name
+  metrics:
+  - expressionType: SQL
+    sqlExpression: STRING_AGG(DISTINCT "Deviated_Paramter_Names", '<br> ')
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: deviated_parameter_names
+    optionName: metric_t95pwde68c_ikze5giqpmr
+  all_columns: []
+  percent_metrics: []
+  order_by_cols: []
+  row_limit: 1000
+  show_totals: false
+  adhoc_filters:
+  - clause: WHERE
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_wphwuybz9qo_z7auo4u1sj
+    isExtra: false
+    isNew: false
+    operator: '!='
+    operatorId: NOT_EQUALS
+    sqlExpression: null
+    subject: Deviated Paramter Names
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_akg0i2fbghn_zc6jt7hdimn
+    isExtra: true
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: datetime_fmt
+  handlebarsTemplate: "<div class=\"superset-param-table\">\r\n  <table>\r\n    <thead>\r\
+    \n      <tr>\r\n        <th class=\"line-header\">Line Names</th>\r\n        <th\
+    \ class=\"param-header\">Deviated Parameter Names</th>\r\n      </tr>\r\n    </thead>\r\
+    \n    <tbody>\r\n      <!-- Manually create rows for each line -->\r\n      <tr>\r\
+    \n        <td class=\"line-name\">Line1</td>\r\n        <td class=\"parameters\"\
+    >\r\n          {{#each data}}\r\n            {{#if (eq this.Line_Name \"Line1\"\
+    )}}\r\n              <div class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\
+    \n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\
+    \n      <tr>\r\n        <td class=\"line-name\">Line2</td>\r\n        <td class=\"\
+    parameters\">\r\n          {{#each data}}\r\n            {{#if (eq this.Line_Name\
+    \ \"Line2\")}}\r\n              <div class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\
+    \n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\
+    \n      <tr>\r\n        <td class=\"line-name\">Line3</td>\r\n        <td class=\"\
+    parameters\">\r\n          {{#each data}}\r\n            {{#if (eq this.Line_Name\
+    \ \"Line3\")}}\r\n              <div class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\
+    \n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\
+    \n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n\r\n<style>\r\n.superset-param-table\
+    \ {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  width:\
+    \ 100%;\r\n  padding: 15px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.superset-param-table\
+    \ table {\r\n  width: 100%;\r\n  border-collapse: collapse;\r\n  border-radius:\
+    \ 8px;\r\n  overflow: hidden;\r\n  box-shadow: 0 2px 10px rgba(0,0,0,0.1);\r\n\
+    }\r\n\r\n.superset-param-table th {\r\n  background-color: #2c3e50;\r\n  color:\
+    \ white;\r\n  padding: 12px 15px;\r\n  text-align: left;\r\n  font-weight: 600;\r\
+    \n}\r\n\r\n.superset-param-table td {\r\n  padding: 15px;\r\n  border-bottom:\
+    \ 1px solid #e0e0e0;\r\n  vertical-align: middle; /* Changed from top to middle\
+    \ for better alignment */\r\n  min-height: 50px; /* Ensures consistent row height\
+    \ */\r\n}\r\n\r\n.line-header {\r\n  width: 120px;\r\n}\r\n\r\n.line-name {\r\n\
+    \  font-weight: bold;\r\n  color: #2c3e50;\r\n  background-color: #f8f9fa;\r\n\
+    \  position: sticky;\r\n  left: 0;\r\n  min-width: 100px;\r\n  vertical-align:\
+    \ middle; /* Ensures text stays centered */\r\n}\r\n\r\n.parameters {\r\n  display:\
+    \ flex;\r\n  flex-wrap: wrap;\r\n  gap: 8px;\r\n  align-items: center; /* Centers\
+    \ items vertically */\r\n  min-height: 42px; /* Matches param-pill height */\r\
+    \n}\r\n\r\n.param-pill {\r\n  background-color: #e3f2fd;\r\n  color: #1976d2;\r\
+    \n  padding: 6px 12px;\r\n  border-radius: 16px;\r\n  font-size: 0.85em;\r\n \
+    \ box-shadow: 0 1px 3px rgba(0,0,0,0.1);\r\n  height: fit-content;\r\n}\r\n\r\n\
+    .no-params {\r\n  color: #666;\r\n  font-style: italic;\r\n  padding: 6px 0;\r\
+    \n  width: 100%;\r\n}\r\n\r\ntr:hover .line-name {\r\n  background-color: #e9ecef;\r\
+    \n}\r\n\r\ntr:hover .param-pill {\r\n  background-color: #bbdefb;\r\n  transform:\
+    \ translateY(-1px);\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .parameters {\r\
+    \n    gap: 6px;\r\n  }\r\n  \r\n  .superset-param-table th,\r\n  .superset-param-table\
+    \ td {\r\n    padding: 10px;\r\n  }\r\n  \r\n  .param-pill {\r\n    font-size:\
+    \ 0.8em;\r\n    padding: 4px 8px;\r\n  }\r\n}\r\n</style>"
+  extra_form_data: {}
+  dashboards:
+  - 3
+  - 8
+query_context: '{"datasource":{"id":10,"type":"table"},"force":false,"queries":[{"filters":[{"col":"Deviated
+  Paramter Names","op":"!="},{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["Line_Name"],"metrics":[{"expressionType":"SQL","sqlExpression":"STRING_AGG(DISTINCT
+  \"Deviated_Paramter_Names\", ''<br> '')","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_t95pwde68c_ikze5giqpmr"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"STRING_AGG(DISTINCT
+  \"Deviated_Paramter_Names\", ''<br> '')","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_t95pwde68c_ikze5giqpmr"},false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"10__table","viz_type":"handlebars","slice_id":37,"query_mode":"aggregate","groupby":["Line_Name"],"metrics":[{"expressionType":"SQL","sqlExpression":"STRING_AGG(DISTINCT
+  \"Deviated_Paramter_Names\", ''<br> '')","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_t95pwde68c_ikze5giqpmr"}],"all_columns":[],"percent_metrics":[],"order_by_cols":[],"row_limit":1000,"show_totals":false,"adhoc_filters":[{"clause":"WHERE","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_wphwuybz9qo_z7auo4u1sj","isExtra":false,"isNew":false,"operator":"!=","operatorId":"NOT_EQUALS","sqlExpression":null,"subject":"Deviated
+  Paramter Names"},{"clause":"WHERE","comparator":"No filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_akg0i2fbghn_zc6jt7hdimn","isExtra":true,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"datetime_fmt"}],"handlebarsTemplate":"<div
+  class=\"superset-param-table\">\r\n  <table>\r\n    <thead>\r\n      <tr>\r\n        <th
+  class=\"line-header\">Line Names</th>\r\n        <th class=\"param-header\">Deviated
+  Parameter Names</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <!--
+  Manually create rows for each line -->\r\n      <tr>\r\n        <td class=\"line-name\">Line1</td>\r\n        <td
+  class=\"parameters\">\r\n          {{#each data}}\r\n            {{#if (eq this.Line_Name
+  \"Line1\")}}\r\n              <div class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td
+  class=\"line-name\">Line2</td>\r\n        <td class=\"parameters\">\r\n          {{#each
+  data}}\r\n            {{#if (eq this.Line_Name \"Line2\")}}\r\n              <div
+  class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td
+  class=\"line-name\">Line3</td>\r\n        <td class=\"parameters\">\r\n          {{#each
+  data}}\r\n            {{#if (eq this.Line_Name \"Line3\")}}\r\n              <div
+  class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n\r\n<style>\r\n.superset-param-table
+  {\r\n  font-family: ''Segoe UI'', Tahoma, Geneva, Verdana, sans-serif;\r\n  width:
+  100%;\r\n  padding: 15px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.superset-param-table
+  table {\r\n  width: 100%;\r\n  border-collapse: collapse;\r\n  border-radius: 8px;\r\n  overflow:
+  hidden;\r\n  box-shadow: 0 2px 10px rgba(0,0,0,0.1);\r\n}\r\n\r\n.superset-param-table
+  th {\r\n  background-color: #2c3e50;\r\n  color: white;\r\n  padding: 12px 15px;\r\n  text-align:
+  left;\r\n  font-weight: 600;\r\n}\r\n\r\n.superset-param-table td {\r\n  padding:
+  15px;\r\n  border-bottom: 1px solid #e0e0e0;\r\n  vertical-align: middle; /* Changed
+  from top to middle for better alignment */\r\n  min-height: 50px; /* Ensures consistent
+  row height */\r\n}\r\n\r\n.line-header {\r\n  width: 120px;\r\n}\r\n\r\n.line-name
+  {\r\n  font-weight: bold;\r\n  color: #2c3e50;\r\n  background-color: #f8f9fa;\r\n  position:
+  sticky;\r\n  left: 0;\r\n  min-width: 100px;\r\n  vertical-align: middle; /* Ensures
+  text stays centered */\r\n}\r\n\r\n.parameters {\r\n  display: flex;\r\n  flex-wrap:
+  wrap;\r\n  gap: 8px;\r\n  align-items: center; /* Centers items vertically */\r\n  min-height:
+  42px; /* Matches param-pill height */\r\n}\r\n\r\n.param-pill {\r\n  background-color:
+  #e3f2fd;\r\n  color: #1976d2;\r\n  padding: 6px 12px;\r\n  border-radius: 16px;\r\n  font-size:
+  0.85em;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.1);\r\n  height: fit-content;\r\n}\r\n\r\n.no-params
+  {\r\n  color: #666;\r\n  font-style: italic;\r\n  padding: 6px 0;\r\n  width: 100%;\r\n}\r\n\r\ntr:hover
+  .line-name {\r\n  background-color: #e9ecef;\r\n}\r\n\r\ntr:hover .param-pill {\r\n  background-color:
+  #bbdefb;\r\n  transform: translateY(-1px);\r\n}\r\n\r\n@media (max-width: 768px)
+  {\r\n  .parameters {\r\n    gap: 6px;\r\n  }\r\n  \r\n  .superset-param-table th,\r\n  .superset-param-table
+  td {\r\n    padding: 10px;\r\n  }\r\n  \r\n  .param-pill {\r\n    font-size: 0.8em;\r\n    padding:
+  4px 8px;\r\n  }\r\n}\r\n</style>","extra_form_data":{},"dashboards":[3,8],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 20d5914f-c124-49e3-81fd-5e200eac9ee4
+version: 1.0.0
+dataset_uuid: 5636b054-301c-43e5-8a2a-78542cb93ddc

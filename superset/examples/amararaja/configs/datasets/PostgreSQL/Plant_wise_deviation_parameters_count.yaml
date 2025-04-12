@@ -1,0 +1,111 @@
+table_name: Plant_wise_deviation_parameters_count
+main_dttm_col: datetime_fmt
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: postgres
+schema: public
+sql: "SELECT \r\n    CASE \r\n        WHEN source_table_name IN ('ABD1_Mixer_1', 'ABD1_Mixer_2',\
+  \ 'ABD1_Mixer_3') THEN 'ABD1'\r\n        ELSE 'ABD2'\r\n    END AS production_line,\r\
+  \n    source_table_name,\r\n    batch_no,\r\n    datetime_fmt,\r\n    UNNEST(ARRAY[\r\
+  \n        CASE WHEN density_deviation_ind = 1 THEN 'Density of Paste' END,\r\n \
+  \       CASE WHEN dm_water_deviation_ind = 1 THEN 'DM Water' END,\r\n        CASE\
+  \ WHEN dump_temp_deviation_ind = 1 THEN 'Mixer Dump Temp' END,\r\n        CASE WHEN\
+  \ dry_mix_time_deviation_ind = 1 THEN 'Dry Mix Time (Sec)' END,\r\n        CASE\
+  \ WHEN lead_oxide_deviation_ind = 1 THEN 'Lead Oxide Consumed' END,\r\n        CASE\
+  \ WHEN acid_dump_time_deviation_ind = 1 THEN 'Acid Dump Time (Sec)' END,\r\n   \
+  \     CASE WHEN peak_temp_deviation_ind = 1 THEN 'Highest Mixer Temp' END,\r\n \
+  \       CASE WHEN acid_addition_deviation_ind = 1 THEN 'Acid Consumed' END,\r\n\
+  \        CASE WHEN pentration_deviation_ind = 1 THEN 'Penetration of Paste' END,\r\
+  \n        CASE WHEN trim_water_deviation_ind = 1 THEN 'Final Water' END,\r\n   \
+  \     CASE WHEN water_dump_time_deviation_ind = 1 THEN 'Water Dumping Time (Sec)'\
+  \ END,\r\n        CASE WHEN wet_mix_time_deviation_ind = 1 THEN 'Wet Mix Time (Sec)'\
+  \ END,\r\n        CASE WHEN cooling_on_temp_deviation_ind = 1 THEN 'Cooling On Temp'\
+  \ END,\r\n        CASE WHEN air_cooling_temp_deviation_ind = 1 THEN 'Air Cooling\
+  \ Temp' END,\r\n        CASE WHEN water_cooling_temp_in_deviation_ind = 1 THEN 'Water\
+  \ Cooling In Temp' END\r\n    ]) AS deviated_param\r\n    \r\nFROM abd1_mixers_all\r\
+  \n WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt >= '{{ from_dttm\
+  \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
+  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    );\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 0b1f2964-ad60-44b6-a4b3-cf34f9c2529c
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: datetime_fmt
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: source_table_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: deviated_param
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: batch_no
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: production_line
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 18417687-d619-42fe-a78b-7c26e1212281
