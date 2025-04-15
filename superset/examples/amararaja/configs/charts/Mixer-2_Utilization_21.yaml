@@ -4,41 +4,41 @@ certified_by: null
 certification_details: null
 viz_type: gauge_chart
 params:
-  datasource: 5__table
+  datasource: 4__table
   viz_type: gauge_chart
-  slice_id: 22
+  slice_id: 21
   groupby: []
   metric:
-    expressionType: SQL
-    sqlExpression: ((SUM(batch_duration)/((count(DISTINCT DATE(datetime_fmt)))*86400*1000))*100.0)
-    column: null
     aggregate: null
+    column: null
     datasourceWarning: false
+    expressionType: SQL
     hasCustomLabel: true
     label: Mixer-2 utilization
     optionName: metric_ttdxkkx6dc_7d0l8rht7qr
+    sqlExpression: ((SUM(batch_duration)/((count(DISTINCT DATE(datetime_fmt)))*86400*1000))*100.0)
   adhoc_filters:
-  - expressionType: SIMPLE
-    subject: source_table_name
-    operator: ==
-    operatorId: EQUALS
+  - clause: WHERE
     comparator: ABD1_Mixer_2
-    clause: WHERE
-    sqlExpression: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_z58ixgm2bwa_sfdanjh96f
     isExtra: false
     isNew: false
-    datasourceWarning: false
-    filterOptionName: filter_z58ixgm2bwa_sfdanjh96f
-  - expressionType: SIMPLE
-    subject: datetime_fmt
-    operator: TEMPORAL_RANGE
-    comparator: No filter
-    clause: WHERE
+    operator: ==
+    operatorId: EQUALS
     sqlExpression: null
+    subject: source_table_name
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_pivi1qsie7p_rtpyjpher2
     isExtra: true
     isNew: false
-    datasourceWarning: false
-    filterOptionName: filter_pivi1qsie7p_rtpyjpher2
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: datetime_fmt
   row_limit: 10
   sort_by_metric: true
   min_val: 0
@@ -57,22 +57,21 @@ params:
   show_progress: false
   overlap: true
   round_cap: true
-  intervals: 25,50,100
-  interval_color_indices: 6,4,3
+  intervals: '100'
+  interval_color_indices: '5'
   extra_form_data: {}
   dashboards:
-  - 5
-  annotation_layers: []
-query_context: '{"datasource":{"id":5,"type":"table"},"force":false,"queries":[{"filters":[{"col":"source_table_name","op":"==","val":"ABD1_Mixer_2"},{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
-  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"((SUM(batch_duration)/((count(DISTINCT
-  DATE(datetime_fmt)))*86400*1000))*100.0)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Mixer-2
-  utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"((SUM(batch_duration)/((count(DISTINCT
-  DATE(datetime_fmt)))*86400*1000))*100.0)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Mixer-2
-  utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr"},false]],"annotation_layers":[],"row_limit":10,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"5__table","viz_type":"gauge_chart","slice_id":22,"groupby":[],"metric":{"expressionType":"SQL","sqlExpression":"((SUM(batch_duration)/((count(DISTINCT
-  DATE(datetime_fmt)))*86400*1000))*100.0)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Mixer-2
-  utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"source_table_name","operator":"==","operatorId":"EQUALS","comparator":"ABD1_Mixer_2","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_z58ixgm2bwa_sfdanjh96f"},{"expressionType":"SIMPLE","subject":"datetime_fmt","operator":"TEMPORAL_RANGE","comparator":"No
-  filter","clause":"WHERE","sqlExpression":null,"isExtra":true,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_pivi1qsie7p_rtpyjpher2"}],"row_limit":10,"sort_by_metric":true,"min_val":0,"max_val":100,"start_angle":"220","end_angle":"-45","color_scheme":"supersetColors","font_size":10,"number_format":"SMART_NUMBER","value_formatter":"{value}
-  %","show_pointer":true,"animation":true,"show_axis_tick":false,"show_split_line":true,"split_number":10,"show_progress":false,"overlap":true,"round_cap":true,"intervals":"25,50,100","interval_color_indices":"6,4,3","extra_form_data":{},"dashboards":[5],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+  - 3
+query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"filters":[{"col":"source_table_name","op":"==","val":"ABD1_Mixer_2"},{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Mixer-2
+  utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr","sqlExpression":"((SUM(batch_duration)/((count(DISTINCT
+  DATE(datetime_fmt)))*86400*1000))*100.0)"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Mixer-2
+  utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr","sqlExpression":"((SUM(batch_duration)/((count(DISTINCT
+  DATE(datetime_fmt)))*86400*1000))*100.0)"},false]],"annotation_layers":[],"row_limit":10,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"4__table","viz_type":"gauge_chart","slice_id":21,"groupby":[],"metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Mixer-2
+  utilization","optionName":"metric_ttdxkkx6dc_7d0l8rht7qr","sqlExpression":"((SUM(batch_duration)/((count(DISTINCT
+  DATE(datetime_fmt)))*86400*1000))*100.0)"},"adhoc_filters":[{"clause":"WHERE","comparator":"ABD1_Mixer_2","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_z58ixgm2bwa_sfdanjh96f","isExtra":false,"isNew":false,"operator":"==","operatorId":"EQUALS","sqlExpression":null,"subject":"source_table_name"},{"clause":"WHERE","comparator":"No
+  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_pivi1qsie7p_rtpyjpher2","isExtra":true,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"datetime_fmt"}],"row_limit":10,"sort_by_metric":true,"min_val":0,"max_val":100,"start_angle":"220","end_angle":"-45","color_scheme":"supersetColors","font_size":10,"number_format":"SMART_NUMBER","value_formatter":"{value}
+  %","show_pointer":true,"animation":true,"show_axis_tick":false,"show_split_line":true,"split_number":10,"show_progress":false,"overlap":true,"round_cap":true,"intervals":"100","interval_color_indices":"5","extra_form_data":{},"dashboards":[3],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
 cache_timeout: null
 uuid: c59b8c66-f000-4050-9606-ae56e39b622a
 version: 1.0.0

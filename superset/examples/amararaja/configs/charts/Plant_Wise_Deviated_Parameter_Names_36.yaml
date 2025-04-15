@@ -2,37 +2,29 @@ slice_name: Plant Wise Deviated Parameter Names
 description: null
 certified_by: null
 certification_details: null
-viz_type: word_cloud
+viz_type: handlebars
 params:
   datasource: 9__table
-  viz_type: word_cloud
+  viz_type: handlebars
   slice_id: 36
-  series: Deviated Paramter Names
-  metric:
-    aggregate: COUNT_DISTINCT
-    column:
-      advanced_data_type: null
-      certification_details: null
-      certified_by: null
-      column_name: Deviated Paramter Names
-      description: null
-      expression: null
-      filterable: true
-      groupby: true
-      id: 176
-      is_certified: false
-      is_dttm: false
-      python_date_format: null
-      type: STRING
-      type_generic: 1
-      verbose_name: null
-      warning_markdown: null
+  query_mode: aggregate
+  groupby:
+  - plants
+  metrics:
+  - expressionType: SQL
+    sqlExpression: STRING_AGG(DISTINCT "Deviated_Paramter_Names", '<br> ')
+    column: null
+    aggregate: null
     datasourceWarning: false
-    expressionType: SIMPLE
-    hasCustomLabel: false
-    label: COUNT_DISTINCT(Deviated Paramter Names)
+    hasCustomLabel: true
+    label: deviated_parameter_names
     optionName: metric_8solm31k6el_1knrdj468wi
-    sqlExpression: null
+  all_columns: []
+  percent_metrics: []
+  order_by_cols: []
+  order_desc: true
+  row_limit: 1000
+  server_page_length: 10
   adhoc_filters:
   - clause: WHERE
     comparator: No filter
@@ -44,24 +36,77 @@ params:
     operator: TEMPORAL_RANGE
     sqlExpression: null
     subject: datetime_fmt
-  row_limit: 1000
-  size_from: 25
-  size_to: 25
-  rotation: flat
-  color_scheme: supersetColors
+  handlebarsTemplate: "<div class=\"superset-param-table\">\r\n  <table>\r\n    <thead>\r\
+    \n      <tr>\r\n        <th class=\"line-header\">Plant Name</th>\r\n        <th\
+    \ class=\"param-header\">Deviated Parameter Name</th>\r\n      </tr>\r\n    </thead>\r\
+    \n    <tbody>\r\n      <!-- Manually create rows for each line -->\r\n      <tr>\r\
+    \n        <td class=\"line-name\">ABD1</td>\r\n        <td class=\"parameters\"\
+    >\r\n          {{#each data}}\r\n            {{#if (eq this.plants \"ABD1\")}}\r\
+    \n              <div class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\
+    \n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\
+    \n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n\r\n<style>\r\n.superset-param-table\
+    \ {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  width:\
+    \ 100%;\r\n  padding: 15px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.superset-param-table\
+    \ table {\r\n  width: 100%;\r\n  border-collapse: collapse;\r\n  border-radius:\
+    \ 8px;\r\n  overflow: hidden;\r\n  box-shadow: 0 2px 10px rgba(0,0,0,0.1);\r\n\
+    }\r\n\r\n.superset-param-table th {\r\n  background-color: #2c3e50;\r\n  color:\
+    \ white;\r\n  padding: 12px 15px;\r\n  text-align: left;\r\n  font-weight: 600;\r\
+    \n}\r\n\r\n.superset-param-table td {\r\n  padding: 15px;\r\n  border-bottom:\
+    \ 1px solid #e0e0e0;\r\n  vertical-align: middle; /* Changed from top to middle\
+    \ for better alignment */\r\n  min-height: 50px; /* Ensures consistent row height\
+    \ */\r\n}\r\n\r\n.line-header {\r\n  width: 120px;\r\n}\r\n\r\n.line-name {\r\n\
+    \  font-weight: bold;\r\n  color: #2c3e50;\r\n  background-color: #f8f9fa;\r\n\
+    \  position: sticky;\r\n  left: 0;\r\n  min-width: 100px;\r\n  vertical-align:\
+    \ middle; /* Ensures text stays centered */\r\n}\r\n\r\n.parameters {\r\n  display:\
+    \ flex;\r\n  flex-wrap: wrap;\r\n  gap: 8px;\r\n  align-items: center; /* Centers\
+    \ items vertically */\r\n  min-height: 42px; /* Matches param-pill height */\r\
+    \n}\r\n\r\n.param-pill {\r\n  background-color: #e3f2fd;\r\n  color: #1976d2;\r\
+    \n  padding: 6px 12px;\r\n  border-radius: 16px;\r\n  font-size: 0.85em;\r\n \
+    \ box-shadow: 0 1px 3px rgba(0,0,0,0.1);\r\n  height: fit-content;\r\n}\r\n\r\n\
+    .no-params {\r\n  color: #666;\r\n  font-style: italic;\r\n  padding: 6px 0;\r\
+    \n  width: 100%;\r\n}\r\n\r\ntr:hover .line-name {\r\n  background-color: #e9ecef;\r\
+    \n}\r\n\r\ntr:hover .param-pill {\r\n  background-color: #bbdefb;\r\n  transform:\
+    \ translateY(-1px);\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .parameters {\r\
+    \n    gap: 6px;\r\n  }\r\n  \r\n  .superset-param-table th,\r\n  .superset-param-table\
+    \ td {\r\n    padding: 10px;\r\n  }\r\n  \r\n  .param-pill {\r\n    font-size:\
+    \ 0.8em;\r\n    padding: 4px 8px;\r\n  }\r\n}\r\n</style>"
   extra_form_data: {}
   dashboards:
   - 2
-  - 8
 query_context: '{"datasource":{"id":9,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
-  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["Deviated
-  Paramter Names"],"metrics":[{"aggregate":"COUNT_DISTINCT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"Deviated
-  Paramter Names","description":null,"expression":null,"filterable":true,"groupby":true,"id":176,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"STRING","type_generic":1,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT_DISTINCT(Deviated
-  Paramter Names)","optionName":"metric_8solm31k6el_1knrdj468wi","sqlExpression":null}],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"9__table","viz_type":"word_cloud","slice_id":36,"series":"Deviated
-  Paramter Names","metric":{"aggregate":"COUNT_DISTINCT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"Deviated
-  Paramter Names","description":null,"expression":null,"filterable":true,"groupby":true,"id":176,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"STRING","type_generic":1,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT_DISTINCT(Deviated
-  Paramter Names)","optionName":"metric_8solm31k6el_1knrdj468wi","sqlExpression":null},"adhoc_filters":[{"clause":"WHERE","comparator":"No
-  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_w5621pxapgn_vynktor329i","isExtra":true,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"datetime_fmt"}],"row_limit":1000,"size_from":25,"size_to":25,"rotation":"flat","color_scheme":"supersetColors","extra_form_data":{},"dashboards":[2,8],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["plants"],"metrics":[{"expressionType":"SQL","sqlExpression":"STRING_AGG(DISTINCT
+  \"Deviated_Paramter_Names\", ''<br> '')","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_8solm31k6el_1knrdj468wi"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"STRING_AGG(DISTINCT
+  \"Deviated_Paramter_Names\", ''<br> '')","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_8solm31k6el_1knrdj468wi"},false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"9__table","viz_type":"handlebars","slice_id":36,"query_mode":"aggregate","groupby":["plants"],"metrics":[{"expressionType":"SQL","sqlExpression":"STRING_AGG(DISTINCT
+  \"Deviated_Paramter_Names\", ''<br> '')","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_8solm31k6el_1knrdj468wi"}],"all_columns":[],"percent_metrics":[],"order_by_cols":[],"order_desc":true,"row_limit":1000,"server_page_length":10,"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_w5621pxapgn_vynktor329i","isExtra":true,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"datetime_fmt"}],"handlebarsTemplate":"<div
+  class=\"superset-param-table\">\r\n  <table>\r\n    <thead>\r\n      <tr>\r\n        <th
+  class=\"line-header\">Plant Name</th>\r\n        <th class=\"param-header\">Deviated
+  Parameter Name</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <!--
+  Manually create rows for each line -->\r\n      <tr>\r\n        <td class=\"line-name\">ABD1</td>\r\n        <td
+  class=\"parameters\">\r\n          {{#each data}}\r\n            {{#if (eq this.plants
+  \"ABD1\")}}\r\n              <div class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n\r\n<style>\r\n.superset-param-table
+  {\r\n  font-family: ''Segoe UI'', Tahoma, Geneva, Verdana, sans-serif;\r\n  width:
+  100%;\r\n  padding: 15px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.superset-param-table
+  table {\r\n  width: 100%;\r\n  border-collapse: collapse;\r\n  border-radius: 8px;\r\n  overflow:
+  hidden;\r\n  box-shadow: 0 2px 10px rgba(0,0,0,0.1);\r\n}\r\n\r\n.superset-param-table
+  th {\r\n  background-color: #2c3e50;\r\n  color: white;\r\n  padding: 12px 15px;\r\n  text-align:
+  left;\r\n  font-weight: 600;\r\n}\r\n\r\n.superset-param-table td {\r\n  padding:
+  15px;\r\n  border-bottom: 1px solid #e0e0e0;\r\n  vertical-align: middle; /* Changed
+  from top to middle for better alignment */\r\n  min-height: 50px; /* Ensures consistent
+  row height */\r\n}\r\n\r\n.line-header {\r\n  width: 120px;\r\n}\r\n\r\n.line-name
+  {\r\n  font-weight: bold;\r\n  color: #2c3e50;\r\n  background-color: #f8f9fa;\r\n  position:
+  sticky;\r\n  left: 0;\r\n  min-width: 100px;\r\n  vertical-align: middle; /* Ensures
+  text stays centered */\r\n}\r\n\r\n.parameters {\r\n  display: flex;\r\n  flex-wrap:
+  wrap;\r\n  gap: 8px;\r\n  align-items: center; /* Centers items vertically */\r\n  min-height:
+  42px; /* Matches param-pill height */\r\n}\r\n\r\n.param-pill {\r\n  background-color:
+  #e3f2fd;\r\n  color: #1976d2;\r\n  padding: 6px 12px;\r\n  border-radius: 16px;\r\n  font-size:
+  0.85em;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.1);\r\n  height: fit-content;\r\n}\r\n\r\n.no-params
+  {\r\n  color: #666;\r\n  font-style: italic;\r\n  padding: 6px 0;\r\n  width: 100%;\r\n}\r\n\r\ntr:hover
+  .line-name {\r\n  background-color: #e9ecef;\r\n}\r\n\r\ntr:hover .param-pill {\r\n  background-color:
+  #bbdefb;\r\n  transform: translateY(-1px);\r\n}\r\n\r\n@media (max-width: 768px)
+  {\r\n  .parameters {\r\n    gap: 6px;\r\n  }\r\n  \r\n  .superset-param-table th,\r\n  .superset-param-table
+  td {\r\n    padding: 10px;\r\n  }\r\n  \r\n  .param-pill {\r\n    font-size: 0.8em;\r\n    padding:
+  4px 8px;\r\n  }\r\n}\r\n</style>","extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
 cache_timeout: null
 uuid: 1bf22740-210d-4b75-b25b-abb1b4c060f6
 version: 1.0.0

@@ -23,7 +23,7 @@ sql: "SELECT \r\n        CASE \r\n            WHEN source_table_name IN ('ABD1_M
   \ = 1 THEN 'Wet Mix Time' END,\r\n            CASE WHEN cooling_on_temp_deviation_ind\
   \ = 1 THEN 'Cooling On Temp' END,\r\n            CASE WHEN air_cooling_temp_deviation_ind\
   \ = 1 THEN 'Air Cooling Temp' END,\r\n            CASE WHEN water_cooling_temp_in_deviation_ind\
-  \ = 1 THEN 'Water Cooling Temp' END\r\n        ]) AS \"Deviated Paramter Names\"\
+  \ = 1 THEN 'Water Cooling Temp' END\r\n        ]) AS \"Deviated_Paramter_Names\"\
   \r\n    FROM abd1_mixers_all\r\n      where (\r\n          density_deviation_ind\
   \ = 1 OR\r\n          dm_water_deviation_ind = 1 OR\r\n          dump_temp_deviation_ind\
   \ = 1 OR\r\n          dry_mix_time_deviation_ind = 1 OR\r\n          lead_oxide_deviation_ind\
@@ -49,21 +49,10 @@ metrics:
   description: null
   d3format: null
   currency: null
-  extra: null
+  extra:
+    warning_markdown: ''
   warning_text: null
 columns:
-- column_name: Deviated Paramter Names
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: STRING
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra: null
 - column_name: datetime_fmt
   verbose_name: null
   is_dttm: true
@@ -75,7 +64,19 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
+- column_name: Deviated_Paramter_Names
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: plants
   verbose_name: null
   is_dttm: false
@@ -87,6 +88,6 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 version: 1.0.0
 database_uuid: 18417687-d619-42fe-a78b-7c26e1212281

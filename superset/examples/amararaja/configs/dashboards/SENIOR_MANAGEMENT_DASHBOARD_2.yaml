@@ -7,12 +7,54 @@ certification_details: ''
 published: true
 uuid: a78aa776-0ef9-424f-99ba-ce2ebf4b2d8f
 position:
+  CHART-8mrzHMwpbCpTHTF-FCIU5:
+    children: []
+    id: CHART-8mrzHMwpbCpTHTF-FCIU5
+    meta:
+      chartId: 25
+      height: 39
+      sliceName: Mixer-1 Idle Time Percentage
+      uuid: f64ed0c3-8cc4-41c1-a173-7e344bc1423b
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-k-bBTHnzzatrN8yoMcprr
+    type: CHART
+  CHART-GvdpAI0cSLmgqdSRJYy6W:
+    children: []
+    id: CHART-GvdpAI0cSLmgqdSRJYy6W
+    meta:
+      chartId: 21
+      height: 39
+      sliceName: Mixer-2 Utilization
+      uuid: c59b8c66-f000-4050-9606-ae56e39b622a
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-k-bBTHnzzatrN8yoMcprr
+    type: CHART
+  CHART-U1LhaxRp8bguiRGgSz5K1:
+    children: []
+    id: CHART-U1LhaxRp8bguiRGgSz5K1
+    meta:
+      chartId: 17
+      height: 39
+      sliceName: Mixer-3 Idle Time Percentage
+      uuid: f6f5d4d6-aa02-43c0-9f4b-59aed80ff36c
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-k-bBTHnzzatrN8yoMcprr
+    type: CHART
   CHART-XBk-7EtmnZTDle_Y6xmH7:
     children: []
     id: CHART-XBk-7EtmnZTDle_Y6xmH7
     meta:
       chartId: 35
-      height: 55
+      height: 58
       sliceName: Plant Wise Ok & Not Ok Parameters
       uuid: 261811c9-f108-4843-b4ac-6def556c959e
       width: 8
@@ -21,6 +63,34 @@ position:
     - GRID_ID
     - ROW-oYSqEKmf7P8-IBD8zzBxD
     - COLUMN-P3pPwt93gY49nWMxzuBku
+    type: CHART
+  CHART-Xhyh2Y8Wa9g0gzYmqB1MS:
+    children: []
+    id: CHART-Xhyh2Y8Wa9g0gzYmqB1MS
+    meta:
+      chartId: 27
+      height: 39
+      sliceName: Mixer-2 Idle Time Percentage
+      uuid: 9f46ef38-b99a-4749-940e-402150574466
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-k-bBTHnzzatrN8yoMcprr
+    type: CHART
+  CHART-ZGOdWXDSkN_ghv6F6_b7Q:
+    children: []
+    id: CHART-ZGOdWXDSkN_ghv6F6_b7Q
+    meta:
+      chartId: 19
+      height: 39
+      sliceName: Mixer-1 Utilization
+      uuid: 255fd670-83df-46c8-b819-1140a4345bfa
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-k-bBTHnzzatrN8yoMcprr
     type: CHART
   CHART-explore-122-1:
     children: []
@@ -49,7 +119,7 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-Ku07iyo56rxbFgMBLs0Tp
+    - ROW-Qwk8oQjLRlPXeNZLAvyH-
     type: CHART
   CHART-explore-124-1:
     children: []
@@ -63,7 +133,7 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-Ku07iyo56rxbFgMBLs0Tp
+    - ROW-Qwk8oQjLRlPXeNZLAvyH-
     type: CHART
   CHART-explore-125-1:
     children: []
@@ -77,35 +147,22 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-Ku07iyo56rxbFgMBLs0Tp
+    - ROW-Qwk8oQjLRlPXeNZLAvyH-
     type: CHART
   CHART-explore-173-1:
     children: []
     id: CHART-explore-173-1
     meta:
       chartId: 33
-      height: 50
+      height: 52
       sliceName: Count Of Total Compliance And Non-Compliance
       uuid: 5678bf4c-1268-481c-91f3-aaa3ec9b25fa
       width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-HdlQy1j_rvYsXSCUXETKc
-    type: CHART
-  CHART-explore-178-1:
-    children: []
-    id: CHART-explore-178-1
-    meta:
-      chartId: 26
-      height: 61
-      sliceName: Count Of Specification Parameters
-      uuid: 957783b4-528e-4344-bf66-93fcd1ff5b99
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-k-bBTHnzzatrN8yoMcprr
+    - ROW-oYSqEKmf7P8-IBD8zzBxD
+    - COLUMN-P3pPwt93gY49nWMxzuBku
     type: CHART
   CHART-explore-24-1:
     children: []
@@ -168,7 +225,7 @@ position:
     id: CHART-explore-38-1
     meta:
       chartId: 38
-      height: 105
+      height: 112
       sliceName: Total Parameter Names
       uuid: 25c31e84-2bbc-4533-a992-173bf3e6521c
       width: 3
@@ -189,7 +246,21 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-HdlQy1j_rvYsXSCUXETKc
+    - ROW-EK_l1JpSQKJBhxKglDCyC
+    type: CHART
+  CHART-hbUqMTB-Ydn35X-YTYLgX:
+    children: []
+    id: CHART-hbUqMTB-Ydn35X-YTYLgX
+    meta:
+      chartId: 32
+      height: 39
+      sliceName: Mixer-3 Utilization
+      uuid: 02b14b0f-b90d-4a86-96ec-c877b47295e1
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-k-bBTHnzzatrN8yoMcprr
     type: CHART
   CHART-ixiid7yrn9HU6-s9hCbao:
     children: []
@@ -203,15 +274,14 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-oYSqEKmf7P8-IBD8zzBxD
-    - COLUMN-P3pPwt93gY49nWMxzuBku
+    - ROW-EK_l1JpSQKJBhxKglDCyC
     type: CHART
   CHART-lFMR05b0I1cabag3cpCUn:
     children: []
     id: CHART-lFMR05b0I1cabag3cpCUn
     meta:
       chartId: 36
-      height: 57
+      height: 58
       sliceName: Plant Wise Deviated Parameter Names
       uuid: 1bf22740-210d-4b75-b25b-abb1b4c060f6
       width: 4
@@ -236,7 +306,7 @@ position:
     type: COLUMN
   COLUMN-P3pPwt93gY49nWMxzuBku:
     children:
-    - CHART-ixiid7yrn9HU6-s9hCbao
+    - CHART-explore-173-1
     - CHART-XBk-7EtmnZTDle_Y6xmH7
     id: COLUMN-P3pPwt93gY49nWMxzuBku
     meta:
@@ -252,8 +322,8 @@ position:
     children:
     - ROW-I0QndK5CdSS5FVGQGnaPK
     - ROW-oYSqEKmf7P8-IBD8zzBxD
-    - ROW-HdlQy1j_rvYsXSCUXETKc
-    - ROW-Ku07iyo56rxbFgMBLs0Tp
+    - ROW-Qwk8oQjLRlPXeNZLAvyH-
+    - ROW-EK_l1JpSQKJBhxKglDCyC
     - ROW-eqt7vAMmC5ykCG-oBBxeP
     - ROW-k8RjBT7yFfyL6xL8Cewrb
     - ROW-k-bBTHnzzatrN8yoMcprr
@@ -282,7 +352,7 @@ position:
     children: []
     id: MARKDOWN-vk--gWyQSkyfCcYFiTdGu
     meta:
-      code: ' [Go to Plant Head Level Dashbaord](http://10.120.0.108:8088/superset/dashboard/p/kO69oDlZy3G/)'
+      code: '### [Go to Plant Head Level Dashbaord](http://10.120.0.108:8088/superset/dashboard/p/kO69oDlZy3G/)'
       height: 12
       width: 4
     parents:
@@ -295,13 +365,12 @@ position:
     - GRID_ID
     id: ROOT_ID
     type: ROOT
-  ROW-HdlQy1j_rvYsXSCUXETKc:
+  ROW-EK_l1JpSQKJBhxKglDCyC:
     children:
-    - CHART-explore-173-1
+    - CHART-ixiid7yrn9HU6-s9hCbao
     - CHART-explore-93-1
-    id: ROW-HdlQy1j_rvYsXSCUXETKc
+    id: ROW-EK_l1JpSQKJBhxKglDCyC
     meta:
-      '0': ROOT_ID
       background: BACKGROUND_TRANSPARENT
     parents:
     - ROOT_ID
@@ -318,14 +387,13 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
-  ROW-Ku07iyo56rxbFgMBLs0Tp:
+  ROW-Qwk8oQjLRlPXeNZLAvyH-:
     children:
     - CHART-explore-123-1
     - CHART-explore-124-1
     - CHART-explore-125-1
-    id: ROW-Ku07iyo56rxbFgMBLs0Tp
+    id: ROW-Qwk8oQjLRlPXeNZLAvyH-
     meta:
-      '0': ROOT_ID
       background: BACKGROUND_TRANSPARENT
     parents:
     - ROOT_ID
@@ -345,7 +413,12 @@ position:
     type: ROW
   ROW-k-bBTHnzzatrN8yoMcprr:
     children:
-    - CHART-explore-178-1
+    - CHART-ZGOdWXDSkN_ghv6F6_b7Q
+    - CHART-8mrzHMwpbCpTHTF-FCIU5
+    - CHART-GvdpAI0cSLmgqdSRJYy6W
+    - CHART-Xhyh2Y8Wa9g0gzYmqB1MS
+    - CHART-hbUqMTB-Ydn35X-YTYLgX
+    - CHART-U1LhaxRp8bguiRGgSz5K1
     id: ROW-k-bBTHnzzatrN8yoMcprr
     meta:
       background: BACKGROUND_TRANSPARENT
@@ -389,10 +462,15 @@ metadata:
         - 12
         - 14
         - 15
+        - 17
         - 18
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
         - 28
+        - 32
         - 33
         - 34
         - 35
@@ -408,10 +486,15 @@ metadata:
         - 12
         - 14
         - 15
+        - 17
         - 18
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
         - 28
+        - 32
         - 33
         - 34
         - 35
@@ -427,10 +510,15 @@ metadata:
         - 12
         - 14
         - 15
+        - 17
         - 18
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
         - 28
+        - 32
         - 33
         - 34
         - 35
@@ -446,10 +534,15 @@ metadata:
         - 7
         - 14
         - 15
+        - 17
         - 18
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
         - 28
+        - 32
         - 33
         - 34
         - 35
@@ -465,10 +558,15 @@ metadata:
         - 7
         - 12
         - 15
+        - 17
         - 18
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
         - 28
+        - 32
         - 33
         - 34
         - 35
@@ -484,10 +582,39 @@ metadata:
         - 7
         - 12
         - 14
+        - 17
         - 18
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
         - 28
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 38
+    '17':
+      id: 17
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 6
+        - 7
+        - 12
+        - 14
+        - 15
+        - 18
+        - 19
+        - 21
+        - 22
+        - 25
+        - 27
+        - 28
+        - 32
         - 33
         - 34
         - 35
@@ -504,9 +631,62 @@ metadata:
         - 12
         - 14
         - 15
+        - 17
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
         - 28
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 38
+    '19':
+      id: 19
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 6
+        - 7
+        - 12
+        - 14
+        - 15
+        - 17
+        - 18
+        - 21
+        - 22
+        - 25
+        - 27
+        - 28
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 38
+    '21':
+      id: 21
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 6
+        - 7
+        - 12
+        - 14
+        - 15
+        - 17
+        - 18
+        - 19
+        - 22
+        - 25
+        - 27
+        - 28
+        - 32
         - 33
         - 34
         - 35
@@ -523,9 +703,62 @@ metadata:
         - 12
         - 14
         - 15
+        - 17
         - 18
-        - 26
+        - 19
+        - 21
+        - 25
+        - 27
         - 28
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 38
+    '25':
+      id: 25
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 6
+        - 7
+        - 12
+        - 14
+        - 15
+        - 17
+        - 18
+        - 19
+        - 21
+        - 22
+        - 27
+        - 28
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 38
+    '27':
+      id: 27
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 6
+        - 7
+        - 12
+        - 14
+        - 15
+        - 17
+        - 18
+        - 19
+        - 21
+        - 22
+        - 25
+        - 28
+        - 32
         - 33
         - 34
         - 35
@@ -542,9 +775,38 @@ metadata:
         - 12
         - 14
         - 15
+        - 17
         - 18
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 38
+    '32':
+      id: 32
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 6
+        - 7
+        - 12
+        - 14
+        - 15
+        - 17
+        - 18
+        - 19
+        - 21
+        - 22
+        - 25
+        - 27
+        - 28
         - 33
         - 34
         - 35
@@ -561,10 +823,15 @@ metadata:
         - 12
         - 14
         - 15
+        - 17
         - 18
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
         - 28
+        - 32
         - 34
         - 35
         - 36
@@ -580,10 +847,15 @@ metadata:
         - 12
         - 14
         - 15
+        - 17
         - 18
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
         - 28
+        - 32
         - 33
         - 35
         - 36
@@ -599,10 +871,15 @@ metadata:
         - 12
         - 14
         - 15
+        - 17
         - 18
+        - 19
+        - 21
         - 22
-        - 26
+        - 25
+        - 27
         - 28
+        - 32
         - 33
         - 34
         - 36
@@ -619,10 +896,15 @@ metadata:
     - 12
     - 14
     - 15
+    - 17
     - 18
+    - 19
+    - 21
     - 22
-    - 26
+    - 25
+    - 27
     - 28
+    - 32
     - 33
     - 34
     - 35
@@ -680,22 +962,12 @@ metadata:
   filter_bar_orientation: HORIZONTAL
   color_scheme_domain: []
   shared_label_colors:
+  - ''
   - Compliance Batches
   - Non-Compliance Batches
   map_label_colors:
     ? ''
     : '#1FA8C9'
-    Acid Addition: '#1FA8C9'
-    Acid Dump Time: '#454E7C'
-    Air Cooling Temp: '#5AC189'
-    Density: '#FF7F44'
-    DM Water: '#666666'
-    Dry Mix Time: '#E04355'
-    Dump Temp: '#FCC700'
-    Lead Oxide: '#A868B7'
-    Peak Temp: '#3CCCCB'
-    Pentration: '#A38F79'
-    'null': '#8FD3E4'
     Compliance Batch Percentage: '#1FA8C9'
     Non-Compliance percentage: '#454E7C'
     Avg Batch Duration: '#5AC189'
