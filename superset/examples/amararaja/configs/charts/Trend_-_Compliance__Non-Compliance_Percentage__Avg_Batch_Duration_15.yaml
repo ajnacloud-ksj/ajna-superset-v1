@@ -69,18 +69,20 @@ params:
   seriesType: line
   only_total: true
   opacity: 0.2
-  markerSize: 6
+  markerEnabled: true
+  markerSize: 4
   show_legend: true
   legendType: scroll
   legendOrientation: top
-  x_axis_time_format: smart_date
+  x_axis_time_format: '%b %Y'
+  xAxisLabelRotation: 90
   rich_tooltip: true
   showTooltipTotal: false
   showTooltipPercentage: false
   tooltipTimeFormat: smart_date
   y_axis_format: SMART_NUMBER
   currency_format: {}
-  truncateXAxis: true
+  truncateXAxis: false
   y_axis_bounds:
   - null
   - null
@@ -108,7 +110,8 @@ query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{
   \n              batch_deviation_ind=1 \n            THEN 1\n            ELSE 0\n        END\n    )
   * 100.0 /(count (batch_no)))"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Avg
   Batch Duration","optionName":"metric_4cxopcphn3s_ltamszkcaa","sqlExpression":"AVG(batch_duration)/60000"}],"groupby":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
-  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_m4tordz3dgh_97adtsir75m","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"datetime_fmt"}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"x_axis_title_margin":15,"y_axis_title":"","y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","time_shift_color":true,"seriesType":"line","only_total":true,"opacity":0.2,"markerSize":6,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","rich_tooltip":true,"showTooltipTotal":false,"showTooltipPercentage":false,"tooltipTimeFormat":"smart_date","y_axis_format":"SMART_NUMBER","currency_format":{},"truncateXAxis":true,"y_axis_bounds":[null,null],"extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_m4tordz3dgh_97adtsir75m","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"datetime_fmt"}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"x_axis_title_margin":15,"y_axis_title":"","y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","time_shift_color":true,"seriesType":"line","only_total":true,"opacity":0.2,"markerEnabled":true,"markerSize":4,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"%b
+  %Y","xAxisLabelRotation":90,"rich_tooltip":true,"showTooltipTotal":false,"showTooltipPercentage":false,"tooltipTimeFormat":"smart_date","y_axis_format":"SMART_NUMBER","currency_format":{},"truncateXAxis":false,"y_axis_bounds":[null,null],"extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
 cache_timeout: null
 uuid: 93a61b86-61e8-4af4-b1b0-886fb8d8898d
 version: 1.0.0

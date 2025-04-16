@@ -292,7 +292,7 @@ position:
     children: []
     id: MARKDOWN-KNDuzkFY5K-nxz48l_sm8
     meta:
-      code: '### [ Go to Floor Level Dashboard - High Level View](http://10.120.0.108:8088/superset/dashboard/7/?native_filters_key=codY95dzZ405Y8h7fguUALQFylK99tLtYWiBsqiX7OxpDvuo6CI-tngRMcW79Oqg)'
+      code: '### [ Go to Floor Level Dashboard - High Level View](http://10.120.0.108:8088/superset/dashboard/7)'
       height: 13
       width: 4
     parents:
@@ -708,8 +708,8 @@ metadata:
   - Not Ok Mixes
   - Ok Mixes
   map_label_colors:
+    Total parameters: '#1FA8C9'
     ? ''
     : '#1FA8C9'
-    Total parameters: '#1FA8C9'
   color_scheme_domain: []
 version: 1.0.0

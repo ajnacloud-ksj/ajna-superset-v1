@@ -98,7 +98,7 @@ position:
     meta:
       chartId: 12
       height: 52
-      sliceName: Batch Wise Compliance V/s Non-Compliance By Quarter
+      sliceName: Batch Wise Compliance V/s Non-Compliance By Month
       uuid: f5cc2310-b9f2-4ac6-be82-0d0260e1c262
       width: 4
     parents:
@@ -352,7 +352,7 @@ position:
     children: []
     id: MARKDOWN-vk--gWyQSkyfCcYFiTdGu
     meta:
-      code: '### [Go to Plant Head Level Dashbaord](http://10.120.0.108:8088/superset/dashboard/p/kO69oDlZy3G/)'
+      code: '### [Go to Plant Head Level Dashbaord](http://10.120.0.108:8088/superset/dashboard/3/)'
       height: 12
       width: 4
     parents:
@@ -971,6 +971,4 @@ metadata:
     Compliance Batch Percentage: '#1FA8C9'
     Non-Compliance percentage: '#454E7C'
     Avg Batch Duration: '#5AC189'
-    Utilization Percentage: '#1FA8C9'
-    Avg: '#1FA8C9'
 version: 1.0.0
