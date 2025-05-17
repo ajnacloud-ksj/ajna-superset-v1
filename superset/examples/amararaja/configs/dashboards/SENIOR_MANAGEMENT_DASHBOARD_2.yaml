@@ -940,8 +940,7 @@ metadata:
         value: previous calendar year
     cascadeParentIds: []
     scope:
-      excluded:
-      - 26
+      excluded: []
       rootPath:
       - ROOT_ID
     type: NATIVE_FILTER

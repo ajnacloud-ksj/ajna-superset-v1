@@ -10,5 +10,5 @@ allow_file_upload: false
 extra:
   allows_virtual_table_explore: true
 impersonate_user: false
-uuid: 18417687-d619-42fe-a78b-7c26e1212281
+uuid: efc9943c-b144-4a99-801f-a9a6803419e9
 version: 1.0.0
