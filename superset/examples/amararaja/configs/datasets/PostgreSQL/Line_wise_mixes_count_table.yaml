@@ -10,7 +10,8 @@ sql: "SELECT \r\n    CASE \r\n        WHEN source_table_name = 'ABD1_Mixer_1' TH
   \ 'Line1'\r\n        WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\r\n  \
   \      WHEN source_table_name = 'ABD1_Mixer_3' THEN 'Line3'\r\n        ELSE source_table_name\r\
   \n    END AS \"Line Name\",\r\n    battery_name AS \"Recipe Type\",\r\n    datetime_fmt,\r\
-  \n    batch_deviation_ind \r\nFROM abd1_mixers_all;"
+  \n    batch_deviation_ind \r\nFROM abd1_mixers_all where battery_name not in ('trail',\
+  \ '');"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -27,7 +28,8 @@ metrics:
   description: null
   d3format: null
   currency: null
-  extra: null
+  extra:
+    warning_markdown: ''
   warning_text: null
 columns:
 - column_name: Line Name
@@ -41,7 +43,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: Recipe Type
   verbose_name: null
   is_dttm: false
@@ -53,7 +55,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: datetime_fmt
   verbose_name: null
   is_dttm: true
@@ -65,7 +67,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: batch_deviation_ind
   verbose_name: null
   is_dttm: false
@@ -77,6 +79,6 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 version: 1.0.0
 database_uuid: efc9943c-b144-4a99-801f-a9a6803419e9

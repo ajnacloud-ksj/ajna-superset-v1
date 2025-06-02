@@ -11,8 +11,8 @@ position:
     children: []
     id: CHART-69A0BEK2
     meta:
-      chartId: 16
-      height: 33
+      chartId: 32
+      height: 39
       sliceName: Line-1 Compliance & Non-Compliance Percentage
       uuid: cbaaa288-c398-4af3-98ef-aa9e477d1fac
       width: 4
@@ -25,7 +25,7 @@ position:
     children: []
     id: CHART-ErlF3Xi__y_3O2L2GblTC
     meta:
-      chartId: 8
+      chartId: 11
       height: 33
       sliceName: Count Of Mixes In Line3
       uuid: 7d7bc9f5-ed69-407a-9dd0-5e038785b53a
@@ -39,7 +39,7 @@ position:
     children: []
     id: CHART-HE7RGL6H
     meta:
-      chartId: 10
+      chartId: 7
       height: 45
       sliceName: Line Wise Ok V/s Not Ok Parameters
       uuid: 3a4df008-8ad2-4e33-be40-2ba99e136b4d
@@ -53,7 +53,7 @@ position:
     children: []
     id: CHART-ILX4749N
     meta:
-      chartId: 3
+      chartId: 2
       height: 45
       sliceName: Line Wise Ok V/s Not Ok Mixes
       uuid: 078eda4f-befa-48eb-afe1-237e5ccf961b
@@ -67,7 +67,7 @@ position:
     children: []
     id: CHART-UdQV-EhIG9B4ZzGdLpPFH
     meta:
-      chartId: 37
+      chartId: 22
       height: 45
       sliceName: Line Wise Deviated Parameter Names
       uuid: 20d5914f-c124-49e3-81fd-5e200eac9ee4
@@ -81,7 +81,7 @@ position:
     children: []
     id: CHART-_6_II57afLGraYorjklWH
     meta:
-      chartId: 21
+      chartId: 33
       height: 37
       sliceName: Mixer-2 Utilization
       uuid: c59b8c66-f000-4050-9606-ae56e39b622a
@@ -96,8 +96,8 @@ position:
     children: []
     id: CHART-explore-21-1
     meta:
-      chartId: 11
-      height: 33
+      chartId: 6
+      height: 39
       sliceName: Line-2 Compliance & Non-Compliance Percentage
       uuid: aa90ad67-3afb-42e1-80be-99d013a82606
       width: 4
@@ -110,8 +110,8 @@ position:
     children: []
     id: CHART-explore-22-1
     meta:
-      chartId: 4
-      height: 33
+      chartId: 18
+      height: 39
       sliceName: Line-3 Compliance & Non-Compliance Percentage
       uuid: d229b76c-9f6a-478e-8f94-bd384a9cbb4c
       width: 4
@@ -124,7 +124,7 @@ position:
     children: []
     id: CHART-explore-34-1
     meta:
-      chartId: 25
+      chartId: 16
       height: 36
       sliceName: Mixer-1 Idle Time Percentage
       sliceNameOverride: Mixer-1 IdleTime %
@@ -139,7 +139,7 @@ position:
     children: []
     id: CHART-explore-35-1
     meta:
-      chartId: 27
+      chartId: 20
       height: 36
       sliceName: Mixer-2 Idle Time Percentage
       sliceNameOverride: Mixer-2 IdleTime %
@@ -154,7 +154,7 @@ position:
     children: []
     id: CHART-explore-36-1
     meta:
-      chartId: 17
+      chartId: 29
       height: 36
       sliceName: Mixer-3 Idle Time Percentage
       sliceNameOverride: Mixer-3 IdleTime %
@@ -169,7 +169,7 @@ position:
     children: []
     id: CHART-in4CAZsc5_Q6EkL1f-JbW
     meta:
-      chartId: 5
+      chartId: 34
       height: 33
       sliceName: Count Of Mixes In Line1
       uuid: 1579217a-58f5-402f-b1df-f336c3969d9f
@@ -183,7 +183,7 @@ position:
     children: []
     id: CHART-piEfb3OAPVHD5YEjblx-L
     meta:
-      chartId: 19
+      chartId: 15
       height: 37
       sliceName: Mixer-1 Utilization
       uuid: 255fd670-83df-46c8-b819-1140a4345bfa
@@ -198,7 +198,7 @@ position:
     children: []
     id: CHART-tjd9Yc6LMrwKsbjGmW8du
     meta:
-      chartId: 32
+      chartId: 4
       height: 37
       sliceName: Mixer-3 Utilization
       uuid: 02b14b0f-b90d-4a86-96ec-c877b47295e1
@@ -213,7 +213,7 @@ position:
     children: []
     id: CHART-vJovHKNo1OZ39Bg-xft66
     meta:
-      chartId: 29
+      chartId: 31
       height: 33
       sliceName: Count Of Mixes In Line2
       uuid: dd7537f1-2d1a-4d38-bd4b-747e23fe16c4
@@ -292,7 +292,7 @@ position:
     children: []
     id: MARKDOWN-KNDuzkFY5K-nxz48l_sm8
     meta:
-      code: '### [ Go to Floor Level Dashboard - High Level View](http://10.120.0.108:8088/superset/dashboard/7)'
+      code: '### [ Go to Floor Level Dashboard - High Level View](http://10.120.0.108:8088/superset/dashboard/3)'
       height: 13
       width: 4
     parents:
@@ -369,293 +369,293 @@ position:
     type: ROW
 metadata:
   chart_configuration:
-    '3':
-      id: 3
+    '2':
+      id: 2
       crossFilters:
         scope: global
         chartsInScope:
         - 4
-        - 5
-        - 8
-        - 10
+        - 6
+        - 7
         - 11
+        - 15
         - 16
-        - 17
-        - 19
-        - 21
-        - 25
-        - 27
+        - 18
+        - 20
+        - 22
         - 29
+        - 31
         - 32
-        - 37
+        - 33
+        - 34
     '4':
       id: 4
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
-        - 5
-        - 8
-        - 10
+        - 2
+        - 6
+        - 7
         - 11
+        - 15
         - 16
-        - 17
-        - 19
-        - 21
-        - 25
-        - 27
+        - 18
+        - 20
+        - 22
         - 29
+        - 31
         - 32
-        - 37
-    '5':
-      id: 5
+        - 33
+        - 34
+    '6':
+      id: 6
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 4
-        - 8
-        - 10
+        - 7
         - 11
+        - 15
         - 16
-        - 17
-        - 19
-        - 21
-        - 25
-        - 27
+        - 18
+        - 20
+        - 22
         - 29
+        - 31
         - 32
-        - 37
-    '8':
-      id: 8
+        - 33
+        - 34
+    '7':
+      id: 7
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 4
-        - 5
-        - 10
+        - 6
         - 11
+        - 15
         - 16
-        - 17
-        - 19
-        - 21
-        - 25
-        - 27
+        - 18
+        - 20
+        - 22
         - 29
+        - 31
         - 32
-        - 37
-    '10':
-      id: 10
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 3
-        - 4
-        - 5
-        - 8
-        - 11
-        - 16
-        - 17
-        - 19
-        - 21
-        - 25
-        - 27
-        - 29
-        - 32
-        - 37
+        - 33
+        - 34
     '11':
       id: 11
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 4
-        - 5
-        - 8
-        - 10
+        - 6
+        - 7
+        - 15
         - 16
-        - 17
-        - 19
-        - 21
-        - 25
-        - 27
+        - 18
+        - 20
+        - 22
         - 29
+        - 31
         - 32
-        - 37
+        - 33
+        - 34
+    '15':
+      id: 15
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 4
+        - 6
+        - 7
+        - 11
+        - 16
+        - 18
+        - 20
+        - 22
+        - 29
+        - 31
+        - 32
+        - 33
+        - 34
     '16':
       id: 16
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 4
-        - 5
-        - 8
-        - 10
+        - 6
+        - 7
         - 11
-        - 17
-        - 19
-        - 21
-        - 25
-        - 27
+        - 15
+        - 18
+        - 20
+        - 22
         - 29
+        - 31
         - 32
-        - 37
-    '17':
-      id: 17
+        - 33
+        - 34
+    '18':
+      id: 18
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 4
-        - 5
-        - 8
-        - 10
+        - 6
+        - 7
         - 11
+        - 15
         - 16
-        - 19
-        - 21
-        - 25
-        - 27
+        - 20
+        - 22
         - 29
+        - 31
         - 32
-        - 37
-    '19':
-      id: 19
+        - 33
+        - 34
+    '20':
+      id: 20
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 4
-        - 5
-        - 8
-        - 10
+        - 6
+        - 7
         - 11
+        - 15
         - 16
-        - 17
-        - 21
-        - 25
-        - 27
+        - 18
+        - 22
         - 29
+        - 31
         - 32
-        - 37
-    '21':
-      id: 21
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 3
-        - 4
-        - 5
-        - 8
-        - 10
-        - 11
-        - 16
-        - 17
-        - 19
-        - 25
-        - 27
-        - 29
-        - 32
-        - 37
-    '25':
-      id: 25
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 3
-        - 4
-        - 5
-        - 8
-        - 10
-        - 11
-        - 16
-        - 17
-        - 19
-        - 21
-        - 27
-        - 29
-        - 32
-        - 37
-    '27':
-      id: 27
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 3
-        - 4
-        - 5
-        - 8
-        - 10
-        - 11
-        - 16
-        - 17
-        - 19
-        - 21
-        - 25
-        - 29
-        - 32
-        - 37
+        - 33
+        - 34
     '29':
       id: 29
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 4
-        - 5
-        - 8
-        - 10
+        - 6
+        - 7
         - 11
+        - 15
         - 16
-        - 17
-        - 19
-        - 21
-        - 25
-        - 27
+        - 18
+        - 20
+        - 22
+        - 31
         - 32
-        - 37
+        - 33
+        - 34
+    '31':
+      id: 31
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 4
+        - 6
+        - 7
+        - 11
+        - 15
+        - 16
+        - 18
+        - 20
+        - 22
+        - 29
+        - 32
+        - 33
+        - 34
     '32':
       id: 32
       crossFilters:
         scope: global
         chartsInScope:
-        - 3
+        - 2
         - 4
-        - 5
-        - 8
-        - 10
+        - 6
+        - 7
         - 11
+        - 15
         - 16
-        - 17
-        - 19
-        - 21
-        - 25
-        - 27
+        - 18
+        - 20
+        - 22
         - 29
-        - 37
+        - 31
+        - 33
+        - 34
+    '33':
+      id: 33
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 4
+        - 6
+        - 7
+        - 11
+        - 15
+        - 16
+        - 18
+        - 20
+        - 22
+        - 29
+        - 31
+        - 32
+        - 34
+    '34':
+      id: 34
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 4
+        - 6
+        - 7
+        - 11
+        - 15
+        - 16
+        - 18
+        - 20
+        - 22
+        - 29
+        - 31
+        - 32
+        - 33
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
-    - 3
+    - 2
     - 4
-    - 5
-    - 8
-    - 10
+    - 6
+    - 7
     - 11
+    - 15
     - 16
-    - 17
-    - 19
-    - 21
-    - 25
-    - 27
+    - 18
+    - 20
+    - 22
     - 29
+    - 31
     - 32
-    - 37
+    - 33
+    - 34
   color_scheme: ''
   refresh_frequency: 0
   expanded_slices: {}
@@ -708,8 +708,6 @@ metadata:
   - Not Ok Mixes
   - Ok Mixes
   map_label_colors:
-    Total parameters: '#1FA8C9'
-    ? ''
-    : '#1FA8C9'
+    Total parameters: '#454E7C'
   color_scheme_domain: []
 version: 1.0.0

@@ -39,7 +39,10 @@ sql: "SELECT \n        CASE \n            WHEN source_table_name = 'ABD1_Mixer_1
   \ END,\n            CASE WHEN cooling_on_temp_deviation_ind = 0 THEN 'param_13_ok'\
   \ END,\n            CASE WHEN air_cooling_temp_deviation_ind = 0 THEN 'param_14_ok'\
   \ END,\n            CASE WHEN water_cooling_temp_in_deviation_ind = 0 THEN 'param_15_ok'\
-  \ END\n        ]) AS non_deviated_param\n    FROM abd1_mixers_all"
+  \ END\n        ]) AS non_deviated_param\n    FROM abd1_mixers_all\n    where {%\
+  \ if from_dttm %}\n            datetime_fmt > '{{ from_dttm }}' AND\n        {%\
+  \ endif %}\n        {% if to_dttm %}\n            datetime_fmt < '{{ to_dttm }}'\
+  \ AND\n        {% endif %}\n      battery_name not in ('trail', '')"
 params: null
 template_params: null
 filter_select_enabled: true

@@ -4,21 +4,21 @@ certified_by: null
 certification_details: null
 viz_type: handlebars
 params:
-  datasource: 9__table
+  datasource: 5__table
   viz_type: handlebars
-  slice_id: 36
+  slice_id: 23
   query_mode: aggregate
   groupby:
   - plants
   metrics:
-  - expressionType: SQL
-    sqlExpression: STRING_AGG(DISTINCT "Deviated_Paramter_Names", '<br> ')
+  - aggregate: null
     column: null
-    aggregate: null
     datasourceWarning: false
+    expressionType: SQL
     hasCustomLabel: true
     label: deviated_parameter_names
     optionName: metric_8solm31k6el_1knrdj468wi
+    sqlExpression: STRING_AGG(DISTINCT "Deviated_Paramter_Names", '<br> ')
   all_columns: []
   percent_metrics: []
   order_by_cols: []
@@ -26,6 +26,16 @@ params:
   row_limit: 1000
   server_page_length: 10
   adhoc_filters:
+  - clause: WHERE
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_j4rfeveequo_pdq0p8bw098
+    isExtra: false
+    isNew: false
+    operator: '!='
+    operatorId: NOT_EQUALS
+    sqlExpression: null
+    subject: Deviated_Paramter_Names
   - clause: WHERE
     comparator: No filter
     datasourceWarning: false
@@ -37,12 +47,12 @@ params:
     sqlExpression: null
     subject: datetime_fmt
   handlebarsTemplate: "<div class=\"superset-param-table\">\r\n  <table>\r\n    <thead>\r\
-    \n      <tr>\r\n        <th class=\"line-header\">Plant Name</th>\r\n        <th\
-    \ class=\"param-header\">Deviated Parameter Name</th>\r\n      </tr>\r\n    </thead>\r\
-    \n    <tbody>\r\n      <!-- Manually create rows for each line -->\r\n      <tr>\r\
-    \n        <td class=\"line-name\">ABD1</td>\r\n        <td class=\"parameters\"\
-    >\r\n          {{#each data}}\r\n            {{#if (eq this.plants \"ABD1\")}}\r\
-    \n              <div class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\
+    \n      <tr>\r\n        <th class=\"line-header\">Plant Names</th>\r\n       \
+    \ <th class=\"param-header\">Deviated Parameter Names</th>\r\n      </tr>\r\n\
+    \    </thead>\r\n    <tbody>\r\n      <!-- Manually create rows for each line\
+    \ -->\r\n      <tr>\r\n        <td class=\"line-name\">ABD 1</td>\r\n        <td\
+    \ class=\"parameters\">\r\n          {{#each data}}\r\n            {{#if (eq this.plants\
+    \ \"ABD1\")}}\r\n              <div class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\
     \n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\
     \n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n\r\n<style>\r\n.superset-param-table\
     \ {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  width:\
@@ -72,20 +82,19 @@ params:
     \ 0.8em;\r\n    padding: 4px 8px;\r\n  }\r\n}\r\n</style>"
   extra_form_data: {}
   dashboards:
-  - 2
-  annotation_layers: []
-query_context: '{"datasource":{"id":9,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
-  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["plants"],"metrics":[{"expressionType":"SQL","sqlExpression":"STRING_AGG(DISTINCT
-  \"Deviated_Paramter_Names\", ''<br> '')","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_8solm31k6el_1knrdj468wi"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"STRING_AGG(DISTINCT
-  \"Deviated_Paramter_Names\", ''<br> '')","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_8solm31k6el_1knrdj468wi"},false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"9__table","viz_type":"handlebars","slice_id":36,"query_mode":"aggregate","groupby":["plants"],"metrics":[{"expressionType":"SQL","sqlExpression":"STRING_AGG(DISTINCT
-  \"Deviated_Paramter_Names\", ''<br> '')","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_8solm31k6el_1knrdj468wi"}],"all_columns":[],"percent_metrics":[],"order_by_cols":[],"order_desc":true,"row_limit":1000,"server_page_length":10,"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  - 7
+query_context: '{"datasource":{"id":5,"type":"table"},"force":false,"queries":[{"filters":[{"col":"Deviated_Paramter_Names","op":"!="},{"col":"datetime_fmt","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["plants"],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_8solm31k6el_1knrdj468wi","sqlExpression":"STRING_AGG(DISTINCT
+  \"Deviated_Paramter_Names\", ''<br> '')"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_8solm31k6el_1knrdj468wi","sqlExpression":"STRING_AGG(DISTINCT
+  \"Deviated_Paramter_Names\", ''<br> '')"},false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"5__table","viz_type":"handlebars","slice_id":23,"query_mode":"aggregate","groupby":["plants"],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"deviated_parameter_names","optionName":"metric_8solm31k6el_1knrdj468wi","sqlExpression":"STRING_AGG(DISTINCT
+  \"Deviated_Paramter_Names\", ''<br> '')"}],"all_columns":[],"percent_metrics":[],"order_by_cols":[],"order_desc":true,"row_limit":1000,"server_page_length":10,"adhoc_filters":[{"clause":"WHERE","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_j4rfeveequo_pdq0p8bw098","isExtra":false,"isNew":false,"operator":"!=","operatorId":"NOT_EQUALS","sqlExpression":null,"subject":"Deviated_Paramter_Names"},{"clause":"WHERE","comparator":"No
   filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_w5621pxapgn_vynktor329i","isExtra":true,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"datetime_fmt"}],"handlebarsTemplate":"<div
   class=\"superset-param-table\">\r\n  <table>\r\n    <thead>\r\n      <tr>\r\n        <th
-  class=\"line-header\">Plant Name</th>\r\n        <th class=\"param-header\">Deviated
-  Parameter Name</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <!--
-  Manually create rows for each line -->\r\n      <tr>\r\n        <td class=\"line-name\">ABD1</td>\r\n        <td
-  class=\"parameters\">\r\n          {{#each data}}\r\n            {{#if (eq this.plants
-  \"ABD1\")}}\r\n              <div class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n\r\n<style>\r\n.superset-param-table
+  class=\"line-header\">Plant Names</th>\r\n        <th class=\"param-header\">Deviated
+  Parameter Names</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <!--
+  Manually create rows for each line -->\r\n      <tr>\r\n        <td class=\"line-name\">ABD
+  1</td>\r\n        <td class=\"parameters\">\r\n          {{#each data}}\r\n            {{#if
+  (eq this.plants \"ABD1\")}}\r\n              <div class=\"param-pill\">{{{this.deviated_parameter_names}}}</div>\r\n            {{/if}}\r\n          {{/each}}\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n\r\n<style>\r\n.superset-param-table
   {\r\n  font-family: ''Segoe UI'', Tahoma, Geneva, Verdana, sans-serif;\r\n  width:
   100%;\r\n  padding: 15px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.superset-param-table
   table {\r\n  width: 100%;\r\n  border-collapse: collapse;\r\n  border-radius: 8px;\r\n  overflow:
@@ -107,7 +116,7 @@ query_context: '{"datasource":{"id":9,"type":"table"},"force":false,"queries":[{
   #bbdefb;\r\n  transform: translateY(-1px);\r\n}\r\n\r\n@media (max-width: 768px)
   {\r\n  .parameters {\r\n    gap: 6px;\r\n  }\r\n  \r\n  .superset-param-table th,\r\n  .superset-param-table
   td {\r\n    padding: 10px;\r\n  }\r\n  \r\n  .param-pill {\r\n    font-size: 0.8em;\r\n    padding:
-  4px 8px;\r\n  }\r\n}\r\n</style>","extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+  4px 8px;\r\n  }\r\n}\r\n</style>","extra_form_data":{},"dashboards":[7],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
 cache_timeout: null
 uuid: 1bf22740-210d-4b75-b25b-abb1b4c060f6
 version: 1.0.0

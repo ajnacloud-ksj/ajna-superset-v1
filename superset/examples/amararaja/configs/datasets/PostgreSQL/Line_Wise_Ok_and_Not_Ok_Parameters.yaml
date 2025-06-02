@@ -15,19 +15,19 @@ sql: " SELECT \r\n    'Not Ok Mixes' AS category,\r\n    SUM(\r\n            CAS
   \n    battery_name,\r\n    datetime_fmt,\r\n    batch_no\r\nFROM \r\n    abd1_mixers_all\r\
   \n    WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
   \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
-  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n  GROUP\
-  \ BY quarter,source_table_name,battery_name,datetime_fmt,batch_no\r\n\r\n  UNION\
-  \ ALL\r\n\r\nSELECT \r\n    'Ok Mixes' AS category,\r\n    SUM(\r\n            CASE\
-  \ WHEN batch_deviation_ind = 0 THEN 1 ELSE 0 END \r\n        ) AS value,\r\n   \
-  \ CASE \r\n        WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\r\n    \
-  \    WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\r\n        WHEN source_table_name\
+  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        battery_name not in ('trail',\
+  \ '')\r\n    )\r\n  GROUP BY quarter,source_table_name,battery_name,datetime_fmt,batch_no\r\
+  \n\r\n  UNION ALL\r\n\r\nSELECT \r\n    'Ok Mixes' AS category,\r\n    SUM(\r\n\
+  \            CASE WHEN batch_deviation_ind = 0 THEN 1 ELSE 0 END \r\n        ) AS\
+  \ value,\r\n    CASE \r\n        WHEN source_table_name = 'ABD1_Mixer_1' THEN 'Line1'\r\
+  \n        WHEN source_table_name = 'ABD1_Mixer_2' THEN 'Line2'\r\n        WHEN source_table_name\
   \ = 'ABD1_Mixer_3' THEN 'Line3'\r\n        ELSE source_table_name  -- Ensures non-matching\
   \ values are retained\r\n    END AS line_name,\r\n    quarter,\r\n    source_table_name,\r\
   \n    battery_name,\r\n    datetime_fmt,\r\n    batch_no\r\n    \r\nFROM \r\n  \
   \  abd1_mixers_all\r\n  WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt\
   \ > '{{ from_dttm }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n\
   \            datetime_fmt < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n     \
-  \   1 = 1\r\n    )\r\n  GROUP BY quarter,source_table_name,battery_name,datetime_fmt,batch_no\r\
+  \   battery_name not in ('trail', '')\r\n    )\r\n  GROUP BY quarter,source_table_name,battery_name,datetime_fmt,batch_no\r\
   \n  \r\n  UNION ALL\r\n\r\n  SELECT \r\n    'Total Mixes' AS category,\r\n    count(\r\
   \n           batch_no \r\n        ) AS value,\r\n    CASE \r\n        WHEN source_table_name\
   \ = 'ABD1_Mixer_1' THEN 'Line1'\r\n        WHEN source_table_name = 'ABD1_Mixer_2'\
@@ -37,9 +37,9 @@ sql: " SELECT \r\n    'Not Ok Mixes' AS category,\r\n    SUM(\r\n            CAS
   \n    datetime_fmt,\r\n    batch_no\r\n    \r\nFROM \r\n    abd1_mixers_all\r\n\
   \  WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt > '{{ from_dttm\
   \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
-  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    )\r\n  GROUP\
-  \ BY quarter,source_table_name,battery_name,datetime_fmt,batch_no\r\n    \r\n\r\n\
-  \    \r\n"
+  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        battery_name not in ('trail',\
+  \ '')\r\n    )\r\n  GROUP BY quarter,source_table_name,battery_name,datetime_fmt,batch_no\r\
+  \n    \r\n\r\n    \r\n"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -71,8 +71,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: value
   verbose_name: null
   is_dttm: false
@@ -84,8 +83,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: source_table_name
   verbose_name: null
   is_dttm: false
@@ -97,8 +95,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: battery_name
   verbose_name: null
   is_dttm: false
@@ -110,8 +107,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: batch_no
   verbose_name: null
   is_dttm: false
@@ -123,8 +119,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: line_name
   verbose_name: null
   is_dttm: false
@@ -136,8 +131,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: category
   verbose_name: null
   is_dttm: false
@@ -149,8 +143,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: quarter
   verbose_name: null
   is_dttm: false
@@ -162,7 +155,6 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 version: 1.0.0
 database_uuid: efc9943c-b144-4a99-801f-a9a6803419e9

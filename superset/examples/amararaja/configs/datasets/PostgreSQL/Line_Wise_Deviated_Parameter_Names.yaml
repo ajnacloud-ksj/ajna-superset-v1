@@ -25,16 +25,20 @@ sql: "SELECT \r\n        CASE \r\n          WHEN source_table_name = 'ABD1_Mixer
   \n            CASE WHEN cooling_on_temp_deviation_ind = 1 THEN 'Cooling On Temp'\
   \ END,\r\n            CASE WHEN air_cooling_temp_deviation_ind = 1 THEN 'Air Cooling\
   \ Temp' END,\r\n            CASE WHEN water_cooling_temp_in_deviation_ind = 1 THEN\
-  \ 'Water Cooling Temp' END\r\n        ]) AS \"Deviated_Paramter_Names\"\r\n    FROM\
-  \ abd1_mixers_all\r\n      where (\r\n          density_deviation_ind = 1 OR\r\n\
-  \          dm_water_deviation_ind = 1 OR\r\n          dump_temp_deviation_ind =\
-  \ 1 OR\r\n          dry_mix_time_deviation_ind = 1 OR\r\n          lead_oxide_deviation_ind\
-  \ = 1 OR\r\n          acid_dump_time_deviation_ind = 1 OR\r\n          peak_temp_deviation_ind\
-  \ = 1 OR\r\n          acid_addition_deviation_ind = 1 OR\r\n          pentration_deviation_ind\
-  \ = 1 OR\r\n          trim_water_deviation_ind = 1 OR\r\n          water_dump_time_deviation_ind\
-  \ = 1 OR\r\n          wet_mix_time_deviation_ind = 1 OR\r\n          cooling_on_temp_deviation_ind\
-  \ = 1 OR\r\n          air_cooling_temp_deviation_ind = 1 OR\r\n          water_cooling_temp_in_deviation_ind\
-  \ = 1\r\n      )"
+  \ 'Water Cooling Temp' END,\r\n            CASE WHEN final_mix_time_deviation_ind\
+  \ = 1 THEN 'Final Mix Time' END\r\n        ]) AS \"Deviated_Paramter_Names\"\r\n\
+  \    FROM abd1_mixers_all\r\n      where \r\n      {% if from_dttm %}\r\n      \
+  \      datetime_fmt > '{{ from_dttm }}' AND\r\n        {% endif %}\r\n        {%\
+  \ if to_dttm %}\r\n            datetime_fmt < '{{ to_dttm }}' AND\r\n        {%\
+  \ endif %}\r\n      battery_name not in ('trail', '') AND\r\n      (\r\n       \
+  \   density_deviation_ind = 1 OR\r\n          dm_water_deviation_ind = 1 OR\r\n\
+  \          dump_temp_deviation_ind = 1 OR\r\n          dry_mix_time_deviation_ind\
+  \ = 1 OR\r\n          lead_oxide_deviation_ind = 1 OR\r\n          acid_dump_time_deviation_ind\
+  \ = 1 OR\r\n          peak_temp_deviation_ind = 1 OR\r\n          acid_addition_deviation_ind\
+  \ = 1 OR\r\n          pentration_deviation_ind = 1 OR\r\n          trim_water_deviation_ind\
+  \ = 1 OR\r\n          water_dump_time_deviation_ind = 1 OR\r\n          wet_mix_time_deviation_ind\
+  \ = 1 OR\r\n          cooling_on_temp_deviation_ind = 1 OR\r\n          air_cooling_temp_deviation_ind\
+  \ = 1 OR\r\n          water_cooling_temp_in_deviation_ind = 1\r\n      )"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -66,7 +70,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: Deviated_Paramter_Names
   verbose_name: null
   is_dttm: false
@@ -78,7 +83,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: Line_Name
   verbose_name: null
   is_dttm: false
@@ -90,6 +96,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 version: 1.0.0
 database_uuid: efc9943c-b144-4a99-801f-a9a6803419e9

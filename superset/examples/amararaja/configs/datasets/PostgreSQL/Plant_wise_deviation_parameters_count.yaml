@@ -27,7 +27,8 @@ sql: "SELECT \r\n    CASE \r\n        WHEN source_table_name IN ('ABD1_Mixer_1',
   \ Cooling In Temp' END\r\n    ]) AS deviated_param\r\n    \r\nFROM abd1_mixers_all\r\
   \n WHERE (\r\n        {% if from_dttm %}\r\n            datetime_fmt >= '{{ from_dttm\
   \ }}' AND\r\n        {% endif %}\r\n        {% if to_dttm %}\r\n            datetime_fmt\
-  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        1 = 1\r\n    );\r\n"
+  \ < '{{ to_dttm }}' AND\r\n        {% endif %}\r\n        battery_name not in ('trail',\
+  \ '')\r\n    );\r\n"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -44,7 +45,8 @@ metrics:
   description: null
   d3format: null
   currency: null
-  extra: null
+  extra:
+    warning_markdown: ''
   warning_text: null
 columns:
 - column_name: datetime_fmt
@@ -58,7 +60,7 @@ columns:
   expression: ''
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: source_table_name
   verbose_name: null
   is_dttm: false
@@ -70,7 +72,7 @@ columns:
   expression: ''
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: deviated_param
   verbose_name: null
   is_dttm: false
@@ -82,7 +84,7 @@ columns:
   expression: ''
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: batch_no
   verbose_name: null
   is_dttm: false
@@ -94,7 +96,7 @@ columns:
   expression: ''
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 - column_name: production_line
   verbose_name: null
   is_dttm: false
@@ -106,6 +108,6 @@ columns:
   expression: ''
   description: null
   python_date_format: null
-  extra: null
+  extra: {}
 version: 1.0.0
 database_uuid: efc9943c-b144-4a99-801f-a9a6803419e9

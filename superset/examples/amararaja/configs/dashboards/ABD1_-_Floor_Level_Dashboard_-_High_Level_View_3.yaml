@@ -13,8 +13,8 @@ position:
     children: []
     id: CHART-Y0_MTo0ttmoBaHDyzLePT
     meta:
-      chartId: 23
-      height: 51
+      chartId: 10
+      height: 55
       sliceName: 'Specification Compliance, '
       uuid: c7429585-b095-4af2-a6c8-f71231a73e5d
       width: 12
@@ -27,82 +27,37 @@ position:
     children: []
     id: CHART-explore-27-1
     meta:
-      chartId: 30
-      height: 107
+      chartId: 3
+      height: 50
       sliceName: Compliance Percentage
       uuid: dc2183ea-32b6-4350-8263-53ee50c70be9
-      width: 4
+      width: 3
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-wojus-yvXofYhZhLUs46U
     - COLUMN-JD20RDXW0N0gJQzNi87fr
     type: CHART
-  CHART-explore-31-1:
-    children: []
-    id: CHART-explore-31-1
-    meta:
-      chartId: 24
-      height: 34
-      sliceName: Mixer-1 Compliance Percentage
-      uuid: ab001383-c4f1-4d71-854d-2c079854d528
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-wojus-yvXofYhZhLUs46U
-    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
-    type: CHART
-  CHART-explore-32-1:
-    children: []
-    id: CHART-explore-32-1
-    meta:
-      chartId: 2
-      height: 35
-      sliceName: Mixer-3 Compliance Percentage
-      uuid: ac38f022-44e1-48ad-9cf6-986c3303a98f
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-wojus-yvXofYhZhLUs46U
-    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
-    type: CHART
-  CHART-explore-33-1:
-    children: []
-    id: CHART-explore-33-1
-    meta:
-      chartId: 13
-      height: 34
-      sliceName: Mixer-2 Compliance Percentage
-      uuid: 1c89b019-d96f-4613-8c22-0608b3d7004b
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-wojus-yvXofYhZhLUs46U
-    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
-    type: CHART
   CHART-explore-9-1:
     children: []
     id: CHART-explore-9-1
     meta:
-      chartId: 20
+      chartId: 28
       height: 51
       sliceName: Parameter Wise CpK
       uuid: c6ab9436-e95e-439f-b0e1-7352b85acc5e
-      width: 12
+      width: 6
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-iGl-QfKTv-I0KFHBLjvsy
+    - ROW-mOdciHKNcOZJdR29k9klH
     type: CHART
   CHART-ezPYA2N4a8aPsxQbb7dzH:
     children: []
     id: CHART-ezPYA2N4a8aPsxQbb7dzH
     meta:
-      chartId: 31
-      height: 54
+      chartId: 14
+      height: 25
       sliceName: Total Batches Processed
       uuid: e09d5db8-e7b1-4ea4-9cb2-721899193e5c
       width: 2
@@ -110,14 +65,14 @@ position:
     - ROOT_ID
     - GRID_ID
     - ROW-wojus-yvXofYhZhLUs46U
-    - COLUMN-14NMUT7uDI9yljjgjuK2G
+    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
     type: CHART
   CHART-sFsYt549NMNs3ET546G94:
     children: []
     id: CHART-sFsYt549NMNs3ET546G94
     meta:
-      chartId: 9
-      height: 51
+      chartId: 8
+      height: 23
       sliceName: Average Batch Duration (Minutes)
       uuid: faffb25b-ce2d-4f20-ad8b-5235726ea80b
       width: 2
@@ -127,44 +82,18 @@ position:
     - ROW-wojus-yvXofYhZhLUs46U
     - COLUMN-14NMUT7uDI9yljjgjuK2G
     type: CHART
-  COLUMN-14NMUT7uDI9yljjgjuK2G:
+  COLUMN-82yDb_7iDbc8Hd3Jfi6ZP:
     children:
     - CHART-sFsYt549NMNs3ET546G94
     - CHART-ezPYA2N4a8aPsxQbb7dzH
-    id: COLUMN-14NMUT7uDI9yljjgjuK2G
+    id: COLUMN-82yDb_7iDbc8Hd3Jfi6ZP
     meta:
       background: BACKGROUND_TRANSPARENT
       width: 3
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-wojus-yvXofYhZhLUs46U
-    type: COLUMN
-  COLUMN-JD20RDXW0N0gJQzNi87fr:
-    children:
-    - CHART-explore-27-1
-    id: COLUMN-JD20RDXW0N0gJQzNi87fr
-    meta:
-      background: BACKGROUND_TRANSPARENT
-      width: 6
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-wojus-yvXofYhZhLUs46U
-    type: COLUMN
-  COLUMN-wQY7xEn_kXCPor8c0xZ9w:
-    children:
-    - CHART-explore-31-1
-    - CHART-explore-33-1
-    - CHART-explore-32-1
-    id: COLUMN-wQY7xEn_kXCPor8c0xZ9w
-    meta:
-      background: BACKGROUND_TRANSPARENT
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-wojus-yvXofYhZhLUs46U
+    - ROW-mOdciHKNcOZJdR29k9klH
     type: COLUMN
   DASHBOARD_VERSION_KEY: v2
   DIVIDER-KCu3yZGEKvdqUPd7V56s7:
@@ -178,9 +107,8 @@ position:
   GRID_ID:
     children:
     - ROW-lAnBLwK4QDb0ws5SQ6LB4
-    - ROW-Y3WNZmSXih-RIQBgPEAle
-    - ROW-iGl-QfKTv-I0KFHBLjvsy
-    - ROW-wojus-yvXofYhZhLUs46U
+    - ROW-JKc4CCf9HY1Y83YteLS8O
+    - ROW-mOdciHKNcOZJdR29k9klH
     - DIVIDER-KCu3yZGEKvdqUPd7V56s7
     id: GRID_ID
     parents:
@@ -219,7 +147,7 @@ position:
     children: []
     id: MARKDOWN-GzADOWmJztUGs6wZi1tTE
     meta:
-      code: '### [ Go to Actual Value Histogram ](http://10.120.0.108:8088/superset/dashboard/p/eKyg8yvx5JW/)'
+      code: '### [ Go to Actual Value Histogram ](http://10.120.0.108:8088/superset/dashboard/6/)'
       height: 13
       width: 2
     parents:
@@ -256,20 +184,10 @@ position:
     - GRID_ID
     id: ROOT_ID
     type: ROOT
-  ROW-Y3WNZmSXih-RIQBgPEAle:
+  ROW-JKc4CCf9HY1Y83YteLS8O:
     children:
     - CHART-Y0_MTo0ttmoBaHDyzLePT
-    id: ROW-Y3WNZmSXih-RIQBgPEAle
-    meta:
-      background: BACKGROUND_TRANSPARENT
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    type: ROW
-  ROW-iGl-QfKTv-I0KFHBLjvsy:
-    children:
-    - CHART-explore-9-1
-    id: ROW-iGl-QfKTv-I0KFHBLjvsy
+    id: ROW-JKc4CCf9HY1Y83YteLS8O
     meta:
       background: BACKGROUND_TRANSPARENT
     parents:
@@ -290,12 +208,12 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
-  ROW-wojus-yvXofYhZhLUs46U:
+  ROW-mOdciHKNcOZJdR29k9klH:
     children:
-    - COLUMN-JD20RDXW0N0gJQzNi87fr
-    - COLUMN-14NMUT7uDI9yljjgjuK2G
-    - COLUMN-wQY7xEn_kXCPor8c0xZ9w
-    id: ROW-wojus-yvXofYhZhLUs46U
+    - CHART-explore-9-1
+    - CHART-explore-27-1
+    - COLUMN-82yDb_7iDbc8Hd3Jfi6ZP
+    id: ROW-mOdciHKNcOZJdR29k9klH
     meta:
       background: BACKGROUND_TRANSPARENT
     parents:
@@ -304,92 +222,44 @@ position:
     type: ROW
 metadata:
   chart_configuration:
-    '2':
-      id: 2
+    '3':
+      id: 3
       crossFilters:
         scope: global
         chartsInScope:
-        - 9
-        - 13
-        - 20
-        - 23
-        - 24
-        - 30
-        - 31
-    '13':
-      id: 13
+        - 8
+        - 10
+        - 14
+        - 28
+    '10':
+      id: 10
       crossFilters:
         scope: global
         chartsInScope:
-        - 2
-        - 9
-        - 20
-        - 23
-        - 24
-        - 30
-        - 31
-    '20':
-      id: 20
+        - 3
+        - 8
+        - 14
+        - 28
+    '28':
+      id: 28
       crossFilters:
         scope: global
         chartsInScope:
-        - 2
-        - 9
-        - 13
-        - 23
-        - 24
-        - 30
-        - 31
-    '23':
-      id: 23
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 2
-        - 9
-        - 13
-        - 20
-        - 24
-        - 30
-        - 31
-    '24':
-      id: 24
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 2
-        - 9
-        - 13
-        - 20
-        - 23
-        - 30
-        - 31
-    '30':
-      id: 30
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 2
-        - 9
-        - 13
-        - 20
-        - 23
-        - 24
-        - 31
+        - 3
+        - 8
+        - 10
+        - 14
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
-    - 2
-    - 9
-    - 13
-    - 20
-    - 23
-    - 24
-    - 30
-    - 31
+    - 3
+    - 8
+    - 10
+    - 14
+    - 28
   color_scheme: ''
   refresh_frequency: 0
   expanded_slices: {}
@@ -432,9 +302,9 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded:
-      - 24
-      - 2
-      - 13
+      - 38
+      - 30
+      - 9
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
@@ -476,9 +346,9 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded:
-      - 24
-      - 2
-      - 13
+      - 38
+      - 30
+      - 9
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
@@ -522,8 +392,7 @@ metadata:
     tabsInScope: []
   filter_bar_orientation: HORIZONTAL
   color_scheme_domain: []
-  shared_label_colors:
-  - ''
+  shared_label_colors: []
   map_label_colors:
     ? ''
     : '#1FA8C9'
